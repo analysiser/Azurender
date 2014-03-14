@@ -1,0 +1,510 @@
+Tapplication
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000531E7D0000000000000000AA
+t1394507008
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052B117A6000000000000044C
+t1387337638
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E7CD500000000000001DE
+t1394506965
+s478
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a
+t1394691432
+s775824
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.LinkFileList
+c0000000053180F990000000000000221
+t1394085785
+s545
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o
+t1394682083
+s97776
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o
+t1394682084
+s25232
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o
+t1394682084
+s19228
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o
+t1394691432
+s628812
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.cpp
+c0000000052BDFBE40000000000001BE0
+t1388182500
+s7136
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+c0000000052BDFBE4000000000000077C
+t1388182500
+s1916
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.cpp
+c0000000052BDFBE40000000000000CC8
+t1388182500
+s3272
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.hpp
+c0000000052BDFBE4000000000000037B
+t1388182500
+s891
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.cpp
+c0000000052BDFBE40000000000002243
+t1388182500
+s8771
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.hpp
+c0000000052BDFBE40000000000000892
+t1388182500
+s2194
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+c0000000052BDFBE40000000000000175
+t1388182500
+s373
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.cpp
+c0000000053214BD8000000000000496D
+t1394691032
+s18797
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.hpp
+c0000000052BDFBE40000000000000212
+t1388182500
+s530
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+c0000000052BDFBE400000000000D7FC6
+t1388182500
+s884678
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+c0000000052BDFBE40000000000000887
+t1388182500
+s2183
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+c0000000052BDFBE40000000000000D11
+t1388182500
+s3345
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+c0000000052BDFBE4000000000000025C
+t1388182500
+s604
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
+c0000000052BDFBE400000000000021DE
+t1388182500
+s8670
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+c0000000052BDFBE40000000000000EC4
+t1388182500
+s3780
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+c0000000052BDFBE40000000000005152
+t1388182500
+s20818
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+c00000000531E57490000000000000705
+t1394497353
+s1797
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/material.hpp
+c0000000053214BFC0000000000000A94
+t1394691068
+s2708
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/mesh.hpp
+c0000000052BDFBE400000000000008AE
+t1388182500
+s2222
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/model.hpp
+c0000000052BDFBE40000000000000FD7
+t1388182500
+s4055
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/ray.hpp
+c00000000531B783A000000000000027F
+t1394309178
+s639
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/scene.hpp
+c0000000053214CB30000000000002DEA
+t1394691251
+s11754
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/sphere.hpp
+c0000000052BDFBE400000000000002AE
+t1388182500
+s686
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/triangle.hpp
+c0000000052BDFBE500000000000005CD
+t1388182501
+s1485
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.h
+c0000000052BDFBE500000000000119F4
+t1388182501
+s72180
+
+N/usr/local/include/SDL/SDL.h
+c0000000052BDDAFD0000000000000CA1
+t1388174077
+s3233
+
+N/usr/local/include/SDL/SDL_active.h
+c0000000052BDDAFD000000000000078D
+t1388174077
+s1933
+
+N/usr/local/include/SDL/SDL_audio.h
+c0000000052BDDAFD0000000000002BCF
+t1388174077
+s11215
+
+N/usr/local/include/SDL/SDL_cdrom.h
+c0000000052BDDAFD00000000000017A0
+t1388174077
+s6048
+
+N/usr/local/include/SDL/SDL_config.h
+c0000000052BDDAFD00000000000023A7
+t1388174077
+s9127
+
+N/usr/local/include/SDL/SDL_cpuinfo.h
+c0000000052BDDAFD00000000000008AD
+t1388174077
+s2221
+
+N/usr/local/include/SDL/SDL_endian.h
+c0000000052BDDAFD00000000000017A7
+t1388174077
+s6055
+
+N/usr/local/include/SDL/SDL_error.h
+c0000000052BDDAFD0000000000000752
+t1388174077
+s1874
+
+N/usr/local/include/SDL/SDL_events.h
+c0000000052BDDAFD00000000000032F1
+t1388174077
+s13041
+
+N/usr/local/include/SDL/SDL_joystick.h
+c0000000052BDDAFD000000000000159C
+t1388174077
+s5532
+
+N/usr/local/include/SDL/SDL_keyboard.h
+c0000000052BDDAFD0000000000001002
+t1388174077
+s4098
+
+N/usr/local/include/SDL/SDL_keysym.h
+c0000000052BDDAFD0000000000001D44
+t1388174077
+s7492
+
+N/usr/local/include/SDL/SDL_loadso.h
+c0000000052BDDAFD0000000000000AB3
+t1388174077
+s2739
+
+N/usr/local/include/SDL/SDL_main.h
+c0000000052BDDAFD0000000000000B32
+t1388174077
+s2866
+
+N/usr/local/include/SDL/SDL_mouse.h
+c0000000052BDDAFD0000000000001292
+t1388174077
+s4754
+
+N/usr/local/include/SDL/SDL_mutex.h
+c0000000052BDDAFD00000000000016E4
+t1388174077
+s5860
+
+N/usr/local/include/SDL/SDL_opengl.h
+c0000000052BDDAFD00000000000522A0
+t1388174077
+s336544
+
+N/usr/local/include/SDL/SDL_platform.h
+c0000000052BDDAFD0000000000000A94
+t1388174077
+s2708
+
+N/usr/local/include/SDL/SDL_quit.h
+c0000000052BDDAFD00000000000007D9
+t1388174077
+s2009
+
+N/usr/local/include/SDL/SDL_rwops.h
+c0000000052BDDAFD000000000000135E
+t1388174077
+s4958
+
+N/usr/local/include/SDL/SDL_stdinc.h
+c0000000052BDDAFD0000000000004059
+t1388174077
+s16473
+
+N/usr/local/include/SDL/SDL_thread.h
+c0000000052BDDAFD0000000000001092
+t1388174077
+s4242
+
+N/usr/local/include/SDL/SDL_timer.h
+c0000000052BDDAFD00000000000011AF
+t1388174077
+s4527
+
+N/usr/local/include/SDL/SDL_version.h
+c0000000052BDDAFD0000000000000A4D
+t1388174077
+s2637
+
+N/usr/local/include/SDL/SDL_video.h
+c0000000052BDDAFD0000000000009482
+t1388174077
+s38018
+
+N/usr/local/include/SDL/begin_code.h
+c0000000052BDDAFD000000000000146E
+t1388174077
+s5230
+
+N/usr/local/include/SDL/close_code.h
+c0000000052BDDAFD00000000000005CA
+t1388174077
+s1482
+
+N/usr/local/include/png.h
+c0000000052A004FA000000000001D030
+t1386218746
+s118832
+
+N/usr/local/include/pngconf.h
+c0000000052A004FA00000000000053F0
+t1386218746
+s21488
+
+N/usr/local/include/pnglibconf.h
+c0000000052A004FA00000000000018AB
+t1386218746
+s6315
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/application.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/camera_roam.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/scene_loader.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2a58e7df46d2b841^0da8e7df46d2b841^---0#1#1#--18"Check dependencies36"5D29ACCE-637B-4EBD-B3AC-9E7C50ABF783-
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416374881.770390
+e416374883.774513
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.hpp
+d/usr/local/include/SDL/SDL.h
+d/usr/local/include/SDL/SDL_main.h
+d/usr/local/include/SDL/SDL_audio.h
+d/usr/local/include/SDL/SDL_endian.h
+d/usr/local/include/SDL/SDL_mutex.h
+d/usr/local/include/SDL/SDL_thread.h
+d/usr/local/include/SDL/SDL_cdrom.h
+d/usr/local/include/SDL/SDL_cpuinfo.h
+d/usr/local/include/SDL/SDL_loadso.h
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_version.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.cpp236"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6550c56160d1b841^5248c66360d1b841^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/application/application.cpp0000000000000000^2584"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/application.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o36"6BC58205-9999-481B-9AC0-5FA1944A453B-
+b61CBD6EE-664F-4C68-A461-2D7A147E0CAA
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416374882.854402
+e416374884.512902
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.cpp236"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler39d1da6260d1b841^5b0b836460d1b841^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/application/camera_roam.cpp0000000000000000^2584"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/camera_roam.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o36"411475C4-6CAC-4147-9A60-851ED71410A6-
+b61CBD6EE-664F-4C68-A461-2D7A147E0CAA
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416374883.139579
+e416374884.983184
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/usr/local/include/png.h
+d/usr/local/include/pnglibconf.h
+d/usr/local/include/pngconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.cpp228"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler54e5236360d1b841^ad16046560d1b841^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/application/imageio.cpp0000000000000000^2560"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o36"4785DE47-A16C-494F-9F76-DB67A5730073-
+b61CBD6EE-664F-4C68-A461-2D7A147E0CAA
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416384229.315956
+e416384232.274907
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/scene.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/material.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/mesh.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/ray.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/sphere.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/model.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/triangle.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.cpp238"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler630b51e584d1b841^6b6146e884d1b841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/application/scene_loader.cpp0000000000000000^2590"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/scene_loader.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o36"74CBB840-D5D7-4856-AA9A-98EA07D847E0-
+b35F487C6-A1E4-4B3A-962D-8430ECBA5C6D
+
+CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a normal x86_64
+s416384232.275465
+e416384232.285999
+r1
+xLibtool
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a normal x86_64113"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a normal x86_64479046e884d1b841^b83d49e884d1b841^---0#0#1#--785"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a36"C0E77FD7-0142-479E-8A41-775E6C96C1AD-
+b35F487C6-A1E4-4B3A-962D-8430ECBA5C6D
+

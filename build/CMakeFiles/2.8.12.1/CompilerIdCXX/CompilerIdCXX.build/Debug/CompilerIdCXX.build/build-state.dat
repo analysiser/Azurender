@@ -1,0 +1,122 @@
+TCompilerIdCXX
+v6
+r1
+cCheck dependencies
+cCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX normal i386
+cPhaseScriptExecution Run\ Script /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052B117A6000000000000044C
+t1387337638
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052B117A600000000000001DB
+t1387337638
+s475
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+c0000000053180EC50000000000002E45
+t1394085573
+s11845
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX
+t2
+s0
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+t1394085573
+s3456
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+c0000000053180EC500000000000000B1
+t1394085573
+s177
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c0000000053180EC5000000000000002A
+t1394085573
+s42
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies766def4546c8b841^3083f94546c8b841^---0#1#1#--18"Check dependencies36"83C79B5E-C430-43BA-9F9D-2E72C312BFE8-
+
+CCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415778373.973658
+e415778373.999434
+r1
+xCompileC
+x./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp180"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerbe66f94546c8b841^0adbff4546c8b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp0000000000000000^2845"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o36"4F27FCAB-88C8-458A-9BF3-B9BB5A5D6A27-
+b8C6935A0-D786-4BD9-8C4B-CF1E5427B6A5
+
+CLd /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX normal i386
+s415778374.000155
+e415778374.088676
+r1
+xLd
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX
+xnormal
+xi386
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Link /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX30"Ld ./CompilerIdCXX normal i386321f004646c8b841^bcb3164646c8b841^---0#0#1#--1136"Ld ./CompilerIdCXX normal i386    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX_dependency_info.dat -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX36"857058C7-3A08-42AB-9C34-93AA54947D56-
+b8C6935A0-D786-4BD9-8C4B-CF1E5427B6A5
+
+CPhaseScriptExecution Run\ Script /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s415778374.089719
+e415778374.100606
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'115"PhaseScriptExecution Run\ Script ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh3a41174646c8b841^83c1194646c8b841^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-415778374#0#47#-0#-----0#0#1#--408"PhaseScriptExecution Run\ Script ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX"    /bin/sh -c \"/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/2.8.12.1/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh\"36"D6874A23-A238-45D6-912A-21763EC10D80-
+b8C6935A0-D786-4BD9-8C4B-CF1E5427B6A5
+

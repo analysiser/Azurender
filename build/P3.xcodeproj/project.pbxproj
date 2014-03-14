@@ -1,0 +1,2696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4217A94E827C47F3B19E197E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 38DE447C158E470EB07FF0BD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C3843ADB9DAD47D9AEE20F63 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		5DEA3B299685428B9A637877 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 67374EC321D14929A3029AD3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				D549958271C64E058FBF638C /* CMake Rules */,
+			);
+			dependencies = (
+				2D37B9B0DC45495D9A834BFA /* PBXTargetDependency */,
+				C8AD64EEBB454CFDBBDEAE1E /* PBXTargetDependency */,
+				7BB12DBE0B054D95BB0075D2 /* PBXTargetDependency */,
+				B9176E9DAF54439CA12380D1 /* PBXTargetDependency */,
+				BBB83CCBE3A14C919994B99A /* PBXTargetDependency */,
+				7B3834C845C94EA79BA26AED /* PBXTargetDependency */,
+				D22D95FEBC2E4D97A2591399 /* PBXTargetDependency */,
+				7945D3A43BD8403EBA345F9F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		B71946ACC80A4D2F8B5452F3 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AABCE6A4DB3640D98AFB1397 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				C346D79B62804A67B9C6FFFC /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5BB71DD5EEA041E1A9514EE2 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02D86E6DBA254BCC8F6765FB /* camera_roam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 726B86E9886E4F569D4900D1 /* camera_roam.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		09F997F1093F4C4991132E6A /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9850B2E02B64031A32314E9 /* sphere.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0C46572F905142F993B5D6BF /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0743471285BD4F4CA9FCE0FC /* tinyxmlparser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		11D17F0B18CBAD3A005D4747 /* Photon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D17F0918CBAD3A005D4747 /* Photon.cpp */; };
+		1F9B1239FA4149E6802DFD0C /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C0E907E0214C90A6619C67 /* mesh.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2312C1999F62424786079295 /* glew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1AD0BABE0084326B9C83202 /* glew.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3DBFE023FA8A48B383066403 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C56B46CED43E088C97C60 /* scene.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4CFAC2D039F24892B0F9B977 /* ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94CDD36302254324803C8AD0 /* ray.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4FFF17E31C584CF89CC37A10 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A141C139E5B4E18A07F87EA /* triangle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		50A7E1A153554EE5BEA15DA0 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A69432BD19F04C0088B23B95 /* tinyxmlerror.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		51DEEA718AD7441EB7985314 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD65F9E62B4A85A07E5C10 /* color.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6436A6D62B6E4623AAEE2CD7 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95B5D3338417475E87719F84 /* vector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7ADE15302325469393CD56D0 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 175B82FED4374A26B39A2751 /* model.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		910AD636505F4FDEA329E316 /* scene_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 811DB7929D0B45C2AED9D92B /* scene_loader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9553DC2390AF4AC0AA09CE6E /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 210ADDCAA9FB4C0F9181F4CF /* camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A2127093EE274BAB8F8A3B5C /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 382EE31EA2E54878AAD0120C /* math.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B173AC633BBD470C90EE9565 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19117BC4E844C06AF01B9A0 /* material.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B55A68A2DF9F4B5CBEB17B3F /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C82DB9E884B4F25857E1075 /* application.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B969FED125D342E790350287 /* SDLmain.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A3B628871442C4B728F692 /* SDLmain.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C4ED61BE38E4499CAF2E3FB5 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77A1EFB3C6C74E8CA7EFE95A /* matrix.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D2A45D79D0E34CEB92D353FF /* imageio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20115A37E28B443BB548B625 /* imageio.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E52BAC7D34A540BDBEC6F441 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA9AE9880E10458DA1339EE5 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EA65823A0D2D412F8F44BDE8 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D4C123E26C4A26918599B6 /* tinyxml.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EF847638A0B04094BE03F7C3 /* quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFD60858C264415C9548FA0F /* quaternion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FBEF944446BE4983B209BC0D /* raytracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8DBE3680C24245BB228053 /* raytracer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DA6169348F4F508FB0BC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A6CDA342324D14BE3137E6;
+			remoteInfo = math;
+		};
+		08AC4321F67D49B7B613A3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		0AEFBC0AD93441E599A5205E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85EE77EB1F544DCE84ED35C3;
+			remoteInfo = p3;
+		};
+		111E1856339A4728A7C7B3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0180574900804300ACE08D4B;
+			remoteInfo = SDLmain;
+		};
+		1E79AA978921499A8A253240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14BD3E2F0FF4C2B8597CE04;
+			remoteInfo = glew;
+		};
+		265853765A894236858BDA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DEA3B299685428B9A637877;
+			remoteInfo = ALL_BUILD;
+		};
+		3620DBED46B64D0995D7F91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A6CDA342324D14BE3137E6;
+			remoteInfo = math;
+		};
+		56CC55987CDA41CDA05C6577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A47973B2A2B445989772868;
+			remoteInfo = scene;
+		};
+		5C1A3EF1C5AA4CFA8F6BEBF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		64C1C69858374465A16B2B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		6D511E4523464B27A6CA5A5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		6F08DBCB763E4956A8A2A57E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A90600A71849F39FCF3F37;
+			remoteInfo = tinyxml;
+		};
+		75D8DF8B382144D0A64B6A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A47973B2A2B445989772868;
+			remoteInfo = scene;
+		};
+		8875F09BC9514654945BDD9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		8BA5C8B74C84455AAF523B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0180574900804300ACE08D4B;
+			remoteInfo = SDLmain;
+		};
+		B5FE6D5A5A174596B071F92D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A90600A71849F39FCF3F37;
+			remoteInfo = tinyxml;
+		};
+		D02E57724A224B589E4FC9D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14BD3E2F0FF4C2B8597CE04;
+			remoteInfo = glew;
+		};
+		D2FFCDD618A947069D5226DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		DADD51A2A8214D0190FEE433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26C81AF45784C9A80301DC5;
+			remoteInfo = application;
+		};
+		DE68A51A6CB4497B95A5371D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+		F45143166B5A42FB9DFE7E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26C81AF45784C9A80301DC5;
+			remoteInfo = application;
+		};
+		F652FA60575F48A7961BA522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4217A94E827C47F3B19E197E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0743471285BD4F4CA9FCE0FC /* tinyxmlparser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxmlparser.cpp; path = tinyxml/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
+		0C8C56B46CED43E088C97C60 /* scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = scene/scene.cpp; sourceTree = SOURCE_ROOT; };
+		117C8C4618CAF63C0053138A /* raytracer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = raytracer.hpp; path = p3/raytracer.hpp; sourceTree = "<group>"; };
+		11D17EFB18CBAC82005D4747 /* material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = material.hpp; path = scene/material.hpp; sourceTree = "<group>"; };
+		11D17EFC18CBAC82005D4747 /* mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mesh.hpp; path = scene/mesh.hpp; sourceTree = "<group>"; };
+		11D17EFD18CBAC82005D4747 /* model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = model.hpp; path = scene/model.hpp; sourceTree = "<group>"; };
+		11D17EFE18CBAC82005D4747 /* ray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ray.hpp; path = scene/ray.hpp; sourceTree = "<group>"; };
+		11D17EFF18CBAC82005D4747 /* scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = scene.hpp; path = scene/scene.hpp; sourceTree = "<group>"; };
+		11D17F0018CBAC82005D4747 /* sphere.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sphere.hpp; path = scene/sphere.hpp; sourceTree = "<group>"; };
+		11D17F0118CBAC82005D4747 /* triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = triangle.hpp; path = scene/triangle.hpp; sourceTree = "<group>"; };
+		11D17F0218CBAC98005D4747 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = camera.hpp; path = math/camera.hpp; sourceTree = "<group>"; };
+		11D17F0318CBAC98005D4747 /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = color.hpp; path = math/color.hpp; sourceTree = "<group>"; };
+		11D17F0418CBAC98005D4747 /* math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = math.hpp; path = math/math.hpp; sourceTree = "<group>"; };
+		11D17F0518CBAC98005D4747 /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = matrix.hpp; path = math/matrix.hpp; sourceTree = "<group>"; };
+		11D17F0618CBAC98005D4747 /* quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = quaternion.hpp; path = math/quaternion.hpp; sourceTree = "<group>"; };
+		11D17F0718CBAC98005D4747 /* random462.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = random462.hpp; path = math/random462.hpp; sourceTree = "<group>"; };
+		11D17F0818CBAC98005D4747 /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vector.hpp; path = math/vector.hpp; sourceTree = "<group>"; };
+		11D17F0918CBAD3A005D4747 /* Photon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Photon.cpp; path = p3/Photon.cpp; sourceTree = "<group>"; };
+		11D17F0A18CBAD3A005D4747 /* Photon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Photon.hpp; path = p3/Photon.hpp; sourceTree = "<group>"; };
+		11D4C123E26C4A26918599B6 /* tinyxml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml.cpp; path = tinyxml/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
+		175B82FED4374A26B39A2751 /* model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = model.cpp; path = scene/model.cpp; sourceTree = SOURCE_ROOT; };
+		20115A37E28B443BB548B625 /* imageio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imageio.cpp; path = application/imageio.cpp; sourceTree = SOURCE_ROOT; };
+		210ADDCAA9FB4C0F9181F4CF /* camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = math/camera.cpp; sourceTree = SOURCE_ROOT; };
+		21C0E907E0214C90A6619C67 /* mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = scene/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		2BB3E4A980F24F22B8121FB2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		382EE31EA2E54878AAD0120C /* math.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = math.cpp; path = math/math.cpp; sourceTree = SOURCE_ROOT; };
+		3CAD65F9E62B4A85A07E5C10 /* color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = math/color.cpp; sourceTree = SOURCE_ROOT; };
+		46828C97AC99486298E83684 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = scene/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		48912A24FDBA4C70B77FFAE7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		726B86E9886E4F569D4900D1 /* camera_roam.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera_roam.cpp; path = application/camera_roam.cpp; sourceTree = SOURCE_ROOT; };
+		77A1EFB3C6C74E8CA7EFE95A /* matrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix.cpp; path = math/matrix.cpp; sourceTree = SOURCE_ROOT; };
+		7BD83BF8910F42B29C97DE8B /* p3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = p3; sourceTree = BUILT_PRODUCTS_DIR; };
+		811DB7929D0B45C2AED9D92B /* scene_loader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene_loader.cpp; path = application/scene_loader.cpp; sourceTree = SOURCE_ROOT; };
+		82FA7D92BDA541EB8C37993F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = application/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8A141C139E5B4E18A07F87EA /* triangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangle.cpp; path = scene/triangle.cpp; sourceTree = SOURCE_ROOT; };
+		8A96FC18243A4C099FF40FD0 /* libscene.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libscene.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED750241BA0464AA399D46C /* libmath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libmath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CDD36302254324803C8AD0 /* ray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ray.cpp; path = scene/ray.cpp; sourceTree = SOURCE_ROOT; };
+		95B5D3338417475E87719F84 /* vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector.cpp; path = math/vector.cpp; sourceTree = SOURCE_ROOT; };
+		9C628306FDC44DE484B3C998 /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C82DB9E884B4F25857E1075 /* application.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = application.cpp; path = application/application.cpp; sourceTree = SOURCE_ROOT; };
+		A1AD0BABE0084326B9C83202 /* glew.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glew.cpp; path = glew/glew.cpp; sourceTree = SOURCE_ROOT; };
+		A69432BD19F04C0088B23B95 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxmlerror.cpp; path = tinyxml/tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
+		A9850B2E02B64031A32314E9 /* sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = scene/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		ABC3C78B376441B48AA25307 /* libapplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libapplication.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A3B628871442C4B728F692 /* SDLmain.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SDLmain.m; path = SDLmain/SDLmain.m; sourceTree = SOURCE_ROOT; };
+		BA7173C6401341188092D045 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = tinyxml/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C0E8971CDD3646A9A00FAE7A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = p3/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C19117BC4E844C06AF01B9A0 /* material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = scene/material.cpp; sourceTree = SOURCE_ROOT; };
+		D19B492B82594D83A33B050C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = SDLmain/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D517A1D78F174598B5674898 /* libSDLmain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDLmain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9AE9880E10458DA1339EE5 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = p3/main.cpp; sourceTree = SOURCE_ROOT; };
+		E77A9BE31AC9416CA0B021B6 /* libglew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8DBE3680C24245BB228053 /* raytracer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raytracer.cpp; path = p3/raytracer.cpp; sourceTree = SOURCE_ROOT; };
+		FB9DAB5B8869478FBDCEA1D7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = math/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FFD60858C264415C9548FA0F /* quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = math/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		006A1A73CDA14BBDBD32E1F3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D4C123E26C4A26918599B6 /* tinyxml.cpp */,
+				A69432BD19F04C0088B23B95 /* tinyxmlerror.cpp */,
+				0743471285BD4F4CA9FCE0FC /* tinyxmlparser.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		08A015344E074D15950DE01B /* SDLmain */ = {
+			isa = PBXGroup;
+			children = (
+				C179702AE3594D438D7B7057 /* Source Files */,
+				D19B492B82594D83A33B050C /* CMakeLists.txt */,
+			);
+			name = SDLmain;
+			sourceTree = "<group>";
+		};
+		09B9F8EE647846529EF57E43 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D17F0A18CBAD3A005D4747 /* Photon.hpp */,
+				11D17F0918CBAD3A005D4747 /* Photon.cpp */,
+				DA9AE9880E10458DA1339EE5 /* main.cpp */,
+				117C8C4618CAF63C0053138A /* raytracer.hpp */,
+				EE8DBE3680C24245BB228053 /* raytracer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1EF4C87C05464E8BBC0A35C2 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				D2441E82F6184CD9A2C996DA /* Source Files */,
+				FB9DAB5B8869478FBDCEA1D7 /* CMakeLists.txt */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		1FF34C6E4A0C4B1A8AD40F78 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				D14CEE1B0BC346F8898C841F /* CMake Rules */,
+				48912A24FDBA4C70B77FFAE7 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		360C34BD8B50413EB0F83481 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D17EFB18CBAC82005D4747 /* material.hpp */,
+				11D17EFC18CBAC82005D4747 /* mesh.hpp */,
+				11D17EFD18CBAC82005D4747 /* model.hpp */,
+				11D17EFE18CBAC82005D4747 /* ray.hpp */,
+				11D17EFF18CBAC82005D4747 /* scene.hpp */,
+				11D17F0018CBAC82005D4747 /* sphere.hpp */,
+				11D17F0118CBAC82005D4747 /* triangle.hpp */,
+				C19117BC4E844C06AF01B9A0 /* material.cpp */,
+				21C0E907E0214C90A6619C67 /* mesh.cpp */,
+				175B82FED4374A26B39A2751 /* model.cpp */,
+				94CDD36302254324803C8AD0 /* ray.cpp */,
+				0C8C56B46CED43E088C97C60 /* scene.cpp */,
+				A9850B2E02B64031A32314E9 /* sphere.cpp */,
+				8A141C139E5B4E18A07F87EA /* triangle.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		41F63E67EAFD41EC90DED2A7 = {
+			isa = PBXGroup;
+			children = (
+				74538C2142F64246BADB2673 /* Sources */,
+				932FB7C266F44D5C844955E8 /* Resources */,
+				A4E1D9961F53415EBADF61BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BE13380C56A47069A772746 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				360C34BD8B50413EB0F83481 /* Source Files */,
+				46828C97AC99486298E83684 /* CMakeLists.txt */,
+			);
+			name = scene;
+			sourceTree = "<group>";
+		};
+		5C8D37E6390949E8A6925C5B /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				A2C830B1ED91480984BB1EF0 /* Source Files */,
+				2BB3E4A980F24F22B8121FB2 /* CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		6DF679EE6D3A42E4B5ABEFCB /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				B2F829E03DB0444F8E91F0BE /* CMake Rules */,
+				48912A24FDBA4C70B77FFAE7 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		74538C2142F64246BADB2673 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1FF34C6E4A0C4B1A8AD40F78 /* ALL_BUILD */,
+				6DF679EE6D3A42E4B5ABEFCB /* ZERO_CHECK */,
+				5C8D37E6390949E8A6925C5B /* glew */,
+				C1143971883B4DF998EFE1C0 /* application */,
+				1EF4C87C05464E8BBC0A35C2 /* math */,
+				B628EB4E22ED433D8028BBC7 /* p3 */,
+				4BE13380C56A47069A772746 /* scene */,
+				8D827751F86C4308B937603F /* tinyxml */,
+				08A015344E074D15950DE01B /* SDLmain */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8D827751F86C4308B937603F /* tinyxml */ = {
+			isa = PBXGroup;
+			children = (
+				006A1A73CDA14BBDBD32E1F3 /* Source Files */,
+				BA7173C6401341188092D045 /* CMakeLists.txt */,
+			);
+			name = tinyxml;
+			sourceTree = "<group>";
+		};
+		932FB7C266F44D5C844955E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A2C830B1ED91480984BB1EF0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1AD0BABE0084326B9C83202 /* glew.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A4E1D9961F53415EBADF61BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E77A9BE31AC9416CA0B021B6 /* libglew.a */,
+				ABC3C78B376441B48AA25307 /* libapplication.a */,
+				8ED750241BA0464AA399D46C /* libmath.a */,
+				7BD83BF8910F42B29C97DE8B /* p3 */,
+				8A96FC18243A4C099FF40FD0 /* libscene.a */,
+				9C628306FDC44DE484B3C998 /* libtinyxml.a */,
+				D517A1D78F174598B5674898 /* libSDLmain.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F829E03DB0444F8E91F0BE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B628EB4E22ED433D8028BBC7 /* p3 */ = {
+			isa = PBXGroup;
+			children = (
+				09B9F8EE647846529EF57E43 /* Source Files */,
+				C0E8971CDD3646A9A00FAE7A /* CMakeLists.txt */,
+			);
+			name = p3;
+			sourceTree = "<group>";
+		};
+		C1143971883B4DF998EFE1C0 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				E2B85492AAA24B999B5DC706 /* Source Files */,
+				82FA7D92BDA541EB8C37993F /* CMakeLists.txt */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		C179702AE3594D438D7B7057 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3A3B628871442C4B728F692 /* SDLmain.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D14CEE1B0BC346F8898C841F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D2441E82F6184CD9A2C996DA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D17F0218CBAC98005D4747 /* camera.hpp */,
+				11D17F0318CBAC98005D4747 /* color.hpp */,
+				11D17F0418CBAC98005D4747 /* math.hpp */,
+				11D17F0518CBAC98005D4747 /* matrix.hpp */,
+				11D17F0618CBAC98005D4747 /* quaternion.hpp */,
+				11D17F0718CBAC98005D4747 /* random462.hpp */,
+				11D17F0818CBAC98005D4747 /* vector.hpp */,
+				210ADDCAA9FB4C0F9181F4CF /* camera.cpp */,
+				3CAD65F9E62B4A85A07E5C10 /* color.cpp */,
+				382EE31EA2E54878AAD0120C /* math.cpp */,
+				77A1EFB3C6C74E8CA7EFE95A /* matrix.cpp */,
+				FFD60858C264415C9548FA0F /* quaternion.cpp */,
+				95B5D3338417475E87719F84 /* vector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E2B85492AAA24B999B5DC706 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C82DB9E884B4F25857E1075 /* application.cpp */,
+				726B86E9886E4F569D4900D1 /* camera_roam.cpp */,
+				20115A37E28B443BB548B625 /* imageio.cpp */,
+				811DB7929D0B45C2AED9D92B /* scene_loader.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0180574900804300ACE08D4B /* SDLmain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BAE7D0FF824566939AD35E /* Build configuration list for PBXNativeTarget "SDLmain" */;
+			buildPhases = (
+				37AF606E12C54D5E965F3EAE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BE795EF50434E36A17FD81C /* PBXTargetDependency */,
+			);
+			name = SDLmain;
+			productName = SDLmain;
+			productReference = D517A1D78F174598B5674898 /* libSDLmain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		25A90600A71849F39FCF3F37 /* tinyxml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECAF30992355426580F4DF83 /* Build configuration list for PBXNativeTarget "tinyxml" */;
+			buildPhases = (
+				899D600CCF0F4CBDAEED79E5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DBC56AB57144ACD855B1DAC /* PBXTargetDependency */,
+			);
+			name = tinyxml;
+			productName = tinyxml;
+			productReference = 9C628306FDC44DE484B3C998 /* libtinyxml.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		85EE77EB1F544DCE84ED35C3 /* p3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7E8847230145ECA37A8511 /* Build configuration list for PBXNativeTarget "p3" */;
+			buildPhases = (
+				FD529940E3EC4DCC9F330816 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451AC7D4D4C44148A2DFE0A8 /* PBXTargetDependency */,
+				92D2ED7CDFAC4E5088E13543 /* PBXTargetDependency */,
+				51D3831BE4604E4496BC481F /* PBXTargetDependency */,
+				E80822B382794D7982BE5E3C /* PBXTargetDependency */,
+				34EF5B2B3BEF4675AD78F07C /* PBXTargetDependency */,
+				11C2D01E5E58424BAA95ACDC /* PBXTargetDependency */,
+				AABD1C4ACF7F4A4AAF80071B /* PBXTargetDependency */,
+			);
+			name = p3;
+			productName = p3;
+			productReference = 7BD83BF8910F42B29C97DE8B /* p3 */;
+			productType = "com.apple.product-type.tool";
+		};
+		98A6CDA342324D14BE3137E6 /* math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFCB5747C154443A4F2B00C /* Build configuration list for PBXNativeTarget "math" */;
+			buildPhases = (
+				555C1B67D2C740BC8E1B692E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF6AE0C04FE42FF8D57479C /* PBXTargetDependency */,
+			);
+			name = math;
+			productName = math;
+			productReference = 8ED750241BA0464AA399D46C /* libmath.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A47973B2A2B445989772868 /* scene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E58E6D647147F09CF046FA /* Build configuration list for PBXNativeTarget "scene" */;
+			buildPhases = (
+				4F2F4EF1282B4EBA94CE202E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000E866B2B874344BD9A0CE4 /* PBXTargetDependency */,
+			);
+			name = scene;
+			productName = scene;
+			productReference = 8A96FC18243A4C099FF40FD0 /* libscene.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A26C81AF45784C9A80301DC5 /* application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3171079FB1F24B5AB55AF5F5 /* Build configuration list for PBXNativeTarget "application" */;
+			buildPhases = (
+				DB03EFD5A24646849BBA8C71 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E9406F070C848229B854043 /* PBXTargetDependency */,
+			);
+			name = application;
+			productName = application;
+			productReference = ABC3C78B376441B48AA25307 /* libapplication.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C14BD3E2F0FF4C2B8597CE04 /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0606200BC97B4276BA72F0B9 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				47A531D30D1F44B1AE74E540 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919A5F08FB534760AFF502FC /* PBXTargetDependency */,
+			);
+			name = glew;
+			productName = glew;
+			productReference = E77A9BE31AC9416CA0B021B6 /* libglew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C9A9E05BDC45B790EF80F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = DA7A18C71A9F4818A3AC784E /* Build configuration list for PBXProject "P3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 41F63E67EAFD41EC90DED2A7;
+			projectDirPath = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src";
+			projectRoot = "";
+			targets = (
+				5DEA3B299685428B9A637877 /* ALL_BUILD */,
+				4217A94E827C47F3B19E197E /* ZERO_CHECK */,
+				B71946ACC80A4D2F8B5452F3 /* install */,
+				C14BD3E2F0FF4C2B8597CE04 /* glew */,
+				A26C81AF45784C9A80301DC5 /* application */,
+				98A6CDA342324D14BE3137E6 /* math */,
+				85EE77EB1F544DCE84ED35C3 /* p3 */,
+				9A47973B2A2B445989772868 /* scene */,
+				25A90600A71849F39FCF3F37 /* tinyxml */,
+				0180574900804300ACE08D4B /* SDLmain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C346D79B62804A67B9C6FFFC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build -f /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C3843ADB9DAD47D9AEE20F63 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build -f /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D549958271C64E058FBF638C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build -f /Users/Xiao/Dropbox/CMU/04.15418/final\\ project/p3/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37AF606E12C54D5E965F3EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B969FED125D342E790350287 /* SDLmain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A531D30D1F44B1AE74E540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2312C1999F62424786079295 /* glew.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2F4EF1282B4EBA94CE202E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173AC633BBD470C90EE9565 /* material.cpp in Sources */,
+				1F9B1239FA4149E6802DFD0C /* mesh.cpp in Sources */,
+				7ADE15302325469393CD56D0 /* model.cpp in Sources */,
+				4CFAC2D039F24892B0F9B977 /* ray.cpp in Sources */,
+				3DBFE023FA8A48B383066403 /* scene.cpp in Sources */,
+				09F997F1093F4C4991132E6A /* sphere.cpp in Sources */,
+				4FFF17E31C584CF89CC37A10 /* triangle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555C1B67D2C740BC8E1B692E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9553DC2390AF4AC0AA09CE6E /* camera.cpp in Sources */,
+				51DEEA718AD7441EB7985314 /* color.cpp in Sources */,
+				A2127093EE274BAB8F8A3B5C /* math.cpp in Sources */,
+				C4ED61BE38E4499CAF2E3FB5 /* matrix.cpp in Sources */,
+				EF847638A0B04094BE03F7C3 /* quaternion.cpp in Sources */,
+				6436A6D62B6E4623AAEE2CD7 /* vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899D600CCF0F4CBDAEED79E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA65823A0D2D412F8F44BDE8 /* tinyxml.cpp in Sources */,
+				50A7E1A153554EE5BEA15DA0 /* tinyxmlerror.cpp in Sources */,
+				0C46572F905142F993B5D6BF /* tinyxmlparser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB03EFD5A24646849BBA8C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55A68A2DF9F4B5CBEB17B3F /* application.cpp in Sources */,
+				02D86E6DBA254BCC8F6765FB /* camera_roam.cpp in Sources */,
+				D2A45D79D0E34CEB92D353FF /* imageio.cpp in Sources */,
+				910AD636505F4FDEA329E316 /* scene_loader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD529940E3EC4DCC9F330816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D17F0B18CBAD3A005D4747 /* Photon.cpp in Sources */,
+				E52BAC7D34A540BDBEC6F441 /* main.cpp in Sources */,
+				FBEF944446BE4983B209BC0D /* raytracer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000E866B2B874344BD9A0CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = DE68A51A6CB4497B95A5371D /* PBXContainerItemProxy */;
+		};
+		0BE795EF50434E36A17FD81C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = D2FFCDD618A947069D5226DA /* PBXContainerItemProxy */;
+		};
+		0E9406F070C848229B854043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = 8875F09BC9514654945BDD9C /* PBXContainerItemProxy */;
+		};
+		11C2D01E5E58424BAA95ACDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98A6CDA342324D14BE3137E6 /* math */;
+			targetProxy = 03DA6169348F4F508FB0BC41 /* PBXContainerItemProxy */;
+		};
+		2D37B9B0DC45495D9A834BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A90600A71849F39FCF3F37 /* tinyxml */;
+			targetProxy = B5FE6D5A5A174596B071F92D /* PBXContainerItemProxy */;
+		};
+		2DBC56AB57144ACD855B1DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = 08AC4321F67D49B7B613A3F1 /* PBXContainerItemProxy */;
+		};
+		34EF5B2B3BEF4675AD78F07C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A47973B2A2B445989772868 /* scene */;
+			targetProxy = 56CC55987CDA41CDA05C6577 /* PBXContainerItemProxy */;
+		};
+		451AC7D4D4C44148A2DFE0A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A90600A71849F39FCF3F37 /* tinyxml */;
+			targetProxy = 6F08DBCB763E4956A8A2A57E /* PBXContainerItemProxy */;
+		};
+		51D3831BE4604E4496BC481F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26C81AF45784C9A80301DC5 /* application */;
+			targetProxy = F45143166B5A42FB9DFE7E1E /* PBXContainerItemProxy */;
+		};
+		5BB71DD5EEA041E1A9514EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DEA3B299685428B9A637877 /* ALL_BUILD */;
+			targetProxy = 265853765A894236858BDA17 /* PBXContainerItemProxy */;
+		};
+		7945D3A43BD8403EBA345F9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = 64C1C69858374465A16B2B9C /* PBXContainerItemProxy */;
+		};
+		7B3834C845C94EA79BA26AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98A6CDA342324D14BE3137E6 /* math */;
+			targetProxy = 3620DBED46B64D0995D7F91D /* PBXContainerItemProxy */;
+		};
+		7BB12DBE0B054D95BB0075D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26C81AF45784C9A80301DC5 /* application */;
+			targetProxy = DADD51A2A8214D0190FEE433 /* PBXContainerItemProxy */;
+		};
+		919A5F08FB534760AFF502FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = F652FA60575F48A7961BA522 /* PBXContainerItemProxy */;
+		};
+		92D2ED7CDFAC4E5088E13543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14BD3E2F0FF4C2B8597CE04 /* glew */;
+			targetProxy = 1E79AA978921499A8A253240 /* PBXContainerItemProxy */;
+		};
+		AABD1C4ACF7F4A4AAF80071B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = 5C1A3EF1C5AA4CFA8F6BEBF7 /* PBXContainerItemProxy */;
+		};
+		AFF6AE0C04FE42FF8D57479C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4217A94E827C47F3B19E197E /* ZERO_CHECK */;
+			targetProxy = 6D511E4523464B27A6CA5A5C /* PBXContainerItemProxy */;
+		};
+		B9176E9DAF54439CA12380D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0180574900804300ACE08D4B /* SDLmain */;
+			targetProxy = 111E1856339A4728A7C7B3C1 /* PBXContainerItemProxy */;
+		};
+		BBB83CCBE3A14C919994B99A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A47973B2A2B445989772868 /* scene */;
+			targetProxy = 75D8DF8B382144D0A64B6A9D /* PBXContainerItemProxy */;
+		};
+		C8AD64EEBB454CFDBBDEAE1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14BD3E2F0FF4C2B8597CE04 /* glew */;
+			targetProxy = D02E57724A224B589E4FC9D0 /* PBXContainerItemProxy */;
+		};
+		D22D95FEBC2E4D97A2591399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85EE77EB1F544DCE84ED35C3 /* p3 */;
+			targetProxy = 0AEFBC0AD93441E599A5205E /* PBXContainerItemProxy */;
+		};
+		E80822B382794D7982BE5E3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0180574900804300ACE08D4B /* SDLmain */;
+			targetProxy = 8BA5C8B74C84455AAF523B9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D9D309D4F041CD847DD2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tinyxml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		13646DD809214F8CA6C80247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Debug/libmath.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/Debug/libscene.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Debug/libtinyxml.a\"",
+					/usr/local/lib/libSDLmain.a,
+					/usr/local/lib/libSDL.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+					"-framework",
+					Cocoa,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Debug/libglew.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Debug/libSDLmain.a\"",
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = p3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		18698CDDC1B546A4BE0C34F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		213E817035DE4866895D6AA5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		23BE674344A0454DAC218C35 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-unused-parameter",
+					"-Wno-objc-protocol-method-implementation",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDLmain;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		244D0CBDF66A4C63BB126755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		32849B33D7E04204A43DFC53 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		35FE66980E464E79A89F3D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Release/libapplication.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Release/libmath.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/Release/libscene.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Release/libtinyxml.a\"",
+					/usr/local/lib/libSDLmain.a,
+					/usr/local/lib/libSDL.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+					"-framework",
+					Cocoa,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Release/libglew.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Release/libSDLmain.a\"",
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = p3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		3B329DDDA1BD4C1EA3DBC9DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = scene;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3C300E8E8CC0431995130D27 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4D668E10C1BD4483A4C5BD11 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/RelWithDebInfo/libapplication.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/RelWithDebInfo/libmath.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/RelWithDebInfo/libscene.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/RelWithDebInfo/libtinyxml.a\"",
+					/usr/local/lib/libSDLmain.a,
+					/usr/local/lib/libSDL.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+					"-framework",
+					Cocoa,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/RelWithDebInfo/libglew.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/RelWithDebInfo/libSDLmain.a\"",
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = p3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		526DF48D96E24E25A21E61EB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5600C6F306E34398806D9DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = scene;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		6AB26EB3D7F0471AA3905203 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6C2E3FCB459E422DAFDCAC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		7C31C521BF344D02B569335B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-unused-parameter",
+					"-Wno-objc-protocol-method-implementation",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDLmain;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		81F8F07A3DDE4DCB9452C075 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		84BDFE6210244F5695AFE1A5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		89EE799D2B7C48528C13CEF6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8E86B026339A495E8FC07377 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		926B83C30425401AA584D665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		A0F64FCFB929410488AD4591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A61C67892252407399D2D976 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tinyxml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B0895192192E4CCC9BAFAAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B0E56F9E38F8486788106366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		B4B3D3B8566741F0BF7AF9BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/build";
+			};
+			name = Debug;
+		};
+		B74CC0A3722740C08E1B0324 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B8824BDA26EF447E80870E18 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		B95D8A4761E64E3ABBBB49B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		BA3E84CA2587441BA2C41985 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-unused-parameter",
+					"-Wno-objc-protocol-method-implementation",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDLmain;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		BC94C63889894D9EAE1E3280 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/build";
+			};
+			name = MinSizeRel;
+		};
+		C630329FDD4A4B25BE448456 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C65059199A8347779745DA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/build";
+			};
+			name = Release;
+		};
+		C8FD7404E4024901AD087D8D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tinyxml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D2C1C42D86804513BF757516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = scene;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		D4F8FB1252864CA4ADD598DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		DCA82D880C3A45D99041BEA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-unused-parameter",
+					"-Wno-objc-protocol-method-implementation",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SDLmain;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		DD5DD532B3DF4FC0884048FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		DD7AADF6295140679DD819BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E4F8935F5D554BEBB0AF352F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = tinyxml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		EA0566BE0F0D493BBFD02510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		ED5AC8F2E66947F099D548B7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = scene;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F250D58F1D9F426AB1AD90A3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "      -DNDEBUG   ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+					"-DNDEBUG",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/MinSizeRel/libapplication.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/MinSizeRel/libmath.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/MinSizeRel/libscene.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/MinSizeRel/libtinyxml.a\"",
+					/usr/local/lib/libSDLmain.a,
+					/usr/local/lib/libSDL.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+					"-framework",
+					Cocoa,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/MinSizeRel/libglew.a\"",
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/MinSizeRel/libSDLmain.a\"",
+					/usr/local/lib/libpng.dylib,
+					/usr/lib/libz.dylib,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					GLUT,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = p3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		FB7BD6E1F9E24DB4A89A0B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src\"",
+					/usr/local/include/SDL,
+					"\"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew\"",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-std=c++0x",
+					"-Wextra",
+					"-DOPENMP",
+				);
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0606200BC97B4276BA72F0B9 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2E3FCB459E422DAFDCAC5E /* Debug */,
+				DD7AADF6295140679DD819BF /* Release */,
+				32849B33D7E04204A43DFC53 /* MinSizeRel */,
+				89EE799D2B7C48528C13CEF6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3171079FB1F24B5AB55AF5F5 /* Build configuration list for PBXNativeTarget "application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7BD6E1F9E24DB4A89A0B1D /* Debug */,
+				244D0CBDF66A4C63BB126755 /* Release */,
+				C630329FDD4A4B25BE448456 /* MinSizeRel */,
+				213E817035DE4866895D6AA5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		38DE447C158E470EB07FF0BD /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0895192192E4CCC9BAFAAFA /* Debug */,
+				EA0566BE0F0D493BBFD02510 /* Release */,
+				526DF48D96E24E25A21E61EB /* MinSizeRel */,
+				6AB26EB3D7F0471AA3905203 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		67374EC321D14929A3029AD3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926B83C30425401AA584D665 /* Debug */,
+				B95D8A4761E64E3ABBBB49B4 /* Release */,
+				81F8F07A3DDE4DCB9452C075 /* MinSizeRel */,
+				8E86B026339A495E8FC07377 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A2E58E6D647147F09CF046FA /* Build configuration list for PBXNativeTarget "scene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5600C6F306E34398806D9DCB /* Debug */,
+				D2C1C42D86804513BF757516 /* Release */,
+				3B329DDDA1BD4C1EA3DBC9DC /* MinSizeRel */,
+				ED5AC8F2E66947F099D548B7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AABCE6A4DB3640D98AFB1397 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5DD532B3DF4FC0884048FC /* Debug */,
+				A0F64FCFB929410488AD4591 /* Release */,
+				3C300E8E8CC0431995130D27 /* MinSizeRel */,
+				B74CC0A3722740C08E1B0324 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AFFCB5747C154443A4F2B00C /* Build configuration list for PBXNativeTarget "math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18698CDDC1B546A4BE0C34F7 /* Debug */,
+				B0E56F9E38F8486788106366 /* Release */,
+				D4F8FB1252864CA4ADD598DE /* MinSizeRel */,
+				84BDFE6210244F5695AFE1A5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2BAE7D0FF824566939AD35E /* Build configuration list for PBXNativeTarget "SDLmain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA82D880C3A45D99041BEA3 /* Debug */,
+				7C31C521BF344D02B569335B /* Release */,
+				23BE674344A0454DAC218C35 /* MinSizeRel */,
+				BA3E84CA2587441BA2C41985 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA7A18C71A9F4818A3AC784E /* Build configuration list for PBXProject "P3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B3D3B8566741F0BF7AF9BB /* Debug */,
+				C65059199A8347779745DA7D /* Release */,
+				BC94C63889894D9EAE1E3280 /* MinSizeRel */,
+				B8824BDA26EF447E80870E18 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD7E8847230145ECA37A8511 /* Build configuration list for PBXNativeTarget "p3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13646DD809214F8CA6C80247 /* Debug */,
+				35FE66980E464E79A89F3D06 /* Release */,
+				F250D58F1D9F426AB1AD90A3 /* MinSizeRel */,
+				4D668E10C1BD4483A4C5BD11 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECAF30992355426580F4DF83 /* Build configuration list for PBXNativeTarget "tinyxml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D9D309D4F041CD847DD2B2 /* Debug */,
+				E4F8935F5D554BEBB0AF352F /* Release */,
+				C8FD7404E4024901AD087D8D /* MinSizeRel */,
+				A61C67892252407399D2D976 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C9A9E05BDC45B790EF80F2 /* Project object */;
+}

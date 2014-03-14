@@ -1,0 +1,1024 @@
+Tp3
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/p3 normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000531E7D0000000000000000AA
+t1394507008
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052B117A6000000000000044C
+t1387337638
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E7CD500000000000001DE
+t1394506965
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/AGL
+c00000000531E7CD5000000000000892C
+t1394506965
+s35116
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+c00000000531E7CD60000000000268434
+t1394506966
+s2524212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c0000000052B117A60000000000007D5C
+t1387337638
+s32092
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+c00000000531E7CD50000000000020D64
+t1394506965
+s134500
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+c0000000052B117A6000000000001B3B8
+t1387337638
+s111544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+c00000000531E7CD50000000000034FAC
+t1394506965
+s217004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+c0000000052B117A6000000000000CB08
+t1387337638
+s51976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+c0000000052B117A6000000000002C5F4
+t1387337638
+s181748
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+c0000000052B117A6000000000002B9A8
+t1387337638
+s178600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+c00000000531E7CD50000000000011EF8
+t1394506965
+s73464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000531E7CD500000000000598A8
+t1394506965
+s366760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c0000000052B117A7000000000000253C
+t1387337639
+s9532
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c00000000531E7CD5000000000004C7C4
+t1394506965
+s313284
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000531E7CD50000000000085C70
+t1394506965
+s547952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000531E7CD5000000000008B334
+t1394506965
+s570164
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+c0000000052B117A7000000000000979C
+t1387337639
+s38812
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+c0000000052B117A700000000000223B4
+t1387337639
+s140212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+c00000000531E7CD50000000000071CA8
+t1394506965
+s466088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+c0000000052B117A70000000000017E1C
+t1387337639
+s97820
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+c00000000531E7CD5000000000004F090
+t1394506965
+s323728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+c00000000531E7CD5000000000003AA48
+t1394506965
+s240200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+c00000000531E7CD500000000000383CC
+t1394506965
+s230348
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+c0000000052B117A7000000000001B66C
+t1387337639
+s112236
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000531E7CD50000000000030448
+t1394506965
+s197704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E7CD600000000000C9E38
+t1394506966
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+c0000000052B117A800000000000135D4
+t1387337640
+s79316
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000531E7CD600000000000394B0
+t1394506966
+s234672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c00000000531E7CD6000000000000BB7C
+t1394506966
+s47996
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+c00000000531E7CD600000000000211A0
+t1394506966
+s135584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+c00000000531E7CD60000000000005F00
+t1394506966
+s24320
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000531E7CD6000000000000681C
+t1394506966
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+c0000000052B117B8000000000006E8B0
+t1387337656
+s452784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+c0000000052B117B80000000000014EF8
+t1387337656
+s85752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+c0000000052B117B800000000000044B8
+t1387337656
+s17592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c0000000052B117B80000000000004734
+t1387337656
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c0000000052B117B8000000000000FC6C
+t1387337656
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c0000000052B117B8000000000000F6A0
+t1387337656
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c0000000052B117B80000000000006254
+t1387337656
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c0000000052B117B8000000000000E0F8
+t1387337656
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000531E7CD6000000000000D6DC
+t1394506966
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000531E7CD60000000000006308
+t1394506966
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c0000000052B117B80000000000004050
+t1387337656
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000531E7CD60000000000008570
+t1394506966
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c0000000052B117B80000000000005EA0
+t1387337656
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c0000000052B117B80000000000005FAC
+t1387337656
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c0000000052B117B80000000000004440
+t1387337656
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c0000000052B117B8000000000000AA28
+t1387337656
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c0000000052B117B80000000000003E2C
+t1387337656
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000531E7CD60000000000030B04
+t1394506966
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000531E7CD60000000000005E54
+t1394506966
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000531E7CD60000000000006A90
+t1394506966
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c0000000052B117B800000000000178AC
+t1387337656
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000531E7CD6000000000001ADC8
+t1394506966
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c0000000052B117B8000000000001028C
+t1387337656
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000531E7CD60000000000008800
+t1394506966
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c0000000052B117B80000000000011090
+t1387337656
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c0000000052B117B8000000000000882C
+t1387337656
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000531E7CD600000000000067AC
+t1394506966
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c0000000052B117B80000000000008DEC
+t1387337656
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000531E7CD60000000000004C08
+t1394506966
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000531E7CD60000000000002428
+t1394506966
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c0000000052B117B8000000000000439C
+t1387337656
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c0000000052B117B80000000000006768
+t1387337656
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000531E7CD700000000000172F4
+t1394506967
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c00000000531E7CD70000000000001770
+t1394506967
+s6000
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Debug/libSDLmain.a
+c00000000532128E3000000000000BAD8
+t1394682083
+s47832
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a
+c0000000053214D6800000000000BD690
+t1394691432
+s775824
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Debug/libglew.a
+c00000000532129190000000001310870
+t1394682137
+s19990640
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Debug/libmath.a
+c00000000532128E3000000000004CD68
+t1394682083
+s314728
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/Debug/p3
+t1394739470
+s1004300
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o
+t1394682139
+s2212
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o
+t1394739155
+s260956
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/p3.LinkFileList
+c00000000531B75C90000000000000157
+t1394308553
+s343
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o
+t1394741089
+s369576
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/Debug/libscene.a
+c0000000053214D68000000000015C7C0
+t1394691432
+s1427392
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Debug/libtinyxml.a
+c00000000532128E100000000000BFCD0
+t1394682081
+s785616
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp
+c00000000531ABCBD000000000000005B
+t1394261181
+s91
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp
+c00000000531ABCF10000000000000431
+t1394261233
+s1073
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+c0000000052BDFBE4000000000000077C
+t1388182500
+s1916
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.hpp
+c0000000052BDFBE4000000000000037B
+t1388182500
+s891
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.hpp
+c0000000052BDFBE40000000000000892
+t1388182500
+s2194
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+c0000000052BDFBE40000000000000175
+t1388182500
+s373
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.hpp
+c0000000052BDFBE40000000000000212
+t1388182500
+s530
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+c0000000052BDFBE400000000000D7FC6
+t1388182500
+s884678
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+c0000000052BDFBE40000000000000887
+t1388182500
+s2183
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+c0000000052BDFBE40000000000000D11
+t1388182500
+s3345
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+c0000000052BDFBE4000000000000025C
+t1388182500
+s604
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
+c0000000052BDFBE400000000000021DE
+t1388182500
+s8670
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+c0000000052BDFBE40000000000000EC4
+t1388182500
+s3780
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/random462.hpp
+c00000000531B76010000000000000222
+t1394308609
+s546
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+c0000000052BDFBE40000000000005152
+t1388182500
+s20818
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.cpp
+c00000000531ABCBD000000000000005B
+t1394261181
+s91
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+c00000000531E57490000000000000705
+t1394497353
+s1797
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp
+c00000000532207D100000000000046F9
+t1394739153
+s18169
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.cpp
+c0000000053220F5E0000000000009CA4
+t1394741086
+s40100
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.hpp
+c00000000531FFF840000000000000E3F
+t1394605956
+s3647
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/material.hpp
+c0000000053214BFC0000000000000A94
+t1394691068
+s2708
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/mesh.hpp
+c0000000052BDFBE400000000000008AE
+t1388182500
+s2222
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/model.hpp
+c0000000052BDFBE40000000000000FD7
+t1388182500
+s4055
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/ray.hpp
+c00000000531B783A000000000000027F
+t1394309178
+s639
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/scene.hpp
+c0000000053214CB30000000000002DEA
+t1394691251
+s11754
+
+N/usr/local/include/SDL/SDL.h
+c0000000052BDDAFD0000000000000CA1
+t1388174077
+s3233
+
+N/usr/local/include/SDL/SDL_active.h
+c0000000052BDDAFD000000000000078D
+t1388174077
+s1933
+
+N/usr/local/include/SDL/SDL_audio.h
+c0000000052BDDAFD0000000000002BCF
+t1388174077
+s11215
+
+N/usr/local/include/SDL/SDL_cdrom.h
+c0000000052BDDAFD00000000000017A0
+t1388174077
+s6048
+
+N/usr/local/include/SDL/SDL_config.h
+c0000000052BDDAFD00000000000023A7
+t1388174077
+s9127
+
+N/usr/local/include/SDL/SDL_cpuinfo.h
+c0000000052BDDAFD00000000000008AD
+t1388174077
+s2221
+
+N/usr/local/include/SDL/SDL_endian.h
+c0000000052BDDAFD00000000000017A7
+t1388174077
+s6055
+
+N/usr/local/include/SDL/SDL_error.h
+c0000000052BDDAFD0000000000000752
+t1388174077
+s1874
+
+N/usr/local/include/SDL/SDL_events.h
+c0000000052BDDAFD00000000000032F1
+t1388174077
+s13041
+
+N/usr/local/include/SDL/SDL_joystick.h
+c0000000052BDDAFD000000000000159C
+t1388174077
+s5532
+
+N/usr/local/include/SDL/SDL_keyboard.h
+c0000000052BDDAFD0000000000001002
+t1388174077
+s4098
+
+N/usr/local/include/SDL/SDL_keysym.h
+c0000000052BDDAFD0000000000001D44
+t1388174077
+s7492
+
+N/usr/local/include/SDL/SDL_loadso.h
+c0000000052BDDAFD0000000000000AB3
+t1388174077
+s2739
+
+N/usr/local/include/SDL/SDL_main.h
+c0000000052BDDAFD0000000000000B32
+t1388174077
+s2866
+
+N/usr/local/include/SDL/SDL_mouse.h
+c0000000052BDDAFD0000000000001292
+t1388174077
+s4754
+
+N/usr/local/include/SDL/SDL_mutex.h
+c0000000052BDDAFD00000000000016E4
+t1388174077
+s5860
+
+N/usr/local/include/SDL/SDL_opengl.h
+c0000000052BDDAFD00000000000522A0
+t1388174077
+s336544
+
+N/usr/local/include/SDL/SDL_platform.h
+c0000000052BDDAFD0000000000000A94
+t1388174077
+s2708
+
+N/usr/local/include/SDL/SDL_quit.h
+c0000000052BDDAFD00000000000007D9
+t1388174077
+s2009
+
+N/usr/local/include/SDL/SDL_rwops.h
+c0000000052BDDAFD000000000000135E
+t1388174077
+s4958
+
+N/usr/local/include/SDL/SDL_stdinc.h
+c0000000052BDDAFD0000000000004059
+t1388174077
+s16473
+
+N/usr/local/include/SDL/SDL_thread.h
+c0000000052BDDAFD0000000000001092
+t1388174077
+s4242
+
+N/usr/local/include/SDL/SDL_timer.h
+c0000000052BDDAFD00000000000011AF
+t1388174077
+s4527
+
+N/usr/local/include/SDL/SDL_version.h
+c0000000052BDDAFD0000000000000A4D
+t1388174077
+s2637
+
+N/usr/local/include/SDL/SDL_video.h
+c0000000052BDDAFD0000000000009482
+t1388174077
+s38018
+
+N/usr/local/include/SDL/begin_code.h
+c0000000052BDDAFD000000000000146E
+t1388174077
+s5230
+
+N/usr/local/include/SDL/close_code.h
+c0000000052BDDAFD00000000000005CA
+t1388174077
+s1482
+
+N/usr/local/lib/libSDL.dylib
+c0000000052BDDB01000000000004675C
+t1388174081
+s288604
+
+N/usr/local/lib/libSDLmain.a
+c0000000052BDDB0000000000000034C8
+t1388174080
+s13512
+
+N/usr/local/lib/libpng.dylib
+c0000000052BDDBB200000000000238DC
+t1388174258
+s145628
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/Photon.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/Photon.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/main.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/raytracer.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies959cebdf46d2b841^fbe5ebdf46d2b841^---0#1#1#--18"Check dependencies36"92D8AAC2-9F05-49EE-AC4D-A4463E15253E-
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415954199.808399
+e415954200.471220
+r0
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/random462.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:24:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?
+o    Vector3 position;       // Hit position
+o    ^~~~~~~
+o    _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:25:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?
+o    Vector3 direction;      // Incoming direction
+o    ^~~~~~~
+o    _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:26:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?
+o    Vector3 normal;         // Normal of the intersection point, for not sampling a sphere but a disk
+o    ^~~~~~~
+o    _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:28:5: error: unknown type name 'Color3'; did you mean '_462::Color3'?
+o    Color3 color;           // Photon color, also flux
+o    ^~~~~~
+o    _462::Color3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:13:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp:20:7: note: '_462::Color3' declared here
+oclass Color3
+o      ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:35:12: error: unknown type name 'Color3'; did you mean '_462::Color3'?
+o    Photon(Color3 lcolor) {
+o           ^~~~~~
+o           _462::Color3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:13:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp:20:7: note: '_462::Color3' declared here
+oclass Color3
+o      ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:36:20: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?
+o        position = Vector3::Zero();
+o                   ^~~~~~~
+o                   _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:37:21: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?
+o        direction = Vector3::Zero();
+o                    ^~~~~~~
+o                    _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:38:18: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?
+o        normal = Vector3::Zero();
+o                 ^~~~~~~
+o                 _462::Vector3
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here
+o    class Vector3
+o          ^
+o8 errors generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp196"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf60acf17f5cab841^49a17818f5cab841^-5167"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:24:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?    Vector3 position;       // Hit position    ^~~~~~~    _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:25:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?    Vector3 direction;      // Incoming direction    ^~~~~~~    _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:26:5: error: unknown type name 'Vector3'; did you mean '_462::Vector3'?    Vector3 normal;         // Normal of the intersection point, for not sampling a sphere but a disk    ^~~~~~~    _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:28:5: error: unknown type name 'Color3'; did you mean '_462::Color3'?    Color3 color;           // Photon color, also flux    ^~~~~~    _462::Color3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:13:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp:20:7: note: '_462::Color3' declared hereclass Color3      ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:35:12: error: unknown type name 'Color3'; did you mean '_462::Color3'?    Photon(Color3 lcolor) {           ^~~~~~           _462::Color3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:13:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp:20:7: note: '_462::Color3' declared hereclass Color3      ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:36:20: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?        position = Vector3::Zero();                   ^~~~~~~                   _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:37:21: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?        direction = Vector3::Zero();                    ^~~~~~~                    _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:38:18: error: use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?        normal = Vector3::Zero();                 ^~~~~~~                 _462::Vector3In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.hpp:15:/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp:256:11: note: '_462::Vector3' declared here    class Vector3          ^8 errors generated.8(36%IDEClangDiagnosticActivityLogMessage2@58"Unknown type name 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^23#4#23#4#315#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^23#4#23#11#315#7#-2@58"Unknown type name 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^24#4#24#4#359#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^24#4#24#11#359#7#-2@58"Unknown type name 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^25#4#25#4#409#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^25#4#25#11#409#7#-2@56"Unknown type name 'Color3'; did you mean '_462::Color3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@28"'_462::Color3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@77"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/color.hpp0000000000000000^19#6#19#6#260#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^27#4#27#4#516#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^27#4#27#10#516#6#-2@56"Unknown type name 'Color3'; did you mean '_462::Color3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@28"'_462::Color3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@77"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/color.hpp0000000000000000^19#6#19#6#260#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^34#11#34#11#834#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^34#11#34#17#834#6#-2@69"Use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^35#19#35#19#870#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^35#19#35#26#870#7#-2@69"Use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^36#20#36#20#907#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^36#20#36#27#907#7#-2@69"Use of undeclared identifier 'Vector3'; did you mean '_462::Vector3'?-415954200#18446744073709551615#0#2(2@89"In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/Photon.cpp:9:-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^8#9#8#9#78#0#21"Apple LLVM 5.0 Notice--2@29"'_462::Vector3' declared here-415954200#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.hpp0000000000000000^255#10#255#10#6568#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^37#17#37#17#941#0#14"Semantic Issue1(3@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.hpp0000000000000000^37#17#37#24#941#7#-0#0#1#-19%DVTDocumentLocation4@73"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/Photon.cpp0000000000000000^2404"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/Photon.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o36"E7D5C7AC-D334-4E0C-B033-748603470E73-
+bA6960DE9-19C7-4136-952B-F2F9737BD00A
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416374938.261461
+e416374939.022738
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.cpp199"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o p3/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2d06439a60d1b841^a8c7069b60d1b841^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/p3/Photon.cpp0000000000000000^2410"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o p3/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/Photon.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o36"2E5114A7-A76D-4F3B-BED8-60A9855AC60D-
+b38E93563-8529-4A29-9A21-9396A22AF925
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416431954.117228
+e416431955.311964
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/application.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/camera_roam.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/imageio.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/scene_loader.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/scene.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/material.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/mesh.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/ray.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/random462.hpp
+d/usr/local/include/SDL/SDL.h
+d/usr/local/include/SDL/SDL_main.h
+d/usr/local/include/SDL/SDL_audio.h
+d/usr/local/include/SDL/SDL_endian.h
+d/usr/local/include/SDL/SDL_mutex.h
+d/usr/local/include/SDL/SDL_thread.h
+d/usr/local/include/SDL/SDL_cdrom.h
+d/usr/local/include/SDL/SDL_cpuinfo.h
+d/usr/local/include/SDL/SDL_loadso.h
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_version.h
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:367:9: warning: 'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective" [-Wdeprecated-declarations]
+o        gluPerspective( camera.get_fov_degrees(),
+o        ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:13:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp:15:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h:1178:
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:278:13: note: 'gluPerspective' declared here
+oextern void gluPerspective (GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakePerspective");
+o            ^
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:378:9: warning: 'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt" [-Wdeprecated-declarations]
+o        gluLookAt( campos.x, campos.y, campos.z,
+o        ^
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:13:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp:15:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h:1178:
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:265:13: note: 'gluLookAt' declared here
+oextern void gluLookAt (GLdouble eyeX, GLdouble eyeY, GLdouble eyeZ, GLdouble centerX, GLdouble centerY, GLdouble centerZ, GLdouble upX, GLdouble upY, GLdouble upZ) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakeLookAt");
+o            ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp195"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o p3/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler98191e523fd2b841^dfdc4f533fd2b841^-1938"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:367:9: warning: 'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective" [-Wdeprecated-declarations]        gluPerspective( camera.get_fov_degrees(),        ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:13:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp:15:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h:1178:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:278:13: note: 'gluPerspective' declared hereextern void gluPerspective (GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakePerspective");            ^/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:378:9: warning: 'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt" [-Wdeprecated-declarations]        gluLookAt( campos.x, campos.y, campos.z,        ^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/main.cpp:13:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp:15:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h:1178:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:265:13: note: 'gluLookAt' declared hereextern void gluLookAt (GLdouble eyeX, GLdouble eyeY, GLdouble eyeZ, GLdouble centerX, GLdouble centerY, GLdouble centerZ, GLdouble upX, GLdouble upY, GLdouble upZ) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakeLookAt");            ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@95"'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective"-416431955#18446744073709551615#0#1(2@30"'gluPerspective' declared here-416431955#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@162"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h0000000000000000^277#12#277#12#15841#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@74"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/p3/main.cpp0000000000000000^366#8#366#8#11450#0#12"Deprecations--2@85"'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt"-416431955#18446744073709551615#0#1(2@25"'gluLookAt' declared here-416431955#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@162"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h0000000000000000^264#12#264#12#14161#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@74"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/p3/main.cpp0000000000000000^377#8#377#8#11894#0#12"Deprecations--0#0#1#-19%DVTDocumentLocation4@74"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/p3/main.cpp0000000000000000^2398"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o p3/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/main.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o36"03C23BBA-4549-4C84-BEAB-CD737A880413-
+b67DDFF96-C077-4B37-B843-FA131CD12057
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416433887.922902
+e416433889.746624
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/random462.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/scene.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/material.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/application/opengl.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/mesh.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/ray.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/Photon.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/scene/model.hpp
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/p3/raytracer.cpp205"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o p3/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc45aecdf46d2b841^f222bfe146d2b841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/p3/raytracer.cpp0000000000000000^2428"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o p3/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/p3/raytracer.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o36"D62EB3F4-370A-486E-A416-0EE4E7F794AC-
+bBB189865-9773-41F2-A18E-8269393C2D05
+
+CLd /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/p3 normal x86_64
+s416433889.750139
+e416433889.821551
+r1
+xLd
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/Debug/p3
+xnormal
+xx86_64
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/p3.LinkFileList
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/Photon.o
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/main.o
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/raytracer.o
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Debug/libmath.a
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/Debug/libscene.a
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Debug/libtinyxml.a
+d/usr/local/lib/libSDLmain.a
+d/usr/local/lib/libSDL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/usr/local/lib/libpng.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/AGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Debug/libglew.a
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Debug/libSDLmain.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Link /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/Debug/p385"Ld /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/p3 normal x86_64261ac0e146d2b841^c251d2e146d2b841^---0#0#1#--1778"Ld /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/p3 normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/p3.LinkFileList -mmacosx-version-min=10.9 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/application/Debug/libapplication.a /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/scene/Debug/libscene.a /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -Xlinker -dependency_info -Xlinker /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/P3.build/Debug/p3.build/Objects-normal/x86_64/p3_dependency_info.dat -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/p3/Debug/p336"EBAA9A27-164C-4F39-AD5E-FF4B9C1E00AB-
+bBB189865-9773-41F2-A18E-8269393C2D05
+

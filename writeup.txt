@@ -1,0 +1,189 @@
+
+#################################################
+#						#	
+# XIAO LI					#
+# AndrewID: xiaol2				#
+# lixiao@cmu.edu				#
+# Computer Graphics 2013 fall			#			
+# 15662 Project 3				#
+#						#
+#################################################
+
+Implemented:
+
+1. Raytracer; Shader logic; Closest hit detection:
+[raytracer.hpp / raytracer.cpp] (In Class Raytracer)
+
+ * Functions for recursively ray tracing and shading. In shade method, separately deal with primitives that are dielectrics:
+
+    Color3 trace(Ray ray, real_t t0, real_t t1, int depth);
+    Color3 shade(Ray ray, HitRecord record, real_t t0, real_t t1, int depth);
+
+ * Function that testing intersection and retrieve the closest hit:
+
+    HitRecord getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit);
+
+ * Function that sampling light volume:
+
+    Vector3 sampleLightSource(SphereLight light);
+
+#################################################
+
+2. Intersection; Bounding box; Lambertian color calculation
+[scene.hpp / scene.cpp] (struct HitRecord, class Box, Class Geometry)
+
+ * Data structure that stores the information of intersection surface:
+
+    struct HitRecord
+    {
+        Vector3 position;       // world position
+        Vector3 normal;         // world normal
+        
+        Color3 diffuse;         // Surface diffusive color
+        Color3 ambient;         // Surface ambien color
+        Color3 specular;        // Surface specular color
+        Color3 texture;         // Surface texture color
+        
+        GeometryType type;      // Type of Geometry
+        
+        real_t t;               // Hit time
+        real_t beta, gamma;     // Barycentric parameters for triangles
+        
+        real_t refractive_index;    // refractive index
+        
+        // Constructor
+        HitRecord();
+        
+        // Get lambertian color that come from light
+        Color3 getPixelColor(SphereLight light, Ray ray );
+    };
+
+ * Data structure and related methods for bounding-box:
+
+    class Box {
+    public:
+        
+        Box() {
+            bounds[0] = Vector3::Zero();
+            bounds[1] = Vector3::Zero();
+        }
+        
+        Box(const Vector3 &min, const Vector3 &max) {
+            bounds[0] = min;
+            bounds[1] = max;
+        }
+        
+        // Test if a given ray hits a bounding box
+        bool intersect(const Ray &r, real_t t0, real_t t1) const;
+        
+        // Bounds[0] is bottom left front corner,
+        // Bounds[1] is top right back corner.
+        Vector3 bounds[2];
+    };
+
+
+ * Helper functions for texture mapping, refraction, triangle mesh intersection:
+
+    inline Vector2 getAdjustTexCoord(Vector2 tex_coord);
+    inline bool isRefract(Vector3 d, Vector3 n, real_t ratio, Vector3 &t);
+    inline Box getBoundingBoxForTriangle(Vector3 A, Vector3 B, Vector3 C);
+    inline Vector3 getResultTriangleIntersection(Ray r, Vector3 A, Vector3 B, Vector3 C);
+
+#################################################
+
+3. Bounding Box Creating; Hit Recording for geometries in scene:
+[triangle.hpp/cpp sphere.hpp/cpp model.hpp/cpp] (Class Triangle, Class Sphere, Class Model)
+
+ * Creating bounding box for geometries according to their properties:
+
+    virtual void createBoundingBox() const;
+        
+ * Override virtual function from Geometry for hit detection and hit record:
+
+    virtual bool hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const;
+
+#################################################
+
+4. For extra credit: BVH Tree; Linked List; Helping Data structure; Space Subdivision:
+[model.hpp/cpp] [struct BoxNode, class LinkedList, class BVHNode]
+
+ * Basic data structure that precomputed for storing model triangle meshes’ indices, in addition, utilized as nodes for linked list that would be reorganized as a BVH Tree:
+
+    struct BoxNode
+    {
+        Box boundingBox;        // bounding box of the node
+        size_t triangleIndex;   // mesh triangle index it refers
+        Vector3 midPoint;       // bounding box mid point, used for tree subdivision
+        
+        BoxNode *prev;
+        BoxNode *next;
+        
+        BoxNode();
+    };
+
+ * Linked List Data structure that organize BoxNodes, it is more intuitive to be converted into BVH Tree. It precomputes bounding boxes, node numbers, bounding-box mid points and have functions to measure how bounding boxes are distributed along three given axis. The pre computation applies gaussian distribution and could be finished in O(n) time complexity when constructing the linked list. The distribution data could also be useful if implementing a 3D KD-Tree or optimized space subdivision for BVH Tree.
+
+    class LinkedList
+    {
+    public:
+        BoxNode *head;
+        BoxNode *tail;
+        
+        LinkedList();
+        ~LinkedList();
+        
+        // Create a BoxNode with box and triangle mesh index
+        BoxNode *create(Box box, size_t idx);
+        
+        // Append a BoxNode, append it to the tail of the linkedlist
+        void append(BoxNode *target);
+        
+        // Detach a BoxNode, but not release the memory, memory releasing would
+        // be handled by BVHNode
+        void detach(BoxNode *target);
+        
+        // getVariance are for measuring how distributed of mid points along
+        // a given axis. It would be used for 3D space subdivision
+        Vector3 getVariance();
+        Vector3 sum;
+        
+        // Medians along 3 dimensiions, used for 3D space subdivision
+        BoxNode *median[3];
+        
+        // size of the linked list
+        size_t count;
+    };
+
+ * BVHNode that would form a BVH Tree for intersection detection optimization:
+
+    class BVHNode
+    {
+    public:
+        BVHNode();
+        BVHNode(LinkedList *linkedList, int axis);
+        ~BVHNode();
+        
+        LinkedList *list;           // Linked list for BoxNode
+        Box bbox;                   // Bounding box of the BVH node
+        BoxNode *data;              // BoxNode data that actually stored in BVHNode
+        
+        BVHNode *left;              // Pointer for left sub tree
+        BVHNode *right;             // Pointer for right sub tree
+        
+        // Get the bounding box for current BVHNode, 
+        //called AFTER initializing left and right subtree
+        void combineBoundingBox();
+        
+        // Test ray - BVH node intersection, put intersect's triangle indices to a vector
+        void nodeIntersect(Ray r, real_t t0, real_t t1, std::vector<size_t> &idxList);
+
+	// Subdivide BVH tree node according to given axis
+	void subdivideList(LinkedList *leftList, LinkedList *rightList, int axis);
+    };
+
+
+ * Note that BVHNode would recursively detecting intersection, and push the triangles indices that might intersect with the incoming ray to a vector. So that when ray - model intersection happens, the model would have a list that indicates which triangles would be a possible candidate for intersection detection.
+
+ * The function subdivideList tremendously increased the intersection detection speed. Basic idea is that it would find the median of midpoints for all bounding boxes along a given axis. Then it would subdivide the bounding boxes into two sets: either all midpoints of bounding boxes smaller than the median or bigger than the median on a given axis. This improves the dragon scene’s raytracing time (for -n 1) from about 9.6 minutes down to 3 seconds.
+
+

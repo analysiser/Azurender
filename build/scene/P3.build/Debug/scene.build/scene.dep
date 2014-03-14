@@ -1,0 +1,8 @@
+159609fa95dc8fed87a0c1da20eb4978 dd49170ddc92373926b61a3c1c938c83 ffffffffffffffffffffffffffffffff 1427392 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/Debug/libscene.a
+00000000531799b30000000000082657 df3bc0ed0aa3fed1c8c1109d171309db ffffffffffffffffffffffffffffffff 75976 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/triangle.o
+00000000531799b20000000000082134 fe0f0da6fc554bfea59cee3b9fc21f2d ffffffffffffffffffffffffffffffff 69004 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/sphere.o
+0000000001aa6256000000000008239a c7efce76de29e5a241d04aad50643b8d ffffffffffffffffffffffffffffffff 281620 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/scene.o
+00000000528b2ee50000000000080e70 fb6abc8d68e0f20939e0f29ed0152d6d ffffffffffffffffffffffffffffffff 22848 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/ray.o
+0000000001aa62570000000000082980 aba2f33140bfab87d42c59ac46964220 ffffffffffffffffffffffffffffffff 265284 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/model.o
+0000000001af4a6a0000000000082b12 a69c28802831e814e1961d93d0e2a233 ffffffffffffffffffffffffffffffff 606352 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/mesh.o
+000000000033fa720000000000082cab 05196dfbee7c829ca777c370be37ae22 ffffffffffffffffffffffffffffffff 93464 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/P3.build/Debug/scene.build/Objects-normal/x86_64/material.o

@@ -1,0 +1,132 @@
+Ttinyxml
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxml.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlerror.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlparser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052B117A6000000000000044C
+t1387337638
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052B117A600000000000001DB
+t1387337638
+s475
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Debug/libtinyxml.a
+t2
+s0
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.LinkFileList
+c0000000053180F950000000000000182
+t1394085781
+s386
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o
+t1394085784
+s535476
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o
+t1394085782
+s81640
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o
+t1394085783
+s240068
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.cpp
+c0000000052BDFBE5000000000000A5A6
+t1388182501
+s42406
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlerror.cpp
+c0000000052BDFBE50000000000000741
+t1388182501
+s1857
+
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlparser.cpp
+c0000000052BDFBE5000000000000B9DD
+t1388182501
+s47581
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxml.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlerror.cpp
+r0
+
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlparser.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7d40b41547c8b841^0bb7b41547c8b841^---0#1#1#--18"Check dependencies36"A4CAAD67-1687-4623-9F46-EA06170C38FD-
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxml.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415778581.708507
+e415778584.015775
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.cpp216"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o tinyxml/tinyxml.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf0f9b51547c8b841^357b041847c8b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/tinyxml/tinyxml.cpp0000000000000000^2496"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o tinyxml/tinyxml.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxml.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.o36"25BCE256-6F4B-4D31-BBDE-F366FE7879AC-
+b2AA7D3C9-E17C-4DA1-930B-29CD2E48C3CF
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlerror.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415778581.713802
+e415778582.862950
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlerror.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlerror.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlerror.cpp226"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o tinyxml/tinyxmlerror.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera914b71547c8b841^53ecdc1647c8b841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/tinyxml/tinyxmlerror.cpp0000000000000000^2526"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o tinyxml/tinyxmlerror.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlerror.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlerror.o36"300E5C4C-90C4-4E0A-AF5A-C444357D38E3-
+b2AA7D3C9-E17C-4DA1-930B-29CD2E48C3CF
+
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlparser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415778581.714028
+e415778583.432218
+r1
+xCompileC
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlparser.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlparser.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxml.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml/tinyxmlparser.cpp228"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o tinyxml/tinyxmlparser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler40dfb61547c8b841^ea096f1747c8b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/tinyxml/tinyxmlparser.cpp0000000000000000^2532"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o tinyxml/tinyxmlparser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/tinyxml/tinyxmlparser.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxmlparser.o36"1A537B52-DF2B-4DAC-930A-DE2442F53206-
+b2AA7D3C9-E17C-4DA1-930B-29CD2E48C3CF
+
+CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a normal x86_64
+s415778585.080300
+e415778585.691504
+r1
+xLibtool
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/Debug/libtinyxml.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a normal x86_64105"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a normal x86_64dba2141947c8b841^c5e4b11947c8b841^---0#0#1#--753"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/P3.build/Debug/tinyxml.build/Objects-normal/x86_64/tinyxml.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/tinyxml/Debug/libtinyxml.a36"7C3158B4-43F0-40A6-858F-E0191BB1387D-
+b2AA7D3C9-E17C-4DA1-930B-29CD2E48C3CF
+

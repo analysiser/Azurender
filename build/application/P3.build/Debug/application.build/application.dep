@@ -1,0 +1,5 @@
+e888b4cf1034b8c199a44f0c86eab73b b653cf271888434aa9d6241f6cd5314b ffffffffffffffffffffffffffffffff 775824 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/Debug/libapplication.a
+00000000531799b200000000000930c8 07c46af7d3f8f34a3d64a209440fb9f6 ffffffffffffffffffffffffffffffff 628812 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o
+0000000001b2946d0000000000090ff5 ba78db794f8c661f08bca6d1bc28f34c ffffffffffffffffffffffffffffffff 19228 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/imageio.o
+000000005312b18e0000000000009475 55c3396d84da8b57c6a0eaafcf3115e3 ffffffffffffffffffffffffffffffff 25232 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o
+0000000001af4a6a000000000008a74f 00f73c2c088422616adca17bb1f4e6ee ffffffffffffffffffffffffffffffff 97776 /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/P3.build/Debug/application.build/Objects-normal/x86_64/application.o

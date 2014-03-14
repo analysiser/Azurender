@@ -62,5 +62,34 @@ public:
 //    }
 };
 
+struct ClosePhoton
+{
+    size_t kdtreeIndex;
+    real_t x, y, z;
+    real_t squaredDistance;
+    short splitAxis;
+    
+    ClosePhoton()
+    {
+        kdtreeIndex = -1;
+        x = y = z =0;
+        splitAxis = -1;
+    }
+    
+    ClosePhoton(Photon photon, size_t idx)
+    {
+        kdtreeIndex = idx;
+        x = photon.position.x;
+        y = photon.position.y;
+        z = photon.position.z;
+        squaredDistance = -1;
+        splitAxis = photon.splitAxis;
+    }
+    
+    bool operator<(const ClosePhoton &p2) const {
+        return squaredDistance < p2.squaredDistance;
+    }
+};
+
 #endif /* defined(__P3__Photon__) */
 

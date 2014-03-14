@@ -124,7 +124,7 @@ namespace _462 {
 //            Ray photonRay = Ray(p + l.position, p);
             Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
             // Make color only the portion of light
-            photonRay.photon.color = l.color * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED));
+            photonRay.photon.color = l.color;// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
             photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
         }
         
@@ -135,7 +135,7 @@ namespace _462 {
 //            Ray photonRay = Ray(p + l.position, p);
             Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
             // Make color only the portion of light
-            photonRay.photon.color = l.color * (real_t(1)/(real_t)(CAUSTICS_PHOTON_NEEDED));
+            photonRay.photon.color = l.color;// * (real_t(1)/(real_t)(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED));
             photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
         }
         
@@ -144,10 +144,28 @@ namespace _462 {
         // balance
         std::vector<Photon> tmp_indirect(photon_indirect_list.size() + 1);
         std::vector<Photon> tmp_caustic(photon_caustic_list.size() + 1);
+
+        balance(1, tmp_indirect, photon_indirect_list);
+        balance(1, tmp_caustic, photon_caustic_list);
+        
         kdtree_photon_indirect_list = tmp_indirect;
         kdtree_photon_caustic_list = tmp_caustic;
-        balance(1, kdtree_photon_indirect_list, photon_indirect_list);
-        balance(1, kdtree_photon_caustic_list, photon_caustic_list);
+        
+        pClosePhotonIndirect = new ClosePhoton[kdtree_photon_indirect_list.size()];
+        pClosePhotonCaustics = new ClosePhoton[kdtree_photon_caustic_list.size()];
+        
+        // initialize close photon kdtree
+        for (size_t i = 0; i < kdtree_photon_indirect_list.size(); i++)
+        {
+            Photon p = kdtree_photon_indirect_list[i];
+            pClosePhotonIndirect[i] = ClosePhoton(p, i);
+        }
+        
+        for (size_t i = 0; i < kdtree_photon_caustic_list.size(); i++)
+        {
+            Photon p = kdtree_photon_caustic_list[i];
+            pClosePhotonCaustics[i] = ClosePhoton(p, i);
+        }
         
         printf("Finished Balancing!\n");
     }
@@ -315,6 +333,7 @@ namespace _462 {
                     // create refractive reflection for photon
                     Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
                     refractRay.photon = ray.photon;
+                    refractRay.photon.color *= record.specular;
                     refractRay.photon.mask |= 0x2;
                     photonTrace(refractRay, t0, t1, depth-1);
                 }
@@ -327,6 +346,7 @@ namespace _462 {
 
                     Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
                     reflectRay.photon = ray.photon;
+                    reflectRay.photon.color *= record.specular;
                     reflectRay.photon.mask |= 0x2;
                     photonTrace(reflectRay, t0, t1, depth - 1);
                     
@@ -338,6 +358,7 @@ namespace _462 {
                     if (prob < 0.5) {
                         Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
                         reflectRay.photon = ray.photon;
+                        reflectRay.photon.color *= record.specular;
                         reflectRay.photon.mask |= 0x2;
                         photonTrace(reflectRay, t0, t1, depth - 1);
                     }
@@ -517,7 +538,7 @@ namespace _462 {
             radiance += shade_caustics(record);
             
             // Shading global illumination
-            radiance += shade_indirect_illumination(record);
+//            radiance += shade_indirect_illumination(record);
         }
         
         // for raytracing ambient
@@ -656,7 +677,7 @@ namespace _462 {
         if (record.refractive_index == 0)
         {
             // sample radius
-            real_t sampleSquaredRadiusCaustics = 0.1;   // 0.1 // 0.001 // 0.0225
+            real_t sampleSquaredRadiusCaustics = 0.001;   // 0.1 // 0.001 // 0.0225
             real_t maxSquaredDistCaustics = 0.001;      // 0.001 // 0.001
             size_t maxPhotonsEstimate = 60;
             
@@ -705,7 +726,7 @@ namespace _462 {
             }
             
             // color/= PI*r^2
-            causticsColor *= (real_t(1)/((real_t(1) - real_t(2)/(real_t(3) * CONE_K)) * (PI * maxSquaredDistCaustics)));
+            causticsColor *= (real_t(1)/((real_t(1) - real_t(2)/(real_t(3) * CONE_K)) * (PI * maxSquaredDistCaustics))) * 0.001;
             //causticsColor *= (real_t(1)/(PI * maxSquaredDistCaustics));
         }
         
@@ -723,43 +744,43 @@ namespace _462 {
         
         if (record.refractive_index == 0)
         {
-            real_t sampleSquaredRadiusIndirect = 0.5;       // 0.5
+            real_t sampleSquaredRadiusIndirect = 0.001;       // 0.5
             real_t maxSquaredDistIndirect = 0.001;          // 0.001
             size_t maxPhotonsEstimate = 100;
             
-            locatePhotons(1, record.position, kdtree_photon_indirect_list, nearestIndirectPhotons, sampleSquaredRadiusIndirect, maxPhotonsEstimate);
+//            locatePhotons(1, record.position, kdtree_photon_indirect_list, nearestIndirectPhotons, sampleSquaredRadiusIndirect, maxPhotonsEstimate);
             
             // gather samples
             // TODO: doing nearest neighbor search with KD Tree
-//            for (std::vector<Photon>::iterator it = photon_indirect_list.begin(); it != photon_indirect_list.end(); it++)
-//            {
-//                real_t squaredDist = squared_distance(record.position, it->position);
-//                if (squaredDist < sampleSquaredRadiusIndirect)
-//                {
-////                    if (dot(record.normal, it->normal) == 1)
-//                    {
-//                        Photon tmp = *it;
-//                        tmp.squaredDistance = squaredDist;
-//                        
-//                        // if photons less than needed to estimate
-//                        if (nearestIndirectPhotons.size() < maxPhotonsEstimate) {
-//                            nearestIndirectPhotons.push_back(tmp);
-//                            std::push_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
-//                        }
-//                        else
-//                        {
-//                            if (tmp < nearestIndirectPhotons.front())
-//                            {
-//                                std::pop_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
-//                                nearestIndirectPhotons.pop_back();
-//                                nearestIndirectPhotons.push_back(tmp);
-//                                std::push_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
-//                            }
-//                        }
-//                        
-//                    }
-//                }
-//            }
+            for (std::vector<Photon>::iterator it = photon_indirect_list.begin(); it != photon_indirect_list.end(); it++)
+            {
+                real_t squaredDist = squared_distance(record.position, it->position);
+                if (squaredDist < sampleSquaredRadiusIndirect)
+                {
+//                    if (dot(record.normal, it->normal) == 1)
+                    {
+                        Photon tmp = *it;
+                        tmp.squaredDistance = squaredDist;
+                        
+                        // if photons less than needed to estimate
+                        if (nearestIndirectPhotons.size() < maxPhotonsEstimate) {
+                            nearestIndirectPhotons.push_back(tmp);
+                            std::push_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
+                        }
+                        else
+                        {
+                            if (tmp < nearestIndirectPhotons.front())
+                            {
+                                std::pop_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
+                                nearestIndirectPhotons.pop_back();
+                                nearestIndirectPhotons.push_back(tmp);
+                                std::push_heap(nearestIndirectPhotons.begin(), nearestIndirectPhotons.end());
+                            }
+                        }
+                        
+                    }
+                }
+            }
             
             // cone filter to gather radiance of indirect illumination photons
             for (size_t i = 0; i < nearestIndirectPhotons.size(); i++)
@@ -769,7 +790,7 @@ namespace _462 {
                 * getGaussianFilterWeight(nearestIndirectPhotons[i].squaredDistance, sampleSquaredRadiusIndirect);
             }
             //indirectColor *= (real_t(1)/((real_t(1) - real_t(2)/(real_t(3) * CONE_K)) * (PI * maxSquaredDistIndirect)));
-            indirectColor *= (real_t(1)/(PI * maxSquaredDistIndirect));
+            indirectColor *= (real_t(1)/(PI * maxSquaredDistIndirect)) * 0.001;
             
         }
         
@@ -1170,12 +1191,13 @@ namespace _462 {
                     assert(0);
                     break;
             }
+            real_t sqrDiffToPlane = diffToPlane * diffToPlane;
             
             if (diffToPlane < 0)
             {
                 // search left subtree
                 locatePhotons(2 * p, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
-                if (diffToPlane * diffToPlane < sqrDist)
+                if (sqrDiffToPlane < sqrDist)
                 {
                     // check right subtree
                     locatePhotons(2 * p + 1, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
@@ -1185,7 +1207,7 @@ namespace _462 {
             {
                 // search right subtree
                 locatePhotons(2 * p + 1, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
-                if (diffToPlane * diffToPlane < sqrDist)
+                if (sqrDiffToPlane < sqrDist)
                 {
                     // check left subtree
                     locatePhotons(2 * p, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
@@ -1196,7 +1218,7 @@ namespace _462 {
         
         // compute true squared distance to photon
         real_t sqrDistPhoton = squared_distance(position, photon.position);
-        if (sqrDistPhoton < sqrDist)
+        if (sqrDistPhoton <= sqrDist)
         {
             photon.squaredDistance = sqrDistPhoton;
             if (nearestPhotons.size() < maxNum)
@@ -1216,12 +1238,86 @@ namespace _462 {
                     sqrDist = photon.squaredDistance;
                 }
             }
-            
         }
-        
-        
-        
-        
     }
+    
+//    inline void locatePhotonsCompact(size_t p,
+//                                     Vector3 position,
+//                                     ClosePhoton *closePhotons,
+//                                     std::vector<ClosePhoton> &nearestClosePhotons,
+//                                     real_t &sqrDist,
+//                                     size_t maxNum)
+//    {
+//        // examine child nodes
+//        ClosePhoton photon = closePhotons[p];
+//        
+//        if (2 * p + 1 < balancedKDTree.size())
+//        {
+//            assert(photon.splitAxis != -1);
+//            Vector3 diff = position - photon.position;
+//            real_t diffToPlane;
+//            switch (photon.splitAxis) {
+//                case 0:
+//                    diffToPlane = diff.x;
+//                    break;
+//                case 1:
+//                    diffToPlane = diff.y;
+//                    break;
+//                case 2:
+//                    diffToPlane = diff.z;
+//                    break;
+//                default:
+//                    assert(0);
+//                    break;
+//            }
+//            
+//            if (diffToPlane < 0)
+//            {
+//                // search left subtree
+//                locatePhotons(2 * p, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
+//                if (diffToPlane * diffToPlane < sqrDist)
+//                {
+//                    // check right subtree
+//                    locatePhotons(2 * p + 1, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
+//                }
+//            }
+//            else
+//            {
+//                // search right subtree
+//                locatePhotons(2 * p + 1, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
+//                if (diffToPlane * diffToPlane < sqrDist)
+//                {
+//                    // check left subtree
+//                    locatePhotons(2 * p, position, balancedKDTree, nearestPhotons, sqrDist, maxNum);
+//                }
+//            }
+//            
+//        }
+//        
+//        // compute true squared distance to photon
+//        real_t sqrDistPhoton = squared_distance(position, photon.position);
+//        if (sqrDistPhoton < sqrDist)
+//        {
+//            photon.squaredDistance = sqrDistPhoton;
+//            if (nearestPhotons.size() < maxNum)
+//            {
+//                nearestPhotons.push_back(photon);
+//                std::push_heap(nearestPhotons.begin(), nearestPhotons.end());
+//            }
+//            else
+//            {
+//                if (sqrDistPhoton < nearestPhotons.front().squaredDistance)
+//                {
+//                    std::pop_heap(nearestPhotons.begin(), nearestPhotons.end());
+//                    nearestPhotons.pop_back();
+//                    nearestPhotons.push_back(photon);
+//                    std::push_heap(nearestPhotons.begin(), nearestPhotons.end());
+//                    
+//                    sqrDist = photon.squaredDistance;
+//                }
+//            }
+//            
+//        }
+//    }
     
 } /* _462 */

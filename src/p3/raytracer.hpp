@@ -46,6 +46,8 @@ namespace _462 {
         std::vector<Photon> kdtree_photon_indirect_list;
         std::vector<Photon> kdtree_photon_caustic_list;
         
+        ClosePhoton *pClosePhotonIndirect;
+        ClosePhoton *pClosePhotonCaustics;
         
     private:
         
@@ -131,6 +133,16 @@ namespace _462 {
                               std::vector<Photon> &nearestPhotons,
                               real_t &sqrDist,
                               size_t maxNum);
+    
+    // find nearest photons compact
+    inline void locatePhotonsCompact(size_t p,
+                                     Vector3 position,
+                                     ClosePhoton *closePhotons,
+                                     std::vector<ClosePhoton> &nearestClosePhotons,
+                                     size_t totalLength,
+                                     real_t &sqrDist,
+                                     size_t maxNum);
+    
     
     // Photon comparator for sort functions
     inline bool photonComparatorX(const Photon &a, const Photon &b)

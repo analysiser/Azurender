@@ -400,25 +400,25 @@ namespace _462 {
         }
         // render each object
         
-        Geometry* const* geometries = scene.get_geometries();
-        
-        for (size_t i = 0; i < scene.num_geometries(); ++i)
-        {
-            const Geometry& geom = *geometries[i];
-            Vector3 axis;
-            real_t angle;
-            
-            glPushMatrix();
-            
-            glTranslated(geom.position.x, geom.position.y, geom.position.z);
-            geom.orientation.to_axis_angle(&axis, &angle);
-            glRotated(angle*(180.0/PI), axis.x, axis.y, axis.z);
-            glScaled(geom.scale.x, geom.scale.y, geom.scale.z);
-            
-            geom.render();
-            
-            glPopMatrix();
-        }
+//        Geometry* const* geometries = scene.get_geometries();
+//        
+//        for (size_t i = 0; i < scene.num_geometries(); ++i)
+//        {
+//            const Geometry& geom = *geometries[i];
+//            Vector3 axis;
+//            real_t angle;
+//            
+//            glPushMatrix();
+//            
+//            glTranslated(geom.position.x, geom.position.y, geom.position.z);
+//            geom.orientation.to_axis_angle(&axis, &angle);
+//            glRotated(angle*(180.0/PI), axis.x, axis.y, axis.z);
+//            glScaled(geom.scale.x, geom.scale.y, geom.scale.z);
+//            
+//            geom.render();
+//            
+//            glPopMatrix();
+//        }
         
         // TODO xiao
         //        std::cout<<raytracer.photon_global_list.size()<<std::endl;

@@ -19,6 +19,8 @@
 #include <stdlib.h>
 #include <iostream>
 #include <cstring>
+#include <vector>
+#include "scene/ray.hpp"
 
 namespace _462 {
     
@@ -30,6 +32,9 @@ namespace _462 {
 #define KEY_RAYTRACE SDLK_r
 #define KEY_SCREENSHOT SDLK_f
     
+    
+    
+    
     // pretty sure these are sequential, but use an array just in case
     static const GLenum LightConstants[] = {
         GL_LIGHT0, GL_LIGHT1, GL_LIGHT2, GL_LIGHT3,
@@ -38,7 +43,7 @@ namespace _462 {
     static const size_t NUM_GL_LIGHTS = 8;
     
     // renders a scene using opengl
-    static void render_scene( const Scene& scene );
+    static void render_scene( const Scene& scene , Raytracer raytracer);
     
     /**
      * Struct of the program options.
@@ -97,9 +102,6 @@ namespace _462 {
         bool raytracing;
         // false if there is more raytracing to do
         bool raytrace_finished;
-        
-        unsigned int start_time;
-        unsigned int end_time;
     };
     
     bool RaytracerApplication::initialize()
@@ -192,13 +194,6 @@ namespace _462 {
                 assert( buffer );
                 raytrace_finished = raytracer.raytrace( buffer, &delta_time );
             }
-            
-            if (raytrace_finished && start_time) {
-                end_time = SDL_GetTicks();
-                printf("Raytrace Time = %d ms\n",end_time - start_time);
-                start_time = 0;
-            }
-            
         } else {
             // copy camera over from camera control (if not raytracing)
             camera_control.update( delta_time );
@@ -238,7 +233,7 @@ namespace _462 {
         } else {
             // else, render the scene using opengl
             glPushAttrib( GL_ALL_ATTRIB_BITS );
-            render_scene( scene );
+            render_scene( scene , raytracer);
             glPopAttrib();
         }
     }
@@ -302,8 +297,6 @@ namespace _462 {
             
             // reset flag that says we are done
             raytrace_finished = false;
-            
-            start_time = SDL_GetTicks();
         }
         
         raytracing = !raytracing;
@@ -340,7 +333,7 @@ namespace _462 {
     }
     
     
-    static void render_scene(const Scene& scene)
+    static void render_scene( const Scene& scene , Raytracer raytracer)
     {
         // backup state so it doesn't mess up raytrace image rendering
         glPushAttrib( GL_ALL_ATTRIB_BITS );
@@ -427,6 +420,40 @@ namespace _462 {
             glPopMatrix();
         }
         
+        // TODO xiao
+        //        std::cout<<raytracer.photon_global_list.size()<<std::endl;
+        if (raytracer.kdtree_photon_caustic_list.size() + raytracer.kdtree_photon_indirect_list.size() > 0) {
+            
+            glDisable( GL_LIGHTING );
+            glDisable( GL_DEPTH_TEST );
+            glPushMatrix();
+            glBegin(GL_POINTS);
+            
+            for (size_t i = 0; i < raytracer.kdtree_photon_caustic_list.size(); i++) {
+                
+                glColor3f(raytracer.kdtree_photon_caustic_list[i].color.r,
+                          raytracer.kdtree_photon_caustic_list[i].color.g,
+                          raytracer.kdtree_photon_caustic_list[i].color.b);
+                glVertex3f(raytracer.kdtree_photon_caustic_list[i].position.x,
+                           raytracer.kdtree_photon_caustic_list[i].position.y,
+                           raytracer.kdtree_photon_caustic_list[i].position.z);
+            }
+            
+            for (size_t i = 0; i < raytracer.kdtree_photon_indirect_list.size(); i++) {
+                
+                glColor3f(raytracer.kdtree_photon_indirect_list[i].color.r,
+                          raytracer.kdtree_photon_indirect_list[i].color.g,
+                          raytracer.kdtree_photon_indirect_list[i].color.b);
+                glVertex3f(raytracer.kdtree_photon_indirect_list[i].position.x,
+                           raytracer.kdtree_photon_indirect_list[i].position.y,
+                           raytracer.kdtree_photon_indirect_list[i].position.z);
+            }
+            
+            glEnd();
+            glEnable( GL_LIGHTING );
+            glEnable( GL_DEPTH_TEST );
+            glPopMatrix();
+        }
         
         glPopClientAttrib();
         glPopAttrib();
@@ -567,8 +594,9 @@ int main(int argc, char* argv[])
             return 1; // some error occurred
         }
         assert( app.buffer );
+        
         // raytrace until done
-        app.raytracer.raytrace( app.buffer, 0 );
+        app.raytracer.raytrace( app.buffer, 0);
         // output result
         app.output_image();
         return 0;

@@ -42,6 +42,10 @@ namespace _462 {
         std::vector<Photon> photon_indirect_list;
         std::vector<Photon> photon_caustic_list;
         
+        // balanced kdtree
+        std::vector<Photon> kdtree_photon_indirect_list;
+        std::vector<Photon> kdtree_photon_caustic_list;
+        
         
     private:
         
@@ -116,6 +120,33 @@ namespace _462 {
      @param dist_max    r is the maximum distance
     */
     inline real_t getConeFilterWeight(real_t dist_x_p, real_t dist_max);
+    
+    // blance kdtree, kdtree stored in compact complete binary tree format
+    inline void balance(size_t index, std::vector<Photon> &balancedKDTree, std::vector<Photon> list);
+    
+    // find nearest photons
+    inline void locatePhotons(size_t p,
+                              Vector3 position,
+                              std::vector<Photon> balancedKDTree,
+                              std::vector<Photon> &nearestPhotons,
+                              real_t &sqrDist,
+                              size_t maxNum);
+    
+    // Photon comparator for sort functions
+    inline bool photonComparatorX(const Photon &a, const Photon &b)
+    {
+        return a.position.x < b.position.x;
+    }
+    
+    inline bool photonComparatorY(const Photon &a, const Photon &b)
+    {
+        return a.position.y < b.position.y;
+    }
+    
+    inline bool photonComparatorZ(const Photon &a, const Photon &b)
+    {
+        return a.position.z < b.position.z;
+    }
     
 } /* _462 */
 

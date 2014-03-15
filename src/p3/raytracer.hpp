@@ -46,8 +46,10 @@ namespace _462 {
         std::vector<Photon> kdtree_photon_indirect_list;
         std::vector<Photon> kdtree_photon_caustic_list;
         
-        ClosePhoton *pClosePhotonIndirect;
-        ClosePhoton *pClosePhotonCaustics;
+//        ClosePhoton *pClosePhotonIndirect;
+//        ClosePhoton *pClosePhotonCaustics;
+        
+        
         
     private:
         
@@ -111,8 +113,26 @@ namespace _462 {
 //        // Current refraction index
 //        real_t current_refractive_index;
         
+        // blance kdtree, kdtree stored in compact complete binary tree format
+        void balance(size_t index, std::vector<Photon> &balancedKDTree, std::vector<Photon> list);
         
+        // find nearest photons
+        void locatePhotons(size_t p,
+                           Vector3 position,
+                           std::vector<Photon> &balancedKDTree,
+                           std::vector<Photon> &nearestPhotons,
+                           real_t &sqrDist,
+                           size_t maxNum);
         
+        // for debug only
+        void locatePhotonsCompact(size_t p,
+                                  Vector3 position,
+                                  std::vector<Photon> balancedKDTree,
+                                  std::vector<Photon> &nearestPhotons,
+                                  real_t &sqrDist,
+                                  size_t maxNum,
+                                  size_t &total);
+                
     };
     
     inline real_t getGaussianFilterWeight(real_t dist_sqr, real_t radius_sqr);
@@ -122,26 +142,6 @@ namespace _462 {
      @param dist_max    r is the maximum distance
     */
     inline real_t getConeFilterWeight(real_t dist_x_p, real_t dist_max);
-    
-    // blance kdtree, kdtree stored in compact complete binary tree format
-    inline void balance(size_t index, std::vector<Photon> &balancedKDTree, std::vector<Photon> list);
-    
-    // find nearest photons
-    inline void locatePhotons(size_t p,
-                              Vector3 position,
-                              std::vector<Photon> balancedKDTree,
-                              std::vector<Photon> &nearestPhotons,
-                              real_t &sqrDist,
-                              size_t maxNum);
-    
-    // find nearest photons compact
-    inline void locatePhotonsCompact(size_t p,
-                                     Vector3 position,
-                                     ClosePhoton *closePhotons,
-                                     std::vector<ClosePhoton> &nearestClosePhotons,
-                                     size_t totalLength,
-                                     real_t &sqrDist,
-                                     size_t maxNum);
     
     
     // Photon comparator for sort functions

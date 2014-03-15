@@ -89,6 +89,8 @@ namespace _462 {
         
         real_t phong;           // p value for blinn-phong model
         
+        bool isLight;
+        
         // Constructor
         HitRecord()
         {
@@ -102,6 +104,8 @@ namespace _462 {
             t = beta = gamma = 0;
             
             phong = 0;
+            
+            isLight = false;
             
         }
         

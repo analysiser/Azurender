@@ -1,29 +1,0 @@
-TZERO_CHECK
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
-c0000000053AA371200000000000000DF
-t1403664146
-s223
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb41cb044cf64b941^0e4ab044cf64b941^---0#1#1#--18"Check dependencies36"41CA71F9-1B05-41D5-95B2-65ABD31BBD80-
-
-CPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
-s426037060.688713
-e426037060.779444
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
-oecho ""
-o
-omake -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.make
-omake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'167"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.she8beb044cf64b941^2b8ac744cf64b941^-234"echo ""make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-426037060#0#8#-0#-----2@104"make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.make-426037060#9#104#-0#-----2@121"make[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.-426037060#113#121#-0#-----0#0#1#--394"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    /bin/sh -c \"/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh\"36"7E93C8F0-B67D-4E4C-A1D4-E0513D2371ED-
-bF885188D-BC69-451C-A601-9721F4B30915
-

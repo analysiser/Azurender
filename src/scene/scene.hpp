@@ -65,6 +65,7 @@ namespace _462 {
         Vector3 vertex1;
         Vector3 vertex2;
         Vector3 normal;
+        real_t depth;
     };
 
     /**
@@ -90,6 +91,7 @@ namespace _462 {
         real_t phong;           // p value for blinn-phong model
         
         bool isLight;
+        bool isInShadow;
         
         // Constructor
         HitRecord()
@@ -106,7 +108,7 @@ namespace _462 {
             phong = 0;
             
             isLight = false;
-            
+            isInShadow = false;
         }
         
         // Get lambertian color that come from light
@@ -131,8 +133,8 @@ namespace _462 {
         
         Color3 getPhotonLambertianColor(Vector3 direction, Color3 photonColor)
         {
-            Vector3 l = normalize(direction);
-            Vector3 n = normal;
+            Vector3 l = direction;//normalize(direction);
+            Vector3 n = this->normal;
             
             real_t dot_nl = dot(n, l);
             

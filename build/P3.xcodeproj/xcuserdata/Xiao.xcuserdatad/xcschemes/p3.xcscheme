@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85EE77EB1F544DCE84ED35C3"
+               BlueprintIdentifier = "AC3CF25B9FE64FCA903C851F"
                BuildableName = "p3"
                BlueprintName = "p3"
                ReferencedContainer = "container:../build/P3.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85EE77EB1F544DCE84ED35C3"
+            BlueprintIdentifier = "AC3CF25B9FE64FCA903C851F"
             BuildableName = "p3"
             BlueprintName = "p3"
             ReferencedContainer = "container:../build/P3.xcodeproj">
@@ -51,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85EE77EB1F544DCE84ED35C3"
+            BlueprintIdentifier = "AC3CF25B9FE64FCA903C851F"
             BuildableName = "p3"
             BlueprintName = "p3"
             ReferencedContainer = "container:../build/P3.xcodeproj">
@@ -59,7 +59,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "scenes/cornell_box.scene -n 1"
+            argument = "scenes/cornell_box_sky.scene"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85EE77EB1F544DCE84ED35C3"
+            BlueprintIdentifier = "AC3CF25B9FE64FCA903C851F"
             BuildableName = "p3"
             BlueprintName = "p3"
             ReferencedContainer = "container:../build/P3.xcodeproj">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25A90600A71849F39FCF3F37"
+               BlueprintIdentifier = "9BD261603A0A428FAC85F04D"
                BuildableName = "libtinyxml.a"
                BlueprintName = "tinyxml"
                ReferencedContainer = "container:../build/P3.xcodeproj">

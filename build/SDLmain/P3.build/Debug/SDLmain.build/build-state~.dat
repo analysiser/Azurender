@@ -2,61 +2,61 @@ TSDLmain
 v6
 r1
 cCheck dependencies
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
-c000000005243E79F00000000000000AA
-t1380181919
+c00000000530295C100000000000000AA
+t1392678337
 s170
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
-c0000000052B117A6000000000000044C
-t1387337638
+c00000000535D6761000000000000044C
+t1398630241
 s1100
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000052B117A600000000000001DB
-t1387337638
-s475
+c00000000535D676100000000000001DE
+t1398630241
+s478
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Debug/libSDLmain.a
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/Debug/libSDLmain.a
 t2
 s0
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.LinkFileList
-c0000000053180F95000000000000007D
-t1394085781
-s125
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.LinkFileList
+c0000000053AA37120000000000000087
+t1403664146
+s135
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o
-t1394085787
-s48960
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o
+t1403664150
+s47608
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m
 c0000000052BDFBE50000000000002BBD
 t1388182501
 s11197
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLmain.m
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLmain.m
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies603fb41547c8b841^f321c01547c8b841^---0#1#1#--18"Check dependencies36"3D927303-9C2E-4B88-9076-C4B01CD08104-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2384ff926e5ab941^6bf3ff926e5ab941^---0#1#1#--18"Check dependencies36"183AB1F3-E106-46C0-ADDF-DC979CDD4E34-
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415778582.864219
-e415778587.668856
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425356947.000351
+e425356950.563457
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m
 d/usr/local/include/SDL/SDL.h
 d/usr/local/include/SDL/SDL_main.h
 d/usr/local/include/SDL/SDL_stdinc.h
@@ -83,12 +83,12 @@ d/usr/local/include/SDL/SDL_quit.h
 d/usr/local/include/SDL/SDL_loadso.h
 d/usr/local/include/SDL/SDL_timer.h
 d/usr/local/include/SDL/SDL_version.h
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLMain.h
-o/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m:72:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLMain.h
+o/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m:72:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]
 o- (void)terminate:(id)sender
 o^
-oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m:9:
-oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLMain.h:11:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m:9:
+oIn file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLMain.h:11:
 oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:
 oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:15:
 oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:8:
@@ -99,17 +99,17 @@ o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 o- (void)terminate:(id)sender;
 o^
 o1 warning generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m222"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler7159dd1647c8b841^b039ab1b47c8b841^-1816"/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m:72:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]- (void)terminate:(id)sender^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLmain.m:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/SDLmain/SDLMain.h:11:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:15:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:8:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCell.h:10:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSText.h:8:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:8:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h:184:1: note: method 'terminate:' declared here- (void)terminate:(id)sender;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@85"Category is implementing a method which will also be implemented by its primary class-415778587#18446744073709551615#0#1(2@33"Method 'terminate:' declared here-415778587#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@172"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h0000000000000000^183#0#183#0#8083#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/SDLmain/SDLmain.m0000000000000000^71#0#71#0#2038#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@80"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/SDLmain/SDLmain.m0000000000000000^2568"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLmain.m -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o36"82041C41-5D90-414B-8534-1DBA641BDBFF-
-bD81EC5E3-9759-4844-B601-EB7A884C5218
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m232"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc17200936e5ab941^a98390966e5ab941^-1846"/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m:72:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]- (void)terminate:(id)sender^In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLmain.m:9:In file included from /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/SDLmain/SDLMain.h:11:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:13:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:15:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSActionCell.h:8:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSCell.h:10:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSText.h:8:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:8:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h:184:1: note: method 'terminate:' declared here- (void)terminate:(id)sender;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@85"Category is implementing a method which will also be implemented by its primary class-425356950#18446744073709551615#0#1(2@33"Method 'terminate:' declared here-425356950#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@172"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h0000000000000000^183#0#183#0#8083#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/SDLmain/SDLmain.m0000000000000000^71#0#71#0#2038#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@90"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/SDLmain/SDLmain.m0000000000000000^2616"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o SDLmain/SDLmain.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLmain.m -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.o36"AFB46FCC-7D84-4FA6-99E1-628FE9DC93C1-
+b8B402D57-6CFD-4D4B-9A49-06A729D994DB
 
-CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64
-s415778587.684465
-e415778587.693737
+CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64
+s425356951.654587
+e425356951.676429
 r1
 xLibtool
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/Debug/libSDLmain.a
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/Debug/libSDLmain.a
 xnormal
 xx86_64
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64105"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a normal x86_640649af1b47c8b841^a7adb11b47c8b841^---0#0#1#--753"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/SDLmain/Debug/libSDLmain.a36"94CE39F1-2063-450E-BA5F-71A89226B644-
-bD81EC5E3-9759-4844-B601-EB7A884C5218
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64115"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64a0a9a7976e5ab941^c87bad976e5ab941^---0#0#1#--803"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/P3.build/Debug/SDLmain.build/Objects-normal/x86_64/SDLmain.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/SDLmain/Debug/libSDLmain.a36"369632E5-40E1-4A7E-BFAA-E9FE3777780C-
+b8B402D57-6CFD-4D4B-9A49-06A729D994DB
 

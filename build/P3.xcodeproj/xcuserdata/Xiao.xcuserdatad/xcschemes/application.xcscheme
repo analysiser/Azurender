@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A26C81AF45784C9A80301DC5"
+               BlueprintIdentifier = "F877FF470A224E8EA63B8947"
                BuildableName = "libapplication.a"
                BlueprintName = "application"
                ReferencedContainer = "container:../build/P3.xcodeproj">

@@ -14,7 +14,7 @@
 
 #include <GL/glew.h>
 #define NO_SDL_GLEXT
-#include <SDL_opengl.h>
+#include <SDL/SDL_opengl.h>
 
 #endif /* _462_OPENGL_HPP_ */
 

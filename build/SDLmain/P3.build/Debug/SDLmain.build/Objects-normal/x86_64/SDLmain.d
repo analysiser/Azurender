@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLmain.m \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLmain.m \
   /usr/local/include/SDL/SDL.h /usr/local/include/SDL/SDL_main.h \
   /usr/local/include/SDL/SDL_stdinc.h \
   /usr/local/include/SDL/SDL_config.h \
@@ -19,4 +19,4 @@ dependencies: \
   /usr/local/include/SDL/SDL_quit.h /usr/local/include/SDL/SDL_loadso.h \
   /usr/local/include/SDL/SDL_timer.h \
   /usr/local/include/SDL/SDL_version.h \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/SDLmain/SDLMain.h
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/SDLmain/SDLMain.h

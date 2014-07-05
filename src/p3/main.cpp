@@ -14,6 +14,10 @@
 #include "scene/scene.hpp"
 #include "p3/raytracer.hpp"
 
+#ifdef __APPLE__
+#include <GLKit/GLKMath.h>
+#endif
+
 #include <SDL.h>
 
 #include <stdlib.h>
@@ -192,6 +196,7 @@ namespace _462 {
             // do part of the raytrace
             if ( !raytrace_finished ) {
                 assert( buffer );
+//                printf("delta time = %f\n",delta_time);
                 raytrace_finished = raytracer.raytrace( buffer, &delta_time );
             }
         } else {
@@ -357,10 +362,18 @@ namespace _462 {
         
         glMatrixMode( GL_PROJECTION );
         glLoadIdentity();
+        
+//#ifdef __APPLE__
+//        GLKMatrix4MakePerspective( camera.get_fov_degrees(),
+//                                  camera.get_aspect_ratio(),
+//                                  camera.get_near_clip(),
+//                                  camera.get_far_clip() );
+//#else
         gluPerspective( camera.get_fov_degrees(),
                        camera.get_aspect_ratio(),
                        camera.get_near_clip(),
                        camera.get_far_clip() );
+//#endif
         
         const Vector3& campos = camera.get_position();
         const Vector3 camref = camera.get_direction() + campos;
@@ -368,9 +381,16 @@ namespace _462 {
         
         glMatrixMode( GL_MODELVIEW );
         glLoadIdentity();
+        
+//#ifdef __APPLE__
+//        GLKMatrix4MakeLookAt( campos.x, campos.y, campos.z,
+//                            camref.x, camref.y, camref.z,
+//                            camup.x,  camup.y,  camup.z );
+//#else
         gluLookAt( campos.x, campos.y, campos.z,
                   camref.x, camref.y, camref.z,
                   camup.x,  camup.y,  camup.z );
+//#endif
         // set light data
         float arr[4];
         arr[3] = 1.0; // w is always 1
@@ -400,28 +420,27 @@ namespace _462 {
         }
         // render each object
         
-//        Geometry* const* geometries = scene.get_geometries();
-//        
-//        for (size_t i = 0; i < scene.num_geometries(); ++i)
-//        {
-//            const Geometry& geom = *geometries[i];
-//            Vector3 axis;
-//            real_t angle;
-//            
-//            glPushMatrix();
-//            
-//            glTranslated(geom.position.x, geom.position.y, geom.position.z);
-//            geom.orientation.to_axis_angle(&axis, &angle);
-//            glRotated(angle*(180.0/PI), axis.x, axis.y, axis.z);
-//            glScaled(geom.scale.x, geom.scale.y, geom.scale.z);
-//            
-//            geom.render();
-//            
-//            glPopMatrix();
-//        }
+        Geometry* const* geometries = scene.get_geometries();
         
-        // TODO xiao
-        //        std::cout<<raytracer.photon_global_list.size()<<std::endl;
+        for (size_t i = 0; i < scene.num_geometries(); ++i)
+        {
+            const Geometry& geom = *geometries[i];
+            Vector3 axis;
+            real_t angle;
+            
+            glPushMatrix();
+            
+            glTranslated(geom.position.x, geom.position.y, geom.position.z);
+            geom.orientation.to_axis_angle(&axis, &angle);
+            glRotated(angle*(180.0/PI), axis.x, axis.y, axis.z);
+            glScaled(geom.scale.x, geom.scale.y, geom.scale.z);
+            
+            geom.render();
+            
+            glPopMatrix();
+        }
+        
+        // Visualize photons
         if (raytracer.kdtree_photon_caustic_list.size() + raytracer.kdtree_photon_indirect_list.size() > 0) {
             
             glDisable( GL_LIGHTING );
@@ -431,9 +450,8 @@ namespace _462 {
             
             for (size_t i = 0; i < raytracer.kdtree_photon_caustic_list.size(); i++) {
                 
-                glColor3f(raytracer.kdtree_photon_caustic_list[i].color.r,
-                          raytracer.kdtree_photon_caustic_list[i].color.g,
-                          raytracer.kdtree_photon_caustic_list[i].color.b);
+                Color3 photonColor = raytracer.kdtree_photon_caustic_list[i].getColor();
+                glColor3f(photonColor.r, photonColor.g, photonColor.b);
                 glVertex3f(raytracer.kdtree_photon_caustic_list[i].position.x,
                            raytracer.kdtree_photon_caustic_list[i].position.y,
                            raytracer.kdtree_photon_caustic_list[i].position.z);
@@ -441,9 +459,8 @@ namespace _462 {
             
             for (size_t i = 0; i < raytracer.kdtree_photon_indirect_list.size(); i++) {
                 
-                glColor3f(raytracer.kdtree_photon_indirect_list[i].color.r,
-                          raytracer.kdtree_photon_indirect_list[i].color.g,
-                          raytracer.kdtree_photon_indirect_list[i].color.b);
+                Color3 photonColor = raytracer.kdtree_photon_indirect_list[i].getColor();
+                glColor3f(photonColor.r, photonColor.g, photonColor.b);
                 glVertex3f(raytracer.kdtree_photon_indirect_list[i].position.x,
                            raytracer.kdtree_photon_indirect_list[i].position.y,
                            raytracer.kdtree_photon_indirect_list[i].position.z);

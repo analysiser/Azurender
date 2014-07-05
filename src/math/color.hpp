@@ -54,7 +54,7 @@ public:
     /**
      * Components of this color.
      */
-    real_t r, g, b;
+    float r, g, b;
 
     /**
      * Default constructor. Leaves values unitialized.
@@ -64,7 +64,7 @@ public:
     /**
      * Create a color with the given values.
      */
-    Color3( real_t r, real_t g, real_t b )
+    Color3( float r, float g, float b )
         : r( r ), g( g ), b( b ) {}
 
     /**
@@ -101,11 +101,11 @@ public:
         return *this;
     }
 
-    Color3 operator*( real_t s ) const {
+    Color3 operator*( float s ) const {
         return Color3( r * s, g * s, b * s );
     }
 
-    Color3& operator*=( real_t s ) {
+    Color3& operator*=( float s ) {
         r *= s;
         g *= s;
         b *= s;
@@ -123,7 +123,7 @@ public:
     /**
      * @remark No bounds checking.
      */
-    const real_t& operator[]( size_t i ) const {
+    const float& operator[]( size_t i ) const {
         // assumes all members are in a contiguous block
         assert( i < DIM );
         return ( &r )[i];
@@ -132,7 +132,7 @@ public:
     /**
      * @remark No bounds checking.
      */
-    real_t& operator[]( size_t i ) {
+    float& operator[]( size_t i ) {
         // assumes all members are in a contiguous block
         assert( i < DIM );
         return ( &r )[i];
@@ -149,11 +149,11 @@ public:
     void to_array( float arr[DIM] ) const;
 };
 
-inline Color3 operator*( real_t s, const Color3& c ) {
+inline Color3 operator*( float s, const Color3& c ) {
     return c * s;
 }
 
-Color3 clamp( const Color3& c, real_t min, real_t max );
+Color3 clamp( const Color3& c, float min, float max );
 
 /**
  * Outputs a color text formatted as "(r,g,b)".

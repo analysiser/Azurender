@@ -73,6 +73,7 @@ namespace _462 {
     static const char STR_LIGHT_TYPE[] = "type";    // indicate if the light source is point light or parallelogram light
     static const char STR_LIGHT_P1[] = "vertex1";
     static const char STR_LIGHT_P2[] = "vertex2";
+    static const char STR_LIGHT_DEPTH[] = "depth";  // area light depth/height
     static const char STR_MATERIAL_PHONG[] = "phong";
     
     static void print_error_header( const TiXmlElement* base )
@@ -118,6 +119,21 @@ namespace _462 {
         }
     }
     
+    // TODO: parse float type than double
+    static void parse_attrib_float( const TiXmlElement* elem, bool required, const char* name, float* val )
+    {
+        int rv = elem->QueryFloatAttribute( name, val );
+        if ( rv == TIXML_WRONG_TYPE ) {
+            print_error_header( elem );
+            std::cout << "error parsing '" << name << "'.\n";
+            throw std::exception();
+        } else if ( required && rv == TIXML_NO_ATTRIBUTE ) {
+            print_error_header( elem );
+            std::cout << "missing '" << name << "'.\n";
+            throw std::exception();
+        }
+    }
+    
     static void parse_attrib_string( const TiXmlElement* elem, bool required, const char* name, const char** val )
     {
         const char* att = elem->Attribute( name );
@@ -152,9 +168,9 @@ namespace _462 {
     
     template<> void parse_elem< Color3 >( const TiXmlElement* elem, Color3* color )
     {
-        parse_attrib_double( elem, true, "r", &color->r );
-        parse_attrib_double( elem, true, "g", &color->g );
-        parse_attrib_double( elem, true, "b", &color->b );
+        parse_attrib_float( elem, true, "r", &color->r );
+        parse_attrib_float( elem, true, "g", &color->g );
+        parse_attrib_float( elem, true, "b", &color->b );
     }
     
     template<> void parse_elem< Vector2 >( const TiXmlElement* elem, Vector2* vector )
@@ -220,6 +236,7 @@ namespace _462 {
         // only for square light
         parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
         parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
+        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
         parse_elem(elem, false, STR_NORMAL, &light->normal);
     }
     

@@ -23,6 +23,7 @@ public:
     real_t radius;
     const Material* material;
     Box *boundingBox;
+//    Box *globalBBox;
 
     Sphere();
     virtual ~Sphere();
@@ -31,6 +32,9 @@ public:
     virtual void createBoundingBox() const;
     
     virtual bool hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const;
+    
+    // pre computation, for accelerate hit test
+//    Vector3 c;
     
 };
 

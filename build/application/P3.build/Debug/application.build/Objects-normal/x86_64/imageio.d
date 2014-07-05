@@ -1,13 +1,12 @@
 dependencies: \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.cpp \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/imageio.hpp \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/opengl.hpp \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew/GL/glew.h \
-  /usr/local/include/SDL/SDL_opengl.h \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/application/imageio.cpp \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/application/imageio.hpp \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/application/opengl.hpp \
+  /usr/local/include/GL/glew.h /usr/local/include/SDL/SDL_opengl.h \
   /usr/local/include/SDL/SDL_config.h \
   /usr/local/include/SDL/SDL_platform.h \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/application/application.hpp \
-  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/math.hpp \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/application/application.hpp \
+  /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/math.hpp \
   /usr/local/include/SDL/SDL_events.h \
   /usr/local/include/SDL/SDL_stdinc.h \
   /usr/local/include/SDL/begin_code.h \

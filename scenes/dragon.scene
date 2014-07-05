@@ -17,6 +17,7 @@
     <point_light>
         <position x="-10.0" y="5.0" z="10.0"/>
         <color r="1.0" g="1.0" b="1.0"/>
+        <type v="1.0"/>
     </point_light>
 
     <material name="default">

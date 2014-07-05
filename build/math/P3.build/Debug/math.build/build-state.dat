@@ -2,260 +2,260 @@ Tmath
 v6
 r1
 cCheck dependencies
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a normal x86_64
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a normal x86_64
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
-c00000000531E7D0000000000000000AA
-t1394507008
+c00000000530295C100000000000000AA
+t1392678337
 s170
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
-c0000000052B117A6000000000000044C
-t1387337638
+c00000000535D6761000000000000044C
+t1398630241
 s1100
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000531E7CD500000000000001DE
-t1394506965
+c00000000535D676100000000000001DE
+t1398630241
 s478
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Debug/libmath.a
-t1394682083
-s314728
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/Debug/libmath.a
+t1403664151
+s314744
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o
-t1394682079
-s22920
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o
+t1403664147
+s22952
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o
-t1394682080
-s75412
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o
+t1403664147
+s75268
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.LinkFileList
-c0000000053180F9500000000000002C5
-t1394085781
-s709
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.LinkFileList
+c0000000053AA37120000000000000301
+t1403664146
+s769
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o
-t1394682079
-s2068
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o
+t1403664148
+s2100
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o
-t1394682081
-s41964
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o
+t1403664149
+s41996
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o
-t1394682081
-s94192
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o
+t1403664149
+s94224
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o
-t1394682082
-s73004
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o
+t1403664151
+s73036
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.cpp
-c0000000052BDFBE4000000000000057F
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.cpp
+c000000005364903F000000000000057F
+t1399099455
 s1407
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
-c0000000052BDFBE40000000000000887
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.hpp
+c00000000536490500000000000000887
+t1399099472
 s2183
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.cpp
-c0000000052BDFBE40000000000000434
-t1388182500
-s1076
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.cpp
+c000000005376A1850000000000000431
+t1400283525
+s1073
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
-c0000000052BDFBE40000000000000D11
-t1388182500
-s3345
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.hpp
+c000000005376A17A0000000000000D06
+t1400283514
+s3334
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.cpp
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.cpp
 c0000000052BDFBE40000000000000087
 t1388182500
 s135
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-c0000000052BDFBE4000000000000025C
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+c000000005364904C000000000000025C
+t1399099468
 s604
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.cpp
-c0000000052BDFBE400000000000022D3
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.cpp
+c000000005364903800000000000022D3
+t1399099448
 s8915
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
-c0000000052BDFBE400000000000021DE
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.hpp
+c000000005364904800000000000021DE
+t1399099464
 s8670
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.cpp
-c0000000052BDFBE4000000000000121B
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.cpp
+c000000005364903B000000000000121B
+t1399099451
 s4635
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
-c0000000052BDFBE40000000000000EC4
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.hpp
+c00000000536490460000000000000EC4
+t1399099462
 s3780
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.cpp
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.cpp
 c0000000052BDFBE40000000000000224
 t1388182500
 s548
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
-c0000000052BDFBE40000000000005152
-t1388182500
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.hpp
+c00000000536490420000000000005152
+t1399099458
 s20818
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/camera.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/camera.cpp
 r0
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/color.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/color.cpp
 r0
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/math.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/math.cpp
 r0
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/matrix.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/matrix.cpp
 r0
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/quaternion.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/quaternion.cpp
 r0
 
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/vector.cpp
+CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/vector.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2505eadf46d2b841^a933ebdf46d2b841^---0#1#1#--18"Check dependencies36"60335D04-8E3B-43AD-ABFD-5B37772628BC-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies8a3cc944cf64b941^567ec944cf64b941^---0#1#1#--18"Check dependencies36"8BBF84AE-5D67-4039-88D1-54507E50BA30-
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374877.890160
-e416374879.089580
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356946.997181
+e425356947.816497
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/camera.cpp205"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6ff6e35d60d1b841^3124175f60d1b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/camera.cpp0000000000000000^2442"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/camera.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o36"B56D2148-EC59-40E3-AE3B-D72413C6301C-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/camera.cpp215"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerb762ff926e5ab941^f88bd1936e5ab941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/camera.cpp0000000000000000^2490"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/camera.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/camera.o36"C12F18CF-EFA0-4F87-924D-189CA2071456-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374879.089940
-e416374880.216001
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356947.000746
+e425356947.819265
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/color.cpp203"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler431c175f60d1b841^a186376060d1b841^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/color.cpp0000000000000000^2436"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/color.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o36"2D9D9BE1-6FC0-43EB-8BDE-AB396380A86B-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/color.cpp213"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc58c00936e5ab941^f5bad1936e5ab941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/color.cpp0000000000000000^2484"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/color.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/color.o36"91ABBFF4-479F-455F-B896-062F0E664AB6-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374879.593733
-e416374879.962225
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356947.817880
+e425356948.149498
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.cpp201"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6e15985f60d1b841^d654f65f60d1b841^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/math.cpp0000000000000000^2430"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/math.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o36"7887DF3D-B865-4D89-BE24-87F2E0D914BA-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.cpp211"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler037ad1936e5ab941^914526946e5ab941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/math.cpp0000000000000000^2478"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/math.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o36"7E6818C2-A7F2-4B61-8FA5-DD200C46021B-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374879.962556
-e416374881.347513
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356948.149821
+e425356949.037048
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.cpp205"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc37ff65f60d1b841^c900606160d1b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/matrix.cpp0000000000000000^2442"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/matrix.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o36"0F524E61-EC16-4782-9448-A59B3E55F0BD-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.cpp215"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler507326946e5ab941^5f7c09956e5ab941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/matrix.cpp0000000000000000^2490"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/matrix.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/matrix.o36"74CC1C0C-A906-4809-B8AA-858342C07453-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374880.216402
-e416374881.593949
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356949.038395
+e425356949.899464
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/matrix.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/quaternion.cpp213"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler857d376060d1b841^6c969b6160d1b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/quaternion.cpp0000000000000000^2466"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/quaternion.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o36"32059605-6944-436A-9150-95F67ACDCD74-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/matrix.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/quaternion.cpp223"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler07ed09956e5ab941^9a43e6956e5ab941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/quaternion.cpp0000000000000000^2514"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/quaternion.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/quaternion.o36"A9756E30-4326-4753-806A-D568AB871E53-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s416374881.517479
-e416374882.852901
+CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s425356950.563739
+e425356951.438949
 r1
 xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.cpp
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.cpp
 xnormal
 xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.hpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/math.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/math/vector.cpp205"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilercd92846160d1b841^5bd1de6260d1b841^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/math/vector.cpp0000000000000000^2442"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -I/usr/local/include/SDL -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/math/vector.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o36"0E50FE14-5D4E-4ABB-B8FD-3624320E2285-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.cpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.hpp
+d/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/math.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/math/vector.cpp215"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerb66990966e5ab941^9e5f70976e5ab941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/workspace/p3/src/math/vector.cpp0000000000000000^2490"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/src/math/vector.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/vector.o36"0A2B21AC-5F05-4187-A852-1DD78E23A9A7-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 
-CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a normal x86_64
-s416374883.785703
-e416374883.798003
+CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a normal x86_64
+s425356951.802232
+e425356951.815327
 r1
 xLibtool
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/Debug/libmath.a
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/Debug/libmath.a
 xnormal
 xx86_64
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o has no symbols
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a normal x86_6499"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a normal x86_64bd34c96360d1b841^834ecc6360d1b841^-233"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o has no symbols-0#0#1#--729"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/math/Debug/libmath.a36"3218B6D3-8A03-4352-BE2A-909532BAF7A6-
-bD03E24B7-FCB7-4589-9711-E633A4F566B7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o has no symbols
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a normal x86_64109"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a normal x86_6420b5cd976e5ab941^f7cad0976e5ab941^-243"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.o has no symbols-0#0#1#--779"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/P3.build/Debug/math.build/Objects-normal/x86_64/math.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/math/Debug/libmath.a36"67F0D360-86C7-48B4-B048-86ADCCDC7B36-
+bC51F4133-8E7A-44A6-A3C8-6D805CE9EEE1
 

@@ -121,6 +121,7 @@ namespace _462 {
         background_color = Color3::Black();
         ambient_light = Color3::Black();
         refractive_index = 1.0;
+        
     }
     
     void Scene::add_geometry( Geometry* g )

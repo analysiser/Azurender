@@ -1,74 +1,0 @@
-Tglew
-v6
-r1
-cCheck dependencies
-cCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew/glew.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a normal x86_64
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
-c000000005243E79F00000000000000AA
-t1380181919
-s170
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
-c0000000052B117A6000000000000044C
-t1387337638
-s1100
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000052B117A600000000000001DB
-t1387337638
-s475
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Debug/libglew.a
-t2
-s0
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.LinkFileList
-c0000000053180F950000000000000074
-t1394085781
-s116
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o
-t1394085820
-s24920684
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/glew.cpp
-c0000000052BDFBE400000000000D07F6
-t1388182500
-s854006
-
-CBuild AST from /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew/glew.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies4b76b41547c8b841^081cb51547c8b841^---0#1#1#--18"Check dependencies36"DE2BF797-FDB0-4644-908C-8192E77B5BF5-
-
-CCompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew/glew.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s415778581.708912
-e415778620.878574
-r1
-xCompileC
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/glew.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/glew.cpp
-d/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/GL/glew.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/glew/glew.cpp201"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o glew/glew.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerc992b51547c8b841^4eede03c47c8b841^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Xiao/Dropbox/CMU/04.15418/final%20project/p3/src/glew/glew.cpp0000000000000000^2327"CompileC /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o glew/glew.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/include -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/DerivedSources/x86_64 -I/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.d --serialize-diagnostics /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.dia -c /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src/glew/glew.cpp -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.o36"65DB51B3-551A-44A4-8AEE-21FA956E685E-
-b0DEB2FF7-0808-4F0B-9596-91A12FA5121B
-
-CLibtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a normal x86_64
-s415778620.879449
-e415778621.367978
-r1
-xLibtool
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/Debug/libglew.a
-xnormal
-xx86_64
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a normal x86_6499"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a normal x86_641135e13c47c8b841^61355e3d47c8b841^---0#0#1#--729"Libtool /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a normal x86_64    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug -filelist /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/P3.build/Debug/glew.build/Objects-normal/x86_64/glew.LinkFileList -o /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/glew/Debug/libglew.a36"96B01A53-240C-484A-A328-FC00F037AEE9-
-b0DEB2FF7-0808-4F0B-9596-91A12FA5121B
-

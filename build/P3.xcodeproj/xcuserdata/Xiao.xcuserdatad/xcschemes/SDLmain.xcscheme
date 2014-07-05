@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0180574900804300ACE08D4B"
+               BlueprintIdentifier = "FB320829487B4AAE90F6D036"
                BuildableName = "libSDLmain.a"
                BlueprintName = "SDLmain"
                ReferencedContainer = "container:../build/P3.xcodeproj">

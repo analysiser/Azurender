@@ -180,20 +180,6 @@ namespace _462 {
             // Subdivision along a given axis
             subdivideList(ll, rl, axis);
             
-            // TODO: subdivision
-//            int half = this->list->count/2;
-//            int full = this->list->count;
-//            for (int i = 0; i < half; i++) {
-//                BoxNode *tmp = this->list->head;
-//                this->list->detach(tmp);
-//                ll->append(tmp);
-//            }
-//            for (int i = half; i < full; i++) {
-//                BoxNode *tmp = this->list->head;
-//                this->list->detach(tmp);
-//                rl->append(tmp);
-//            }
-            
             this->left = new BVHNode(ll, (axis+1)%3);
             this->right = new BVHNode(rl, (axis+1)%3);
             
@@ -363,7 +349,7 @@ box2.bounds[1].z;
         modelBoxNodes = new LinkedList();
         bBox = Box(Vector3::Zero(), Vector3::Zero());
         type = eModel;
-	root = NULL;
+        root = NULL;
     }
     Model::~Model() {
         delete modelBoxNodes;
@@ -385,8 +371,7 @@ box2.bounds[1].z;
     {
         // if already have bounding boxes, then no need to recalculate again
         // reduced about 10 MB for each time a new ray tracing happens
-        if (this->bBox.bounds[0] == Vector3::Zero() && this->bBox.bounds[1] ==
-Vector3::Zero()) {
+        if (this->bBox.bounds[0] == Vector3::Zero() && this->bBox.bounds[1] == Vector3::Zero()) {
             MeshTriangle const *triangles = mesh->get_triangles();
             
             for (size_t i = 0; i < mesh->num_triangles(); i++) {
@@ -480,6 +465,8 @@ B.position, C.position);
             
             rec.refractive_index = material->refractive_index;
             tt = result.z;
+            
+            rec.isLight = this->isLight;
         }
         
         if (tt < INFINITY) {

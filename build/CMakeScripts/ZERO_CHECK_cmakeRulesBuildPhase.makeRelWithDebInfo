@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/ZERO_CHECK
+	/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeFiles/ZERO_CHECK
 
 
-/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeFiles/ZERO_CHECK: 
+/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make
+	make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.make

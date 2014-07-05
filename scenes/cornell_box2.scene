@@ -15,9 +15,17 @@
 
     <point_light>
         <position x="0.0" y="4.0" z="0.0"/>
-        <color r="1.7" g="1.7" b="1.7"/>
+        <color r="0.7" g="0.7" b="0.7"/>
 		<radius v="1.0"/>
+        <type v="1.0"/>
     </point_light>
+
+    <material name="car">
+        <refractive_index v="0.0"/>
+        <ambient r="1.0" g="1.0" b="1.0"/>
+        <diffuse r="1.0" g="1.0" b="1.0"/>
+        <specular r="0.4" g="0.4" b="0.4"/>
+    </material>
 
     <material name="white">
         <refractive_index v="0.0"/>
@@ -240,7 +248,7 @@
         <vertex name="b1"/>
     </triangle>
 
-    <sphere material="crystal">
+    <!-- <sphere material="crystal">
         <position x="1.0" y="-1.0" z="1.0"/>
         <radius v="1.0"/>
     </sphere>
@@ -248,6 +256,14 @@
     <sphere material="mirror">
         <position x="-1.0" y="0.0" z="-1.75"/>
         <radius v="2.0"/>
-    </sphere>
+    </sphere> -->
+
+    <mesh name="toyplane" filename="models/LAM.obj"/>
+
+    <model material="car" mesh="toyplane">
+        <position x="0.0" y="-4.5" z="0.0"/>
+        <scale x="0.005" y="0.005" z="0.005" />
+        <orientation a="0.0" x="1.0" y="1.0" z="1.0"/>
+    </model> 
 
 </scene>

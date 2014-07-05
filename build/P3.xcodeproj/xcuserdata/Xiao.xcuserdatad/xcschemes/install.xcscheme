@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B71946ACC80A4D2F8B5452F3"
+               BlueprintIdentifier = "A49384B10845447FB077A292"
                BuildableName = "install"
                BlueprintName = "install"
                ReferencedContainer = "container:../build/P3.xcodeproj">

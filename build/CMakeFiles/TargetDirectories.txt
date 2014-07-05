@@ -1,9 +1,8 @@
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/ALL_BUILD.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/SDLmain/CMakeFiles/SDLmain.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/ZERO_CHECK.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/application/CMakeFiles/application.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/glew/CMakeFiles/glew.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/math/CMakeFiles/math.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/p3/CMakeFiles/p3.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/scene/CMakeFiles/scene.dir
-/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/tinyxml/CMakeFiles/tinyxml.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/ALL_BUILD.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/SDLmain/CMakeFiles/SDLmain.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/ZERO_CHECK.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/application/CMakeFiles/application.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/math/CMakeFiles/math.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/p3/CMakeFiles/p3.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/scene/CMakeFiles/scene.dir
+/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/tinyxml/CMakeFiles/tinyxml.dir

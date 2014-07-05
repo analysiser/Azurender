@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src/tinyxml
+# Install script for directory: /Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src/tinyxml
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

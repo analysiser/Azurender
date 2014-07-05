@@ -2,106 +2,28 @@ TZERO_CHECK
 v6
 r1
 cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh
+cPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
 
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh
-c00000000531ABE8000000000000000CB
-t1394261632
-s203
-
-N/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh
-c0000000053180F9500000000000000CB
-t1394085781
-s203
+N/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
+c0000000053AA371200000000000000DF
+t1403664146
+s223
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies73f5d7df46d2b841^4c6ed8df46d2b841^---0#1#1#--18"Check dependencies36"83590739-0341-4D01-A54A-EE0236310DF1-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb41cb044cf64b941^0e4ab044cf64b941^---0#1#1#--18"Check dependencies36"41CA71F9-1B05-41D5-95B2-65ABD31BBD80-
 
-CPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh
-s416433887.844604
-e416433887.902375
+CPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
+s426037060.688713
+e426037060.779444
 r1
 xPhaseScriptExecution
 xCMake Rules
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh
+x/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh
 oecho ""
 o
-omake -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make
-omake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'157"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh029ed8df46d2b841^5c03e7df46d2b841^-214"echo ""make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-416433887#0#8#-0#-----2@94"make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make-416433887#9#94#-0#-----2@111"make[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/CMakeFiles/cmake.check_cache' is up to date.-416433887#103#111#-0#-----0#0#1#--364"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    /bin/sh -c \"/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-C3843ADB9DAD47D9AEE20F63.sh\"36"A302566B-3236-4ED4-B019-E0136CA792CE-
-b822529CE-9FF4-4B0E-AA34-10C77086542A
-
-CPhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh
-s415954398.054924
-e415954425.732978
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh
-oecho ""
-o
-omake -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make
-o/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -H/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -B/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build
-o-- Try OpenMP C flag = [-fopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [/openmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [-Qopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [-openmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [ ]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [-xopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [+Oopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [-qsmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP C flag = [-mp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-fopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [/openmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-Qopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-openmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [ ]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-xopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [+Oopenmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-qsmp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Try OpenMP CXX flag = [-mp]
-o-- Performing Test OpenMP_FLAG_DETECTED
-o-- Performing Test OpenMP_FLAG_DETECTED - Failed
-o-- Could NOT find OpenMP (missing:  OpenMP_C_FLAGS OpenMP_CXX_FLAGS) 
-o-- Could NOT find GLEW (missing:  GLEW_INCLUDE_DIR GLEW_LIBRARY) 
-o-- Configuring done
-o-- Generating done
-o-- Build files have been written to: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'157"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh66660edef5cab841^2ba5bbf9f5cab841^-2728"echo ""make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -H/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -B/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build-- Try OpenMP C flag = [-fopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [/openmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [-Qopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [-openmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [ ]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [-xopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [+Oopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [-qsmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP C flag = [-mp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-fopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [/openmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-Qopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-openmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [ ]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-xopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [+Oopenmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-qsmp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Try OpenMP CXX flag = [-mp]-- Performing Test OpenMP_FLAG_DETECTED-- Performing Test OpenMP_FLAG_DETECTED - Failed-- Could NOT find OpenMP (missing:  OpenMP_C_FLAGS OpenMP_CXX_FLAGS) -- Could NOT find GLEW (missing:  GLEW_INCLUDE_DIR GLEW_LIBRARY) -- Configuring done-- Generating done-- Build files have been written to: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build62(21%IDEActivityLogMessage2@8"echo ""-415954398#0#8#-0#-----2@94"make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/CMakeScripts/ReRunCMake.make-415954398#9#94#-0#-----2@159"/usr/local/Cellar/cmake/2.8.12.1/bin/cmake -H/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/src -B/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build-415954398#103#159#-0#-----2@34"-- Try OpenMP C flag = [-fopenmp]-415954399#262#34#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954399#296#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954402#336#49#-0#-----2@33"-- Try OpenMP C flag = [/openmp]-415954402#385#33#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954402#418#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954403#458#49#-0#-----2@34"-- Try OpenMP C flag = [-Qopenmp]-415954403#507#34#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954403#541#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954404#581#49#-0#-----2@33"-- Try OpenMP C flag = [-openmp]-415954404#630#33#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954404#663#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954404#703#49#-0#-----2@27"-- Try OpenMP C flag = [ ]-415954404#752#27#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954404#779#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954405#819#49#-0#-----2@34"-- Try OpenMP C flag = [-xopenmp]-415954405#868#34#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954405#902#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954405#942#49#-0#-----2@34"-- Try OpenMP C flag = [+Oopenmp]-415954405#991#34#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954405#1025#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954406#1065#49#-0#-----2@31"-- Try OpenMP C flag = [-qsmp]-415954406#1114#31#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954406#1145#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954406#1185#49#-0#-----2@29"-- Try OpenMP C flag = [-mp]-415954406#1234#29#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954406#1263#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954407#1303#49#-0#-----2@36"-- Try OpenMP CXX flag = [-fopenmp]-415954407#1352#36#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954407#1388#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954408#1428#49#-0#-----2@35"-- Try OpenMP CXX flag = [/openmp]-415954408#1477#35#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954408#1512#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954408#1552#49#-0#-----2@36"-- Try OpenMP CXX flag = [-Qopenmp]-415954408#1601#36#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954408#1637#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954409#1677#49#-0#-----2@35"-- Try OpenMP CXX flag = [-openmp]-415954409#1726#35#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954409#1761#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954409#1801#49#-0#-----2@29"-- Try OpenMP CXX flag = [ ]-415954409#1850#29#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954409#1879#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954410#1919#49#-0#-----2@36"-- Try OpenMP CXX flag = [-xopenmp]-415954410#1968#36#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954410#2004#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954410#2044#49#-0#-----2@36"-- Try OpenMP CXX flag = [+Oopenmp]-415954410#2093#36#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954410#2129#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954411#2169#49#-0#-----2@33"-- Try OpenMP CXX flag = [-qsmp]-415954411#2218#33#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954411#2251#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954412#2291#49#-0#-----2@31"-- Try OpenMP CXX flag = [-mp]-415954412#2340#31#-0#-----2@40"-- Performing Test OpenMP_FLAG_DETECTED-415954412#2371#40#-0#-----2@49"-- Performing Test OpenMP_FLAG_DETECTED - Failed-415954412#2411#49#-0#-----2@70"-- Could NOT find OpenMP (missing:  OpenMP_C_FLAGS OpenMP_CXX_FLAGS) -415954412#2460#70#-0#-----2@66"-- Could NOT find GLEW (missing:  GLEW_INCLUDE_DIR GLEW_LIBRARY) -415954425#2530#66#-0#-----2@20"-- Configuring done-415954425#2596#20#-0#-----2@19"-- Generating done-415954425#2616#19#-0#-----2@93"-- Build files have been written to: /Users/Xiao/Dropbox/CMU/04.15418/final project/p3/build-415954425#2635#93#-0#-----0#0#1#--364"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/p3/src"    /bin/sh -c \"/Users/Xiao/Dropbox/CMU/04.15418/final\ project/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-F3EB8B972A924E2CB8279811.sh\"36"7912B514-A230-433B-AAAA-966E97A5F3B3-
-b0482FE2D-026B-4FFB-B4EA-17E9D77C46FC
+omake -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'167"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.she8beb044cf64b941^2b8ac744cf64b941^-234"echo ""make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-426037060#0#8#-0#-----2@104"make -f /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/CMakeScripts/ReRunCMake.make-426037060#9#104#-0#-----2@121"make[1]: `/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/build/CMakeFiles/cmake.check_cache' is up to date.-426037060#113#121#-0#-----0#0#1#--394"PhaseScriptExecution CMake\ Rules /Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh    cd "/Users/Xiao/Dropbox/CMU/04.15418/final project/workspace/p3/src"    /bin/sh -c \"/Users/Xiao/Dropbox/CMU/04.15418/final\ project/workspace/p3/build/P3.build/Debug/ZERO_CHECK.build/Script-70FF50F327C34949A753BEC9.sh\"36"7E93C8F0-B67D-4E4C-A1D4-E0513D2371ED-
+bF885188D-BC69-451C-A601-9721F4B30915
 

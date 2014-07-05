@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98A6CDA342324D14BE3137E6"
+               BlueprintIdentifier = "215A5BDAB3514C7890C3F3DA"
                BuildableName = "libmath.a"
                BlueprintName = "math"
                ReferencedContainer = "container:../build/P3.xcodeproj">

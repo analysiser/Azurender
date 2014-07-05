@@ -11,7 +11,7 @@ namespace _462 {
 
 Color3::Color3( const unsigned char* arr )
 {
-    static const real_t inv = 1.0 / 255.0;
+    static const float inv = 1.0 / 255.0;
     r = arr[0] * inv;
     g = arr[1] * inv;
     b = arr[2] * inv;
@@ -36,7 +36,7 @@ void Color3::to_array( float arr[DIM] ) const
     arr[2] = float( b );
 }
 
-Color3 clamp( const Color3& c, real_t min, real_t max )
+Color3 clamp( const Color3& c, float min, float max )
 {
     return Color3(
         clamp( c.r, min, max ),

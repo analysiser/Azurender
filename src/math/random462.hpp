@@ -8,7 +8,11 @@ namespace _462{
      */
     inline real_t random_uniform()
     {
-        return real_t(rand())/RAND_MAX;
+//        unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+//        std::mt19937 generator (seed);
+//        return real_t(generator())/std::mt19937::max();
+        
+      return real_t(rand())/RAND_MAX;
     }
 
     /**

@@ -76,12 +76,15 @@ namespace _462 {
     : radius(0), material(0)
     {
         boundingBox = new Box(Vector3::Zero(), Vector3::Zero());
+//        globalBBox = new Box(Vector3::Zero(), Vector3::Zero());
         type = eSphere;
+//        c = invMat.transform_point(position);
     }
     
     Sphere::~Sphere()
     {
         delete boundingBox;
+//        delete globalBBox;
     }
     
     void Sphere::render() const
@@ -111,6 +114,11 @@ namespace _462 {
         
         boundingBox->bounds[0] = box.bounds[0];
         boundingBox->bounds[1] = box.bounds[1];
+        
+        // create global bounding box
+//        Vector3 gcenter = position;
+//        globalBBox->bounds[0] = gcenter - Vector3(radius, radius, radius);
+//        globalBBox->bounds[1] = gcenter + Vector3(radius, radius, radius);
     }
 
     
@@ -197,6 +205,8 @@ namespace _462 {
                 rec.refractive_index = material->refractive_index;
                 
                 rec.t = t;
+                
+                rec.isLight = this->isLight;
                 
             }
         }

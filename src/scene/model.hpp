@@ -111,11 +111,9 @@ namespace _462 {
 
         
         // Subdivide BVH tree node according to given axis, applied 3D kd-tree subdivision algorithm
+        // No SAH, used median
         void subdivideList(LinkedList *leftList, LinkedList *rightList, int axis);
 
-        
-
-        
     };
 
     

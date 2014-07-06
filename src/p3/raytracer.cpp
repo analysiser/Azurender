@@ -61,9 +61,10 @@
 #define C_PHOTON_MODE                   1
 #define SIMPLE_SMALL_NODE               1
 
-#define ENABLE_DOF                      1
+#define ENABLE_DOF                      0
 #define DOF_T                           9
-#define DOF_R                           0.5
+#define DOF_R                           (0.5)
+#define DOF_SAMPLE                      2
 
 
 namespace _462 {
@@ -518,7 +519,7 @@ namespace _462 {
             Ray r = Ray(scene->camera.get_position(), Ray::get_pixel_dir(i, j));
             res += trace(r, EPSILON, TMAX, RAYTRACE_DEPTH);
             
-            for (int i = 0; i < 9; i++) {
+            for (int i = 0; i < DOF_SAMPLE - 1; i++) {
                 double random_r = DOF_R * random_uniform();
                 double random_theta = 2 * PI * random_uniform();
                 double random_x = random_r * cos(random_theta);
@@ -530,7 +531,7 @@ namespace _462 {
                 res += trace(sample_ray, EPSILON, TMAX, RAYTRACE_DEPTH);
             }
             
-            res *= 0.1;
+            res *= 1.0/(float)DOF_SAMPLE;
             
             
             

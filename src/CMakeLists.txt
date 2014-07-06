@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(P3)
+project(Azurender)
 
 include(build/CMakeLists.txt)
 
@@ -12,7 +12,7 @@ include_directories(
 
 add_subdirectory(application)
 add_subdirectory(math)
-add_subdirectory(p3)
+add_subdirectory(raytracer)
 add_subdirectory(scene)
 add_subdirectory(tinyxml)
 

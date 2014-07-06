@@ -7,8 +7,7 @@
 #include "math/camera.hpp"
 #include "scene/material.hpp"
 #include "scene/mesh.hpp"
-#include "p3/Photon.hpp"
-//#include "p3/Utils.c"
+#include "raytracer/Photon.hpp"
 #include <string>
 #include <vector>
 

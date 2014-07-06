@@ -1,0 +1,1926 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              A9BE75410A9747A784F7D3B4 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 2C1DE459492F46DF9C961A2C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            0B14B57E4D8C4A3C8BA981F5 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            CEF69CD8B4414CD38999768D /* PBXTargetDependency */,
+                            3DAEDB04D3F84183BA5F316D /* PBXTargetDependency */,
+                            9E4BD480C75548E8A6594CFA /* PBXTargetDependency */,
+                            0030A5E7B1CC4249AF77E5A9 /* PBXTargetDependency */,
+                            FD5257E206A84E9DA1061CDA /* PBXTargetDependency */,
+                            E3812BF71A934FEC9E99B800 /* PBXTargetDependency */,
+                            62779FD303CA400B984BE1A5 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              48770DC4AE814B519F2FE24F /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = C6E4F755728C4552BC335A94 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            35A6A56A345A4322B937B321 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              9D6AFB4A4169437C988F66E9 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 3A019D316FE846BF97A378AA /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            5E06C7CFE6BF4EE392BB2719 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            0E92670BB7D54DEEAC83DBD6 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+6BF1E83C868F42B282E305B1 /* /Users/Xiao/workspace/Azurender/src/application/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 37D45AE684EC4279B199FECB /* /Users/Xiao/workspace/Azurender/src/application/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+AF43C300808548B3BCF2B07B /* /Users/Xiao/workspace/Azurender/src/application/application.cpp */ = {isa = PBXBuildFile; fileRef = 1299B1015E6A42EEAC69B228 /* /Users/Xiao/workspace/Azurender/src/application/application.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+799DCE19C214484A9C0AFC15 /* /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp */ = {isa = PBXBuildFile; fileRef = F32C2055B3EA4638BE040510 /* /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C7C39D9672944EB59ABDDBDE /* /Users/Xiao/workspace/Azurender/src/application/imageio.cpp */ = {isa = PBXBuildFile; fileRef = D08AE1DD2A5245D4AFD59B1D /* /Users/Xiao/workspace/Azurender/src/application/imageio.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9E59F7700A9E4F829085CF6B /* /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp */ = {isa = PBXBuildFile; fileRef = C81F64DAF4E34D2B8F8AEA79 /* /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+32273102C6144BE1BD914F19 /* /Users/Xiao/workspace/Azurender/src/math/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 44429446AF274C9584698E61 /* /Users/Xiao/workspace/Azurender/src/math/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+719317850B7441CABAE4C9C3 /* /Users/Xiao/workspace/Azurender/src/math/camera.cpp */ = {isa = PBXBuildFile; fileRef = 74FE525D99AB402D87D288A5 /* /Users/Xiao/workspace/Azurender/src/math/camera.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F4B7BB410A354DDBB3C3B6B4 /* /Users/Xiao/workspace/Azurender/src/math/color.cpp */ = {isa = PBXBuildFile; fileRef = FA62A1875B0847E2B9FD296B /* /Users/Xiao/workspace/Azurender/src/math/color.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1A100059C4A94837A341AAEE /* /Users/Xiao/workspace/Azurender/src/math/math.cpp */ = {isa = PBXBuildFile; fileRef = 84AD9CE8C4724AB1980CFC9C /* /Users/Xiao/workspace/Azurender/src/math/math.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C772E9463A284879BD095B2D /* /Users/Xiao/workspace/Azurender/src/math/matrix.cpp */ = {isa = PBXBuildFile; fileRef = CEDDC61436A042218C4C8E38 /* /Users/Xiao/workspace/Azurender/src/math/matrix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2818FC3BBAFC4D069B17D2F0 /* /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = 0BE5239E3BA848E9BF575B8C /* /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1669CFFEADB947F981F56E26 /* /Users/Xiao/workspace/Azurender/src/math/vector.cpp */ = {isa = PBXBuildFile; fileRef = EDD9CA69F85847C780C13AF1 /* /Users/Xiao/workspace/Azurender/src/math/vector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9E7F8A146C534486BE7D3C17 /* /Users/Xiao/workspace/Azurender/src/raytracer/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3DB0F27D28484C4D986A07C2 /* /Users/Xiao/workspace/Azurender/src/raytracer/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+6623A66866004EBFB604D3E4 /* /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp */ = {isa = PBXBuildFile; fileRef = CC79633B1E4D4B9BBC77F108 /* /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+EF7AE4A12C1B41519ECF4D87 /* /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp */ = {isa = PBXBuildFile; fileRef = 8035319BCFBC4522A5A41BC8 /* /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+27EEEAA9BD3D42BBB0E38DAB /* /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp */ = {isa = PBXBuildFile; fileRef = BD75459BACF84A1C8F36CCC3 /* /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D2AEF52193B144F58C4CF7B3 /* /Users/Xiao/workspace/Azurender/src/scene/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8253CC69A7C0434588E8845A /* /Users/Xiao/workspace/Azurender/src/scene/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+72493B77DB464CA2934BBDDE /* /Users/Xiao/workspace/Azurender/src/scene/material.cpp */ = {isa = PBXBuildFile; fileRef = 07AE654280774BDEAC9FA5A0 /* /Users/Xiao/workspace/Azurender/src/scene/material.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5C3C35CAA7E346CFB04CA98F /* /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp */ = {isa = PBXBuildFile; fileRef = CE057566EB7545EC9645D0DE /* /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+20E02DD34A76414A8004BBB7 /* /Users/Xiao/workspace/Azurender/src/scene/model.cpp */ = {isa = PBXBuildFile; fileRef = 164C309F183F4819A33462BC /* /Users/Xiao/workspace/Azurender/src/scene/model.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+454D7063D3394E239D67C57D /* /Users/Xiao/workspace/Azurender/src/scene/ray.cpp */ = {isa = PBXBuildFile; fileRef = B29099F4D5D74957A86E97AD /* /Users/Xiao/workspace/Azurender/src/scene/ray.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+070F2A31CCB945929F26A132 /* /Users/Xiao/workspace/Azurender/src/scene/scene.cpp */ = {isa = PBXBuildFile; fileRef = 855B53E017D5416B883536B7 /* /Users/Xiao/workspace/Azurender/src/scene/scene.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3BB9D2F51F00483F9809F74B /* /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 6D1B0A8343724EE28EE9CFF0 /* /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C97EE7455CE242EFA73A7D1F /* /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp */ = {isa = PBXBuildFile; fileRef = A20939C891F14C74A36DE329 /* /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+38DFB9598A844B05B8537C8B /* /Users/Xiao/workspace/Azurender/src/tinyxml/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2E6FA89BE1794A2EB6968C4D /* /Users/Xiao/workspace/Azurender/src/tinyxml/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+789F8BED63784F73A1A19D1B /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxml.cpp */ = {isa = PBXBuildFile; fileRef = A4D7A5B52C284893B8DA2886 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxml.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E2D07D1A6DFA4C1A8A17FBDA /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlerror.cpp */ = {isa = PBXBuildFile; fileRef = 04BDC120DD614D0897913C70 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlerror.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BEEAE86809AA4E76BF766BF3 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlparser.cpp */ = {isa = PBXBuildFile; fileRef = D8935C7124D64CABB0B37A84 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlparser.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9A4418029642481CB7587451 /* /Users/Xiao/workspace/Azurender/src/SDLmain/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EA29C02541CE4CBB850CA922 /* /Users/Xiao/workspace/Azurender/src/SDLmain/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+6896A77477664410B5F17A62 /* /Users/Xiao/workspace/Azurender/src/SDLmain/SDLmain.m */ = {isa = PBXBuildFile; fileRef = 481AC96AC9CC41C89AFA5324 /* /Users/Xiao/workspace/Azurender/src/SDLmain/SDLmain.m */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              E8AC97630D9E4C719D298507 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              026EB0ABFB014472B962F5CD /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              63F223E79F4241E38D1DFE3D /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              911E58604FB94EC1932D5312 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              76236F0E8F7C4B8BBB77B20B /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              ED773A9D7CBD4E65A78227DA /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              9264EDCD7837453482E89281 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 2C7A578116DC45589731C0DB;
+                     remoteInfo = tinyxml;
+              };
+              9F50758364CC440195A2C842 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1FDD9933EDAE49C39E01355B;
+                     remoteInfo = SDLmain;
+              };
+              37EDBB06784046C48E3D9C99 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 20E48CDE9EB740258ACB199F;
+                     remoteInfo = scene;
+              };
+              A65294FE598747F590653685 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 813091F553C24CF584D70A05;
+                     remoteInfo = math;
+              };
+              3AA89344D27D4462AF46AE25 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F9C3B717C38147748F27019B;
+                     remoteInfo = application;
+              };
+              03612452DD9F40049405417B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 805D547E356D415CA9E349ED;
+                     remoteInfo = raytracer;
+              };
+              BC773919B6474023962BD6DC /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = A9BE75410A9747A784F7D3B4;
+                     remoteInfo = ALL_BUILD;
+              };
+              62FA1E6CA437415BB3593BE8 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              54A234A092C342A89E805591 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              5DCA3BB2C32A4A76A1645D99 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              854BC14A4ACF486085FEC43D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 2C7A578116DC45589731C0DB;
+                     remoteInfo = tinyxml;
+              };
+              3B097A933EAE4D46B937E3BA /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1FDD9933EDAE49C39E01355B;
+                     remoteInfo = SDLmain;
+              };
+              DDFC752832724D24AF408F30 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 20E48CDE9EB740258ACB199F;
+                     remoteInfo = scene;
+              };
+              F5B991F7C11A4B53A841C978 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 813091F553C24CF584D70A05;
+                     remoteInfo = math;
+              };
+              B8F8E2D1D66649FB9C7AA874 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F9C3B717C38147748F27019B;
+                     remoteInfo = application;
+              };
+              0A369D372ADC478BAFBE788F /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              1435B3E4333A4EDE8F832F7A /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              86C4D13FCDE0468BA0531D65 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0C19DFBF8354020AF9A67F6 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 48770DC4AE814B519F2FE24F;
+                     remoteInfo = ZERO_CHECK;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+9210FB4C22604BCD8B2E1B4C /* /Users/Xiao/workspace/Azurender/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+37D45AE684EC4279B199FECB /* /Users/Xiao/workspace/Azurender/src/application/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "application/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+1299B1015E6A42EEAC69B228 /* /Users/Xiao/workspace/Azurender/src/application/application.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "application.cpp"; path = "application/application.cpp"; sourceTree = SOURCE_ROOT; };
+F32C2055B3EA4638BE040510 /* /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camera_roam.cpp"; path = "application/camera_roam.cpp"; sourceTree = SOURCE_ROOT; };
+D08AE1DD2A5245D4AFD59B1D /* /Users/Xiao/workspace/Azurender/src/application/imageio.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "imageio.cpp"; path = "application/imageio.cpp"; sourceTree = SOURCE_ROOT; };
+C81F64DAF4E34D2B8F8AEA79 /* /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "scene_loader.cpp"; path = "application/scene_loader.cpp"; sourceTree = SOURCE_ROOT; };
+CDC640C0E7164EF3A3916E1D /* application */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libapplication.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+44429446AF274C9584698E61 /* /Users/Xiao/workspace/Azurender/src/math/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "math/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+74FE525D99AB402D87D288A5 /* /Users/Xiao/workspace/Azurender/src/math/camera.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camera.cpp"; path = "math/camera.cpp"; sourceTree = SOURCE_ROOT; };
+FA62A1875B0847E2B9FD296B /* /Users/Xiao/workspace/Azurender/src/math/color.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "color.cpp"; path = "math/color.cpp"; sourceTree = SOURCE_ROOT; };
+84AD9CE8C4724AB1980CFC9C /* /Users/Xiao/workspace/Azurender/src/math/math.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "math.cpp"; path = "math/math.cpp"; sourceTree = SOURCE_ROOT; };
+CEDDC61436A042218C4C8E38 /* /Users/Xiao/workspace/Azurender/src/math/matrix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "matrix.cpp"; path = "math/matrix.cpp"; sourceTree = SOURCE_ROOT; };
+0BE5239E3BA848E9BF575B8C /* /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "quaternion.cpp"; path = "math/quaternion.cpp"; sourceTree = SOURCE_ROOT; };
+EDD9CA69F85847C780C13AF1 /* /Users/Xiao/workspace/Azurender/src/math/vector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "vector.cpp"; path = "math/vector.cpp"; sourceTree = SOURCE_ROOT; };
+9243E1EC713B4A1680C692BC /* math */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libmath.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+3DB0F27D28484C4D986A07C2 /* /Users/Xiao/workspace/Azurender/src/raytracer/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "raytracer/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+CC79633B1E4D4B9BBC77F108 /* /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Photon.cpp"; path = "raytracer/Photon.cpp"; sourceTree = SOURCE_ROOT; };
+8035319BCFBC4522A5A41BC8 /* /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "main.cpp"; path = "raytracer/main.cpp"; sourceTree = SOURCE_ROOT; };
+BD75459BACF84A1C8F36CCC3 /* /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "raytracer.cpp"; path = "raytracer/raytracer.cpp"; sourceTree = SOURCE_ROOT; };
+9AC8E8E08B4146669DC874B3 /* raytracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = raytracer; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+8253CC69A7C0434588E8845A /* /Users/Xiao/workspace/Azurender/src/scene/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "scene/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+07AE654280774BDEAC9FA5A0 /* /Users/Xiao/workspace/Azurender/src/scene/material.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "material.cpp"; path = "scene/material.cpp"; sourceTree = SOURCE_ROOT; };
+CE057566EB7545EC9645D0DE /* /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "mesh.cpp"; path = "scene/mesh.cpp"; sourceTree = SOURCE_ROOT; };
+164C309F183F4819A33462BC /* /Users/Xiao/workspace/Azurender/src/scene/model.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "model.cpp"; path = "scene/model.cpp"; sourceTree = SOURCE_ROOT; };
+B29099F4D5D74957A86E97AD /* /Users/Xiao/workspace/Azurender/src/scene/ray.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ray.cpp"; path = "scene/ray.cpp"; sourceTree = SOURCE_ROOT; };
+855B53E017D5416B883536B7 /* /Users/Xiao/workspace/Azurender/src/scene/scene.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "scene.cpp"; path = "scene/scene.cpp"; sourceTree = SOURCE_ROOT; };
+6D1B0A8343724EE28EE9CFF0 /* /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "sphere.cpp"; path = "scene/sphere.cpp"; sourceTree = SOURCE_ROOT; };
+A20939C891F14C74A36DE329 /* /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "triangle.cpp"; path = "scene/triangle.cpp"; sourceTree = SOURCE_ROOT; };
+8F9656A3931F4741BB3E1BAF /* scene */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libscene.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+2E6FA89BE1794A2EB6968C4D /* /Users/Xiao/workspace/Azurender/src/tinyxml/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "tinyxml/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+A4D7A5B52C284893B8DA2886 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxml.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tinyxml.cpp"; path = "tinyxml/tinyxml.cpp"; sourceTree = SOURCE_ROOT; };
+04BDC120DD614D0897913C70 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlerror.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tinyxmlerror.cpp"; path = "tinyxml/tinyxmlerror.cpp"; sourceTree = SOURCE_ROOT; };
+D8935C7124D64CABB0B37A84 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlparser.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tinyxmlparser.cpp"; path = "tinyxml/tinyxmlparser.cpp"; sourceTree = SOURCE_ROOT; };
+9E52001D045D4558BEF0FD4D /* tinyxml */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libtinyxml.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+EA29C02541CE4CBB850CA922 /* /Users/Xiao/workspace/Azurender/src/SDLmain/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "SDLmain/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+481AC96AC9CC41C89AFA5324 /* /Users/Xiao/workspace/Azurender/src/SDLmain/SDLmain.m */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.objc"; fileEncoding = 4; name = "SDLmain.m"; path = "SDLmain/SDLmain.m"; sourceTree = SOURCE_ROOT; };
+5A5909F0D8A5422ABD6BE95E /* SDLmain */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libSDLmain.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              AEA3178FF8F24F9E889E7A2B  = {
+                     isa = PBXGroup;
+                     children = (
+                            FF03D725DB4943F9ABEA49D5 /* Sources */,
+                            B70C51C225C14273A001371C /* Resources */,
+                            0D5D528C4A764D43BB35B426 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              FF03D725DB4943F9ABEA49D5 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            071F4AD3887D4B308EAF759F /* ALL_BUILD */,
+                            ADE5C4E31EB94711814AD9E3 /* ZERO_CHECK */,
+                            CE97A1C44E03421B89595C8B /* application */,
+                            487B1C97F51840F9A44A6962 /* math */,
+                            CF596D96CFB141AE96EA3A89 /* raytracer */,
+                            6C2FC1F0FBCA4ACB9E2E5709 /* scene */,
+                            85AD3A4903024FC399AFE391 /* tinyxml */,
+                            2D77A9AA21644EFB83D87C65 /* SDLmain */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              B70C51C225C14273A001371C /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              071F4AD3887D4B308EAF759F /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E91C4B3C0E0E43D290240BD3 /* CMake Rules */,
+                            9210FB4C22604BCD8B2E1B4C /* /Users/Xiao/workspace/Azurender/src/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              E91C4B3C0E0E43D290240BD3 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              ADE5C4E31EB94711814AD9E3 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2533607F1FE8409A86CBAD34 /* CMake Rules */,
+                            9210FB4C22604BCD8B2E1B4C /* /Users/Xiao/workspace/Azurender/src/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              2533607F1FE8409A86CBAD34 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              CE97A1C44E03421B89595C8B /* application */ = {
+                     isa = PBXGroup;
+                     children = (
+                            62A64D5C37EB4EF68D815DC9 /* Source Files */,
+                            37D45AE684EC4279B199FECB /* /Users/Xiao/workspace/Azurender/src/application/CMakeLists.txt */,
+                     );
+                     name = application;
+                     sourceTree = "<group>";
+              };
+              62A64D5C37EB4EF68D815DC9 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1299B1015E6A42EEAC69B228 /* /Users/Xiao/workspace/Azurender/src/application/application.cpp */,
+                            F32C2055B3EA4638BE040510 /* /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp */,
+                            D08AE1DD2A5245D4AFD59B1D /* /Users/Xiao/workspace/Azurender/src/application/imageio.cpp */,
+                            C81F64DAF4E34D2B8F8AEA79 /* /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              487B1C97F51840F9A44A6962 /* math */ = {
+                     isa = PBXGroup;
+                     children = (
+                            745459137A5F4CC59EF7F588 /* Source Files */,
+                            44429446AF274C9584698E61 /* /Users/Xiao/workspace/Azurender/src/math/CMakeLists.txt */,
+                     );
+                     name = math;
+                     sourceTree = "<group>";
+              };
+              745459137A5F4CC59EF7F588 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            74FE525D99AB402D87D288A5 /* /Users/Xiao/workspace/Azurender/src/math/camera.cpp */,
+                            FA62A1875B0847E2B9FD296B /* /Users/Xiao/workspace/Azurender/src/math/color.cpp */,
+                            84AD9CE8C4724AB1980CFC9C /* /Users/Xiao/workspace/Azurender/src/math/math.cpp */,
+                            CEDDC61436A042218C4C8E38 /* /Users/Xiao/workspace/Azurender/src/math/matrix.cpp */,
+                            0BE5239E3BA848E9BF575B8C /* /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp */,
+                            EDD9CA69F85847C780C13AF1 /* /Users/Xiao/workspace/Azurender/src/math/vector.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              CF596D96CFB141AE96EA3A89 /* raytracer */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4B92342923A64BF299175F78 /* Source Files */,
+                            3DB0F27D28484C4D986A07C2 /* /Users/Xiao/workspace/Azurender/src/raytracer/CMakeLists.txt */,
+                     );
+                     name = raytracer;
+                     sourceTree = "<group>";
+              };
+              4B92342923A64BF299175F78 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CC79633B1E4D4B9BBC77F108 /* /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp */,
+                            8035319BCFBC4522A5A41BC8 /* /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp */,
+                            BD75459BACF84A1C8F36CCC3 /* /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              6C2FC1F0FBCA4ACB9E2E5709 /* scene */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D7516238A6024672AA289F4B /* Source Files */,
+                            8253CC69A7C0434588E8845A /* /Users/Xiao/workspace/Azurender/src/scene/CMakeLists.txt */,
+                     );
+                     name = scene;
+                     sourceTree = "<group>";
+              };
+              D7516238A6024672AA289F4B /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            07AE654280774BDEAC9FA5A0 /* /Users/Xiao/workspace/Azurender/src/scene/material.cpp */,
+                            CE057566EB7545EC9645D0DE /* /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp */,
+                            164C309F183F4819A33462BC /* /Users/Xiao/workspace/Azurender/src/scene/model.cpp */,
+                            B29099F4D5D74957A86E97AD /* /Users/Xiao/workspace/Azurender/src/scene/ray.cpp */,
+                            855B53E017D5416B883536B7 /* /Users/Xiao/workspace/Azurender/src/scene/scene.cpp */,
+                            6D1B0A8343724EE28EE9CFF0 /* /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp */,
+                            A20939C891F14C74A36DE329 /* /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              85AD3A4903024FC399AFE391 /* tinyxml */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C5705A71CA514841B88B8DA2 /* Source Files */,
+                            2E6FA89BE1794A2EB6968C4D /* /Users/Xiao/workspace/Azurender/src/tinyxml/CMakeLists.txt */,
+                     );
+                     name = tinyxml;
+                     sourceTree = "<group>";
+              };
+              C5705A71CA514841B88B8DA2 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A4D7A5B52C284893B8DA2886 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxml.cpp */,
+                            04BDC120DD614D0897913C70 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlerror.cpp */,
+                            D8935C7124D64CABB0B37A84 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlparser.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              2D77A9AA21644EFB83D87C65 /* SDLmain */ = {
+                     isa = PBXGroup;
+                     children = (
+                            80B8EF2316ED4E4B87272687 /* Source Files */,
+                            EA29C02541CE4CBB850CA922 /* /Users/Xiao/workspace/Azurender/src/SDLmain/CMakeLists.txt */,
+                     );
+                     name = SDLmain;
+                     sourceTree = "<group>";
+              };
+              80B8EF2316ED4E4B87272687 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            481AC96AC9CC41C89AFA5324 /* /Users/Xiao/workspace/Azurender/src/SDLmain/SDLmain.m */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              0D5D528C4A764D43BB35B426 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CDC640C0E7164EF3A3916E1D /* application */,
+                            9243E1EC713B4A1680C692BC /* math */,
+                            9AC8E8E08B4146669DC874B3 /* raytracer */,
+                            8F9656A3931F4741BB3E1BAF /* scene */,
+                            9E52001D045D4558BEF0FD4D /* tinyxml */,
+                            5A5909F0D8A5422ABD6BE95E /* SDLmain */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              F9C3B717C38147748F27019B /* application */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 7CB579A582154065BDA3B8CE /* Build configuration list for PBXNativeTarget "application" */;
+                     buildPhases = (
+                            BEF715A1FB7F4EBEABE75271 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            03DD035EBA824B1198243910 /* PBXTargetDependency */,
+                     );
+                     name = application;
+                     productName = application;
+                     productReference = CDC640C0E7164EF3A3916E1D /* application */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              813091F553C24CF584D70A05 /* math */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 7F49BA44FD2C4C0DB484E97A /* Build configuration list for PBXNativeTarget "math" */;
+                     buildPhases = (
+                            198E5FED7AF34739B3E87037 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            E940D8F84AB24CBE8AE9E13E /* PBXTargetDependency */,
+                     );
+                     name = math;
+                     productName = math;
+                     productReference = 9243E1EC713B4A1680C692BC /* math */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              805D547E356D415CA9E349ED /* raytracer */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 42B02C98188044E28926BBC1 /* Build configuration list for PBXNativeTarget "raytracer" */;
+                     buildPhases = (
+                            1C5A1D4ACB6C403CAF7E0C28 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            918DD38902CB4C309712FEB2 /* PBXTargetDependency */,
+                            B67C290CEAA547128A294F6B /* PBXTargetDependency */,
+                            91E580D78AF84EC8AF993346 /* PBXTargetDependency */,
+                            ED6C824E61454659AB8B5A61 /* PBXTargetDependency */,
+                            FBF4F58043F6449A8D311CE7 /* PBXTargetDependency */,
+                            2D203F8EE0AC45BEA8B5D126 /* PBXTargetDependency */,
+                     );
+                     name = raytracer;
+                     productName = raytracer;
+                     productReference = 9AC8E8E08B4146669DC874B3 /* raytracer */;
+                     productType = "com.apple.product-type.tool";
+              };
+              20E48CDE9EB740258ACB199F /* scene */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 1613CD1036A943358BD32F7E /* Build configuration list for PBXNativeTarget "scene" */;
+                     buildPhases = (
+                            D6913350A46E444899BCE25B /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            A718C69E46134E2FB65C9277 /* PBXTargetDependency */,
+                     );
+                     name = scene;
+                     productName = scene;
+                     productReference = 8F9656A3931F4741BB3E1BAF /* scene */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              2C7A578116DC45589731C0DB /* tinyxml */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 29117313648A4298BB9D7964 /* Build configuration list for PBXNativeTarget "tinyxml" */;
+                     buildPhases = (
+                            632049FAE3E045FFA6EE170E /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            636CE4ED0108482A97F75EF1 /* PBXTargetDependency */,
+                     );
+                     name = tinyxml;
+                     productName = tinyxml;
+                     productReference = 9E52001D045D4558BEF0FD4D /* tinyxml */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              1FDD9933EDAE49C39E01355B /* SDLmain */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 59B5A9BB38AF40AF9FA6E169 /* Build configuration list for PBXNativeTarget "SDLmain" */;
+                     buildPhases = (
+                            7486EAB8DF994B39B03CC256 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            81D7D624735649128DC379DF /* PBXTargetDependency */,
+                     );
+                     name = SDLmain;
+                     productName = SDLmain;
+                     productReference = 5A5909F0D8A5422ABD6BE95E /* SDLmain */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              F0C19DFBF8354020AF9A67F6 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 2374305EEAF842B6BD8252BB /* Build configuration list for PBXProject  "Azurender" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            026EB0ABFB014472B962F5CD /* Debug */,
+                            63F223E79F4241E38D1DFE3D /* Release */,
+                            911E58604FB94EC1932D5312 /* MinSizeRel */,
+                            76236F0E8F7C4B8BBB77B20B /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = AEA3178FF8F24F9E889E7A2B;
+                     projectDirPath = /Users/Xiao/workspace/Azurender/src;
+                     projectRoot = "";
+                     targets = (
+                            A9BE75410A9747A784F7D3B4 /* ALL_BUILD */,
+                            48770DC4AE814B519F2FE24F /* ZERO_CHECK */,
+                            9D6AFB4A4169437C988F66E9 /* install */,
+                            F9C3B717C38147748F27019B /* application */,
+                            813091F553C24CF584D70A05 /* math */,
+                            805D547E356D415CA9E349ED /* raytracer */,
+                            20E48CDE9EB740258ACB199F /* scene */,
+                            2C7A578116DC45589731C0DB /* tinyxml */,
+                            1FDD9933EDAE49C39E01355B /* SDLmain */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              527709D87D7C4207A9BCA44B /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              0B14B57E4D8C4A3C8BA981F5 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/Xiao/workspace/Azurender/build -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              5DF2FF14C80B46D1A0059346 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              35A6A56A345A4322B937B321 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/Xiao/workspace/Azurender/build -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              33426E53842141BDA2F0C781 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              5E06C7CFE6BF4EE392BB2719 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/Xiao/workspace/Azurender/build -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              BEF715A1FB7F4EBEABE75271 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            AF43C300808548B3BCF2B07B /* /Users/Xiao/workspace/Azurender/src/application/application.cpp */,
+                            799DCE19C214484A9C0AFC15 /* /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp */,
+                            C7C39D9672944EB59ABDDBDE /* /Users/Xiao/workspace/Azurender/src/application/imageio.cpp */,
+                            9E59F7700A9E4F829085CF6B /* /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              198E5FED7AF34739B3E87037 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            719317850B7441CABAE4C9C3 /* /Users/Xiao/workspace/Azurender/src/math/camera.cpp */,
+                            F4B7BB410A354DDBB3C3B6B4 /* /Users/Xiao/workspace/Azurender/src/math/color.cpp */,
+                            1A100059C4A94837A341AAEE /* /Users/Xiao/workspace/Azurender/src/math/math.cpp */,
+                            C772E9463A284879BD095B2D /* /Users/Xiao/workspace/Azurender/src/math/matrix.cpp */,
+                            2818FC3BBAFC4D069B17D2F0 /* /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp */,
+                            1669CFFEADB947F981F56E26 /* /Users/Xiao/workspace/Azurender/src/math/vector.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              1C5A1D4ACB6C403CAF7E0C28 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            6623A66866004EBFB604D3E4 /* /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp */,
+                            EF7AE4A12C1B41519ECF4D87 /* /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp */,
+                            27EEEAA9BD3D42BBB0E38DAB /* /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              D6913350A46E444899BCE25B /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            72493B77DB464CA2934BBDDE /* /Users/Xiao/workspace/Azurender/src/scene/material.cpp */,
+                            5C3C35CAA7E346CFB04CA98F /* /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp */,
+                            20E02DD34A76414A8004BBB7 /* /Users/Xiao/workspace/Azurender/src/scene/model.cpp */,
+                            454D7063D3394E239D67C57D /* /Users/Xiao/workspace/Azurender/src/scene/ray.cpp */,
+                            070F2A31CCB945929F26A132 /* /Users/Xiao/workspace/Azurender/src/scene/scene.cpp */,
+                            3BB9D2F51F00483F9809F74B /* /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp */,
+                            C97EE7455CE242EFA73A7D1F /* /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              632049FAE3E045FFA6EE170E /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            789F8BED63784F73A1A19D1B /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxml.cpp */,
+                            E2D07D1A6DFA4C1A8A17FBDA /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlerror.cpp */,
+                            BEEAE86809AA4E76BF766BF3 /* /Users/Xiao/workspace/Azurender/src/tinyxml/tinyxmlparser.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              7486EAB8DF994B39B03CC256 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            6896A77477664410B5F17A62 /* /Users/Xiao/workspace/Azurender/src/SDLmain/SDLmain.m */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              CEF69CD8B4414CD38999768D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = ED773A9D7CBD4E65A78227DA /* PBXContainerItemProxy */;
+              };
+              3DAEDB04D3F84183BA5F316D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 2C7A578116DC45589731C0DB /* tinyxml */;
+                     targetProxy = 9264EDCD7837453482E89281 /* PBXContainerItemProxy */;
+              };
+              9E4BD480C75548E8A6594CFA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1FDD9933EDAE49C39E01355B /* SDLmain */;
+                     targetProxy = 9F50758364CC440195A2C842 /* PBXContainerItemProxy */;
+              };
+              0030A5E7B1CC4249AF77E5A9 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 20E48CDE9EB740258ACB199F /* scene */;
+                     targetProxy = 37EDBB06784046C48E3D9C99 /* PBXContainerItemProxy */;
+              };
+              FD5257E206A84E9DA1061CDA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 813091F553C24CF584D70A05 /* math */;
+                     targetProxy = A65294FE598747F590653685 /* PBXContainerItemProxy */;
+              };
+              E3812BF71A934FEC9E99B800 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F9C3B717C38147748F27019B /* application */;
+                     targetProxy = 3AA89344D27D4462AF46AE25 /* PBXContainerItemProxy */;
+              };
+              62779FD303CA400B984BE1A5 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 805D547E356D415CA9E349ED /* raytracer */;
+                     targetProxy = 03612452DD9F40049405417B /* PBXContainerItemProxy */;
+              };
+              0E92670BB7D54DEEAC83DBD6 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = A9BE75410A9747A784F7D3B4 /* ALL_BUILD */;
+                     targetProxy = BC773919B6474023962BD6DC /* PBXContainerItemProxy */;
+              };
+              03DD035EBA824B1198243910 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 62FA1E6CA437415BB3593BE8 /* PBXContainerItemProxy */;
+              };
+              E940D8F84AB24CBE8AE9E13E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 54A234A092C342A89E805591 /* PBXContainerItemProxy */;
+              };
+              918DD38902CB4C309712FEB2 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 5DCA3BB2C32A4A76A1645D99 /* PBXContainerItemProxy */;
+              };
+              B67C290CEAA547128A294F6B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 2C7A578116DC45589731C0DB /* tinyxml */;
+                     targetProxy = 854BC14A4ACF486085FEC43D /* PBXContainerItemProxy */;
+              };
+              91E580D78AF84EC8AF993346 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1FDD9933EDAE49C39E01355B /* SDLmain */;
+                     targetProxy = 3B097A933EAE4D46B937E3BA /* PBXContainerItemProxy */;
+              };
+              ED6C824E61454659AB8B5A61 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 20E48CDE9EB740258ACB199F /* scene */;
+                     targetProxy = DDFC752832724D24AF408F30 /* PBXContainerItemProxy */;
+              };
+              FBF4F58043F6449A8D311CE7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 813091F553C24CF584D70A05 /* math */;
+                     targetProxy = F5B991F7C11A4B53A841C978 /* PBXContainerItemProxy */;
+              };
+              2D203F8EE0AC45BEA8B5D126 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F9C3B717C38147748F27019B /* application */;
+                     targetProxy = B8F8E2D1D66649FB9C7AA874 /* PBXContainerItemProxy */;
+              };
+              A718C69E46134E2FB65C9277 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 0A369D372ADC478BAFBE788F /* PBXContainerItemProxy */;
+              };
+              636CE4ED0108482A97F75EF1 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 1435B3E4333A4EDE8F832F7A /* PBXContainerItemProxy */;
+              };
+              81D7D624735649128DC379DF /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 48770DC4AE814B519F2FE24F /* ZERO_CHECK */;
+                     targetProxy = 86C4D13FCDE0468BA0531D65 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              9E5B31D194D24047A2A69F15 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/build;
+                     };
+                     name = Debug;
+              };
+              FBD1BB7483B140B59C7A55E1 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/build;
+                     };
+                     name = Release;
+              };
+              B013417A67C64C0A8CF15399 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/build;
+                     };
+                     name = MinSizeRel;
+              };
+              AA1B7B8BB5C34D308F0B90BB /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              F584EA4EC20A47AFABC4EA1A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2807180A74AC40EC999C48FB /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              DFFF848BBC114B09991B4C8B /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              FABD8B301F754993BD22DEB2 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              AFD9F0387B2A4569BE30D538 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              098805821AB74755A5369A43 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              DB54AD53954A4CAF9FB2E387 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              7C8A99D5F5A04548ACA18BF2 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              DCD76A211DE0414285C31993 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              DBA9477AA65440109598D2B3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              21302293F35D435489440530 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              681BB81329FD4D3D8A5BF60F /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              360DB3EA941B46EEBEA9F898 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = application;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/application;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B731F39118FE490781BE837A /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = application;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/application;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A1D48F75DEA549C3A81AC61E /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = application;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/application;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              D6CEC386B1BB4D2CBD767578 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP        -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = application;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/application;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              4529CA89498A432B95FF2CA1 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = math;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/math;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B9701E38369040919D2B543B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = math;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/math;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              F0C4F8E9BB444FE2A4A3E71F /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = math;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/math;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              B41314E19E1745C68AEA3E85 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP        -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = math;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/math;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              DC292EB0507047B2BD2AA06E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     ";
+                            OTHER_LDFLAGS = "   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/Xiao/workspace/Azurender/build/application/Debug/libapplication.a /Users/Xiao/workspace/Azurender/build/math/Debug/libmath.a /Users/Xiao/workspace/Azurender/build/scene/Debug/libscene.a /Users/Xiao/workspace/Azurender/build/tinyxml/Debug/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib /Users/Xiao/workspace/Azurender/build/SDLmain/Debug/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT /usr/local/lib/libGLEW.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = raytracer;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/raytracer;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              4C600409207944788F5FD046 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = "   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/Xiao/workspace/Azurender/build/application/Release/libapplication.a /Users/Xiao/workspace/Azurender/build/math/Release/libmath.a /Users/Xiao/workspace/Azurender/build/scene/Release/libscene.a /Users/Xiao/workspace/Azurender/build/tinyxml/Release/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib /Users/Xiao/workspace/Azurender/build/SDLmain/Release/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT /usr/local/lib/libGLEW.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = raytracer;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/raytracer;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              4CE38F4FE4F04D43836BD746 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = "   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/Xiao/workspace/Azurender/build/application/MinSizeRel/libapplication.a /Users/Xiao/workspace/Azurender/build/math/MinSizeRel/libmath.a /Users/Xiao/workspace/Azurender/build/scene/MinSizeRel/libscene.a /Users/Xiao/workspace/Azurender/build/tinyxml/MinSizeRel/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib /Users/Xiao/workspace/Azurender/build/SDLmain/MinSizeRel/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT /usr/local/lib/libGLEW.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = raytracer;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/raytracer;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              981DB84E86574DB7B20F11F5 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = "";
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP        -DNDEBUG  ";
+                            OTHER_LDFLAGS = "   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/Xiao/workspace/Azurender/build/application/RelWithDebInfo/libapplication.a /Users/Xiao/workspace/Azurender/build/math/RelWithDebInfo/libmath.a /Users/Xiao/workspace/Azurender/build/scene/RelWithDebInfo/libscene.a /Users/Xiao/workspace/Azurender/build/tinyxml/RelWithDebInfo/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib /Users/Xiao/workspace/Azurender/build/SDLmain/RelWithDebInfo/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT /usr/local/lib/libGLEW.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = raytracer;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/raytracer;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              15DDDCF5E9B545BEAA4A602B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = scene;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/scene;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1EF2FC3E90F94D63B2C2023D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = scene;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/scene;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3C0AF06B6890482BAE3D04F0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = scene;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/scene;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              04C7FC53ADA345B3AB9D80DF /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP        -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = scene;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/scene;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              D0E060FD373E4D67B2F710E0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tinyxml;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/tinyxml;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              A82E86D3F34247C39C867BEB /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tinyxml;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/tinyxml;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E67057A06EAA48E480ABD962 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG   ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP     -DNDEBUG -g  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tinyxml;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/tinyxml;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              BAE36F04E6B54F53A0C5CDE8 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = " -Wall -std=c++0x -Wextra         -DOPENMP        -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tinyxml;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/tinyxml;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              0D0BA648153B41B3B99765E9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      ";
+                            OTHER_CPLUSPLUSFLAGS = "  -Wno-unused-parameter -Wno-objc-protocol-method-implementation     ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = SDLmain;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/SDLmain;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2FD83C70C6BC4FB48C68E8CA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "  -Wno-unused-parameter -Wno-objc-protocol-method-implementation     -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = SDLmain;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/SDLmain;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3F426CF7A3F2486A9C842726 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "      -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "  -Wno-unused-parameter -Wno-objc-protocol-method-implementation     -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = SDLmain;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/SDLmain;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              BA380CCC0C344D29BFB4D58B /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/Xiao/workspace/Azurender/src, /usr/local/include/SDL, /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "  -Wno-unused-parameter -Wno-objc-protocol-method-implementation        -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = SDLmain;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/Xiao/workspace/Azurender/build/SDLmain;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              2374305EEAF842B6BD8252BB /* Build configuration list for PBXProject  "Azurender" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9E5B31D194D24047A2A69F15 /* Debug */,
+                            FBD1BB7483B140B59C7A55E1 /* Release */,
+                            B013417A67C64C0A8CF15399 /* MinSizeRel */,
+                            AA1B7B8BB5C34D308F0B90BB /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2C1DE459492F46DF9C961A2C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F584EA4EC20A47AFABC4EA1A /* Debug */,
+                            2807180A74AC40EC999C48FB /* Release */,
+                            DFFF848BBC114B09991B4C8B /* MinSizeRel */,
+                            FABD8B301F754993BD22DEB2 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C6E4F755728C4552BC335A94 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AFD9F0387B2A4569BE30D538 /* Debug */,
+                            098805821AB74755A5369A43 /* Release */,
+                            DB54AD53954A4CAF9FB2E387 /* MinSizeRel */,
+                            7C8A99D5F5A04548ACA18BF2 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3A019D316FE846BF97A378AA /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DCD76A211DE0414285C31993 /* Debug */,
+                            DBA9477AA65440109598D2B3 /* Release */,
+                            21302293F35D435489440530 /* MinSizeRel */,
+                            681BB81329FD4D3D8A5BF60F /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7CB579A582154065BDA3B8CE /* Build configuration list for PBXNativeTarget "application" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            360DB3EA941B46EEBEA9F898 /* Debug */,
+                            B731F39118FE490781BE837A /* Release */,
+                            A1D48F75DEA549C3A81AC61E /* MinSizeRel */,
+                            D6CEC386B1BB4D2CBD767578 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7F49BA44FD2C4C0DB484E97A /* Build configuration list for PBXNativeTarget "math" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            4529CA89498A432B95FF2CA1 /* Debug */,
+                            B9701E38369040919D2B543B /* Release */,
+                            F0C4F8E9BB444FE2A4A3E71F /* MinSizeRel */,
+                            B41314E19E1745C68AEA3E85 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              42B02C98188044E28926BBC1 /* Build configuration list for PBXNativeTarget "raytracer" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DC292EB0507047B2BD2AA06E /* Debug */,
+                            4C600409207944788F5FD046 /* Release */,
+                            4CE38F4FE4F04D43836BD746 /* MinSizeRel */,
+                            981DB84E86574DB7B20F11F5 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1613CD1036A943358BD32F7E /* Build configuration list for PBXNativeTarget "scene" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            15DDDCF5E9B545BEAA4A602B /* Debug */,
+                            1EF2FC3E90F94D63B2C2023D /* Release */,
+                            3C0AF06B6890482BAE3D04F0 /* MinSizeRel */,
+                            04C7FC53ADA345B3AB9D80DF /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              29117313648A4298BB9D7964 /* Build configuration list for PBXNativeTarget "tinyxml" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D0E060FD373E4D67B2F710E0 /* Debug */,
+                            A82E86D3F34247C39C867BEB /* Release */,
+                            E67057A06EAA48E480ABD962 /* MinSizeRel */,
+                            BAE36F04E6B54F53A0C5CDE8 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              59B5A9BB38AF40AF9FA6E169 /* Build configuration list for PBXNativeTarget "SDLmain" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0D0BA648153B41B3B99765E9 /* Debug */,
+                            2FD83C70C6BC4FB48C68E8CA /* Release */,
+                            3F426CF7A3F2486A9C842726 /* MinSizeRel */,
+                            BA380CCC0C344D29BFB4D58B /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = F0C19DFBF8354020AF9A67F6;
+}

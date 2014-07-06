@@ -1,0 +1,131 @@
+Tmath
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/workspace/Azurender/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/workspace/Azurender/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/workspace/Azurender/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535D6761000000000000044C
+t1398630241
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535D676100000000000001DE
+t1398630241
+s478
+
+N/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/src/math/camera.cpp
+c000000005364903F000000000000057F
+t1399099455
+s1407
+
+N/Users/Xiao/workspace/Azurender/src/math/color.cpp
+c000000005376A1850000000000000431
+t1400283525
+s1073
+
+N/Users/Xiao/workspace/Azurender/src/math/math.cpp
+c0000000052BDFBE40000000000000087
+t1388182500
+s135
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/camera.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/color.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/math.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/matrix.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/math/vector.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies5b99c87acf68b941^73d8c97acf68b941^---0#1#1#--18"Check dependencies36"0C049210-C25B-4E40-9AB3-5102DE15D4F6-
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o /Users/Xiao/workspace/Azurender/src/math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299260.594469
+e426299261.367542
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o
+x/Users/Xiao/workspace/Azurender/src/math/camera.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/math/camera.cpp
+d/Users/Xiao/workspace/Azurender/src/math/camera.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/math/quaternion.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/Xiao/workspace/Azurender/src/math/camera.cpp193"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf244987ccf68b941^4fe85d7dcf68b941^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/Xiao/workspace/Azurender/src/math/camera.cpp0000000000000000^2212"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o math/camera.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/math/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.dia -c /Users/Xiao/workspace/Azurender/src/math/camera.cpp -o /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o36"7C225EE9-D9EC-464E-BAB9-8E338551E2A3-
+b60B0DF2C-4629-4FF1-9E3B-39E305BEADC5
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o /Users/Xiao/workspace/Azurender/src/math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299261.237141
+e426299262.060270
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o
+x/Users/Xiao/workspace/Azurender/src/math/color.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/math/color.cpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/Xiao/workspace/Azurender/src/math/color.cpp191"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera7c93c7dcf68b941^f86e0f7ecf68b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/Xiao/workspace/Azurender/src/math/color.cpp0000000000000000^2206"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o math/color.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/math/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.dia -c /Users/Xiao/workspace/Azurender/src/math/color.cpp -o /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o36"9575DB7C-E6B1-4122-B11A-A5527EE5CDC6-
+b60B0DF2C-4629-4FF1-9E3B-39E305BEADC5
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o /Users/Xiao/workspace/Azurender/src/math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299261.654280
+e426299261.960198
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o
+x/Users/Xiao/workspace/Azurender/src/math/math.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/math/math.cpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/Xiao/workspace/Azurender/src/math/math.cpp189"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler02baa77dcf68b941^13d3f57dcf68b941^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/Xiao/workspace/Azurender/src/math/math.cpp0000000000000000^2200"CompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o math/math.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/math/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/math/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.dia -c /Users/Xiao/workspace/Azurender/src/math/math.cpp -o /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o36"A487D51D-A162-44D8-B6C7-C5846A79E116-
+b60B0DF2C-4629-4FF1-9E3B-39E305BEADC5
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/matrix.o /Users/Xiao/workspace/Azurender/src/math/matrix.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/quaternion.o /Users/Xiao/workspace/Azurender/src/math/quaternion.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/vector.o /Users/Xiao/workspace/Azurender/src/math/vector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLibtool /Users/Xiao/workspace/Azurender/build/math/Debug/libmath.a normal x86_64
+r0
+

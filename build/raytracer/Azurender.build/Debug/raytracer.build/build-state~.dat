@@ -1,0 +1,118 @@
+Traytracer
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535D6761000000000000044C
+t1398630241
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535D676100000000000001DE
+t1398630241
+s478
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+c00000000531ABCBD000000000000005B
+t1394261181
+s91
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+c0000000053B8985B0000000000004E5F
+t1404606555
+s20063
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+c0000000053B891A6000000000001A4FE
+t1404604838
+s107774
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies467956e0cf68b941^deca56e0cf68b941^---0#1#1#--18"Check dependencies36"613C14FE-2737-443C-ACC8-4BF9C57D1981-
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299360.339649
+e426299360.995606
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.hpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp208"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera60957e0cf68b941^b1e0fee0cf68b941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp0000000000000000^2292"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o36"9148F7B0-7D28-421E-A0D7-5314B6A0A924-
+b67B66980-CFA1-4DC5-B147-B8C7F90C14D7
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299360.339942
+e426299361.576089
+r0
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:15:
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp:23:10: fatal error: 'p3/Photon.hpp' file not found
+o#include "p3/Photon.hpp"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp204"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilercd1f57e0cf68b941^aa7c93e1cf68b941^-247"In file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:15:/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp:23:10: fatal error: 'p3/Photon.hpp' file not found#include "p3/Photon.hpp"         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@61"file:///Users/Xiao/workspace/Azurender/src/raytracer/main.cpp0000000000000000^2280"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o36"A5BA3250-41E7-40B8-B29F-4B9D195BFD73-
+b67B66980-CFA1-4DC5-B147-B8C7F90C14D7
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299360.340246
+e426299361.475142
+r0
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:11:
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp:23:10: fatal error: 'p3/Photon.hpp' file not found
+o#include "p3/Photon.hpp"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp214"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7d5857e0cf68b941^77a179e1cf68b941^-252"In file included from /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:11:/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp:23:10: fatal error: 'p3/Photon.hpp' file not found#include "p3/Photon.hpp"         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@30"'p3/Photon.hpp' file not found-426299361#18446744073709551615#0#1(2@85"In file included from /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:11:-426299361#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^10#9#10#9#171#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp0000000000000000^22#9#22#9#472#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2310"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o36"BD27BBB5-2A77-45DF-803E-C45928727391-
+b67B66980-CFA1-4DC5-B147-B8C7F90C14D7
+
+CLd /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer normal x86_64
+r0
+

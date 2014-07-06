@@ -1,0 +1,29 @@
+TZERO_CHECK
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh
+
+N/Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh
+c0000000053B897FA00000000000000A5
+t1404606458
+s165
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese755797acf68b941^a8ff7c7acf68b941^---0#1#1#--18"Check dependencies36"731A8D78-C774-443D-9524-A290FD8FAD44-
+
+CPhaseScriptExecution CMake\ Rules /Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh
+s426299258.492180
+e426299258.781989
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh
+oecho ""
+o
+omake -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/Xiao/workspace/Azurender/build/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'145"PhaseScriptExecution CMake\ Rules /Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.shf8c47e7acf68b941^5532c87acf68b941^-177"echo ""make -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/Xiao/workspace/Azurender/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-426299258#0#8#-0#-----2@75"make -f /Users/Xiao/workspace/Azurender/build/CMakeScripts/ReRunCMake.make-426299258#9#75#-0#-----2@93"make[1]: `/Users/Xiao/workspace/Azurender/build/CMakeFiles/cmake.check_cache' is up to date.-426299258#84#93#-0#-----0#0#1#--316"PhaseScriptExecution CMake\ Rules /Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh    cd /Users/Xiao/workspace/Azurender/src    /bin/sh -c /Users/Xiao/workspace/Azurender/build/Azurender.build/Debug/ZERO_CHECK.build/Script-35A6A56A345A4322B937B321.sh36"A5C76C8E-8725-4120-A43D-8FA17E18AA59-
+b3F9A16C7-E9FD-468F-9CFC-B73260F80508
+

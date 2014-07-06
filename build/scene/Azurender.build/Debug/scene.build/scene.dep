@@ -1,0 +1,8 @@
+e945987657c8df2048b075a3c4698631 a895cd3e3352630722534c1af1e04f71 ffffffffffffffffffffffffffffffff 1424464 /Users/Xiao/workspace/Azurender/build/scene/Debug/libscene.a
+000000005364907c0000000000001721 1dc8ac81ebf6bf42528dda7c421a5eea ffffffffffffffffffffffffffffffff 74920 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/triangle.o
+00000000536490790000000000001e64 c2ebd86b637b6b9d7a53ab6fae338294 ffffffffffffffffffffffffffffffff 68724 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/sphere.o
+00000000536490760000000000001771 96ebe0ea5e062346f9af8171b5c749e0 ffffffffffffffffffffffffffffffff 281276 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/scene.o
+0000000053655d3d0000000000000740 3b4a682820c77b1384430f24cfb8b6a8 ffffffffffffffffffffffffffffffff 22528 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/ray.o
+00000000536490720000000000003c29 2b8a4d20a1efea121f528d3f3cf0428a ffffffffffffffffffffffffffffffff 264732 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o
+ffffffffffffffffffffffffffffffff 603ef71620c038b624c76e0a31972981 ffffffffffffffffffffffffffffffff 606272 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o
+0000000053b497940000000000000946 d073de687323348a261769d05f58eead ffffffffffffffffffffffffffffffff 93168 /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o

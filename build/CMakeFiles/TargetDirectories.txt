@@ -1,0 +1,8 @@
+/Users/Xiao/workspace/Azurender/build/CMakeFiles/ALL_BUILD.dir
+/Users/Xiao/workspace/Azurender/build/SDLmain/CMakeFiles/SDLmain.dir
+/Users/Xiao/workspace/Azurender/build/CMakeFiles/ZERO_CHECK.dir
+/Users/Xiao/workspace/Azurender/build/application/CMakeFiles/application.dir
+/Users/Xiao/workspace/Azurender/build/math/CMakeFiles/math.dir
+/Users/Xiao/workspace/Azurender/build/raytracer/CMakeFiles/raytracer.dir
+/Users/Xiao/workspace/Azurender/build/scene/CMakeFiles/scene.dir
+/Users/Xiao/workspace/Azurender/build/tinyxml/CMakeFiles/tinyxml.dir

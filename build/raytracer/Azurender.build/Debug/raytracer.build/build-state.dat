@@ -1,0 +1,340 @@
+Traytracer
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535D6761000000000000044C
+t1398630241
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535D676100000000000001DE
+t1398630241
+s478
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o
+t1404606560
+s2156
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o
+t1404606590
+s329688
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.LinkFileList
+c0000000053B898600000000000000160
+t1404606560
+s352
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o
+t1404606591
+s880640
+
+N/Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/src/math/color.hpp
+c000000005376A17A0000000000000D06
+t1400283514
+s3334
+
+N/Users/Xiao/workspace/Azurender/src/math/math.hpp
+c000000005364904C000000000000025C
+t1399099468
+s604
+
+N/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+c00000000536490420000000000005152
+t1399099458
+s20818
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+c00000000531ABCBD000000000000005B
+t1394261181
+s91
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/Photon.hpp
+c000000005365BAAE00000000000009FB
+t1399175854
+s2555
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+c0000000053B8985B0000000000004E5F
+t1404606555
+s20063
+
+N/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+c0000000053B891A6000000000001A4FE
+t1404604838
+s107774
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7251bdfccf68b941^486ebdfccf68b941^---0#1#1#--18"Check dependencies36"60895AE3-072D-4FF0-8560-B1090B0B6B8A-
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299360.339649
+e426299360.995606
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.hpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp208"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera60957e0cf68b941^b1e0fee0cf68b941^---0#0#1#-19%DVTDocumentLocation2@63"file:///Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp0000000000000000^2292"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o raytracer/Photon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/Photon.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o36"9148F7B0-7D28-421E-A0D7-5314B6A0A924-
+b67B66980-CFA1-4DC5-B147-B8C7F90C14D7
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299388.740808
+e426299390.175919
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp
+d/Users/Xiao/workspace/Azurender/src/application/application.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/workspace/Azurender/src/application/camera_roam.hpp
+d/Users/Xiao/workspace/Azurender/src/math/camera.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/math/quaternion.hpp
+d/Users/Xiao/workspace/Azurender/src/application/imageio.hpp
+d/Users/Xiao/workspace/Azurender/src/application/scene_loader.hpp
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/Users/Xiao/workspace/Azurender/src/scene/scene.hpp
+d/Users/Xiao/workspace/Azurender/src/math/matrix.hpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/material.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/mesh.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/ray.hpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.hpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp
+d/Users/Xiao/workspace/Azurender/src/math/random462.hpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Utils.h
+d/usr/local/include/SDL/SDL.h
+d/usr/local/include/SDL/SDL_main.h
+d/usr/local/include/SDL/SDL_audio.h
+d/usr/local/include/SDL/SDL_endian.h
+d/usr/local/include/SDL/SDL_mutex.h
+d/usr/local/include/SDL/SDL_thread.h
+d/usr/local/include/SDL/SDL_cdrom.h
+d/usr/local/include/SDL/SDL_cpuinfo.h
+d/usr/local/include/SDL/SDL_loadso.h
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_version.h
+o/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:372:9: warning: 'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective" [-Wdeprecated-declarations]
+o        gluPerspective( camera.get_fov_degrees(),
+o        ^
+oIn file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:13:
+oIn file included from /Users/Xiao/workspace/Azurender/src/application/opengl.hpp:15:
+oIn file included from /usr/local/include/GL/glew.h:1186:
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:278:13: note: 'gluPerspective' declared here
+oextern void gluPerspective (GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakePerspective");
+o            ^
+o/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:390:9: warning: 'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt" [-Wdeprecated-declarations]
+o        gluLookAt( campos.x, campos.y, campos.z,
+o        ^
+oIn file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:13:
+oIn file included from /Users/Xiao/workspace/Azurender/src/application/opengl.hpp:15:
+oIn file included from /usr/local/include/GL/glew.h:1186:
+o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:265:13: note: 'gluLookAt' declared here
+oextern void gluLookAt (GLdouble eyeX, GLdouble eyeY, GLdouble eyeZ, GLdouble centerX, GLdouble centerY, GLdouble centerZ, GLdouble upX, GLdouble upY, GLdouble upZ) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakeLookAt");
+o            ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp204"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler0fb5bdfccf68b941^64072dfecf68b941^-1778"/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:372:9: warning: 'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective" [-Wdeprecated-declarations]        gluPerspective( camera.get_fov_degrees(),        ^In file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:13:In file included from /Users/Xiao/workspace/Azurender/src/application/opengl.hpp:15:In file included from /usr/local/include/GL/glew.h:1186:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:278:13: note: 'gluPerspective' declared hereextern void gluPerspective (GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakePerspective");            ^/Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:390:9: warning: 'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt" [-Wdeprecated-declarations]        gluLookAt( campos.x, campos.y, campos.z,        ^In file included from /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp:13:In file included from /Users/Xiao/workspace/Azurender/src/application/opengl.hpp:15:In file included from /usr/local/include/GL/glew.h:1186:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:265:13: note: 'gluLookAt' declared hereextern void gluLookAt (GLdouble eyeX, GLdouble eyeY, GLdouble eyeZ, GLdouble centerX, GLdouble centerY, GLdouble centerZ, GLdouble upX, GLdouble upY, GLdouble upZ) OPENGL_DEPRECATED_MSG(10_0, 10_9, "Use GLKMatrix4MakeLookAt");            ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@95"'gluPerspective' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakePerspective"-426299390#18446744073709551615#0#1(2@30"'gluPerspective' declared here-426299390#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@162"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h0000000000000000^277#12#277#12#15841#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@61"file:///Users/Xiao/workspace/Azurender/src/raytracer/main.cpp0000000000000000^371#8#371#8#11597#0#12"Deprecations--2@85"'gluLookAt' is deprecated: first deprecated in OS X 10.9 - "Use GLKMatrix4MakeLookAt"-426299390#18446744073709551615#0#1(2@25"'gluLookAt' declared here-426299390#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@162"file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h0000000000000000^264#12#264#12#14161#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@61"file:///Users/Xiao/workspace/Azurender/src/raytracer/main.cpp0000000000000000^389#8#389#8#12269#0#12"Deprecations--0#0#1#-19%DVTDocumentLocation4@61"file:///Users/Xiao/workspace/Azurender/src/raytracer/main.cpp0000000000000000^2280"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o raytracer/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/main.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o36"922F8D8A-BF3A-44EE-9254-279F736485B3-
+bBE6CE50B-8E17-407C-8515-70B2F2ABE2EA
+
+CCompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299388.741085
+e426299391.246003
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o
+x/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.hpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/math/random462.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/scene.hpp
+d/Users/Xiao/workspace/Azurender/src/math/quaternion.hpp
+d/Users/Xiao/workspace/Azurender/src/math/matrix.hpp
+d/Users/Xiao/workspace/Azurender/src/math/camera.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/material.hpp
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/workspace/Azurender/src/scene/mesh.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/ray.hpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Photon.hpp
+d/Users/Xiao/workspace/Azurender/src/raytracer/Utils.h
+d/Users/Xiao/workspace/Azurender/src/scene/model.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/triangle.hpp
+d/Users/Xiao/workspace/Azurender/src/scene/sphere.hpp
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2284:63: warning: unused parameter 'source' [-Wunused-parameter]
+o    void Raytracer::vvhKDTreePreprocess(std::vector<cPhoton> &source,
+o                                                              ^
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2285:67: warning: unused parameter 'sortedSource' [-Wunused-parameter]
+o                                        std::vector<metaCPhoton> &sortedSource)
+o                                                                  ^
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2466:67: warning: unused parameter 'list' [-Wunused-parameter]
+o                                            std::vector<cPhoton> &list)
+o                                                                  ^
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2628:65: warning: unused parameter 'nodeList' [-Wunused-parameter]
+o    void Raytracer::vvhPreorderTraversal(std::vector<KDNode *> &nodeList,
+o                                                                ^
+o/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2629:64: warning: unused parameter 'list' [-Wunused-parameter]
+o                                         std::vector<cPhoton> &list)
+o                                                               ^
+o5 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp214"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8ecabdfccf68b941^fdf93effcf68b941^-1347"/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2284:63: warning: unused parameter 'source' [-Wunused-parameter]    void Raytracer::vvhKDTreePreprocess(std::vector<cPhoton> &source,                                                              ^/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2285:67: warning: unused parameter 'sortedSource' [-Wunused-parameter]                                        std::vector<metaCPhoton> &sortedSource)                                                                  ^/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2466:67: warning: unused parameter 'list' [-Wunused-parameter]                                            std::vector<cPhoton> &list)                                                                  ^/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2628:65: warning: unused parameter 'nodeList' [-Wunused-parameter]    void Raytracer::vvhPreorderTraversal(std::vector<KDNode *> &nodeList,                                                                ^/Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp:2629:64: warning: unused parameter 'list' [-Wunused-parameter]                                         std::vector<cPhoton> &list)                                                               ^5 warnings generated.5(36%IDEClangDiagnosticActivityLogMessage2@25"Unused parameter 'source'-426299391#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2283#62#2283#62#91222#0#14"Semantic Issue--2@31"Unused parameter 'sortedSource'-426299391#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2284#66#2284#66#91296#0#14"Semantic Issue--2@23"Unused parameter 'list'-426299391#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2465#66#2465#66#97670#0#14"Semantic Issue--2@27"Unused parameter 'nodeList'-426299391#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2627#64#2627#64#103218#0#14"Semantic Issue--2@23"Unused parameter 'list'-426299391#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2628#63#2628#63#103291#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@66"file:///Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp0000000000000000^2310"CompileC /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o raytracer/raytracer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/raytracer/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.dia -c /Users/Xiao/workspace/Azurender/src/raytracer/raytracer.cpp -o /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o36"BCE9E1EE-1602-435E-9D04-8FE47D30E75E-
+bBE6CE50B-8E17-407C-8515-70B2F2ABE2EA
+
+CLd /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer normal x86_64
+s426299391.246730
+e426299391.479493
+r1
+xLd
+x/Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer
+xnormal
+xx86_64
+d/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.LinkFileList
+d/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/Photon.o
+d/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/main.o
+d/Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.o
+d/Users/Xiao/workspace/Azurender/build/application/Debug/libapplication.a
+d/Users/Xiao/workspace/Azurender/build/math/Debug/libmath.a
+d/Users/Xiao/workspace/Azurender/build/scene/Debug/libscene.a
+d/Users/Xiao/workspace/Azurender/build/tinyxml/Debug/libtinyxml.a
+d/usr/local/lib/libSDLmain.a
+d/usr/local/lib/libSDL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/usr/local/lib/libpng.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/AGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+d/usr/local/lib/libGLEW.dylib
+d/Users/Xiao/workspace/Azurender/build/SDLmain/Debug/libSDLmain.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Link /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer80"Ld /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer normal x86_64b83b3fffcf68b941^df327bffcf68b941^---0#0#1#--1627"Ld /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer normal x86_64    cd /Users/Xiao/workspace/Azurender/src    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Xiao/workspace/Azurender/build/raytracer/Debug -F/Users/Xiao/workspace/Azurender/build/raytracer/Debug -filelist /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer.LinkFileList -mmacosx-version-min=10.9 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/Xiao/workspace/Azurender/build/application/Debug/libapplication.a /Users/Xiao/workspace/Azurender/build/math/Debug/libmath.a /Users/Xiao/workspace/Azurender/build/scene/Debug/libscene.a /Users/Xiao/workspace/Azurender/build/tinyxml/Debug/libtinyxml.a /usr/local/lib/libSDLmain.a /usr/local/lib/libSDL.dylib -framework Cocoa /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib /Users/Xiao/workspace/Azurender/build/SDLmain/Debug/libSDLmain.a /usr/local/lib/libpng.dylib /usr/lib/libz.dylib -framework AGL -framework OpenGL -framework GLUT /usr/local/lib/libGLEW.dylib -Xlinker -dependency_info -Xlinker /Users/Xiao/workspace/Azurender/build/raytracer/Azurender.build/Debug/raytracer.build/Objects-normal/x86_64/raytracer_dependency_info.dat -o /Users/Xiao/workspace/Azurender/build/raytracer/Debug/raytracer36"B61460B4-FBD8-4E13-8149-142C234D27D8-
+bBE6CE50B-8E17-407C-8515-70B2F2ABE2EA
+

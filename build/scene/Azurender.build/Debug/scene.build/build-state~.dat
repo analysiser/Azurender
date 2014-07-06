@@ -1,0 +1,163 @@
+Tscene
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o /Users/Xiao/workspace/Azurender/src/scene/material.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o /Users/Xiao/workspace/Azurender/src/scene/model.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535D6761000000000000044C
+t1398630241
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535D676100000000000001DE
+t1398630241
+s478
+
+N/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/ray.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/src/scene/material.cpp
+c0000000053B497940000000000000CD4
+t1404344212
+s3284
+
+N/Users/Xiao/workspace/Azurender/src/scene/mesh.cpp
+c0000000052BDFBE40000000000002C5D
+t1388182500
+s11357
+
+N/Users/Xiao/workspace/Azurender/src/scene/model.cpp
+c000000005364907200000000000039BB
+t1399099506
+s14779
+
+N/Users/Xiao/workspace/Azurender/src/scene/ray.cpp
+c0000000053655D3D00000000000002D2
+t1399151933
+s722
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/material.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/model.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/ray.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/scene.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9e95c87acf68b941^e09cc97acf68b941^---0#1#1#--18"Check dependencies36"EABD1FB3-7E2D-4E30-94E6-E4C8E36F3DFD-
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o /Users/Xiao/workspace/Azurender/src/scene/material.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299258.787800
+e426299259.917557
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o
+x/Users/Xiao/workspace/Azurender/src/scene/material.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/scene/material.cpp
+d/Users/Xiao/workspace/Azurender/src/scene/material.hpp
+d/Users/Xiao/workspace/Azurender/src/math/color.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/workspace/Azurender/src/application/imageio.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Xiao/workspace/Azurender/src/scene/material.cpp200"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o scene/material.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler90bec97acf68b941^5ad9ea7bcf68b941^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/Xiao/workspace/Azurender/src/scene/material.cpp0000000000000000^2240"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o scene/material.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/scene/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/scene/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.dia -c /Users/Xiao/workspace/Azurender/src/scene/material.cpp -o /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/material.o36"03C67109-1C1D-414A-9E2A-2C9DF6FFBBD5-
+bB67EBCEC-41FE-48D1-B004-1881298A701B
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299258.789177
+e426299261.644941
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o
+x/Users/Xiao/workspace/Azurender/src/scene/mesh.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/scene/mesh.cpp
+d/Users/Xiao/workspace/Azurender/src/scene/mesh.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp192"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o scene/mesh.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler6421ca7acf68b941^7008a57dcf68b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/Xiao/workspace/Azurender/src/scene/mesh.cpp0000000000000000^2216"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o scene/mesh.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/scene/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/scene/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.dia -c /Users/Xiao/workspace/Azurender/src/scene/mesh.cpp -o /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/mesh.o36"1559C605-FF72-4A27-924F-87B2B4E159A4-
+bB67EBCEC-41FE-48D1-B004-1881298A701B
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o /Users/Xiao/workspace/Azurender/src/scene/model.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299259.796954
+e426299260.836595
+r0
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o
+x/Users/Xiao/workspace/Azurender/src/scene/model.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/Xiao/workspace/Azurender/src/scene/model.cpp:9:
+oIn file included from /Users/Xiao/workspace/Azurender/src/scene/model.hpp:11:
+oIn file included from /Users/Xiao/workspace/Azurender/src/scene/scene.hpp:19:
+o/Users/Xiao/workspace/Azurender/src/scene/ray.hpp:10:10: fatal error: 'p3/Photon.hpp' file not found
+o#include "p3/Photon.hpp"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/Xiao/workspace/Azurender/src/scene/model.cpp194"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o scene/model.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8a1ecc7bcf68b941^dd43d67ccf68b941^-389"In file included from /Users/Xiao/workspace/Azurender/src/scene/model.cpp:9:In file included from /Users/Xiao/workspace/Azurender/src/scene/model.hpp:11:In file included from /Users/Xiao/workspace/Azurender/src/scene/scene.hpp:19:/Users/Xiao/workspace/Azurender/src/scene/ray.hpp:10:10: fatal error: 'p3/Photon.hpp' file not found#include "p3/Photon.hpp"         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@30"'p3/Photon.hpp' file not found-426299260#18446744073709551615#0#3(2@76"In file included from /Users/Xiao/workspace/Azurender/src/scene/model.cpp:9:-426299260#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@58"file:///Users/Xiao/workspace/Azurender/src/scene/model.cpp0000000000000000^8#9#8#9#135#0#21"Apple LLVM 5.0 Notice--2@77"In file included from /Users/Xiao/workspace/Azurender/src/scene/model.hpp:11:-426299260#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@58"file:///Users/Xiao/workspace/Azurender/src/scene/model.hpp0000000000000000^10#9#10#9#157#0#21"Apple LLVM 5.0 Notice--2@77"In file included from /Users/Xiao/workspace/Azurender/src/scene/scene.hpp:19:-426299260#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@58"file:///Users/Xiao/workspace/Azurender/src/scene/scene.hpp0000000000000000^18#9#18#9#363#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@56"file:///Users/Xiao/workspace/Azurender/src/scene/ray.hpp0000000000000000^9#9#9#9#234#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@58"file:///Users/Xiao/workspace/Azurender/src/scene/model.cpp0000000000000000^2222"CompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o scene/model.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/scene/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/scene/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.dia -c /Users/Xiao/workspace/Azurender/src/scene/model.cpp -o /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/model.o36"422B9EF5-9A10-40D8-A2E1-D9F4714D907D-
+bB67EBCEC-41FE-48D1-B004-1881298A701B
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/ray.o /Users/Xiao/workspace/Azurender/src/scene/ray.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/scene.o /Users/Xiao/workspace/Azurender/src/scene/scene.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/sphere.o /Users/Xiao/workspace/Azurender/src/scene/sphere.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Xiao/workspace/Azurender/build/scene/Azurender.build/Debug/scene.build/Objects-normal/x86_64/triangle.o /Users/Xiao/workspace/Azurender/src/scene/triangle.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLibtool /Users/Xiao/workspace/Azurender/build/scene/Debug/libscene.a normal x86_64
+r0
+

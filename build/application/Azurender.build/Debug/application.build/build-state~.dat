@@ -1,0 +1,216 @@
+Tapplication
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o /Users/Xiao/workspace/Azurender/src/application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o /Users/Xiao/workspace/Azurender/src/application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535D6761000000000000044C
+t1398630241
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535D676100000000000001DE
+t1398630241
+s478
+
+N/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o
+t2
+s0
+
+N/Users/Xiao/workspace/Azurender/src/application/application.cpp
+c00000000536490570000000000001BE0
+t1399099479
+s7136
+
+N/Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp
+c00000000536490860000000000000CC8
+t1399099526
+s3272
+
+N/Users/Xiao/workspace/Azurender/src/application/imageio.cpp
+c0000000052BDFBE40000000000002243
+t1388182500
+s8771
+
+N/Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp
+c0000000053B497440000000000004C57
+t1404344132
+s19543
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/application/application.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/application/imageio.cpp
+r0
+
+CBuild AST from /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb893c87acf68b941^ee5bc97acf68b941^---0#1#1#--18"Check dependencies36"7761F3BC-7B04-4142-9574-D3D59A804B9A-
+
+CCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o /Users/Xiao/workspace/Azurender/src/application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299258.786921
+e426299259.796633
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o
+x/Users/Xiao/workspace/Azurender/src/application/application.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/application/application.cpp
+d/Users/Xiao/workspace/Azurender/src/application/application.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/Users/Xiao/workspace/Azurender/src/application/imageio.hpp
+d/usr/local/include/SDL/SDL.h
+d/usr/local/include/SDL/SDL_main.h
+d/usr/local/include/SDL/SDL_audio.h
+d/usr/local/include/SDL/SDL_endian.h
+d/usr/local/include/SDL/SDL_mutex.h
+d/usr/local/include/SDL/SDL_thread.h
+d/usr/local/include/SDL/SDL_cdrom.h
+d/usr/local/include/SDL/SDL_cpuinfo.h
+d/usr/local/include/SDL/SDL_loadso.h
+d/usr/local/include/SDL/SDL_timer.h
+d/usr/local/include/SDL/SDL_version.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Xiao/workspace/Azurender/src/application/application.cpp224"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerfbadc97acf68b941^7cefcb7bcf68b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/Xiao/workspace/Azurender/src/application/application.cpp0000000000000000^2354"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o application/application.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/application/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.dia -c /Users/Xiao/workspace/Azurender/src/application/application.cpp -o /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/application.o36"942721DB-DC29-4A20-B467-E1730AB8A1CE-
+bAAF5F35B-B172-47CB-AE60-204561E2FEAA
+
+CCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299259.918289
+e426299260.593596
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o
+x/Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp
+d/Users/Xiao/workspace/Azurender/src/application/camera_roam.hpp
+d/Users/Xiao/workspace/Azurender/src/application/application.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/Users/Xiao/workspace/Azurender/src/math/camera.hpp
+d/Users/Xiao/workspace/Azurender/src/math/vector.hpp
+d/Users/Xiao/workspace/Azurender/src/math/quaternion.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp224"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler282aeb7bcf68b941^01f8977ccf68b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp0000000000000000^2354"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o application/camera_roam.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/application/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.dia -c /Users/Xiao/workspace/Azurender/src/application/camera_roam.cpp -o /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/camera_roam.o36"FFABBB44-C02C-4678-B43A-9139AF0C8B4F-
+bAAF5F35B-B172-47CB-AE60-204561E2FEAA
+
+CCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o /Users/Xiao/workspace/Azurender/src/application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299260.838725
+e426299261.859107
+r1
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o
+x/Users/Xiao/workspace/Azurender/src/application/imageio.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Xiao/workspace/Azurender/src/application/imageio.cpp
+d/Users/Xiao/workspace/Azurender/src/application/imageio.hpp
+d/Users/Xiao/workspace/Azurender/src/application/opengl.hpp
+d/usr/local/include/GL/glew.h
+d/usr/local/include/SDL/SDL_opengl.h
+d/usr/local/include/SDL/SDL_config.h
+d/usr/local/include/SDL/SDL_platform.h
+d/Users/Xiao/workspace/Azurender/src/application/application.hpp
+d/Users/Xiao/workspace/Azurender/src/math/math.hpp
+d/usr/local/include/SDL/SDL_events.h
+d/usr/local/include/SDL/SDL_stdinc.h
+d/usr/local/include/SDL/begin_code.h
+d/usr/local/include/SDL/close_code.h
+d/usr/local/include/SDL/SDL_error.h
+d/usr/local/include/SDL/SDL_active.h
+d/usr/local/include/SDL/SDL_keyboard.h
+d/usr/local/include/SDL/SDL_keysym.h
+d/usr/local/include/SDL/SDL_mouse.h
+d/usr/local/include/SDL/SDL_video.h
+d/usr/local/include/SDL/SDL_rwops.h
+d/usr/local/include/SDL/SDL_joystick.h
+d/usr/local/include/SDL/SDL_quit.h
+d/usr/local/include/png.h
+d/usr/local/include/pnglibconf.h
+d/usr/local/include/pngconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Xiao/workspace/Azurender/src/application/imageio.cpp216"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler5bcdd67ccf68b941^ff07dc7dcf68b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/Xiao/workspace/Azurender/src/application/imageio.cpp0000000000000000^2330"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o application/imageio.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/application/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.dia -c /Users/Xiao/workspace/Azurender/src/application/imageio.cpp -o /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/imageio.o36"3C25CBA2-4524-407B-8612-B4B0278C7970-
+bAAF5F35B-B172-47CB-AE60-204561E2FEAA
+
+CCompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426299261.370111
+e426299262.362699
+r0
+xCompileC
+x/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o
+x/Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp:10:
+oIn file included from /Users/Xiao/workspace/Azurender/src/scene/scene.hpp:19:
+o/Users/Xiao/workspace/Azurender/src/scene/ray.hpp:10:10: fatal error: 'p3/Photon.hpp' file not found
+o#include "p3/Photon.hpp"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp226"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compileraad65e7dcf68b941^dcd85c7ecf68b941^-325"In file included from /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp:10:In file included from /Users/Xiao/workspace/Azurender/src/scene/scene.hpp:19:/Users/Xiao/workspace/Azurender/src/scene/ray.hpp:10:10: fatal error: 'p3/Photon.hpp' file not found#include "p3/Photon.hpp"         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@71"file:///Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp0000000000000000^2360"CompileC /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o application/scene_loader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Xiao/workspace/Azurender/src    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O2 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/Xiao/workspace/Azurender/build/application/Debug/include -I/Users/Xiao/workspace/Azurender/src -I/usr/local/include/SDL -I/usr/local/include -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources/x86_64 -I/Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/Xiao/workspace/Azurender/build/application/Debug -Wall -std=c++0x -Wextra -DOPENMP -MMD -MT dependencies -MF /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.d --serialize-diagnostics /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.dia -c /Users/Xiao/workspace/Azurender/src/application/scene_loader.cpp -o /Users/Xiao/workspace/Azurender/build/application/Azurender.build/Debug/application.build/Objects-normal/x86_64/scene_loader.o36"70F9E6F0-4A4F-41A3-A398-29563094F7ED-
+bAAF5F35B-B172-47CB-AE60-204561E2FEAA
+
+CLibtool /Users/Xiao/workspace/Azurender/build/application/Debug/libapplication.a normal x86_64
+r0
+

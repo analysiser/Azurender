@@ -1,0 +1,7 @@
+a8dc0683df6ce61b8deac6e0d13f1cdb 27a3535021761f1f4a2988dfedd8d989 ffffffffffffffffffffffffffffffff 314240 /Users/Xiao/workspace/Azurender/build/math/Debug/libmath.a
+0000000052bdfbe400000000000007b6 03410e99aca1808b875ed11e941f91d2 ffffffffffffffffffffffffffffffff 72956 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/vector.o
+000000005364903b0000000000001789 ab15c7473feebe0e0f2c4be1498e7b3d ffffffffffffffffffffffffffffffff 94144 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/quaternion.o
+00000000536490380000000000002741 3a2daf76d842400c5cad3339faf370c9 ffffffffffffffffffffffffffffffff 41916 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/matrix.o
+ffffffffffffffffffffffffffffffff 1c8ce75c5bc55103dd8a039ee7546513 ffffffffffffffffffffffffffffffff 2016 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/math.o
+ffffffffffffffffffffffffffffffff 3047da96518706288e0ccf3414fdd2e4 ffffffffffffffffffffffffffffffff 75172 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/color.o
+000000005364903f00000000000000ed 166e5de19f5297070ab3a38c05f45984 ffffffffffffffffffffffffffffffff 22872 /Users/Xiao/workspace/Azurender/build/math/Azurender.build/Debug/math.build/Objects-normal/x86_64/camera.o

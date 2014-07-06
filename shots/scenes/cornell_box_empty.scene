@@ -1,0 +1,343 @@
+<scene>
+    <camera>
+        <fov v="1.0471975511"/>
+        <near_clip v=".01"/>
+        <far_clip v="100.0"/>
+        <position x="0.0" y="2.0" z="9.2"/>
+        <orientation a="0.0" x="0.0" y="1.0" z="0.0"/>
+    </camera>
+
+    <background_color r="0.0" g="0.0" b="0.0"/>
+
+    <refractive_index v="1.0"/>
+
+    <ambient_light r="0.1" g="0.1" b="0.1"/>
+
+    <!-- <point_light>
+        <position x="0.0" y="4" z="0.0"/>
+        <color r="0.7" g="0.7" b="0.7"/>
+        <radius v="0.25"/>
+        <type v="1.0"/>
+    </point_light> -->
+
+    <point_light>
+        <position x="0.0" y="5.98" z="0.0"/>
+        <color r="0.7" g="0.7" b="0.7"/>
+		<radius v="1.0"/>
+        <type v="2.0"/>
+        <vertex1 x="0.25" y="5.98" z="0.0"/>
+        <vertex2 x="0.0" y="5.98" z="0.25"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <depth v="0.00001"/>
+    </point_light>
+
+    <material name="light">
+        <refractive_index v="0.0"/>
+        <ambient r="1.0" g="1.0" b="1.0"/>
+        <diffuse r="1.0" g="1.0" b="1.0"/>
+        <specular r="-1.0" g="-1.0" b="-1.0"/>
+    </material>
+
+    <material name="white">
+        <refractive_index v="0.0"/>
+        <ambient r="1.0" g="1.0" b="1.0"/>
+        <diffuse r="1.0" g="1.0" b="1.0"/>
+    </material>
+
+    <material name="green">
+        <refractive_index v="0.0"/>
+        <ambient r="0.6" g="0.95" b="0.37"/>
+        <diffuse r="0.6" g="0.95" b="0.37"/>
+    </material>
+
+    <material name="red">
+        <refractive_index v="0.0"/>
+        <ambient r="0.95" g="0.5" b="0.42"/>
+        <diffuse r="0.95" g="0.5" b="0.42"/>
+    </material>
+
+    <material name="crystal">
+        <refractive_index v="2.0"/>
+        <diffuse r="1.0" g="1.0" b="1.0"/>
+        <specular r="1.0" g="1.0" b="1.0"/>
+        <phong v="256"/>
+    </material>
+
+    <material name="mirror">
+        <refractive_index v="0.0"/>
+        <ambient r="0.0" g="0.0" b="0.0"/>
+        <diffuse r="0.0" g="0.0" b="0.0"/>
+        <specular r="0.86" g="0.79" b="0.14"/>
+        <!-- <specular r="1.0" g="1.0" b="1.0"/> -->
+        <phong v="256"/>
+    </material>
+
+    <vertex name="g1" material="green">
+        <position x="4.0" y="6.0" z="-4.0"/>
+        <normal x="-1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="g2" material="green">
+        <position x="4.0" y="-2.0" z="-4.0"/>
+        <normal x="-1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="g3" material="green">
+        <position x="4.0" y="-2.0" z="4.0"/>
+        <normal x="-1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="g4" material="green">
+        <position x="4.0" y="6.0" z="4.0"/>
+        <normal x="-1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="r1" material="red">
+        <position x="-4.0" y="-2.0" z="-4.0"/>
+        <normal x="1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="r2" material="red">
+        <position x="-4.0" y="6.0" z="-4.0"/>
+        <normal x="1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="r3" material="red">
+        <position x="-4.0" y="6.0" z="4.0"/>
+        <normal x="1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="r4" material="red">
+        <position x="-4.0" y="-2.0" z="4.0"/>
+        <normal x="1.0" y="0.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="f1" material="white">
+        <position x="-4.0" y="-2.0" z="-4.0"/>
+        <normal x="0.0" y="1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="f2" material="white">
+        <position x="-4.0" y="-2.0" z="4.0"/>
+        <normal x="0.0" y="1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="f3" material="white">
+        <position x="4.0" y="-2.0" z="4.0"/>
+        <normal x="0.0" y="1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="f4" material="white">
+        <position x="4.0" y="-2.0" z="-4.0"/>
+        <normal x="0.0" y="1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="c1" material="white">
+        <position x="-4.0" y="6.0" z="-4.0"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="c2" material="white">
+        <position x="4.0" y="6.0" z="-4.0"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="c3" material="white">
+        <position x="4.0" y="6.0" z="4.0"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="c4" material="white">
+        <position x="-4.0" y="6.0" z="4.0"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="b1" material="white">
+        <position x="-4.0" y="-2.0" z="-4.0"/>
+        <normal x="0.0" y="0.0" z="1.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="b2" material="white">
+        <position x="4.0" y="-2.0" z="-4.0"/>
+        <normal x="0.0" y="0.0" z="1.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="b3" material="white">
+        <position x="4.0" y="6.0" z="-4.0"/>
+        <normal x="0.0" y="0.0" z="1.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="b4" material="white">
+        <position x="-4.0" y="6.0" z="-4.0"/>
+        <normal x="0.0" y="0.0" z="1.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <!--lights vertices-->
+    <vertex name="l1" material="light">
+        <position x="-0.25" y="5.99" z="-0.25"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="l2" material="light">
+        <position x="0.25" y="5.99" z="-0.25"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="l3" material="light">
+        <position x="0.25" y="5.99" z="0.25"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <vertex name="l4" material="light">
+        <position x="-0.25" y="5.99" z="0.25"/>
+        <normal x="0.0" y="-1.0" z="0.0"/>
+        <tex_coord u="0.0" v="0.0"/>
+    </vertex>
+
+    <triangle material="green">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="g1"/>
+        <vertex name="g2"/>
+        <vertex name="g3"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <triangle material="green">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="g3"/>
+        <vertex name="g4"/>
+        <vertex name="g1"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <triangle material="red">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="r1"/>
+        <vertex name="r2"/>
+        <vertex name="r3"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <triangle material="red">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="r3"/>
+        <vertex name="r4"/>
+        <vertex name="r1"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <!--floor left-->
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="f1"/>
+        <vertex name="f2"/>
+        <vertex name="f3"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <!--floor right-->
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="f3"/>
+        <vertex name="f4"/>
+        <vertex name="f1"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <!--ceiling right-->
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="c1"/>
+        <vertex name="c2"/>
+        <vertex name="c3"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <!--ceiling left-->
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="c3"/>
+        <vertex name="c4"/>
+        <vertex name="c1"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="b1"/>
+        <vertex name="b2"/>
+        <vertex name="b3"/>
+        <islight v="0.0"/>
+    </triangle>
+
+    <triangle material="white">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="b3"/>
+        <vertex name="b4"/>
+        <vertex name="b1"/>
+        <islight v="0.0"/>
+    </triangle>
+
+<!--     <sphere material="crystal">
+        <position x="2.5" y="-0.75" z="0.25"/>
+        <radius v="1.25"/>
+        <islight v="0.0"/>
+    </sphere>
+
+    <sphere material="mirror">
+        <position x="-1.5" y="0.25" z="-0.75"/>
+        <radius v="2.25"/>
+        <islight v="0.0"/>
+    </sphere> -->
+
+    <!--sphere light-->
+    <!--sphere material="white"-->
+        <!--position x="0" y="4.0" z="0.0"/-->
+        <!--radius v="1.0"/-->
+        <!--islight v="1.0"/-->
+    <!--/sphere-->
+
+    <!--square light-->
+    <!--square light right-->
+    <triangle material="light">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="l1"/>
+        <vertex name="l2"/>
+        <vertex name="l3"/>
+        <islight v="1.0"/>
+    </triangle>
+
+    <triangle material="light">
+        <position x="0.0" y="0.0" z="0.0"/>
+        <vertex name="l3"/>
+        <vertex name="l4"/>
+        <vertex name="l1"/>
+        <islight v="1.0"/>
+    </triangle>
+
+
+
+</scene>

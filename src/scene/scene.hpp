@@ -88,7 +88,7 @@ namespace _462 {
         
         real_t refractive_index;    // refractive index
         
-        real_t phong;           // p value for blinn-phong model
+        int phong;           // p value for blinn-phong model
         
         bool isLight;
         bool isInShadow;

@@ -31,8 +31,20 @@ namespace _462 {
         // specular (reflective) color
         Color3 specular;
         
+        // inner color, used for self-illuminated material
+        Color3 inner;
+        
+        // intensity defined for light mtl
+        float intensity;
+        
+        // one float value, evaluate phong value
+        float roughness;
+        
         // IGNORE THIS FOR THE RAYTRACER, only used for the OpenGL renderer
         real_t shininess;
+        
+        /// Xiao: value used for blinn-phong, for getting high light
+        int phong;
         
         // refractive index of material dielectric. 0 is special case for
         // infinity, i.e. opaque. Any other value means transparent with the
@@ -72,8 +84,7 @@ namespace _462 {
         /// leaves other settings unchanged for efficiency.
         void reset_gl_state() const;
         
-        /// Xiao: value used for blinn-phong, for getting high light
-        real_t phong;
+        
         
     private:
         

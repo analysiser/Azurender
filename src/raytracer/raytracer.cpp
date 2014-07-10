@@ -35,7 +35,7 @@
 #define TMAX                        300
 
 #define PROB_DABSORB                0.5F
-#define INDIRECT_PHOTON_NEEDED      0      // 200000   // 500000
+#define INDIRECT_PHOTON_NEEDED      500000      // 200000   // 500000
 #define CAUSTICS_PHOTON_NEEDED      200000      // 50000    // 200000
 
 #define NUM_SAMPLE_PER_LIGHT        1           // if I do so many times of raytracing, i dont need high number of samples
@@ -57,11 +57,13 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PHOTON_MAPPING           0
+#define ENABLE_PATH_TRACING_GI          true
+
+#define ENABLE_PHOTON_MAPPING           false
 #define C_PHOTON_MODE                   1
 #define SIMPLE_SMALL_NODE               1
 
-#define ENABLE_DOF                      0
+#define ENABLE_DOF                      false
 #define DOF_T                           9
 #define DOF_R                           (0.5)
 #define DOF_SAMPLE                      2
@@ -213,8 +215,6 @@ namespace _462 {
         
         unsigned int start = SDL_GetTicks();
         
-//        printf("1 size = %ld\n", photon_indirect_list.size());
-        
         // scatter indirect
         while ((photon_indirect_list.size() < INDIRECT_PHOTON_NEEDED))
         {
@@ -226,7 +226,6 @@ namespace _462 {
             photonRay.photon.setColor(l.color);// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
             photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
             
-//            printf("2 size = %ld\n", photon_indirect_list.size());
         }
 
         
@@ -246,8 +245,6 @@ namespace _462 {
             photonRay.photon.mask = 0;
             photonRay.photon.setColor(l.color);// * (real_t(1)/(real_t)(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED));
             photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
-            
-//            printf("3 size = %ld\n", photon_caustic_list.size());
         }
 
         
@@ -1216,14 +1213,20 @@ namespace _462 {
             
             // 6/27/2014, path tracing test
             // generate a new ray, randomized along normal sphere
-            Vector3 dir = uniformSampleHemisphere(record.normal);
-            Ray pathRay = Ray(record.position, dir);
             
             // Trace each light source for direct illumination
-            radiance += shade_direct_illumination(record, t0, t1) + 0.6 * trace(pathRay, t0, t1, depth - 1);
+            radiance += shade_direct_illumination(record, t0, t1);
             
-            // TODO: add path tracing
+#if ENABLE_PATH_TRACING_GI
+            Vector3 dir = uniformSampleHemisphere(record.normal);
+            Ray pathRay = Ray(record.position, dir);
+            radiance += 0.6 * trace(pathRay, t0, t1, depth - 1);
+#else
+#endif
             
+            
+            
+//            radiance += shade_direct_illumination(record, t0, t1) + 0.6 * trace(pathRay, t0, t1, depth - 1);
             
             // remove ambient light
 //            radiance += scene->ambient_light * record.ambient;
@@ -1243,7 +1246,7 @@ namespace _462 {
             
             // normal
 #if ENABLE_PHOTON_MAPPING
-                int coeef = 20;
+                int coeef = 75;
     #if C_PHOTON_MODE
                 if (CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED > 0)
                 {
@@ -1296,28 +1299,29 @@ namespace _462 {
         
         // TODO:
         // try to add high light with blinn-phong model
-//        if (record.phong > 0) {
-//            SphereLight light = scene->get_lights()[0];
-//            Vector3 lightpos = sampleLightSource(light);
-//            Vector3 l = normalize(lightpos - record.position);
-//            Ray rayToLight = Ray(record.position, l);
-//            bool isHit, isHitLight;
-//            getClosestHit(rayToLight, EPSILON, TMAX, &isHit, &isHitLight);
-//            Color3 highLightColor = Color3::White();//light.color;  // xiao debug: light color
-//            if (isHit && isHitLight) {
-//                // should be high light
-//                Vector3 r = -l + 2 * dot(l, record.normal) * record.normal;
-//                Vector3 e = -ray.d;
-//                real_t coef = dot(e, r);
-//                coef = coef > 0 ? coef : 0;
-//                coef = pow(coef, record.phong);
-//                highLightColor *= coef;
-//            }
-//            else
-//                highLightColor = Color3::Black();
-//            
-//            radiance += highLightColor;
-//        }
+        // the higher the phong, the smaller the high light
+        if (record.phong > 0) {
+            SphereLight light = scene->get_lights()[0];
+            Vector3 lightpos = sampleLightSource(light);
+            Vector3 l = normalize(lightpos - record.position);
+            Ray rayToLight = Ray(record.position, l);
+            bool isHit;
+            getClosestHit(rayToLight, EPSILON, TMAX, &isHit);
+            Color3 highLightColor = light.color * 64;  // TODO: light intensity
+            if (isHit) {
+                // should be high light
+                Vector3 r = -l + 2 * dot(l, record.normal) * record.normal;
+                Vector3 e = -ray.d;
+                real_t coef = dot(e, r);
+                coef = coef > 0 ? coef : 0;
+                coef = pow(coef, record.phong);
+                highLightColor *= coef;
+            }
+            else
+                highLightColor = Color3::Black();
+            
+            radiance += highLightColor;
+        }
         
         return record.texture * radiance;
         // consider diffusive color

@@ -49,10 +49,17 @@ namespace _462 {
     static const char STR_ACON[] = "attenuation_constant";
     static const char STR_ALIN[] = "attenuation_linear";
     static const char STR_AQUAD[] = "attenuation_quadratic";
+    
+    // majorly for materials
     static const char STR_AMBIENT[] = "ambient";
     static const char STR_DIFFUSE[] = "diffuse";
     static const char STR_SPECULAR[] = "specular";
-    static const char STR_SHININESS[] = "shininess";
+    static const char STR_SHININESS[] = "shininess";    //
+    static const char STR_INNER[] = "inner";            // defined for light mtl
+    static const char STR_INTENSITY[] = "intensity";    // defined for light mtl
+    static const char STR_ROUGHNESS[] = "roughness";    // defined for rough mat, phong model or microfacet? TODO...
+    static const char STR_MATERIAL_PHONG[] = "phong";
+    
     static const char STR_REFRACT[] = "refractive_index";
     static const char STR_TEXTURE[] = "texture";
     static const char STR_NAME[] = "name";
@@ -74,7 +81,7 @@ namespace _462 {
     static const char STR_LIGHT_P1[] = "vertex1";
     static const char STR_LIGHT_P2[] = "vertex2";
     static const char STR_LIGHT_DEPTH[] = "depth";  // area light depth/height
-    static const char STR_MATERIAL_PHONG[] = "phong";
+    
     
     static void print_error_header( const TiXmlElement* base )
     {
@@ -103,6 +110,20 @@ namespace _462 {
         }
         
         return elem;
+    }
+    
+    static void parse_attrib_int( const TiXmlElement* elem, bool required, const char* name, int* val )
+    {
+        int rv = elem->QueryIntAttribute( name, val );
+        if ( rv == TIXML_WRONG_TYPE ) {
+            print_error_header( elem );
+            std::cout << "error parsing '" << name << "'.\n";
+            throw std::exception();
+        } else if ( required && rv == TIXML_NO_ATTRIBUTE ) {
+            print_error_header( elem );
+            std::cout << "missing '" << name << "'.\n";
+            throw std::exception();
+        }
     }
     
     static void parse_attrib_double( const TiXmlElement* elem, bool required, const char* name, double* val )
@@ -159,6 +180,11 @@ namespace _462 {
     static void parse_elem( const TiXmlElement* /*elem*/, T* /*val*/ )
     {
         throw std::exception();
+    }
+    
+    template<> void parse_elem< int >( const TiXmlElement* elem, int *v)
+    {
+        parse_attrib_int( elem, true, "v", v );
     }
     
     template<> void parse_elem< double >( const TiXmlElement* elem, double* d )
@@ -263,12 +289,25 @@ namespace _462 {
         parse_attrib_string( elem, false, STR_TEXTURE,  &material->texture_filename );
         parse_attrib_string( elem, true,  STR_NAME,     &name );
         
-        parse_elem( elem, false, STR_REFRACT,   &material->refractive_index );
-        parse_elem( elem, false, STR_AMBIENT,   &material->ambient );
-        parse_elem( elem, false, STR_DIFFUSE,   &material->diffuse );
-        parse_elem( elem, false, STR_SPECULAR,  &material->specular );
-        parse_elem( elem, false, STR_SHININESS,  &material->shininess );
-        parse_elem( elem, false, STR_MATERIAL_PHONG, &material->phong);
+        std::cout<<name<<std::endl;
+        
+        parse_elem( elem, false, STR_REFRACT,           &material->refractive_index );
+        parse_elem( elem, false, STR_AMBIENT,           &material->ambient );
+        parse_elem( elem, false, STR_DIFFUSE,           &material->diffuse );
+        parse_elem( elem, false, STR_SPECULAR,          &material->specular );
+        parse_elem( elem, false, STR_SHININESS,         &material->shininess );
+        
+        
+        
+        parse_elem( elem, false, STR_INNER,             &material->inner );
+        parse_elem( elem, false, STR_INTENSITY,         &material->intensity );
+        parse_elem( elem, false, STR_ROUGHNESS,         &material->roughness );
+        
+        
+        
+        parse_elem( elem, false, STR_MATERIAL_PHONG,    &material->phong);
+        
+        std::cout<<name<<std::endl;
         
         return name;
     }

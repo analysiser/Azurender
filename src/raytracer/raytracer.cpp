@@ -586,9 +586,9 @@ namespace _462 {
             int loop_upper = std::min(current_row + STEP_SIZE, height);
             
             // This tells OpenMP that this loop can be parallelized.
-#ifndef __APPLE__
-#pragma omp parallel for
-#endif
+//#ifndef __APPLE__
+//#pragma omp parallel for
+//#endif
             // launch 4 threads for actually tracing pixel, one for each row
             // NOTE!!!! MAX_THREADS_TRACE must be same with step size
 //            std::thread threads[MAX_THREADS_TRACE];
@@ -620,6 +620,7 @@ namespace _462 {
 //                    progressiveColor.to_array(&buffer[4 * (c_row * width + x)]);
 //                }
 //            }
+//            #pragma omp parallel for
             for (int c_row = current_row; c_row < loop_upper; c_row++)
             {
                 

@@ -1,2 +1,3 @@
-add_library(scene material.cpp mesh.cpp model.cpp scene.cpp sphere.cpp
-            triangle.cpp ray.cpp)
+add_library(scene material.cpp material.hpp  mesh.cpp mesh.hpp model.cpp model.hpp
+ 	    scene.cpp scene.hpp sphere.cpp sphere.hpp triangle.cpp triangle.hpp  ray.cpp ray.hpp
+            BndBox.cpp BndBox.hpp)

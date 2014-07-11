@@ -1,4 +1,4 @@
-add_executable(raytracer main.cpp raytracer.cpp Photon.cpp)
+add_executable(raytracer main.cpp  raytracer.cpp raytracer.hpp Photon.cpp Photon.hpp Utils.h )
 target_link_libraries(raytracer application math scene tinyxml ${SDL_LIBRARY}
                       ${PNG_LIBRARIES} ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES}
                       ${GLEW_LIBRARIES})

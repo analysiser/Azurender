@@ -155,8 +155,10 @@ namespace _462 {
         if (isHit) {
             
             real_t sqrt_discrim = sqrt(discriminant);
-            real_t t_1 = (dot(-d, ce) + sqrt_discrim)/dot_dd;
-            real_t t_2 = (dot(-d, ce) - sqrt_discrim)/dot_dd;
+            real_t inv_dot_dd = 1.0/dot_dd;
+            real_t dot_nd_ce  = dot(-d, ce);
+            real_t t_1 = (dot_nd_ce + sqrt_discrim) * inv_dot_dd;
+            real_t t_2 = (dot_nd_ce - sqrt_discrim) * inv_dot_dd;
             
             if(t_1 <= 0.0) {
                 return false;

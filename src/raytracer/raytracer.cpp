@@ -32,7 +32,7 @@
 
 
 #define EPSILON                     1e-12
-#define TMAX                        300
+#define TMAX                        400
 
 #define PROB_DABSORB                0.5F
 #define INDIRECT_PHOTON_NEEDED      500000      // 200000   // 500000
@@ -46,7 +46,7 @@
 #define BETA                            (1.953)
 #define ONE_MINUS_E_TO_MINUS_BETA       (0.858)
 
-#define TOTAL_ITERATION                 100  // 300
+#define TOTAL_ITERATION                 300  // 300
 #define SMALL_NODE_GRANULARITY          128
 
 #define PHOTON_QUERY_RADIUS             (0.000375)     // 0.000272
@@ -57,7 +57,7 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PATH_TRACING_GI          true
+#define ENABLE_PATH_TRACING_GI          false
 
 #define ENABLE_PHOTON_MAPPING           false
 #define C_PHOTON_MODE                   1

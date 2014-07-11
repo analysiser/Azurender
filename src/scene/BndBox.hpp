@@ -56,13 +56,7 @@ namespace _462 {
         // Test if a given ray hits a bounding box
         bool intersect(const Ray &r, real_t t0, real_t t1) const;
         
-        
         Vector3 pMin, pMax;
-        
-    private:
-        real_t x0_, y0_;
-        real_t x1_, y1_;
-        real_t x2_, y2_;
     };
 }
 

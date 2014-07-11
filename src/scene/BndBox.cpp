@@ -10,6 +10,17 @@
 
 namespace _462 {
     
+    void BndBox::include(const _462::Vector3 &p)
+    {
+        pMin.x = std::min(pMin.x, p.x);
+        pMin.y = std::min(pMin.y, p.y);
+        pMin.z = std::min(pMin.z, p.z);
+        
+        pMax.x = std::max(pMax.x, p.x);
+        pMax.y = std::max(pMax.y, p.y);
+        pMax.z = std::max(pMax.z, p.z);
+    }
+    
     BndBox BndBox::expand(const _462::BndBox &b, const _462::Vector3 &p)
     {
         BndBox ret = b;

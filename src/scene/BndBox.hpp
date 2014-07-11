@@ -49,6 +49,7 @@ namespace _462 {
             return d.x * d.y * d.z;
         }
         
+        void include(const Vector3 &p);
         BndBox expand(const BndBox &b, const Vector3 &p);
         BndBox expand(const BndBox &b, const BndBox &b2);
         

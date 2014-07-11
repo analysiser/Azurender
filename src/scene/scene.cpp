@@ -27,6 +27,8 @@ namespace _462 {
         make_transformation_matrix(&mat, position, orientation, scale);
         make_normal_matrix(&normMat, mat);
         
+        position_local = invMat.transform_point(position);
+        
         return true;
     }
     

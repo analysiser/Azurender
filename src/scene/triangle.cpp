@@ -17,13 +17,15 @@ namespace _462 {
         vertices[1].material = 0;
         vertices[2].material = 0;
         
-        boundingBox = new Box(Vector3::Zero(), Vector3::Zero());
+        bbox_local = new BndBox();
+        bbox_world = new BndBox();
         
         type = eTriangle;
     }
     
     Triangle::~Triangle() {
-        delete boundingBox;
+        delete bbox_local;
+        delete bbox_world;
     }
     
     void Triangle::render() const
@@ -62,24 +64,21 @@ namespace _462 {
      */
     void Triangle::createBoundingBox() const
     {
-        Vector3 A = vertices[0].position;
-        Vector3 B = vertices[1].position;
-        Vector3 C = vertices[2].position;
-        
-        Box box = getBoundingBoxForTriangle(A, B, C);
-        boundingBox->bounds[0] = box.bounds[0];
-        boundingBox->bounds[1] = box.bounds[1];
+        for (int i = 0; i < 3; i++) {
+            // local bounding box
+            bbox_local->include(vertices[i].position);
+            bbox_world->include(invMat.transform_point(vertices[i].position));
+        }
     }
     
     bool Triangle::hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const
     {
+        if(!bbox_world->intersect(ray, t0, t1))
+            return false;
+        
         // Transform ray to sphere's local space
         Ray r = Ray(invMat.transform_point(ray.e), invMat.transform_vector(ray.d));
-        
-        if (!boundingBox->intersect(r, t0, t1)) {
-            return false;
-        }
-        
+
         Vertex A = vertices[0];
         Vertex B = vertices[1];
         Vertex C = vertices[2];

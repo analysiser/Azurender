@@ -10,6 +10,7 @@
 #define _462_SCENE_SPHERE_HPP_
 
 #include "scene/scene.hpp"
+#include "scene/BndBox.hpp"
 
 namespace _462 {
 
@@ -22,7 +23,9 @@ public:
 
     real_t radius;
     const Material* material;
-    Box *boundingBox;
+    BndBox *bbox_local;
+    BndBox *bbox_world;
+//    Box *boundingBox;
 //    Box *globalBBox;
 
     Sphere();

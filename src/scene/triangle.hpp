@@ -9,6 +9,7 @@
 #define _462_SCENE_TRIANGLE_HPP_
 
 #include "scene/scene.hpp"
+#include "scene/BndBox.hpp"
 
 namespace _462 {
     
@@ -37,7 +38,8 @@ namespace _462 {
         Vertex vertices[3];
         
         // Bounding box for triangle mesh
-        Box *boundingBox;
+        BndBox *bbox_local;
+        BndBox *bbox_world;
         
         Triangle();
         virtual ~Triangle();

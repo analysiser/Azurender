@@ -161,6 +161,9 @@ namespace _462 {
         // The world position of the object.
         Vector3 position;
         
+        // The local position of the object.
+        Vector3 position_local;
+        
         // The world orientation of the object.
         // Use Quaternion::to_matrix to get the rotation matrix.
         Quaternion orientation;

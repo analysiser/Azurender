@@ -1,5 +1,5 @@
 //
-//  BndBox.h
+//  BndBox.hpp
 //  Azurender
 //
 //  Created by Xiao Li on 7/10/14.
@@ -21,6 +21,7 @@ namespace _462 {
     
     class BndBox
     {
+        friend class azBVHTree;
     public:
         BndBox () {
             pMin = Vector3(INFINITY, INFINITY, INFINITY);
@@ -58,6 +59,7 @@ namespace _462 {
         
         Vector3 pMin, pMax;
     };
+    
 }
 
 

@@ -51,10 +51,15 @@ namespace _462 {
         }
         
         void include(const Vector3 &p);
+        void include(const BndBox &bbox);
+        
         BndBox expand(const BndBox &b, const Vector3 &p);
         BndBox expand(const BndBox &b, const BndBox &b2);
         
         // Test if a given ray hits a bounding box
+        /**
+         * out tt: output the nearest hit value of t
+         */
         bool intersect(const Ray &r, real_t t0, real_t t1) const;
         
         Vector3 pMin, pMax;

@@ -21,6 +21,19 @@ namespace _462 {
         pMax.z = std::max(pMax.z, p.z);
     }
     
+    void BndBox::include(const BndBox &bbox)
+    {
+        include(bbox.pMin);
+        include(bbox.pMax);
+//        pMin.x = std::min(pMin.x, bbox.pMin.x);
+//        pMin.y = std::min(pMin.y, bbox.pMin.y);
+//        pMin.z = std::min(pMin.z, bbox.pMin.z);
+//        
+//        pMax.x = std::max(pMax.x, bbox.pMin.x);
+//        pMax.y = std::max(pMax.y, bbox.pMin.y);
+//        pMax.z = std::max(pMax.z, bbox.pMin.z);
+    }
+    
     BndBox BndBox::expand(const _462::BndBox &b, const _462::Vector3 &p)
     {
         BndBox ret = b;
@@ -51,7 +64,7 @@ namespace _462 {
         return ret;
     }
     
-    bool BndBox::intersect(const _462::Ray &r, real_t t0, real_t t1) const
+    bool BndBox::intersect(const Ray &r, real_t t0, real_t t1) const
     {
         real_t mint = t0, maxt = t1;
         

@@ -58,9 +58,9 @@
 
     <material name="crystal">
         <refractive_index v="1.5"/>
-        <diffuse r="1.0" g="1.0" b="1.0"/>
+        <diffuse r="0.0" g="0.0" b="0.0"/>
         <specular r="1.0" g="1.0" b="1.0"/>
-        <phong v="256"/>
+        <phong v="1024"/>
     </material>
 
     <material name="mirror">
@@ -69,7 +69,7 @@
         <diffuse r="0.0" g="0.0" b="0.0"/>
         <specular r="0.86" g="0.79" b="0.14"/>
         <!-- <specular r="1.0" g="1.0" b="1.0"/> -->
-        <phong v="256"/>
+        <phong v="1024"/>
     </material>
 
     <material name="mirror2">

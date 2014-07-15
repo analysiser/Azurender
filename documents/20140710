@@ -1,0 +1,190 @@
+// Before
+default
+default
+Loading mesh from 'models/dragon.obj'...
+Successfully loaded mesh 'models/dragon.obj'.
+construct BVH time: 564 ms
+c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
+Done One Pass! Iteration = 1, Pass spent = 2960ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 2, Pass spent = 2660ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 3, Pass spent = 2865ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Program ended with exit code: 0
+
+
+
+// Add local position to sphere
+light
+light
+white
+white
+green
+green
+red
+red
+crystal
+crystal
+mirror
+mirror
+mirror2
+mirror2
+chess
+chess
+Loading texture images/chess.png...
+libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+Finished loading texture
+Loaded GL textureimages/chess.png
+construct BVH time: 0 ms
+c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
+Done One Pass! Iteration = 1, Pass spent = 2450ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 2, Pass spent = 2160ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 3, Pass spent = 1808ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 4, Pass spent = 1887ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 5, Pass spent = 1887ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+
+
+
+// Add local position and ray test for triangle
+light
+light
+white
+white
+green
+green
+red
+red
+crystal
+crystal
+mirror
+mirror
+mirror2
+mirror2
+chess
+chess
+Loading texture images/chess.png...
+libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+Finished loading texture
+Loaded GL textureimages/chess.png
+construct BVH time: 0 ms
+c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
+Done One Pass! Iteration = 1, Pass spent = 2254ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 2, Pass spent = 2368ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 3, Pass spent = 2442ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 4, Pass spent = 2003ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 5, Pass spent = 2001ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 6, Pass spent = 1948ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 7, Pass spent = 1865ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 8, Pass spent = 1773ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 9, Pass spent = 1729ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 10, Pass spent = 1741ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 11, Pass spent = 1733ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 12, Pass spent = 1828ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 13, Pass spent = 1818ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 14, Pass spent = 1733ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 15, Pass spent = 1831ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 16, Pass spent = 1860ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 17, Pass spent = 1891ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 18, Pass spent = 1818ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 19, Pass spent = 1691ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 20, Pass spent = 1748ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 21, Pass spent = 1763ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 22, Pass spent = 1792ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 23, Pass spent = 1840ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 24, Pass spent = 1742ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 25, Pass spent = 1779ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 26, Pass spent = 2297ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Program ended with exit code: 9
+
+
+
+light
+light
+white
+white
+green
+green
+red
+red
+crystal
+crystal
+mirror
+mirror
+mirror2
+mirror2
+chess
+chess
+Loading texture images/chess.png...
+libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+Finished loading texture
+Loaded GL textureimages/chess.png
+construct BVH time: 0 ms
+c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
+Done One Pass! Iteration = 1, Pass spent = 1742ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 2, Pass spent = 1843ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 3, Pass spent = 1666ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 4, Pass spent = 1562ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 5, Pass spent = 1345ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 6, Pass spent = 1374ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 7, Pass spent = 1328ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 8, Pass spent = 1330ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 9, Pass spent = 1353ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 10, Pass spent = 1353ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 11, Pass spent = 1351ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 12, Pass spent = 1505ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 13, Pass spent = 1335ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 14, Pass spent = 1354ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 15, Pass spent = 1345ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 16, Pass spent = 1353ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 17, Pass spent = 1362ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 18, Pass spent = 1400ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms

@@ -595,7 +595,7 @@ int main(int argc, char* argv[])
     if ( opt.open_window ) {
         
         real_t fps = 30.0;
-        const char* title = "15462 Project 3 - Raytracer";
+        const char* title = "Azurender";
         // start a new application
         return Application::start_application(&app,
                                               opt.width,

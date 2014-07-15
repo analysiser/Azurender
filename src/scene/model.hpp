@@ -8,8 +8,10 @@
 #ifndef _462_SCENE_MODEL_HPP_
 #define _462_SCENE_MODEL_HPP_
 
-#include "scene/scene.hpp"
+#include "scene/azBVHTree.hpp"
 #include "scene/mesh.hpp"
+#include "scene/scene.hpp"
+
 #include <iostream>
 #include <set>
 #include <vector>
@@ -118,7 +120,7 @@ namespace _462 {
 
     
 
-    
+    class azBVHTree;
     /**
      * A mesh of triangles.
      */
@@ -129,6 +131,8 @@ namespace _462 {
         
         const Mesh* mesh;
         const Material* material;
+        
+        mutable azBVHTree *bvhTree;
 
         
         LinkedList *modelBoxNodes;
@@ -155,11 +159,17 @@ namespace _462 {
         virtual bool hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const;
 
         
-        // Create a BVH Tree for optimization
-        void createBVHTree();
+        bool rayIntersectionTest(const Ray& r, real_t t0, real_t t1, real_t &tt, uint32_t triIndex) const;
+        
+//        // Create a BVH Tree for optimization
+//        void createBVHTree();
+        
+        
 
                 
     };
+    
+    inline void test() {};
 } /* _462 */
 
 #endif /* _462_SCENE_MODEL_HPP_ */

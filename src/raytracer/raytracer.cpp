@@ -141,11 +141,9 @@ namespace _462 {
         // Initialization or precompuation before the trace
         for (size_t i = 0; i < scene->num_geometries(); i++) {
             scene->get_geometries()[i]->createBoundingBox();
-            if (scene->get_geometries()[i]->type == eModel) {
-                Model *model = (Model *)scene->get_geometries()[i];
-                // For models, create BVH tree for optimization
-                model->createBVHTree();
-            }
+//            if (scene->get_geometries()[i]->type == eModel) {
+//                Model *model = (Model *)scene->get_geometries()[i];
+//            }
         }
         
         // initialize debug variables
@@ -2286,8 +2284,8 @@ namespace _462 {
                        costheta[photon.theta]);
     }
     
-    void Raytracer::vvhKDTreePreprocess(std::vector<cPhoton> &source,
-                                        std::vector<metaCPhoton> &sortedSource)
+    void Raytracer::vvhKDTreePreprocess(std::vector<cPhoton>& /*source*/,
+                                        std::vector<metaCPhoton>& /*sortedSource*/)
     {
 //        std::vector<cPhoton> datax = source;
 //        std::vector<cPhoton> datay = source;

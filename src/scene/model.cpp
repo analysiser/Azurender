@@ -371,34 +371,62 @@ box2.bounds[1].z;
     {
         // if already have bounding boxes, then no need to recalculate again
         // reduced about 10 MB for each time a new ray tracing happens
-        if (this->bBox.bounds[0] == Vector3::Zero() && this->bBox.bounds[1] == Vector3::Zero()) {
-            MeshTriangle const *triangles = mesh->get_triangles();
+//        if (this->bBox.bounds[0] == Vector3::Zero() && this->bBox.bounds[1] == Vector3::Zero()) {
+//            MeshTriangle const *triangles = mesh->get_triangles();
+//            
+//            for (size_t i = 0; i < mesh->num_triangles(); i++) {
+//                
+//                Vector3 A = mesh->vertices[triangles[i].vertices[0]].position;
+//                Vector3 B = mesh->vertices[triangles[i].vertices[1]].position;
+//                Vector3 C = mesh->vertices[triangles[i].vertices[2]].position;
+//                
+//                Box boundingBox = getBoundingBoxForTriangle(A, B, C);
+//                
+//                BoxNode *newNode = modelBoxNodes->create(boundingBox, i);
+//                modelBoxNodes->append(newNode);
+//            }
+//        }
+        
+        if (!bvhTree) {
             
+            MeshTriangle const *triangles = mesh->get_triangles();
+            bvhTree = new azBVHTree(mesh->num_triangles());
+            std::cout<<bvhTree->leafNodes_.size()<<std::endl;
             for (size_t i = 0; i < mesh->num_triangles(); i++) {
                 
                 Vector3 A = mesh->vertices[triangles[i].vertices[0]].position;
                 Vector3 B = mesh->vertices[triangles[i].vertices[1]].position;
                 Vector3 C = mesh->vertices[triangles[i].vertices[2]].position;
                 
-                Box boundingBox = getBoundingBoxForTriangle(A, B, C);
+                BndBox bbox(A);
+                bbox.include(B);
+                bbox.include(C);
                 
-                BoxNode *newNode = modelBoxNodes->create(boundingBox, i);
-                modelBoxNodes->append(newNode);
+                bvhTree->leafNodes_[i] = azBVHTree::azBVNode(bbox, i);
             }
+            
+            bvhTree->root_ = &bvhTree->branchNodes_[0];
+            bvhTree->root_->buildDown(bvhTree->leafNodes_.begin(), bvhTree->leafNodes_.end());
         }
     }
     
     bool Model::hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const
     {
         Ray r = Ray(invMat.transform_point(ray.e), invMat.transform_vector(ray.d));
-        
-        if (!bBox.intersect(r, t0, t1)) {
-            return false;
-        }
+
+//        if (!bBox.intersect(r, t0, t1)) {
+//            return false;
+//        }
         
         // Indices list that stores all the indices of triangles that might hit
         std::vector<size_t> indexList;
-        root->nodeIntersect(r, t0, t1, indexList);
+//        root->nodeIntersect(r, t0, t1, indexList);
+        UINT idx;
+        bvhTree->root_->intersectRay(r, t0, t1, idx, indexList);
+        
+        if (indexList.size() == 0) {
+            return false;
+        }
         
         MeshTriangle const *triangles = mesh->get_triangles();
         real_t tt = INFINITY;
@@ -476,20 +504,46 @@ B.position, C.position);
         return false;
     }
     
-    /**
-     @brief To create a BVH Tree for model
-     */
+    /*
+    // @brief To create a BVH Tree for model
     void Model::createBVHTree()
     {
         // Attention here, this function is called multiple times but root is only 
         // intiated once
         // this is to avoid memory leak. modelBoxNodes are only initiated once and it 
         // would be empty then
-        if (root == NULL) {
-            root = new BVHNode(modelBoxNodes, 0);
-            this->bBox = root->bbox;
+//        if (root == NULL) {
+//            root = new BVHNode(modelBoxNodes, 0);
+//            this->bBox = root->bbox;
+//        }
+        
+    }*/
+    
+    bool Model::rayIntersectionTest(const Ray& r, real_t t0, real_t t1, real_t &tt, uint32_t triIndex) const
+    {
+        MeshTriangle const *triangles = mesh->get_triangles();
+        
+        MeshVertex A = mesh->vertices[triangles[triIndex].vertices[0]];
+        MeshVertex B = mesh->vertices[triangles[triIndex].vertices[1]];
+        MeshVertex C = mesh->vertices[triangles[triIndex].vertices[2]];
+        
+        // result.x = beta, result.y = gamma, result.z = t
+        Vector3 result = getResultTriangleIntersection(r, A.position, B.position, C.position);
+        
+        if (result.z < t0 || result.z > t1) {
+            return false;
         }
         
+        if (result.y < 0 || result.y > 1) {
+            return false;
+        }
+        
+        if (result.x < 0 || result.x > 1 - result.y) {
+            return false;
+        }
+
+        tt = result.z;
+        return true;
     }
     
 } /* _462 */

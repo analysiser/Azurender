@@ -156,8 +156,8 @@ namespace _462 {
         
         /////////// vvh kdtree ///////////
         // vvh kdtree preprocessing for faster construction
-        void vvhKDTreePreprocess(std::vector<cPhoton> &source,
-                                 std::vector<metaCPhoton> &sortedSource);
+        void vvhKDTreePreprocess(std::vector<cPhoton>& source,
+                                 std::vector<metaCPhoton>& sortedSource);
                                  
         
         // vvh kdtree construction

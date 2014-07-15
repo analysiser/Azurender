@@ -37,112 +37,98 @@ namespace _462 {
         assert(leavesBegin != leavesEnd);
         
         UINT size = leavesEnd - leavesBegin;
-        std::cout<<size<<std::endl;
-        
         assert(size > 1);
         
         // this node is a leaf node
-//        if (size > 1) {
-//            this->isLeaf_ = false;
-//            this->buildBoundingBox(leavesBegin, leavesEnd);
-//            this->d_ = this->getLongestEdge();
-//            
-//            // get the middle position along the longest edge of this bounding box
-//            std::vector<azBVNode>::iterator leavesMiddle =
-//            std::partition(leavesBegin, leavesEnd, [this](const azBVNode &aNode) {
-//                return ( (aNode.pMin[this->d_] + aNode.pMax[this->d_]) <= (this->pMin[this->d_] + this->pMax[this->d_]) );
-//            });
-//            
-//            
-//            
-//        }
-        
-        
-        // this is the node that is directly above two leaves
-        if (size == 2) {
+        if (size > 1) {
             this->isLeaf_ = false;
             this->buildBoundingBox(leavesBegin, leavesEnd);
-            this->leftChild_ = &(*leavesBegin);
-            this->rightChild_ = &(*(leavesBegin + 1));
-        }
-        else if (size > 2) {
-            
-            this->isLeaf_ = false;
-            
-            this->buildBoundingBox(leavesBegin, leavesEnd);
-            d_ = this->getLongestEdge();
+            this->d_ = this->getLongestEdge();
             
             // get the middle position along the longest edge of this bounding box
             std::vector<azBVNode>::iterator leavesMiddle =
             std::partition(leavesBegin, leavesEnd, [this](const azBVNode &aNode) {
-                return ( (aNode.pMin[this->d_] + aNode.pMax[this->d_]) < (this->pMin[this->d_] + this->pMax[this->d_]) );
+                return ( (aNode.pMin[this->d_] + aNode.pMax[this->d_]) <= (this->pMin[this->d_] + this->pMax[this->d_]) );
             });
             
-            UINT leftSize = leavesMiddle - leavesBegin;
-            UINT rightSize = leavesEnd - leavesMiddle;
             
-//            std::cout<<leftSize<<" "<<rightSize<<std::endl;
+            UINT firstSize, secondSize;
+            firstSize = leavesMiddle - leavesBegin;
+            secondSize = leavesEnd - leavesMiddle;
             
-            if ((leftSize == 0) or (rightSize == 0)) {
+            assert( size == (firstSize + secondSize) );
+            
+            if (firstSize == 0 or secondSize == 0) {
                 
-                UINT median = (leftSize + rightSize - 1)/2 + 1;
+                UINT median = (firstSize + secondSize - 1)/2 + 1;
                 std::nth_element(leavesBegin, leavesBegin + median, leavesEnd,
                                  [this](const azBVNode &nodeA, const azBVNode &nodeB) {
                                      
-                            return ( (nodeA.pMin[this->d_] + nodeA.pMax[this->d_]) <=
-                                     (nodeB.pMin[this->d_] + nodeB.pMax[this->d_]) );
-                });
+                                     return ( (nodeA.pMin[this->d_] + nodeA.pMax[this->d_]) <=
+                                              (nodeB.pMin[this->d_] + nodeB.pMax[this->d_]) );
+                                 });
                 
                 leavesMiddle = leavesBegin + median;
-                leftSize = leavesMiddle - leavesBegin;
-                rightSize = leavesEnd - leavesMiddle;
-                
-//                std::cout<<"adjusted: "<<leftSize<<" "<<rightSize<<std::endl;
-                assert((leftSize != 0) and (rightSize != 0));
+                firstSize = leavesMiddle - leavesBegin;
+                secondSize = leavesEnd - leavesMiddle;
             }
             
-            if ((leftSize > 0) and (rightSize > 0)) {
+            assert( size == (firstSize + secondSize) );
+            
+            if (firstSize > 1) {
                 
-                // always make sure mode nodes on left side
-                if (leftSize >= rightSize) {
+                if (secondSize > 1) {
                     
-                    // if there is only one node on right
-                    if (rightSize == 1) {
+                    if (firstSize >= secondSize) {
                         this->leftChild_ = this + 1;
-                        this->rightChild_ = &(*leavesMiddle);
-                        
-                        this->leftChild_->buildDown(leavesBegin, leavesMiddle);
-                    }
-                    else {
-                        this->leftChild_ = this + 1;
-                        this->rightChild_ = this + leftSize;
+                        this->rightChild_ = this + firstSize;
                         
                         this->leftChild_->buildDown(leavesBegin, leavesMiddle);
                         this->rightChild_->buildDown(leavesMiddle, leavesEnd);
                     }
-                }
-                else {
-                    
-                    // if there is only one node the left
-                    if (leftSize == 1) {
-                        this->leftChild_ = this + 1;
-                        this->rightChild_ = &(*leavesMiddle);
-                        
-                        this->leftChild_->buildDown(leavesMiddle, leavesEnd);
-                    }
                     else {
                         this->leftChild_ = this + 1;
-                        this->rightChild_ = this + rightSize;
+                        this->rightChild_ = this + secondSize;
                         
+                        this->leftChild_->buildDown(leavesMiddle, leavesEnd);
                         this->rightChild_->buildDown(leavesBegin, leavesMiddle);
+                    }
+                }
+                else if (secondSize == 1) {
+                    this->leftChild_ = this + 1;
+                    this->rightChild_ = &*leavesMiddle;
+                    this->leftChild_->buildDown(leavesBegin, leavesMiddle);
+                    
+                }
+                else {
+                    // rebuild
+                    assert(0);
+                }
+            }
+            else {
+                
+                if (firstSize == 1) {
+                    if (secondSize > firstSize) {
+                        this->leftChild_ = this + 1;
+                        this->rightChild_ = &*leavesBegin;
                         this->leftChild_->buildDown(leavesMiddle, leavesEnd);
                     }
+                    else if (secondSize == firstSize){
+                        this->leftChild_ = &*leavesBegin;
+                        this->rightChild_ = &*leavesMiddle;
+                    }
+                    else {
+                        assert(0);
+                    }
+                }
+                else {
+                    // rebuild
+                    assert(0);
                 }
             }
             
+            
         }
-        
-        
         
     }
     

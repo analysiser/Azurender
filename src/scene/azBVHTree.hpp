@@ -25,8 +25,6 @@ namespace _462 {
     typedef std::uint32_t UINT;
     typedef std::uint8_t  UINT8;
     
-//    typedef bool (*rayIntersectionFunction)(const Ray& r, real_t t0, real_t t1, real_t& tt, UINT index);
-    
     class azBVHTree
     {
     public:
@@ -51,13 +49,6 @@ namespace _462 {
             branchNodes_ = azBVNodesArray(branchsize_);
         }
         
-//        auto lambda = [](){std::cout<<"yes"<<std::endl;};
-        
-//        template <class FN>
-//        bool insectFirstRay(const Ray& ray, real_t& t0, real_t &t1, FN& rayIntersectionFunction);
-        
-        
-        
         class azBVNode : public BndBox {
 
         public:
@@ -68,7 +59,7 @@ namespace _462 {
             
             azBVNode() : idx1_(0),
             idx2_(std::numeric_limits<unsigned int>::max()),
-            edgeValue_(0), isLeaf_(0), leftChild_(0), rightChild_(0), is1_(0)
+            edgeValue_(0), isLeaf_(0), leftChild_(0), rightChild_(0)
             { }
             
             azBVNode(const BndBox &bbox, UINT index) {
@@ -81,7 +72,6 @@ namespace _462 {
                 this->isLeaf_ = true;
                 this->leftChild_ = nullptr;
                 this->rightChild_ = nullptr;
-                is1_ = 0;
             }
             
             azBVNode(const azBVNode *other)
@@ -168,11 +158,9 @@ namespace _462 {
             UINT idx1_, idx2_;
             real_t edgeValue_;
             bool isLeaf_;
-            bool is1_;
             
             azBVNode *leftChild_, *rightChild_;
-            
-//            rayIntersectionFunction *func_;
+        
         };
         
 //    private:
@@ -180,9 +168,6 @@ namespace _462 {
         azBVNode *root_;
         azBVNodesArray leafNodes_;
         azBVNodesArray branchNodes_;
-        
-    private:
-        
         
         
     };

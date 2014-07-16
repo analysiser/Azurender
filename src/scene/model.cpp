@@ -409,19 +409,34 @@ box2.bounds[1].z;
             bvhTree->root_ = &bvhTree->branchNodes_[0];
             bvhTree->root_->buildDown(bvhTree->leafNodes_.begin(), bvhTree->leafNodes_.end());
             
+            std::vector<size_t> m(bvhTree->leafNodes_.size());
             size_t size = 0;
             for (auto it = bvhTree->branchNodes_.begin(); it != bvhTree->branchNodes_.end(); it++) {
+                
+                if (it->leftChild_ == nullptr || it->rightChild_ == nullptr) {
+                    exit(1);
+                }
+                
                 if (it->leftChild_ != nullptr) {
                     if (it->leftChild_->isLeaf()) {
-                        ++size;
+                        m[it->leftChild_->idx2_] += 1;
+                        size += 1;
                     }
                 }
                 if (it->rightChild_ != nullptr) {
                     if (it->rightChild_->isLeaf()) {
-                        ++size;
+                        m[it->rightChild_->idx2_] += 1;
+                        size += 1;
                     }
                 }
             }
+            
+            for (size_t i = 0; i < size; i++) {
+                if (m[i] != 1) {
+                    std::cout<<i<<" ";
+                }
+            }
+            std::cout<<std::endl;
             
             std::cout<<size<<" "<<bvhTree->leafNodes_.size()<<std::endl;
         }
@@ -465,10 +480,7 @@ box2.bounds[1].z;
             tt = result.z;
             return true;
         };
-        
-//        auto test = [](){
-//            std::cout<<"test"<<std::endl;
-//        };
+
         int64_t idx = -1;
         bvhTree->root_->intersectRayTest(r, t0, t1, idx, rayTriangleIntersectionTest);
         if (idx != -1) {
@@ -520,6 +532,7 @@ box2.bounds[1].z;
         }
         
         return false;
+        
 //        if (indexList.size() == 0) {
 //            return false;
 //        }

@@ -10,23 +10,13 @@
 
 namespace _462 {
     
-//    template <class FN>
-//    bool azBVHTree::insectFirstRay(const Ray& ray, real_t& t0, real_t &t1, FN& rayIntersectionFunction) {
-//        
-//    }
-    
     void azBVHTree::azBVNode::buildBoundingBox(std::vector<azBVNode>::iterator leavesBegin,
                                                std::vector<azBVNode>::iterator leavesEnd) {
         
         for (auto it = leavesBegin; it != leavesEnd; it++) {
-            this->include(*it);
+            this->include(it->pMin);
+            this->include(it->pMax);
         }
-        
-//        UINT size = leavesEnd - leavesBegin;
-//        for (UINT i = 0; i < size; i++) {
-//            const azBVNode node = *(leavesBegin + i);
-//            this->include(node);
-//        }
     }
     
     void azBVHTree::azBVNode::buildDown(std::vector<azBVNode>::iterator leavesBegin,
@@ -40,14 +30,13 @@ namespace _462 {
         // this node is a leaf node
         if (size > 1) {
             this->isLeaf_ = false;
-            this->is1_ = 1;
             this->buildBoundingBox(leavesBegin, leavesEnd);
             this->d_ = this->getLongestEdge();
             
             // get the middle position along the longest edge of this bounding box
             std::vector<azBVNode>::iterator leavesMiddle =
             std::partition(leavesBegin, leavesEnd, [this](const azBVNode &aNode) {
-                return ( (aNode.pMin[this->d_] + aNode.pMax[this->d_]) <= (this->pMin[this->d_] + this->pMax[this->d_]) );
+                return ( (aNode.pMin[this->d_] + aNode.pMax[this->d_]) < (this->pMin[this->d_] + this->pMax[this->d_]) );
             });
             
             
@@ -63,7 +52,7 @@ namespace _462 {
                 std::nth_element(leavesBegin, leavesBegin + median, leavesEnd,
                                  [this](const azBVNode &nodeA, const azBVNode &nodeB) {
                                      
-                                     return ( (nodeA.pMin[this->d_] + nodeA.pMax[this->d_]) <=
+                                     return ( (nodeA.pMin[this->d_] + nodeA.pMax[this->d_]) <
                                               (nodeB.pMin[this->d_] + nodeB.pMax[this->d_]) );
                                  });
                 
@@ -100,7 +89,6 @@ namespace _462 {
                     
                 }
                 else {
-                    // rebuild
                     assert(0);
                 }
             }
@@ -121,7 +109,6 @@ namespace _462 {
                     }
                 }
                 else {
-                    // rebuild
                     assert(0);
                 }
             }

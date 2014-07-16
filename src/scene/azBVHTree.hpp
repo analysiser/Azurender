@@ -22,7 +22,8 @@
 
 namespace _462 {
     
-    typedef std::uint32_t UINT;
+    typedef std::int64_t INT64;
+    typedef std::uint32_t UINT32;
     typedef std::uint8_t  UINT8;
     
     class azBVHTree
@@ -32,14 +33,9 @@ namespace _462 {
         class azBVNode;
         typedef std::vector<azBVNode> azBVNodesArray;
         
-        azBVHTree () : size_(0),
-        leafsize_(0),
-        branchsize_(0),
-        branchNodes_(0),
-        leafNodes_(0)
-        { }
+        azBVHTree () {}
         
-        azBVHTree (const UINT &leafSize) {
+        azBVHTree (const UINT32 &leafSize) {
             
             leafsize_ = leafSize;
             branchsize_ = leafSize - 1;
@@ -49,6 +45,50 @@ namespace _462 {
             branchNodes_ = azBVNodesArray(branchsize_);
         }
         
+        azBVNodesArray getLeafNodes() { return leafNodes_; }
+        UINT32 getLeafSize() { return leafsize_; }
+        
+        azBVNodesArray getBranchNodes() { return branchNodes_; }
+        UINT32 getBranchSize() { return branchsize_; }
+        
+        void setLeaf(BndBox bbox, UINT32 index) {
+            assert(index < leafsize_);
+            leafNodes_[index] = azBVNode(bbox, index);
+        }
+        
+        azBVNode *root() {
+            
+            assert(branchsize_ > 0);
+            return &branchNodes_[0];
+        }
+        
+        void buildBVHTree() {
+            
+            assert(root_ != nullptr);
+            assert(leafsize_ > 0);
+            assert(branchsize_ > 0);
+            
+            root_ = &*branchNodes_.begin();
+            root_->buildDown(leafNodes_.begin(), leafNodes_.end());
+        }
+        
+        template <typename FN>
+        bool getFisrtIntersectIndex(const Ray& r,
+                                    real_t& t0,
+                                    real_t& t1,
+                                    INT64& index,
+                                    FN &func) {
+            INT64 idx = -1;
+            this->root()->intersectRayTest(r, t0, t1, idx, func);
+            if (idx != -1) {
+                index = idx;
+                return true;
+            }
+            return false;
+        }
+        
+        
+        // Nested class azBVNode, supporting structure for BVHTree
         class azBVNode : public BndBox {
 
         public:
@@ -62,7 +102,7 @@ namespace _462 {
             edgeValue_(0), isLeaf_(0), leftChild_(0), rightChild_(0)
             { }
             
-            azBVNode(const BndBox &bbox, UINT index) {
+            azBVNode(const BndBox &bbox, UINT32 index) {
                 
                 this->d_ = 0;
                 this->pMin = bbox.pMin;
@@ -104,13 +144,14 @@ namespace _462 {
                 return (pMax[d] - pMin[d]);
             }
             
-            UINT getLeafIndex() {
+            UINT32 getLeafIndex() {
                 assert(idx1_ == 0);
                 return idx2_;
             }
             
             bool isLeaf(){ return isLeaf_; }
             
+            // Build the bounding box for all nodes from leavesBegin to leavesEnd
             void buildBoundingBox(std::vector<azBVNode>::iterator leavesBegin,
                                   std::vector<azBVNode>::iterator leavesEnd);
             
@@ -155,7 +196,7 @@ namespace _462 {
 //        private:
 //            UINT8 edge_;
             UINT8 d_;
-            UINT idx1_, idx2_;
+            UINT32 idx1_, idx2_;
             real_t edgeValue_;
             bool isLeaf_;
             
@@ -163,8 +204,8 @@ namespace _462 {
         
         };
         
-//    private:
-        UINT size_, leafsize_, branchsize_;
+    private:
+        UINT32 size_, leafsize_, branchsize_;
         azBVNode *root_;
         azBVNodesArray leafNodes_;
         azBVNodesArray branchNodes_;

@@ -46,7 +46,7 @@
 #define BETA                            (1.953)
 #define ONE_MINUS_E_TO_MINUS_BETA       (0.858)
 
-#define TOTAL_ITERATION                 1  // 300
+#define TOTAL_ITERATION                 200  // 300
 #define SMALL_NODE_GRANULARITY          128
 
 #define PHOTON_QUERY_RADIUS             (0.000375)     // 0.000272
@@ -2467,7 +2467,7 @@ namespace _462 {
     
     void Raytracer::vvhPreprocessSmallNodes(std::vector<KDNode *> &smallList,
                                             std::vector<KDNode *> &nodeList,
-                                            std::vector<cPhoton> &list)
+                                            std::vector<cPhoton> & /*list*/)
     {
         // temporary treat all small nodes as leaf nodes
 #if SIMPLE_SMALL_NODE
@@ -2629,8 +2629,8 @@ namespace _462 {
         return diff.x * diff.y * diff.z + TWO_MUL_RADIUS * (diff.x * diff.y + diff.x * diff.z + diff.y + diff.z ) + SPHERE_VOLUME;
     }
     
-    void Raytracer::vvhPreorderTraversal(std::vector<KDNode *> &nodeList,
-                                         std::vector<cPhoton> &list)
+    void Raytracer::vvhPreorderTraversal(std::vector<KDNode *>& /*nodeList*/,
+                                         std::vector<cPhoton> & /*list*/ )
     {
 //        for (std::vector<KDNode *>::iterator it = nodeList.begin(); it != nodeList.end(); it++)
 //        {

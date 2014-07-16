@@ -24,7 +24,7 @@ namespace _462 {
         
         assert(leavesBegin != leavesEnd);
         
-        UINT size = leavesEnd - leavesBegin;
+        UINT32 size = leavesEnd - leavesBegin;
         assert(size > 1);
         
         // this node is a leaf node
@@ -40,7 +40,7 @@ namespace _462 {
             });
             
             
-            UINT firstSize, secondSize;
+            UINT32 firstSize, secondSize;
             firstSize = leavesMiddle - leavesBegin;
             secondSize = leavesEnd - leavesMiddle;
             
@@ -48,7 +48,7 @@ namespace _462 {
             
             if (firstSize == 0 or secondSize == 0) {
                 
-                UINT median = (firstSize + secondSize - 1)/2 + 1;
+                UINT32 median = (firstSize + secondSize - 1)/2 + 1;
                 std::nth_element(leavesBegin, leavesBegin + median, leavesEnd,
                                  [this](const azBVNode &nodeA, const azBVNode &nodeB) {
                                      

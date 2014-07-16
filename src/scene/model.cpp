@@ -392,7 +392,7 @@ box2.bounds[1].z;
             
             MeshTriangle const *triangles = mesh->get_triangles();
             bvhTree = new azBVHTree(mesh->num_triangles());
-            std::cout<<bvhTree->leafNodes_.size()<<std::endl;
+
             for (size_t i = 0; i < mesh->num_triangles(); i++) {
                 
                 Vector3 A = mesh->vertices[triangles[i].vertices[0]].position;
@@ -403,42 +403,11 @@ box2.bounds[1].z;
                 bbox.include(B);
                 bbox.include(C);
                 
-                bvhTree->leafNodes_[i] = azBVHTree::azBVNode(bbox, i);
+//                bvhTree->leafNodes_[i] = azBVHTree::azBVNode(bbox, i);
+                bvhTree->setLeaf(azBVHTree::azBVNode(bbox, i), i);
             }
             
-            bvhTree->root_ = &bvhTree->branchNodes_[0];
-            bvhTree->root_->buildDown(bvhTree->leafNodes_.begin(), bvhTree->leafNodes_.end());
-            
-            std::vector<size_t> m(bvhTree->leafNodes_.size());
-            size_t size = 0;
-            for (auto it = bvhTree->branchNodes_.begin(); it != bvhTree->branchNodes_.end(); it++) {
-                
-                if (it->leftChild_ == nullptr || it->rightChild_ == nullptr) {
-                    exit(1);
-                }
-                
-                if (it->leftChild_ != nullptr) {
-                    if (it->leftChild_->isLeaf()) {
-                        m[it->leftChild_->idx2_] += 1;
-                        size += 1;
-                    }
-                }
-                if (it->rightChild_ != nullptr) {
-                    if (it->rightChild_->isLeaf()) {
-                        m[it->rightChild_->idx2_] += 1;
-                        size += 1;
-                    }
-                }
-            }
-            
-            for (size_t i = 0; i < size; i++) {
-                if (m[i] != 1) {
-                    std::cout<<i<<" ";
-                }
-            }
-            std::cout<<std::endl;
-            
-            std::cout<<size<<" "<<bvhTree->leafNodes_.size()<<std::endl;
+            bvhTree->buildBVHTree();
         }
     }
     
@@ -454,8 +423,7 @@ box2.bounds[1].z;
 //        std::vector<size_t> indexList;
 //        root->nodeIntersect(r, t0, t1, indexList);
         
-        
-        auto rayTriangleIntersectionTest = [this](Ray rr, real_t tt0, real_t tt1, real_t &tt, UINT triIndex){
+        auto rayTriangleIntersectionTest = [this](Ray rr, real_t tt0, real_t tt1, real_t &tt, INT64 triIndex){
             MeshTriangle const *triangles = mesh->get_triangles();
             
             MeshVertex A = mesh->vertices[triangles[triIndex].vertices[0]];
@@ -481,18 +449,17 @@ box2.bounds[1].z;
             return true;
         };
 
-        int64_t idx = -1;
-        bvhTree->root_->intersectRayTest(r, t0, t1, idx, rayTriangleIntersectionTest);
-        if (idx != -1) {
-
+        INT64 idx = -1;
+        
+        if (bvhTree->getFisrtIntersectIndex(r, t0, t1, idx, rayTriangleIntersectionTest)) {
+            
             MeshTriangle const *triangles = mesh->get_triangles();
             MeshVertex A = mesh->vertices[triangles[idx].vertices[0]];
             MeshVertex B = mesh->vertices[triangles[idx].vertices[1]];
             MeshVertex C = mesh->vertices[triangles[idx].vertices[2]];
             
             // result.x = beta, result.y = gamma, result.z = t
-            Vector3 result = getResultTriangleIntersection(r, A.position,
-                                                           B.position, C.position);
+            Vector3 result = getResultTriangleIntersection(r, A.position, B.position, C.position);
             
             rec.type = eTriangle;
             

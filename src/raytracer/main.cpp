@@ -259,6 +259,9 @@ namespace _462 {
                 case KEY_RAYTRACE:
                     get_dimension( &width, &height );
                     toggle_raytracing( width, height );
+                    std::cout<<"Camera Status"<<std::endl;
+                    std::cout<<camera_control.camera.position<<std::endl;
+                    std::cout<<camera_control.camera.orientation<<std::endl;
                     break;
                 case KEY_SCREENSHOT:
                     output_image();

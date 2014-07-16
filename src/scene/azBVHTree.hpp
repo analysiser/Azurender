@@ -24,7 +24,8 @@ namespace _462 {
     
     typedef std::uint32_t UINT;
     typedef std::uint8_t  UINT8;
-    typedef bool (*rayIntersectionFunction)(const Ray& r, real_t t0, real_t t1, real_t& tt, UINT index);
+    
+//    typedef bool (*rayIntersectionFunction)(const Ray& r, real_t t0, real_t t1, real_t& tt, UINT index);
     
     class azBVHTree
     {
@@ -32,7 +33,6 @@ namespace _462 {
         
         class azBVNode;
         typedef std::vector<azBVNode> azBVNodesArray;
-//        typedef std::vector<azBVNode> azBVNodesList;
         
         azBVHTree () : size_(0),
         leafsize_(0),
@@ -51,6 +51,8 @@ namespace _462 {
             branchNodes_ = azBVNodesArray(branchsize_);
         }
         
+//        auto lambda = [](){std::cout<<"yes"<<std::endl;};
+        
 //        template <class FN>
 //        bool insectFirstRay(const Ray& ray, real_t& t0, real_t &t1, FN& rayIntersectionFunction);
         
@@ -66,7 +68,7 @@ namespace _462 {
             
             azBVNode() : idx1_(0),
             idx2_(std::numeric_limits<unsigned int>::max()),
-            edgeValue_(0), isLeaf_(0), leftChild_(0), rightChild_(0)
+            edgeValue_(0), isLeaf_(0), leftChild_(0), rightChild_(0), is1_(0)
             { }
             
             azBVNode(const BndBox &bbox, UINT index) {
@@ -79,6 +81,7 @@ namespace _462 {
                 this->isLeaf_ = true;
                 this->leftChild_ = nullptr;
                 this->rightChild_ = nullptr;
+                is1_ = 0;
             }
             
             azBVNode(const azBVNode *other)
@@ -126,12 +129,38 @@ namespace _462 {
                            std::vector<azBVNode>::iterator leavesEnd);
             
             // Ray intersect with box
-//            template <class FN>
-            void intersectRay(const Ray& r,
-                              real_t& t0,
-                              real_t& t1,
-                              UINT &index,
-                              std::vector<size_t> &indices);
+            template <typename FN>
+            void intersectRayTest(const Ray& r,
+                                  real_t& t0,
+                                  real_t& t1,
+                                  int64_t& index,
+                                  FN &func) {
+                
+                if (this->intersect(r, t0, t1)) {
+                    if (this->isLeaf()) {
+                        real_t tt;
+                        if (func(r, t0, t1, tt, this->idx2_)) {
+                            t1 = tt;
+                            index = this->idx2_;
+                        }
+
+                    }
+                    else {
+                        if (this->leftChild_ != nullptr) {
+                            this->leftChild_->intersectRayTest(r, t0, t1, index, func);
+                        }
+                        if (this->rightChild_ != nullptr) {
+                            this->rightChild_->intersectRayTest(r, t0, t1, index, func);
+                        }
+                        
+                        
+                    }
+                    
+                }
+                
+                
+                
+            }
             
 //        private:
 //            UINT8 edge_;
@@ -139,8 +168,11 @@ namespace _462 {
             UINT idx1_, idx2_;
             real_t edgeValue_;
             bool isLeaf_;
+            bool is1_;
             
             azBVNode *leftChild_, *rightChild_;
+            
+//            rayIntersectionFunction *func_;
         };
         
 //    private:

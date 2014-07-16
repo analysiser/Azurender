@@ -18,9 +18,7 @@ namespace _462 {
     void azBVHTree::azBVNode::buildBoundingBox(std::vector<azBVNode>::iterator leavesBegin,
                                                std::vector<azBVNode>::iterator leavesEnd) {
         
-        std::vector<azBVNode>::iterator it;
-        for (it = leavesBegin; it != leavesEnd; it++) {
-//            const azBVNode node = *it;
+        for (auto it = leavesBegin; it != leavesEnd; it++) {
             this->include(*it);
         }
         
@@ -42,6 +40,7 @@ namespace _462 {
         // this node is a leaf node
         if (size > 1) {
             this->isLeaf_ = false;
+            this->is1_ = 1;
             this->buildBoundingBox(leavesBegin, leavesEnd);
             this->d_ = this->getLongestEdge();
             
@@ -130,31 +129,6 @@ namespace _462 {
             
         }
         
-    }
-    
-//    template <class FN>
-    void azBVHTree::azBVNode::intersectRay(const Ray& r,
-                                           real_t& t0,
-                                           real_t& t1,
-                                           UINT &index,
-                                           std::vector<size_t> &indices)
-    {
-        
-        if (this->intersect(r, t0, t1)) {
-            
-            if (this->isLeaf()) {
-                indices.push_back(this->idx2_);
-            }
-            else {
-                if (this->leftChild_ != nullptr) {
-                    this->leftChild_->intersectRay(r, t0, t1, index, indices);
-                }
-                
-                if (this->rightChild_ != nullptr) {
-                    this->rightChild_->intersectRay(r, t0, t1, index, indices);
-                }
-            }
-        }
     }
     
     

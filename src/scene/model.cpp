@@ -350,6 +350,7 @@ box2.bounds[1].z;
         bBox = Box(Vector3::Zero(), Vector3::Zero());
         type = eModel;
         root = NULL;
+        bvhTree = nullptr;
     }
     Model::~Model() {
         delete modelBoxNodes;
@@ -407,6 +408,22 @@ box2.bounds[1].z;
             
             bvhTree->root_ = &bvhTree->branchNodes_[0];
             bvhTree->root_->buildDown(bvhTree->leafNodes_.begin(), bvhTree->leafNodes_.end());
+            
+            size_t size = 0;
+            for (auto it = bvhTree->branchNodes_.begin(); it != bvhTree->branchNodes_.end(); it++) {
+                if (it->leftChild_ != nullptr) {
+                    if (it->leftChild_->isLeaf()) {
+                        ++size;
+                    }
+                }
+                if (it->rightChild_ != nullptr) {
+                    if (it->rightChild_->isLeaf()) {
+                        ++size;
+                    }
+                }
+            }
+            
+            std::cout<<size<<" "<<bvhTree->leafNodes_.size()<<std::endl;
         }
     }
     
@@ -419,45 +436,51 @@ box2.bounds[1].z;
 //        }
         
         // Indices list that stores all the indices of triangles that might hit
-        std::vector<size_t> indexList;
+//        std::vector<size_t> indexList;
 //        root->nodeIntersect(r, t0, t1, indexList);
-        UINT idx;
-        bvhTree->root_->intersectRay(r, t0, t1, idx, indexList);
         
-        if (indexList.size() == 0) {
-            return false;
-        }
         
-        MeshTriangle const *triangles = mesh->get_triangles();
-        real_t tt = INFINITY;
-        
-        for (size_t i = 0; i < indexList.size(); i++) {
+        auto rayTriangleIntersectionTest = [this](Ray rr, real_t tt0, real_t tt1, real_t &tt, UINT triIndex){
+            MeshTriangle const *triangles = mesh->get_triangles();
             
-            size_t idx = indexList[i];
+            MeshVertex A = mesh->vertices[triangles[triIndex].vertices[0]];
+            MeshVertex B = mesh->vertices[triangles[triIndex].vertices[1]];
+            MeshVertex C = mesh->vertices[triangles[triIndex].vertices[2]];
             
+            // result.x = beta, result.y = gamma, result.z = t
+            Vector3 result = getResultTriangleIntersection(rr, A.position, B.position, C.position);
+            
+            if (result.z < tt0 || result.z > tt1) {
+                return false;
+            }
+            
+            if (result.y < 0 || result.y > 1) {
+                return false;
+            }
+            
+            if (result.x < 0 || result.x > 1 - result.y) {
+                return false;
+            }
+            
+            tt = result.z;
+            return true;
+        };
+        
+//        auto test = [](){
+//            std::cout<<"test"<<std::endl;
+//        };
+        int64_t idx = -1;
+        bvhTree->root_->intersectRayTest(r, t0, t1, idx, rayTriangleIntersectionTest);
+        if (idx != -1) {
+
+            MeshTriangle const *triangles = mesh->get_triangles();
             MeshVertex A = mesh->vertices[triangles[idx].vertices[0]];
             MeshVertex B = mesh->vertices[triangles[idx].vertices[1]];
             MeshVertex C = mesh->vertices[triangles[idx].vertices[2]];
             
             // result.x = beta, result.y = gamma, result.z = t
             Vector3 result = getResultTriangleIntersection(r, A.position,
-B.position, C.position);
-            
-            if (result.z < t0 || result.z > t1) {
-                continue;
-            }
-            
-            if (result.y < 0 || result.y > 1) {
-                continue;
-            }
-            
-            if (result.x < 0 || result.x > 1 - result.y) {
-                continue;
-            }
-            
-            if (result.z > tt) {
-                continue;
-            }
+                                                           B.position, C.position);
             
             rec.type = eTriangle;
             
@@ -468,7 +491,7 @@ B.position, C.position);
             real_t alpha = 1 - beta - gamma;
             
             rec.normal = normalize(alpha * (normMat * A.normal) + beta * (normMat * B.normal) + gamma * (normMat * C.normal));
-
+            
             // For texture mapping adjustment
             A.tex_coord = getAdjustTexCoord(A.tex_coord);
             B.tex_coord = getAdjustTexCoord(B.tex_coord);
@@ -492,16 +515,89 @@ B.position, C.position);
             rec.t = result.z;
             
             rec.refractive_index = material->refractive_index;
-            tt = result.z;
             
-            rec.isLight = this->isLight;
-        }
-        
-        if (tt < INFINITY) {
             return true;
         }
         
         return false;
+//        if (indexList.size() == 0) {
+//            return false;
+//        }
+        
+//        MeshTriangle const *triangles = mesh->get_triangles();
+//        real_t tt = INFINITY;
+//        
+//        for (size_t i = 0; i < indexList.size(); i++) {
+//            
+//            size_t idx = indexList[i];
+//            
+//            MeshVertex A = mesh->vertices[triangles[idx].vertices[0]];
+//            MeshVertex B = mesh->vertices[triangles[idx].vertices[1]];
+//            MeshVertex C = mesh->vertices[triangles[idx].vertices[2]];
+//            
+//            // result.x = beta, result.y = gamma, result.z = t
+//            Vector3 result = getResultTriangleIntersection(r, A.position,
+//B.position, C.position);
+//            
+//            if (result.z < t0 || result.z > t1) {
+//                continue;
+//            }
+//            
+//            if (result.y < 0 || result.y > 1) {
+//                continue;
+//            }
+//            
+//            if (result.x < 0 || result.x > 1 - result.y) {
+//                continue;
+//            }
+//            
+//            if (result.z > tt) {
+//                continue;
+//            }
+//            
+//            rec.type = eTriangle;
+//            
+//            rec.position = ray.e + result.z * ray.d;
+//            
+//            real_t beta = result.x;
+//            real_t gamma = result.y;
+//            real_t alpha = 1 - beta - gamma;
+//            
+//            rec.normal = normalize(alpha * (normMat * A.normal) + beta * (normMat * B.normal) + gamma * (normMat * C.normal));
+//
+//            // For texture mapping adjustment
+//            A.tex_coord = getAdjustTexCoord(A.tex_coord);
+//            B.tex_coord = getAdjustTexCoord(B.tex_coord);
+//            C.tex_coord = getAdjustTexCoord(C.tex_coord);
+//            
+//            Vector2 tex_cood_interpolated =
+//            alpha * A.tex_coord + beta * B.tex_coord + gamma * C.tex_coord;
+//            
+//            int width = 0, height = 0;
+//            if (material) {
+//                material->get_texture_size(&width, &height);
+//            }
+//            
+//            rec.diffuse = material->diffuse;
+//            rec.ambient = material->ambient;
+//            rec.specular = material->specular;
+//            rec.phong = material->phong;
+//            
+//            rec.texture = material->get_texture_pixel(tex_cood_interpolated.x * width, tex_cood_interpolated.y * height);
+//            
+//            rec.t = result.z;
+//            
+//            rec.refractive_index = material->refractive_index;
+//            tt = result.z;
+//            
+////            rec.isLight = this->isLight;
+//        }
+//        
+//        if (tt < INFINITY) {
+//            return true;
+//        }
+//        
+//        return false;
     }
     
     /*
@@ -518,32 +614,4 @@ B.position, C.position);
 //        }
         
     }*/
-    
-    bool Model::rayIntersectionTest(const Ray& r, real_t t0, real_t t1, real_t &tt, uint32_t triIndex) const
-    {
-        MeshTriangle const *triangles = mesh->get_triangles();
-        
-        MeshVertex A = mesh->vertices[triangles[triIndex].vertices[0]];
-        MeshVertex B = mesh->vertices[triangles[triIndex].vertices[1]];
-        MeshVertex C = mesh->vertices[triangles[triIndex].vertices[2]];
-        
-        // result.x = beta, result.y = gamma, result.z = t
-        Vector3 result = getResultTriangleIntersection(r, A.position, B.position, C.position);
-        
-        if (result.z < t0 || result.z > t1) {
-            return false;
-        }
-        
-        if (result.y < 0 || result.y > 1) {
-            return false;
-        }
-        
-        if (result.x < 0 || result.x > 1 - result.y) {
-            return false;
-        }
-
-        tt = result.z;
-        return true;
-    }
-    
 } /* _462 */

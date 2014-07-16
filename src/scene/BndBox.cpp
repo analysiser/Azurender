@@ -29,9 +29,9 @@ namespace _462 {
 //        pMin.y = std::min(pMin.y, bbox.pMin.y);
 //        pMin.z = std::min(pMin.z, bbox.pMin.z);
 //        
-//        pMax.x = std::max(pMax.x, bbox.pMin.x);
-//        pMax.y = std::max(pMax.y, bbox.pMin.y);
-//        pMax.z = std::max(pMax.z, bbox.pMin.z);
+//        pMax.x = std::max(pMax.x, bbox.pMax.x);
+//        pMax.y = std::max(pMax.y, bbox.pMax.y);
+//        pMax.z = std::max(pMax.z, bbox.pMax.z);
     }
     
     BndBox BndBox::expand(const _462::BndBox &b, const _462::Vector3 &p)

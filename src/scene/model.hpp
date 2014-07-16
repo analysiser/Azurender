@@ -153,23 +153,15 @@ namespace _462 {
         
         //
         virtual void createBoundingBox() const;
+        
+//        void createBVHTree();
 
         
         // Override of virtual function from Geometry
         virtual bool hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const;
 
-        
-        bool rayIntersectionTest(const Ray& r, real_t t0, real_t t1, real_t &tt, uint32_t triIndex) const;
-        
-//        // Create a BVH Tree for optimization
-//        void createBVHTree();
-        
-        
-
-                
     };
     
-    inline void test() {};
 } /* _462 */
 
 #endif /* _462_SCENE_MODEL_HPP_ */

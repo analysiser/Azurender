@@ -46,7 +46,7 @@
 #define BETA                            (1.953)
 #define ONE_MINUS_E_TO_MINUS_BETA       (0.858)
 
-#define TOTAL_ITERATION                 300  // 300
+#define TOTAL_ITERATION                 1  // 300
 #define SMALL_NODE_GRANULARITY          128
 
 #define PHOTON_QUERY_RADIUS             (0.000375)     // 0.000272
@@ -143,6 +143,7 @@ namespace _462 {
             scene->get_geometries()[i]->createBoundingBox();
 //            if (scene->get_geometries()[i]->type == eModel) {
 //                Model *model = (Model *)scene->get_geometries()[i];
+//                model->createBVHTree();
 //            }
         }
         
@@ -1244,7 +1245,7 @@ namespace _462 {
             
             // normal
 #if ENABLE_PHOTON_MAPPING
-                int coeef = 75;
+                int coeef = 25;
     #if C_PHOTON_MODE
                 if (CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED > 0)
                 {

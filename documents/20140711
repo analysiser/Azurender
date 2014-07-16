@@ -28,15 +28,24 @@ c photon KDTree Construction Time = 158 ms
 Done One Pass! Iteration = 469, Pass spent = 13755ms
 Pass photon search spent: indirect = 4193ms, caustics = 2339ms
 
+// dragon before using new BVHTree
+default
+default
+Loading mesh from 'models/dragon.obj'...
+Successfully loaded mesh 'models/dragon.obj'.
+construct BVH time: 643 ms
+c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
+Done One Pass! Iteration = 1, Pass spent = 3021ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 2, Pass spent = 2687ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 3, Pass spent = 2685ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 4, Pass spent = 2680ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Program ended with exit code: 0
 
-
-
-
-
-
-
-
-// dragon after
+// dragon after using new BVHTree
 default
 default
 Loading mesh from 'models/dragon.obj'...
@@ -55,23 +64,34 @@ Pass photon search spent: indirect = 0ms, caustics = 0ms
 Done One Pass! Iteration = 5, Pass spent = 1797ms
 Pass photon search spent: indirect = 0ms, caustics = 0ms
 
-
-
-// dragon before
+// dragon after using lambda expression for t testing
 default
 default
+crystal
+crystal
 Loading mesh from 'models/dragon.obj'...
 Successfully loaded mesh 'models/dragon.obj'.
-construct BVH time: 643 ms
+100000
+construct BVH time: 54 ms
 c photon size = 24, photon size = 32, Vector3 size = 24, Color size = 12, TP size = 1
-Done One Pass! Iteration = 1, Pass spent = 3021ms
+Done One Pass! Iteration = 1, Pass spent = 1308ms
 Pass photon search spent: indirect = 0ms, caustics = 0ms
-Done One Pass! Iteration = 2, Pass spent = 2687ms
+Done One Pass! Iteration = 2, Pass spent = 1261ms
 Pass photon search spent: indirect = 0ms, caustics = 0ms
-Done One Pass! Iteration = 3, Pass spent = 2685ms
+Done One Pass! Iteration = 3, Pass spent = 1040ms
 Pass photon search spent: indirect = 0ms, caustics = 0ms
-Done One Pass! Iteration = 4, Pass spent = 2680ms
+Done One Pass! Iteration = 4, Pass spent = 1048ms
 Pass photon search spent: indirect = 0ms, caustics = 0ms
-Program ended with exit code: 0
-
+Done One Pass! Iteration = 5, Pass spent = 1053ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 6, Pass spent = 1043ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 7, Pass spent = 1043ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 8, Pass spent = 1050ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 9, Pass spent = 1035ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
+Done One Pass! Iteration = 10, Pass spent = 1039ms
+Pass photon search spent: indirect = 0ms, caustics = 0ms
 

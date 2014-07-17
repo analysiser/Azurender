@@ -27,8 +27,8 @@ struction on framwork...). It supports environment mapping based on cube mapping
 It has acceleration data structures for photon mapping (KD-Tree) and ray tracing
 (BVH Tree). For KD-Tree buidling and nearest neighbor searching, my final project
 in Parallel Computer Architecture and Programming (15-418, by Kavon Fatahalian:
-15418.courses.cs.cmu.edu/spring2014/) final project has more detailed description
-(cargocollective.com/xiaoli/15418-Final-Project).
+http://15418.courses.cs.cmu.edu/spring2014/) final project has more detailed description
+(http://cargocollective.com/xiaoli/15418-Final-Project).
 
 NOTE:
 For 15-462 students in CMU, some implementation might be helpful to your project,

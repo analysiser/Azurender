@@ -27,7 +27,7 @@
 
 #endif
 
-#define RAYTRACE_DEPTH          8
+#define RAYTRACE_DEPTH          5
 #define PHOTON_TRACE_DEPTH      5
 
 

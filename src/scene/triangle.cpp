@@ -67,7 +67,7 @@ namespace _462 {
         for (int i = 0; i < 3; i++) {
             // local bounding box
             bbox_local->include(vertices[i].position);
-            bbox_world->include(invMat.transform_point(vertices[i].position));
+            bbox_world->include(mat.transform_point(vertices[i].position));
         }
     }
     

@@ -73,7 +73,7 @@ namespace _462 {
         }
         
         template <typename FN>
-        bool getFisrtIntersectIndex(const Ray& r,
+        bool getFirstIntersectIndex(const Ray& r,
                                     real_t& t0,
                                     real_t& t1,
                                     INT64& index,

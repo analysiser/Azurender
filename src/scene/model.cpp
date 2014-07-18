@@ -451,7 +451,7 @@ box2.bounds[1].z;
 
         INT64 idx = -1;
         
-        if (bvhTree->getFisrtIntersectIndex(r, t0, t1, idx, rayTriangleIntersectionTest)) {
+        if (bvhTree->getFirstIntersectIndex(r, t0, t1, idx, rayTriangleIntersectionTest)) {
             
             MeshTriangle const *triangles = mesh->get_triangles();
             MeshVertex A = mesh->vertices[triangles[idx].vertices[0]];
@@ -494,6 +494,9 @@ box2.bounds[1].z;
             rec.t = result.z;
             
             rec.refractive_index = material->refractive_index;
+            
+//            rec.isLight = this->isLight;
+
             
             return true;
         }

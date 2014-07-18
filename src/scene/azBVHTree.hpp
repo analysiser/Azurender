@@ -43,6 +43,7 @@ namespace _462 {
             
             leafNodes_ = azBVNodesArray(leafsize_);
             branchNodes_ = azBVNodesArray(branchsize_);
+            root_ = &branchNodes_[0];
         }
         
         azBVNodesArray getLeafNodes() { return leafNodes_; }

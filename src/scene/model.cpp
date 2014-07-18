@@ -388,7 +388,7 @@ box2.bounds[1].z;
 //            }
 //        }
         
-        if (!bvhTree) {
+        if (bvhTree == nullptr) {
             
             MeshTriangle const *triangles = mesh->get_triangles();
             bvhTree = new azBVHTree(mesh->num_triangles());

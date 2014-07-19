@@ -4,11 +4,11 @@
         <fov v=".785"/>
         <near_clip v=".01"/>
         <far_clip v="100.0"/>
-        <position x="0.0" y="1.0" z="20.0"/>
-        <orientation a="0.0" x="0.0" y="1.0" z="0.0"/>
+        <position x="6.9" y="1.17" z="49.5"/>
+        <orientation a="0.793683" x="0.224424" y="0.565166" z="-0.0169889"/>
     </camera>
 
-    <background_color r="0.0" g="0.0" b="0.0"/>
+    <background_color r="0.0" g="0.7" b="0.7"/>
 
     <refractive_index v="1.0"/>
 
@@ -33,6 +33,15 @@
         <radius v="6.0"/>
         <islight v="1.0"/>
     </sphere>
+
+    <material name="steel">
+        <refractive_index v="0.0"/>
+        <ambient r="0.0" g="0.0" b="0.0"/>
+        <diffuse r="0.5" g="0.5" b="0.5"/>
+        <specular r="0.88" g="0.87" b="0.85"/>
+        <!-- <specular r="1.0" g="1.0" b="1.0"/> -->
+        <phong v="1024"/>
+    </material>
     
     <material name="white">
         <refractive_index v="0.0"/>
@@ -42,10 +51,10 @@
     
     <mesh name="mech" filename="models/mech.obj"/>
 
-    <model material="white" mesh="mech">
+    <model material="steel" mesh="mech">
         <position x="10.0" y="10.0" z="10.0"/>
         <scale x="0.1" y="0.1" z="0.1" />
-        <orientation a="-1.4" x="1.0" y="1.0" z="1.0"/>
+        <orientation a="1.0" x="1.0" y="1.0" z="-1.0"/>
     </model> 
 
 </scene>

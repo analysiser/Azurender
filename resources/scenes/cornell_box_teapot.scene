@@ -335,22 +335,22 @@
     </material> 
  
 
-    <!-- <mesh name="bunny" filename="models/dragon.obj"/>
+    <mesh name="bunny" filename="models/dragon.obj"/>
 
-    <model material="default" mesh="bunny">
-        <position x="0.0" y="0.0" z="0.0"/>
-        <scale x="10.0" y="3.0" z="3.0"/>
+    <model material="crystal" mesh="bunny">
+        <position x="0.0" y="0.25" z="0.0"/>
+        <scale x="3.0" y="3.0" z="3.0"/>
         <orientation a="1.4" x="-1.0" y="0.0" z="0.0"/>
-    </model>  -->
+    </model> 
 
 
-    <mesh name="teapot" filename="models/teapot.obj"/>
+    <!-- <mesh name="teapot" filename="models/teapot.obj"/>
 
     <model material="white" mesh="teapot">
         <position x="0.0" y="-0.8" z="0.0"/>
         <scale x="0.15" y="0.15" z="0.15"/>
         <orientation a="0.0" x="-1.0" y="0.0" z="0.0"/>
-    </model> 
+    </model>  -->
 
 
 

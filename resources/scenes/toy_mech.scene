@@ -17,12 +17,14 @@
         <position x="0.0" y="-3.0" z="50.0"/>
 		<radius v="6.0"/>
         <color r="1.0" g="1.0" b="1.0"/>
+        <type v="1.0"/>
     </point_light>
     
     <point_light>
         <position x="-10.0" y="-10.0" z="50.0"/>
 		<radius v="6.0"/>
         <color r="0.9" g="0.9" b="0.18"/>
+        <type v="1.0"/>
     </point_light>
 
     <material name="wood" texture="images/metal1_2.png">

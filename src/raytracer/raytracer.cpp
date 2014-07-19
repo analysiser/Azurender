@@ -1222,27 +1222,6 @@ namespace _462 {
             radiance += 0.6 * trace(pathRay, t0, t1, depth - 1);
 #else
 #endif
-            
-            
-            
-//            radiance += shade_direct_illumination(record, t0, t1) + 0.6 * trace(pathRay, t0, t1, depth - 1);
-            
-            // remove ambient light
-//            radiance += scene->ambient_light * record.ambient;
-            
-            // add coeefficient so that darker part are brighter and brighter part get darker
-            
-            
-//            if (radiance.r <= 0.1 && radiance.g <= 0.1 && radiance.b <= 0.1)
-//                coeef *= 2;
-            
-            // Shading caustics
-//            radiance += shade_caustics(record, 0.0001 * 1, INFINITY) * (1.0/(CAUSTICS_PHOTON_NEEDED)) * coeef; // 0.0001
-            
-            // Shading global illumination
-//            radiance += shade_indirect_illumination(record, 0.0001 * 1, INFINITY) * (1.0/(INDIRECT_PHOTON_NEEDED)) * coeef;   // 0.0001
-//            radiance += shade_photons(record, 0.0001, INFINITY) * (2.0/(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED)) * coeef;
-            
             // normal
 #if ENABLE_PHOTON_MAPPING
                 int coeef = 25;
@@ -1260,19 +1239,9 @@ namespace _462 {
                 {
                     Color3 photonRadiance = shade_photons(record, PHOTON_QUERY_RADIUS, INFINITY) * (2.0/(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED)) * coeef;
                     photonRadiance = clamp(photonRadiance, 0, 1.0);
-    //                if (photonRadiance.r > 1.0 && photonRadiance.g > 1.0 && photonRadiance.b > 1.0) {
-    //                    
-    //                    std::cout<<photonRadiance<<std::endl;
-    //                }
                     radiance += photonRadiance;
                     
                     radiance = clamp(radiance, 0, 1.0);
-                    
-    //                if (radiance.r > 1.0 || radiance.g > 1.0 || radiance.b > 1.0) {
-    //                    
-    //                    std::cout<<radiance<<std::endl;
-    //                }
-
                 }
     #endif
 #endif

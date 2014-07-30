@@ -219,7 +219,7 @@ namespace _462 {
                 
                 rec.t = t;
                 
-                rec.isLight = this->isLight;
+//                rec.isLight = this->isLight;
                 
             }
         }

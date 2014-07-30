@@ -14,6 +14,7 @@
 #include "math/color.hpp"
 #include "scene/material.hpp"
 #include "scene/mesh.hpp"
+#include "scene/azLights.hpp"
 
 //#include "scene/bvh.hpp"
 #include "ray.hpp"
@@ -31,11 +32,6 @@ namespace _462 {
         eModel = 3,
     };
     
-    /*
-     @brief Changed the sphere light class to also containing parallelogram light
-            type = 0 is sphere light
-            type = 1 is parallelogram light
-     */
     struct SphereLight
     {
         struct Attenuation
@@ -57,15 +53,15 @@ namespace _462 {
         // point light radius
         real_t radius;
         
-        // type = 0: sphere light
-        // type = 1: parallelogram light
-        real_t type;
-        
-        // two vectors for parallelogram light
-        Vector3 vertex1;
-        Vector3 vertex2;
-        Vector3 normal;
-        real_t depth;
+//        // type = 0: sphere light
+//        // type = 1: parallelogram light
+//        real_t type;
+//        
+//        // two vectors for parallelogram light
+//        Vector3 vertex1;
+//        Vector3 vertex2;
+//        Vector3 normal;
+//        real_t depth;
     };
 
     /**
@@ -90,7 +86,7 @@ namespace _462 {
         
         int phong;           // p value for blinn-phong model
         
-        bool isLight;
+//        bool isLight;
         bool isInShadow;
         
         // Constructor
@@ -107,7 +103,7 @@ namespace _462 {
             
             phong = 0;
             
-            isLight = false;
+//            isLight = false;
             isInShadow = false;
         }
         
@@ -254,12 +250,15 @@ namespace _462 {
         // accessor functions
         Geometry* const* get_geometries() const;
         size_t num_geometries() const;
-        const SphereLight* get_lights() const;
-        size_t num_lights() const;
+//        const SphereLight* get_lights() const;
+//        size_t num_lights() const;
         Material* const* get_materials() const;
         size_t num_materials() const;
         Mesh* const* get_meshes() const;
         size_t num_meshes() const;
+        
+        Light* const* get_lights() const;
+        size_t num_lights() const;
         
         /// Clears the scene, and invokes delete on everything in geometries.
         void reset();
@@ -270,6 +269,7 @@ namespace _462 {
         void add_material( Material* m );
         void add_mesh( Mesh* m );
         void add_light( const SphereLight& l );
+        void add_lights( Light *l );
         
 
     private:
@@ -278,6 +278,7 @@ namespace _462 {
         typedef std::vector< Material* > MaterialList;
         typedef std::vector< Mesh* > MeshList;
         typedef std::vector< Geometry* > GeometryList;
+        typedef std::vector< Light * > LightList;
         
         // list of all lights in the scene
         SphereLightList point_lights;
@@ -287,6 +288,8 @@ namespace _462 {
         MeshList meshes;
         // list of all geometries. deleted in dctor, so should be allocated on heap.
         GeometryList geometries;
+        
+        LightList lights;
         
     private:
         

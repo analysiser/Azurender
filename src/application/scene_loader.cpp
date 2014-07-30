@@ -7,9 +7,10 @@
 
 #include "application/scene_loader.hpp"
 
+#include "scene/azLights.hpp"
+#include "scene/model.hpp"
 #include "scene/scene.hpp"
 #include "scene/sphere.hpp"
-#include "scene/model.hpp"
 #include "scene/triangle.hpp"
 #include "tinyxml/tinyxml.h"
 
@@ -76,7 +77,7 @@ namespace _462 {
     
     // light
     // add by xiao li
-    static const char STR_ISLIGHT[] = "islight";
+//    static const char STR_ISLIGHT[] = "islight";
     static const char STR_LIGHT_TYPE[] = "type";    // indicate if the light source is point light or parallelogram light
     static const char STR_LIGHT_P1[] = "vertex1";
     static const char STR_LIGHT_P2[] = "vertex2";
@@ -187,9 +188,14 @@ namespace _462 {
         parse_attrib_int( elem, true, "v", v );
     }
     
-    template<> void parse_elem< double >( const TiXmlElement* elem, double* d )
+    template<> void parse_elem< double >( const TiXmlElement* elem, double *d )
     {
         parse_attrib_double( elem, true, "v", d );
+    }
+    
+    template<> void parse_elem< float >( const TiXmlElement* elem, float *t )
+    {
+        parse_attrib_float(elem, true, "v", t);
     }
     
     template<> void parse_elem< Color3 >( const TiXmlElement* elem, Color3* color )
@@ -256,14 +262,23 @@ namespace _462 {
         parse_elem( elem, false, STR_RADIUS,    &light->radius );
 //        parse_elem( elem, false, STR_TEST,      &light->test);
         
-        // indicate light type
-        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
-        
-        // only for square light
-        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
-        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
-        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
-        parse_elem(elem, false, STR_NORMAL, &light->normal);
+//        // indicate light type
+//        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
+//        
+//        // only for square light
+//        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
+//        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
+//        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
+//        parse_elem(elem, false, STR_NORMAL, &light->normal);
+    }
+    
+    // parse lights
+    static void parse_light_point( const TiXmlElement *elem, PointLight *light )
+    {
+        parse_elem(elem, true,  STR_POSITION,  &light->position);
+        parse_elem(elem, true,  STR_COLOR,     &light->color);
+        parse_elem(elem, true,  STR_RADIUS,    &light->radius);
+        parse_elem(elem, true,  STR_INTENSITY, &light->intensity);
     }
     
     template< typename T >
@@ -345,7 +360,7 @@ namespace _462 {
         parse_elem( elem, true,  STR_POSITION,  &geom->position );
         parse_elem( elem, false, STR_ORIENT,    &ori );
         parse_elem( elem, false, STR_SCALE,     &geom->scale );
-        parse_elem( elem, false, STR_ISLIGHT,   &geom->isLight );
+//        parse_elem( elem, false, STR_ISLIGHT,   &geom->isLight );
         
         // normalize orientation
         geom->orientation = normalize( ori );
@@ -445,10 +460,17 @@ namespace _462 {
             // parse the lights
             elem = root->FirstChildElement( STR_PLIGHT );
             while ( elem ) {
-                SphereLight pl;
-                parse_point_light( elem, &pl );
-                scene->add_light( pl );
+//                SphereLight pl;
+//                parse_point_light( elem, &pl );
+//                scene->add_light( pl );
+//                elem = elem->NextSiblingElement( STR_PLIGHT );
+                
+                PointLight *pointLight = new PointLight();
+                // TODO: add light to scene
+                scene->add_lights(pointLight);
+                parse_light_point( elem, pointLight );
                 elem = elem->NextSiblingElement( STR_PLIGHT );
+                
             }
             
             // parse the materials

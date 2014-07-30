@@ -162,21 +162,22 @@ namespace _462 {
             scene.ambient_light.to_array( arr );
             glLightModelfv( GL_LIGHT_MODEL_AMBIENT, arr );
             
-            const SphereLight* lights = scene.get_lights();
+           Light* const* lights = scene.get_lights();
             
             for ( size_t i = 0; i < NUM_GL_LIGHTS && i < scene.num_lights(); i++ )
             {
-                const SphereLight& light = lights[i];
+//                const SphereLight& light = lights[i];
+//                PointLight *light = lights[i];
                 glEnable( LightConstants[i] );
-                light.color.to_array( arr );
+                lights[i]->color.to_array( arr );
                 glLightfv( LightConstants[i], GL_DIFFUSE, arr );
                 glLightfv( LightConstants[i], GL_SPECULAR, arr );
-                glLightf( LightConstants[i], GL_CONSTANT_ATTENUATION,
-                         light.attenuation.constant );
-                glLightf( LightConstants[i], GL_LINEAR_ATTENUATION,
-                         light.attenuation.linear );
-                glLightf( LightConstants[i], GL_QUADRATIC_ATTENUATION,
-                         light.attenuation.quadratic );
+//                glLightf( LightConstants[i], GL_CONSTANT_ATTENUATION,
+//                         light.attenuation.constant );
+//                glLightf( LightConstants[i], GL_LINEAR_ATTENUATION,
+//                         light.attenuation.linear );
+//                glLightf( LightConstants[i], GL_QUADRATIC_ATTENUATION,
+//                         light.attenuation.quadratic );
             }
             
             glLightModeli( GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE );
@@ -403,22 +404,23 @@ namespace _462 {
         
         glLightModeli( GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE );
         
-        const SphereLight* lights = scene.get_lights();
+//        const SphereLight* lights = scene.get_lights();
+        Light* const* lights = scene.get_lights();
         
         for ( size_t i = 0; i < NUM_GL_LIGHTS && i < scene.num_lights(); i++ )
         {
-            const SphereLight& light = lights[i];
+//            const SphereLight& light = lights[i];
             glEnable( LightConstants[i] );
-            light.color.to_array( arr );
+            lights[i]->color.to_array( arr );
             glLightfv( LightConstants[i], GL_DIFFUSE, arr );
             glLightfv( LightConstants[i], GL_SPECULAR, arr );
-            glLightf( LightConstants[i], GL_CONSTANT_ATTENUATION,
-                     light.attenuation.constant );
-            glLightf( LightConstants[i], GL_LINEAR_ATTENUATION,
-                     light.attenuation.linear );
-            glLightf( LightConstants[i], GL_QUADRATIC_ATTENUATION,
-                     light.attenuation.quadratic );
-            light.position.to_array( arr );
+//            glLightf( LightConstants[i], GL_CONSTANT_ATTENUATION,
+//                     light.attenuation.constant );
+//            glLightf( LightConstants[i], GL_LINEAR_ATTENUATION,
+//                     light.attenuation.linear );
+//            glLightf( LightConstants[i], GL_QUADRATIC_ATTENUATION,
+//                     light.attenuation.quadratic );
+            lights[i]->position.to_array( arr );
             glLightfv( LightConstants[i], GL_POSITION, arr );
         }
         // render each object

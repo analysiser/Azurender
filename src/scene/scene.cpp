@@ -71,15 +71,16 @@ namespace _462 {
         return geometries.size();
     }
     
-    const SphereLight* Scene::get_lights() const
-    {
-        return point_lights.empty() ? NULL : &point_lights[0];
-    }
-    
-    size_t Scene::num_lights() const
-    {
-        return point_lights.size();
-    }
+//    const SphereLight* Scene::get_lights() const
+//    {
+////        return point_lights.empty() ? NULL : &point_lights[0];
+//        return lights.size();
+//    }
+//    
+//    size_t Scene::num_lights() const
+//    {
+//        return point_lights.size();
+//    }
     
     Material* const* Scene::get_materials() const
     {
@@ -99,6 +100,16 @@ namespace _462 {
     size_t Scene::num_meshes() const
     {
         return meshes.size();
+    }
+    
+    Light* const* Scene::get_lights() const
+    {
+        return lights.empty() ? NULL : &lights[0];
+    }
+    
+    size_t Scene::num_lights() const
+    {
+        return lights.size();
     }
     
     void Scene::reset()
@@ -144,6 +155,11 @@ namespace _462 {
     void Scene::add_light( const SphereLight& l )
     {
         point_lights.push_back( l );
+    }
+    
+    void Scene::add_lights( Light *l )
+    {
+        lights.push_back(l);
     }
     
     /**

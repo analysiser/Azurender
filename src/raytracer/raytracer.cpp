@@ -57,9 +57,9 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PATH_TRACING_GI          false
+#define ENABLE_PATH_TRACING_GI          true
 
-#define ENABLE_PHOTON_MAPPING           false
+#define ENABLE_PHOTON_MAPPING           true
 #define C_PHOTON_MODE                   1
 #define SIMPLE_SMALL_NODE               1
 
@@ -210,7 +210,7 @@ namespace _462 {
         photon_caustic_list.clear();
         
         // assuming there is only one light source
-        SphereLight l = scene->get_lights()[0];
+//        SphereLight l = scene->get_lights()[0];
         
         unsigned int start = SDL_GetTicks();
         
@@ -219,11 +219,18 @@ namespace _462 {
         {
             //            Vector3 p = samplePointOnUnitSphere();
             //            Ray photonRay = Ray(p + l.position, p);
-            Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
-            // Make color only the portion of light
-            photonRay.photon.mask = 0;
-            photonRay.photon.setColor(l.color);// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
-            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
+            for (size_t i = 0; i < scene->num_lights(); i++) {
+                Light *aLight = scene->get_lights()[i];
+                Ray photonRay = getPhotonEmissionRayFromLight(aLight);
+                photonRay.photon.mask = 0;
+                photonRay.photon.setColor(aLight->color);
+                photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
+            }
+//            Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
+//            // Make color only the portion of light
+//            photonRay.photon.mask = 0;
+//            photonRay.photon.setColor(l->color);// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
+//            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
             
         }
 
@@ -236,14 +243,21 @@ namespace _462 {
         // scatter cautics
         while ((photon_caustic_list.size() < CAUSTICS_PHOTON_NEEDED))
         {
+            for (size_t i = 0; i < scene->num_lights(); i++) {
+                Light *aLight = scene->get_lights()[i];
+                Ray photonRay = getPhotonEmissionRayFromLight(aLight);
+                photonRay.photon.mask = 0;
+                photonRay.photon.setColor(aLight->color);
+                photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
+                
+            }
             //            Vector3 p = samplePointOnUnitSphere();
             //            Ray photonRay = Ray(p + l.position, p);
-            Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
-            //            Ray photonRay = getPhotonEmissionRayForCaustics(scene->get_lights()[0]);
-            // Make color only the portion of light
-            photonRay.photon.mask = 0;
-            photonRay.photon.setColor(l.color);// * (real_t(1)/(real_t)(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED));
-            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
+//            Ray photonRay = getPhotonEmissionRayFromLight(scene->get_lights()[0]);
+//            // Make color only the portion of light
+//            photonRay.photon.mask = 0;
+//            photonRay.photon.setColor(l->color);// * (real_t(1)/(real_t)(CAUSTICS_PHOTON_NEEDED + INDIRECT_PHOTON_NEEDED));
+//            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
         }
 
         
@@ -283,31 +297,49 @@ namespace _462 {
         // scatter indirect
         while ((data->worker_photon_indirect.size() < data->indirect_needed))
         {
-            Ray photonRay = getPhotonEmissionRayFromLight(data->light);
-            // Make color only the portion of light
-            photonRay.photon = Photon(data->light.color);
-//            photonRay.photon.setColor();// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
-//            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
-            localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
-                             data->worker_photon_indirect,
-                             data->worker_photon_caustics,
-                             data->indirect_needed,
-                             data->caustics_needed);
+            for (size_t i = 0; i < data->worker_lights_copy.size(); i++)
+            {
+                Ray photonRay = getPhotonEmissionRayFromLight(data->worker_lights_copy[i]);
+                photonRay.photon = Photon(data->worker_lights_copy[i]->color);
+                localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
+                                 data->worker_photon_indirect,
+                                 data->worker_photon_caustics,
+                                 data->indirect_needed,
+                                 data->caustics_needed);
+            }
+//            Ray photonRay = getPhotonEmissionRayFromLight(data->light);
+//            // Make color only the portion of light
+//            photonRay.photon = Photon(data->light->color);
+//            localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
+//                             data->worker_photon_indirect,
+//                             data->worker_photon_caustics,
+//                             data->indirect_needed,
+//                             data->caustics_needed);
         }
         
         // scatter caustics
         while ((data->worker_photon_caustics.size() < data->caustics_needed))
         {
-            Ray photonRay = getPhotonEmissionRayFromLight(data->light);
-            // Make color only the portion of light
-            photonRay.photon = Photon(data->light.color);
-//            photonRay.photon.setColor(data->light.color);// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
-            //            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
-            localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
-                             data->worker_photon_indirect,
-                             data->worker_photon_caustics,
-                             data->indirect_needed,
-                             data->caustics_needed);
+            for (size_t i = 0; i < data->worker_lights_copy.size(); i++)
+            {
+                Ray photonRay = getPhotonEmissionRayFromLight(data->worker_lights_copy[i]);
+                photonRay.photon = Photon(data->worker_lights_copy[i]->color);
+                localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
+                                 data->worker_photon_indirect,
+                                 data->worker_photon_caustics,
+                                 data->indirect_needed,
+                                 data->caustics_needed);
+            }
+//            Ray photonRay = getPhotonEmissionRayFromLight(data->light);
+//            // Make color only the portion of light
+//            photonRay.photon = Photon(data->light->color);
+////            photonRay.photon.setColor(data->light.color);// * (real_t(1)/(real_t)(INDIRECT_PHOTON_NEEDED + CAUSTICS_PHOTON_NEEDED));
+//            //            photonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH);
+//            localPhotonTrace(photonRay, EPSILON, TMAX, PHOTON_TRACE_DEPTH,
+//                             data->worker_photon_indirect,
+//                             data->worker_photon_caustics,
+//                             data->indirect_needed,
+//                             data->caustics_needed);
         }
         
         unsigned int end = SDL_GetTicks();
@@ -335,7 +367,8 @@ namespace _462 {
         photon_caustic_list.clear();
         
         // assuming there is only one light source
-        SphereLight l = scene->get_lights()[0];
+//        SphereLight l = scene->get_lights()[0];
+
         
         // create MAX_THREADS POSIX threads
         std::thread tid[MAX_THREADS_SCATTER];
@@ -345,8 +378,12 @@ namespace _462 {
         {
             data[i].indirect_needed = INDIRECT_PHOTON_NEEDED/MAX_THREADS_SCATTER;
             data[i].caustics_needed = CAUSTICS_PHOTON_NEEDED/MAX_THREADS_SCATTER;
-            data[i].light = l;
-            
+//            data[i].light = l;
+            for (size_t ii = 0; ii < scene->num_lights(); ii++)
+            {
+                Light *aLight = scene->get_lights()[ii];
+                data[i].worker_lights_copy.push_back(aLight);
+            }
             tid[i] = std::thread(&Raytracer::photonScatterWorker, *this, &data[i]);
         }
         
@@ -755,7 +792,9 @@ namespace _462 {
         bool isHit = false;
         HitRecord record = getClosestHit(ray, t0, t1, &isHit);
         
-        if (isHit && !record.isLight)
+        // xiao debug
+//        if (isHit && !record.isLight)
+        if (isHit)
         {
             // refractive
             if (record.refractive_index > 0) {
@@ -951,7 +990,8 @@ namespace _462 {
         bool isHit = false;
         HitRecord record = getClosestHit(ray, t0, t1, &isHit);
         
-        if (isHit && !record.isLight)
+//        if (isHit && !record.isLight)// xiao debug
+        if (isHit)
         {
             // refractive
             if (record.refractive_index > 0) {
@@ -1090,37 +1130,27 @@ namespace _462 {
     {
         bool isHit = false;
         HitRecord record = getClosestHit(ray, t0, t1, &isHit);
-        
-        if (isHit && !record.isLight) {
+        if (isHit) {
             return shade(ray, record, t0, t1, depth);
         }
-        else if (isHit && record.isLight) {
-            // TODO: lixiao debug force color to be white...
-//            return scene->get_lights()[0].color * Color3(100, 100, 100);
-//            return scene->get_lights()[0].color;
-            return Color3(10,10,10);
-        }
-        else
+        else {
             return scene->background_color;
+        }
+        
+//        if (isHit && !record.isLight) {
+//            return shade(ray, record, t0, t1, depth);
+//        }
+//        else if (isHit && record.isLight) {
+//            // TODO: lixiao debug force color to be white...
+////            return scene->get_lights()[0].color * Color3(100, 100, 100);
+////            return scene->get_lights()[0].color;
+//            return Color3(10,10,10);
+//        }
+//        else
+//            return scene->background_color;
         
     }
-    
-    // trace conterparts that enables DOF
-    Color3 Raytracer::trace_DOF(HitRecord &record, Ray ray, real_t t0, real_t t1, int depth)
-    {
-        bool isHit = false;
-        record = getClosestHit(ray, t0, t1, &isHit);
-        
-        if (isHit && !record.isLight) {
-            return shade(ray, record, t0, t1, depth);
-        }
-        else if (isHit && record.isLight) {
-            return Color3(10,10,10);
-        }
-        else
-            return scene->background_color;
-    }
-    
+
     /**
      * @brief   Shading a hit point on surface
      * @param   ray     Ray to trace
@@ -1269,26 +1299,34 @@ namespace _462 {
         // try to add high light with blinn-phong model
         // the higher the phong, the smaller the high light
         if (record.phong > 0) {
-            SphereLight light = scene->get_lights()[0];
-            Vector3 lightpos = sampleLightSource(light);
-            Vector3 l = normalize(lightpos - record.position);
-            Ray rayToLight = Ray(record.position, l);
-            bool isHit;
-            getClosestHit(rayToLight, EPSILON, TMAX, &isHit);
-            Color3 highLightColor = light.color * 64;  // TODO: light intensity
-            if (isHit) {
-                // should be high light
-                Vector3 r = -l + 2 * dot(l, record.normal) * record.normal;
-                Vector3 e = -ray.d;
-                real_t coef = dot(e, r);
-                coef = coef > 0 ? coef : 0;
-                coef = pow(coef, record.phong);
-                highLightColor *= coef;
-            }
-            else
-                highLightColor = Color3::Black();
             
-            radiance += highLightColor;
+            for (size_t i = 0; i < scene->num_lights(); i++) {
+                
+//                SphereLight light = scene->get_lights()[i];
+                Light *light = scene->get_lights()[i];
+//                Vector3 lightpos = sampleLightSource(light);
+                Vector3 dir;
+                Vector3 lightpos = light->SamplePointOnLight(dir);
+                Vector3 l = normalize(lightpos - record.position);
+                Ray rayToLight = Ray(record.position, l);
+                bool isHit;
+                getClosestHit(rayToLight, EPSILON, TMAX, &isHit);
+                Color3 highLightColor = light->color * light->intensity;  // TODO: light intensity
+                if (isHit) {
+                    // should be high light
+                    Vector3 r = -l + 2 * dot(l, record.normal) * record.normal;
+                    Vector3 e = -ray.d;
+                    real_t coef = dot(e, r);
+                    coef = coef > 0 ? coef : 0;
+                    coef = pow(coef, record.phong);
+                    highLightColor *= coef;
+                }
+                else
+                    highLightColor = Color3::Black();
+                
+                radiance += highLightColor;
+            }
+            
         }
         
         return record.texture * radiance;
@@ -1311,66 +1349,97 @@ namespace _462 {
             size_t sample_num_per_light = NUM_SAMPLE_PER_LIGHT;    // todo: add samples
             for (size_t j = 0; j < sample_num_per_light; j++)
             {
-                // Get a random point on light sphere
-                Vector3 sampleLightPos = sampleLightSource(scene->get_lights()[i]);
-                
-                // scene->get_lights()[i].position; // For hard shadows
+                Light *aLight = scene->get_lights()[i];
+                Vector3 dir;
+                Vector3 sampleLightPos = aLight->SamplePointOnLight(dir);
                 
                 Vector3 d_shadowRay = sampleLightPos - record.position;
                 Vector3 d_shadowRay_normolized = normalize(d_shadowRay);
                 Ray shadowRay = Ray(record.position + EPSILON * d_shadowRay_normolized, d_shadowRay_normolized);
-//                    real_t tl = d_shadowRay.x / d_shadowRay_normolized.x;
-//                    real_t tl = length(d_shadowRay) / length(d_shadowRay_normolized);
-                
                 bool isHit = false;
-//                    tl = tl < t1 ? tl : t1;
                 HitRecord shadowRecord = getClosestHit(shadowRay, t0, t1, &isHit);
                 
-                // only when hits the light before hits anything else
-                if (shadowRecord.isLight)
-                {
-                    // if the obejct is not in shadow and is opaque
-                    if (!isHit && (record.refractive_index == 0))
-                    {
-                        res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-                    }
-                    else
-                    {
-                        // in shadow
-                        record.isInShadow = true;
-                    }
-                    
-                    
-                    if (record.refractive_index == 0)
-                    {
-                        //res = Color3::White();
-                        // if the light is a sphere light source
-                        if (scene->get_lights()[i].type == 1)
-                        {
-                            res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-                        }
-                        else if (scene->get_lights()[i].type == 2)
-                        {
-                            // test the light normal
-                            if (dot(scene->get_lights()[i].normal, d_shadowRay_normolized) < 0)
-                            {
-                                res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-                            }
-                            else
-                            {
-                                // in shadow
-                                record.isInShadow = true;
-                            }
-                        }
-                        
-                        
-                    }
-                    else
-                    {
-                        // in shadow
-//                        record.isInShadow = true;
-                    }
+                if (isHit) {
+                    res += record.diffuse * aLight->SampleLight(record.position, record.normal, t0, std::min(shadowRecord.t, t1));
                 }
+                else {
+                    res += record.diffuse * aLight->SampleLight(record.position, record.normal, t0, t1);
+                }
+                
+                
+                
+                // -------------old working code------------>
+//                Light *aLight = scene->get_lights()[i];
+//                // Get a random point on light sphere
+////                Vector3 sampleLightPos = sampleLightSource(scene->get_lights()[i]);
+//                Vector3 sampleLightPos = aLight->SamplePointOnLight();
+//                
+//                // scene->get_lights()[i].position; // For hard shadows
+//                
+//                Vector3 d_shadowRay = sampleLightPos - record.position;
+//                Vector3 d_shadowRay_normolized = normalize(d_shadowRay);
+//                Ray shadowRay = Ray(record.position + EPSILON * d_shadowRay_normolized, d_shadowRay_normolized);
+//                    real_t tl = d_shadowRay.x / d_shadowRay_normolized.x;
+////                    real_t tl = length(d_shadowRay) / length(d_shadowRay_normolized);
+//                
+//                bool isHit = false;
+////                    tl = tl < t1 ? tl : t1;
+//                HitRecord shadowRecord = getClosestHit(shadowRay, t0, t1, &isHit);
+//                
+//                
+//                
+//                if (!isHit || tl < shadowRecord.t) {
+//                    res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
+//                }
+                // <-----------------old working code----
+                
+                
+                
+                // only when hits the light before hits anything else
+//                if (shadowRecord.isLight)
+//                {
+//                    // if the obejct is not in shadow and is opaque
+//                    if (!isHit && (record.refractive_index == 0))
+//                    {
+//                        res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
+//                    }
+//                    else
+//                    {
+//                        // in shadow
+//                        record.isInShadow = true;
+//                    }
+//                    
+//                    
+//                    if (record.refractive_index == 0)
+//                    {
+//                        //res = Color3::White();
+//                        // if the light is a sphere light source
+//                        if (scene->get_lights()[i].type == 1)
+//                        {
+//                            res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
+//                        }
+//                        else if (scene->get_lights()[i].type == 2)
+//                        {
+//                            // test the light normal
+//                            if (dot(scene->get_lights()[i].normal, d_shadowRay_normolized) < 0)
+//                            {
+//                                res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
+//                            }
+//                            else
+//                            {
+//                                // in shadow
+//                                record.isInShadow = true;
+//                            }
+//                        }
+//                        
+//                        
+//                    }
+//                    else
+//                    {
+//                        // in shadow
+////                        record.isInShadow = true;
+//                    }
+//                }
                 
                 
             }
@@ -1598,49 +1667,49 @@ namespace _462 {
         return color;
     }
 
-    /**
-     * @brief   Sampling light volumn by sampling on light 
-     *          sphere with gaussian distribution
-     * @param   light   Instance of SphereLight
-     */
-    Vector3 Raytracer::sampleLightSource(SphereLight light)
-    {
-        Vector3 ran = Vector3::Zero();
-        
-        // sphere light
-        if (light.type == 1) {
-            
-            real_t x = _462::random_gaussian();
-            real_t y = _462::random_gaussian();
-            real_t z = _462::random_gaussian();
-            
-            ran = Vector3(x, y, z);
-            
-            ran = normalize(ran);
-            ran *= light.radius;
-            ran += light.position;
-            
-        }
-        else if (light.type == 2)
-        {
-            real_t b = _462::random_uniform() * real_t(2) - real_t(1);
-            real_t c = _462::random_uniform() * real_t(2) - real_t(1);//_462::random_uniform();
-//            real_t h = random() + EPSILON;
-//            real_t d = _462::random_uniform();
-            
-            Vector3 vec1 = light.vertex1 - light.position;
-            Vector3 vec2 = light.vertex2 - light.position;
-//            Vector3 vec3 = normalize(cross(vec2, vec1));
-            
-            ran = light.position + (vec1) * b + (vec2) * c ;// + vec3 * d;
-        }
-        else
-        {
-            printf("Wrong Light Type, must be 1 (sphere light) or 2(parallelogram light)\n");
-        }
-        
-        return ran;
-    }
+//    /**
+//     * @brief   Sampling light volumn by sampling on light 
+//     *          sphere with gaussian distribution
+//     * @param   light   Instance of SphereLight
+//     */
+//    Vector3 Raytracer::sampleLightSource(SphereLight light)
+//    {
+//        Vector3 ran = Vector3::Zero();
+//        
+//        // sphere light
+////        if (light.type == 1) {
+//        
+//            real_t x = _462::random_gaussian();
+//            real_t y = _462::random_gaussian();
+//            real_t z = _462::random_gaussian();
+//            
+//            ran = Vector3(x, y, z);
+//            
+//            ran = normalize(ran);
+//            ran *= light.radius;
+//            ran += light.position;
+//            
+////        }
+////        else if (light.type == 2)
+////        {
+////            real_t b = _462::random_uniform() * real_t(2) - real_t(1);
+////            real_t c = _462::random_uniform() * real_t(2) - real_t(1);//_462::random_uniform();
+//////            real_t h = random() + EPSILON;
+//////            real_t d = _462::random_uniform();
+////            
+////            Vector3 vec1 = light.vertex1 - light.position;
+////            Vector3 vec2 = light.vertex2 - light.position;
+//////            Vector3 vec3 = normalize(cross(vec2, vec1));
+////            
+////            ran = light.position + (vec1) * b + (vec2) * c ;// + vec3 * d;
+////        }
+////        else
+////        {
+////            printf("Wrong Light Type, must be 1 (sphere light) or 2(parallelogram light)\n");
+////        }
+////        
+//        return ran;
+//    }
     
     /**
      * @brief   Sampling light volumn by sampling on light
@@ -1648,18 +1717,22 @@ namespace _462 {
      * @param   light   Instance of SphereLight
      * @return  Randomized photon emmision ray
      */
-    Ray Raytracer::getPhotonEmissionRayFromLight(SphereLight light)
+    Ray Raytracer::getPhotonEmissionRayFromLight(Light *light)
     {
         Ray photonRay;
+        
+//        Vector3 posOnLight = light->SamplePointOnLight();
+        
         // sphere light
-        if (light.type == 1)
-        {
-            Vector3 p = samplePointOnUnitSphere();
-            photonRay = Ray(p + light.position, p);
-        }
-        // square light
-        else if (light.type == 2)
-        {
+//        if (light.type == 1)
+//        {
+        Vector3 dir;
+        Vector3 p = light->SamplePointOnLight(dir);//samplePointOnUnitSphere();
+            photonRay = Ray(p, dir);
+//        }
+//        // square light
+//        else if (light.type == 2)
+//        {
 //            std::cout<<"light pos = "<<light.position<<std::endl;
 //            std::cout<<"light nom = "<<light.normal<<std::endl;
             
@@ -1676,65 +1749,27 @@ namespace _462 {
 //            
 //            Vector3 lpos = light.position + vec1 + vec2;
 //            Vector3 lpos = sampleLightSource(light);
-            Vector3 lpos = light.position;
-            // revert! xiaoxiao debug
-            // ------>
-            
-            Vector3 normal = light.normal;
-            Vector3 d = uniformSampleHemisphere(normal);
-//            Vector3 p = samplePointOnUnitSphere();//sampleLightSource(light);
-            
-//            real_t u = random();
-//            real_t v = 2 * PI * random();
-//            Vector3 d = -Vector3(cos(v) * sqrt(u), sin(v) * sqrt(u), sqrt(1 - u));
-//            std::cout<<light.position<<std::endl;
-            photonRay = Ray(lpos + d * EPSILON, d);
-            
-        }
-        else
-        {
-            printf("error in light type!\n");
-        }
+//            Vector3 lpos = light.position;
+//            // revert! xiaoxiao debug
+//            // ------>
+//            
+//            Vector3 normal = light.normal;
+//            Vector3 d = uniformSampleHemisphere(normal);
+////            Vector3 p = samplePointOnUnitSphere();//sampleLightSource(light);
+//            
+////            real_t u = random();
+////            real_t v = 2 * PI * random();
+////            Vector3 d = -Vector3(cos(v) * sqrt(u), sin(v) * sqrt(u), sqrt(1 - u));
+////            std::cout<<light.position<<std::endl;
+//            photonRay = Ray(lpos + d * EPSILON, d);
+//            
+//        }
+//        else
+//        {
+//            printf("error in light type!\n");
+//        }
         
         return photonRay;
-    }
-    
-    // for higher efficiency of photon tracing pass
-    Ray Raytracer::getPhotonEmissionRayForCaustics(SphereLight light)
-    {
-        // select a random object
-        size_t index = rand() % cboxes.size();
-        Box abox = cboxes[index];
-        
-        Vector3 endpos = abox.bounds[0];
-        Vector3 startpos = Vector3::Zero();
-        Vector3 dir = Vector3::Zero();
-        
-        Vector3 dim = abox.bounds[1] - abox.bounds[0];
-        
-        endpos = abox.bounds[0] + 0.5 * dim;
-        Vector3 pointOnSphere = samplePointOnUnitSphere() * 0.5 * dim.x;
-        endpos + pointOnSphere;
-        
-        if (light.type == 1)
-        {
-            Vector3 p = samplePointOnUnitSphere();
-            startpos = p + light.position;
-            dir = normalize(endpos - startpos);
-        }
-        // square light
-        else if (light.type == 2)
-        {
-            Vector3 lpos = sampleLightSource(light);
-            Vector3 normal = light.normal;
-            Vector3 d = uniformSampleHemisphere(normal);
-            
-            startpos = lpos + d * EPSILON;
-            dir = normalize(endpos - startpos);
-            
-        }
-        
-        return Ray(startpos, dir);
     }
     
     

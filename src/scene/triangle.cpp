@@ -138,7 +138,7 @@ namespace _462 {
         beta * B.material->refractive_index +
         gamma * C.material->refractive_index;
         
-        rec.isLight = this->isLight;
+//        rec.isLight = this->isLight;
         
         return true;
 

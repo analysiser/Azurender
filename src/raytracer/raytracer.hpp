@@ -31,7 +31,8 @@ namespace _462 {
     {
         std::vector<Photon> worker_photon_indirect;
         std::vector<Photon> worker_photon_caustics;
-        SphereLight light;
+        std::vector<Light*> worker_lights_copy;
+//        PointLight worker_lights_copy;
         unsigned int indirect_needed;
         unsigned int caustics_needed;
     };
@@ -206,9 +207,7 @@ namespace _462 {
         
         // Raytracing helper function, to decide if there is a hit on a surface to shade
         Color3 trace(Ray ray, real_t t0, real_t t1, int depth);
-        
-        Color3 trace_DOF(HitRecord &record, Ray ray, real_t t0, real_t t1, int depth);
-        
+                
         // Shading function, shades the hit record from a surface
         Color3 shade(Ray ray, HitRecord record, real_t t0, real_t t1, int depth);
         
@@ -231,12 +230,10 @@ namespace _462 {
         HitRecord getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit);
         
         // sample a Light source on the volumn of sphere light
-        Vector3 sampleLightSource(SphereLight light);
+//        Vector3 sampleLightSource(SphereLight light);
         
-        Ray getPhotonEmissionRayFromLight(SphereLight light);
-        
-        Ray getPhotonEmissionRayForCaustics(SphereLight light);
-        
+        Ray getPhotonEmissionRayFromLight(Light *light);
+                
         void generateCausticsBoxes();
         
         // helper function for sampling a point on a given unit sphere

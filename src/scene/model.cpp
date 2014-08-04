@@ -403,7 +403,6 @@ box2.bounds[1].z;
                 bbox.include(B);
                 bbox.include(C);
                 
-//                bvhTree->leafNodes_[i] = azBVHTree::azBVNode(bbox, i);
                 bvhTree->setLeaf(azBVHTree::azBVNode(bbox, i), i);
             }
             
@@ -414,14 +413,6 @@ box2.bounds[1].z;
     bool Model::hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const
     {
         Ray r = Ray(invMat.transform_point(ray.e), invMat.transform_vector(ray.d));
-
-//        if (!bBox.intersect(r, t0, t1)) {
-//            return false;
-//        }
-        
-        // Indices list that stores all the indices of triangles that might hit
-//        std::vector<size_t> indexList;
-//        root->nodeIntersect(r, t0, t1, indexList);
         
         auto rayTriangleIntersectionTest = [this](Ray rr, real_t tt0, real_t tt1, real_t &tt, INT64 triIndex){
             MeshTriangle const *triangles = mesh->get_triangles();
@@ -470,6 +461,7 @@ box2.bounds[1].z;
             real_t alpha = 1 - beta - gamma;
             
             rec.normal = normalize(alpha * (normMat * A.normal) + beta * (normMat * B.normal) + gamma * (normMat * C.normal));
+//            rec.normal = -rec.normal;
             
             // For texture mapping adjustment
             A.tex_coord = getAdjustTexCoord(A.tex_coord);
@@ -503,10 +495,18 @@ box2.bounds[1].z;
         
         return false;
         
+//        if (!bBox.intersect(r, t0, t1)) {
+//            return false;
+//        }
+//        
+//        // Indices list that stores all the indices of triangles that might hit
+//        std::vector<size_t> indexList;
+//        root->nodeIntersect(r, t0, t1, indexList);
+//        
 //        if (indexList.size() == 0) {
 //            return false;
 //        }
-        
+//        
 //        MeshTriangle const *triangles = mesh->get_triangles();
 //        real_t tt = INFINITY;
 //        
@@ -519,8 +519,7 @@ box2.bounds[1].z;
 //            MeshVertex C = mesh->vertices[triangles[idx].vertices[2]];
 //            
 //            // result.x = beta, result.y = gamma, result.z = t
-//            Vector3 result = getResultTriangleIntersection(r, A.position,
-//B.position, C.position);
+//            Vector3 result = getResultTriangleIntersection(r, A.position, B.position, C.position);
 //            
 //            if (result.z < t0 || result.z > t1) {
 //                continue;
@@ -579,11 +578,11 @@ box2.bounds[1].z;
 //        if (tt < INFINITY) {
 //            return true;
 //        }
-//        
-//        return false;
+        
+        return false;
     }
     
-    /*
+    
     // @brief To create a BVH Tree for model
     void Model::createBVHTree()
     {
@@ -591,10 +590,10 @@ box2.bounds[1].z;
         // intiated once
         // this is to avoid memory leak. modelBoxNodes are only initiated once and it 
         // would be empty then
-//        if (root == NULL) {
-//            root = new BVHNode(modelBoxNodes, 0);
-//            this->bBox = root->bbox;
-//        }
+        if (root == NULL) {
+            root = new BVHNode(modelBoxNodes, 0);
+            this->bBox = root->bbox;
+        }
         
-    }*/
+    }
 } /* _462 */

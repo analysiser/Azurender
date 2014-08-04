@@ -232,8 +232,6 @@ namespace _462 {
         // sample a Light source on the volumn of sphere light
 //        Vector3 sampleLightSource(SphereLight light);
         
-        Ray getPhotonEmissionRayFromLight(Light *light);
-                
         void generateCausticsBoxes();
         
         // helper function for sampling a point on a given unit sphere

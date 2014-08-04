@@ -32,12 +32,20 @@ namespace _462 {
         // SampleLight, returns the radiance arriving at point p due to this light
         virtual Color3 SampleLight(const Vector3 &p, const Vector3 &normal, float t0, float t1) const = 0;
         
-        virtual Vector3 SamplePointOnLight(Vector3 &dir) const = 0;
+        // return a sample point on light surface
+        virtual Vector3 SamplePointOnLight() const = 0;
+        
+        virtual Ray getRandomRayFromLight() const = 0;
+        
+        virtual Vector3 getLightEmissionDirection(const Vector3 &sampleOnLight) const = 0;
+        
+        virtual Vector3 getPointToLightDirection(const Vector3 &incidentPos, const Vector3 &lightPos) const = 0;
+        
         virtual real_t Power() const = 0;
 //
 //        virtual bool isDeltaLight() const = 0;
         
-        bool initialize();
+        virtual bool initialize() const = 0;
         
         const int nSamples;
         
@@ -78,10 +86,23 @@ namespace _462 {
 //        PointLight(const Matrix4 &light2world, const Color3 &intensity) {
 //            
 //        }
+        bool initialize() const;
         
+        // TODO: add falloff operator
         Color3 SampleLight(const Vector3 &p, const Vector3 &normal, float t0, float t1) const;
         
-        Vector3 SamplePointOnLight(Vector3 &dir) const;
+        // sample a point on light surface
+        Vector3 SamplePointOnLight() const;
+        
+        Ray getRandomRayFromLight() const;
+        
+        // given a sample point on light, get the emission direction from light source to the point
+        // return normalized direction
+        Vector3 getLightEmissionDirection(const Vector3 &sampleOnLight) const;
+        
+        // given a incident point on light, get the direction from incident point to light source
+        // return normalized direction
+        Vector3 getPointToLightDirection(const Vector3 &incidentPos, const Vector3 &lightPos) const;
         
         real_t Power() const;
         
@@ -92,6 +113,36 @@ namespace _462 {
         
 //    private:
         float radius;
+        
+        int attenuation_constant;
+        
+    };
+    
+    class DistantLight : public Light {
+    public:
+        DistantLight();
+        
+        bool initialize() const;
+        
+        Color3 SampleLight(const Vector3 &p, const Vector3 &normal, float t0, float t1) const;
+        
+        // sample a point on light surface
+        Vector3 SamplePointOnLight() const;
+        
+        Ray getRandomRayFromLight() const;
+        
+        // given a sample point on light, get the emission direction from light source to the point
+        // return normalized direction
+        Vector3 getLightEmissionDirection(const Vector3 &sampleOnLight) const;
+        
+        // given a incident point on light, get the direction from incident point to light source
+        // return normalized direction
+        Vector3 getPointToLightDirection(const Vector3 &incidentPos, const Vector3 &lightPos) const;
+        
+        real_t Power() const;
+        
+        mutable Vector3 direction;
+        mutable Vector3 inversed_direction;
         
     };
     

@@ -58,7 +58,8 @@ namespace _462 {
     static const char STR_SHININESS[] = "shininess";    //
     static const char STR_INNER[] = "inner";            // defined for light mtl
     static const char STR_INTENSITY[] = "intensity";    // defined for light mtl
-    static const char STR_ROUGHNESS[] = "roughness";    // defined for rough mat, phong model or microfacet? TODO...
+    static const char STR_ROUGHNESS[] = "roughness";    // defined for rough mat, phong model or microfacet? TODO..
+    
     static const char STR_MATERIAL_PHONG[] = "phong";
     
     static const char STR_REFRACT[] = "refractive_index";
@@ -68,7 +69,11 @@ namespace _462 {
     static const char STR_BACKGROUND[] = "background_color";
     static const char STR_AMLIGHT[] = "ambient_light";
     static const char STR_CAMERA[] = "camera";
+    
+    static const char STR_DIRECTION[] = "direction";
+    
     static const char STR_PLIGHT[] = "point_light";
+    static const char STR_DIST_LIGHT[] = "distant_light";
     static const char STR_MATERIAL[] = "material";
     static const char STR_SPHERE[] = "sphere";
     static const char STR_TRIANGLE[] = "triangle";
@@ -252,25 +257,25 @@ namespace _462 {
         camera->orientation = normalize( ori );
     }
     
-    static void parse_point_light( const TiXmlElement* elem, SphereLight* light )
-    {
-        parse_elem( elem, false, STR_ACON,      &light->attenuation.constant );
-        parse_elem( elem, false, STR_ALIN,      &light->attenuation.linear );
-        parse_elem( elem, false, STR_AQUAD,     &light->attenuation.quadratic );
-        parse_elem( elem, true,  STR_POSITION,  &light->position );
-        parse_elem( elem, true,  STR_COLOR,     &light->color );
-        parse_elem( elem, false, STR_RADIUS,    &light->radius );
-//        parse_elem( elem, false, STR_TEST,      &light->test);
-        
-//        // indicate light type
-//        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
+//    static void parse_point_light( const TiXmlElement* elem, SphereLight* light )
+//    {
+//        parse_elem( elem, false, STR_ACON,      &light->attenuation.constant );
+//        parse_elem( elem, false, STR_ALIN,      &light->attenuation.linear );
+//        parse_elem( elem, false, STR_AQUAD,     &light->attenuation.quadratic );
+//        parse_elem( elem, true,  STR_POSITION,  &light->position );
+//        parse_elem( elem, true,  STR_COLOR,     &light->color );
+//        parse_elem( elem, false, STR_RADIUS,    &light->radius );
+////        parse_elem( elem, false, STR_TEST,      &light->test);
 //        
-//        // only for square light
-//        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
-//        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
-//        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
-//        parse_elem(elem, false, STR_NORMAL, &light->normal);
-    }
+////        // indicate light type
+////        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
+////        
+////        // only for square light
+////        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
+////        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
+////        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
+////        parse_elem(elem, false, STR_NORMAL, &light->normal);
+//    }
     
     // parse lights
     static void parse_light_point( const TiXmlElement *elem, PointLight *light )
@@ -279,6 +284,16 @@ namespace _462 {
         parse_elem(elem, true,  STR_COLOR,     &light->color);
         parse_elem(elem, true,  STR_RADIUS,    &light->radius);
         parse_elem(elem, true,  STR_INTENSITY, &light->intensity);
+        parse_elem(elem, false,  STR_ACON,      &light->attenuation_constant);
+    }
+    
+    static void parse_light_distant( const TiXmlElement *elem, DistantLight *light )
+    {
+        parse_elem(elem, true,  STR_POSITION,  &light->position);
+        parse_elem(elem, true,  STR_COLOR,     &light->color);
+        parse_elem(elem, true,  STR_INTENSITY, &light->intensity);
+        parse_elem(elem, true,  STR_DIRECTION, &light->direction);
+        light->initialize();
     }
     
     template< typename T >
@@ -466,11 +481,20 @@ namespace _462 {
 //                elem = elem->NextSiblingElement( STR_PLIGHT );
                 
                 PointLight *pointLight = new PointLight();
-                // TODO: add light to scene
                 scene->add_lights(pointLight);
                 parse_light_point( elem, pointLight );
                 elem = elem->NextSiblingElement( STR_PLIGHT );
                 
+            }
+            
+            // parse the distant light
+            elem = root->FirstChildElement(STR_DIST_LIGHT);
+            while (elem) {
+                
+                DistantLight *distLight = new DistantLight();
+                scene->add_lights(distLight);
+                parse_light_distant( elem, distLight );
+                elem = elem->NextSiblingElement( STR_DIST_LIGHT );
             }
             
             // parse the materials

@@ -154,7 +154,7 @@ namespace _462 {
         //
         virtual void createBoundingBox() const;
         
-//        void createBVHTree();
+        void createBVHTree();
 
         
         // Override of virtual function from Geometry

@@ -332,6 +332,13 @@ namespace _462 {
         
         // also uses default copy and assignment
         
+//        Vector3 operator=( const Vector3& rhs) const {
+//            real_t xx = rhs.x;
+//            real_t yy = rhs.y;
+//            real_t zz = rhs.z;
+//            return Vector3(xx, yy, zz);
+//        }
+        
         Vector3 operator+( const Vector3& rhs ) const {
             return Vector3( x + rhs.x, y + rhs.y, z + rhs.z );
         }

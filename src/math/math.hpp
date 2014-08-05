@@ -13,22 +13,27 @@
 #include <cmath>
 
 namespace _462 {
-
-// floating point precision set by this typedef
-typedef double real_t;
-
-class Color3;
-
-// since the standard library happily does not provide one
+    
+    // floating point precision set by this typedef
+    typedef double real_t;
+    
+    class Color3;
+    
+    // since the standard library happily does not provide one
 #define PI 3.141592653589793238
-
-template<typename T>
-inline T clamp( T val, T min, T max )
-{
-    return std::min( max, std::max( min, val ) );
-}
-
-
+    
+    template<typename T>
+    inline T clamp( T val, T min, T max )
+    {
+        return std::min( max, std::max( min, val ) );
+    }
+    
+    inline float Square(float v)
+    {
+        return v * v;
+    }
+    
+    
 } /* _462 */
 
 #endif /* _462_MATH_MATH_HPP_ */

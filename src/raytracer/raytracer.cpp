@@ -9,6 +9,8 @@
  */
 
 #include "raytracer.hpp"
+
+#include "raytracer/azReflection.hpp"
 #include "scene/scene.hpp"
 #include "scene/model.hpp"
 #include "scene/triangle.hpp"
@@ -46,7 +48,7 @@
 #define BETA                            (1.953)
 #define ONE_MINUS_E_TO_MINUS_BETA       (0.858)
 
-#define TOTAL_ITERATION                 200  // 300
+#define TOTAL_ITERATION                 1  // 300
 #define SMALL_NODE_GRANULARITY          128
 
 #define PHOTON_QUERY_RADIUS             (0.000375)     // 0.000272
@@ -57,7 +59,7 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PATH_TRACING_GI          true
+#define ENABLE_PATH_TRACING_GI          false
 
 #define ENABLE_PHOTON_MAPPING           false
 #define C_PHOTON_MODE                   1
@@ -1176,7 +1178,9 @@ namespace _462 {
             Color3 refrColor = Color3::Black();
             
             // Trace reflection color
-            Vector3 reflectDirection = ray.d - 2 * dot(ray.d, record.normal) * record.normal;
+            ray.d = normalize(ray.d);
+            Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+            //ray.d - 2 * dot(ray.d, record.normal) * record.normal;
             Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, normalize(reflectDirection));
             if (record.specular != Color3::Black())
             {
@@ -1184,36 +1188,60 @@ namespace _462 {
             }
             
             // Trace for specularly transmissive
-            real_t cos_theta = dot(normalize(ray.d), record.normal);
+            float cos_theta = dot(ray.d, record.normal);
             Vector3 rd;     //refract ray direction
-            real_t nn = real_t(1.0);
-            real_t nt = record.refractive_index;
-            real_t idxRatio = nn/nt;    // n/nt
-            real_t c = 0;
+            float ni = real_t(1.0);
+            float nt = record.refractive_index;
+//            float idxRatio = ni/nt;    // n/nt
+            float eta = nt/ni;
+            float inv_eta = ni/nt;
+            float c = 0;
             
-            bool isRefraction = false;
+            // xiao revert
+//            bool isRefraction = false;
             
-            if (cos_theta <= 0) {
-                // From air to dielectric material
-                isRefraction = isRefract(ray.d, record.normal, idxRatio, rd);
-                if(isRefraction)
-                    c = -cos_theta;//dot(-ray.d, record.normal);
-            }
-            else {
-                // From dielectric material to air
-                isRefraction = isRefract(ray.d, -record.normal, real_t(1) / idxRatio, rd);
-                if (isRefraction) {
-                    c = dot(rd, record.normal);
+            //--> new
+            bool isRefraction = (azFresnel::FresnelDielectricDielectric(eta, cos_theta) != 1.0);
+            if (isRefraction) {
+                c = std::max(cos_theta, -cos_theta);
+//                isRefract(ray.d, record.normal, eta, rd);
+//                rd = azReflection::refract(-ray.d, record.normal, eta);
+                
+                if (cos_theta < 0) {
+                    rd = azReflection::refract(ray.d, record.normal, inv_eta);
+                }
+                else {
+                    rd = azReflection::refract(ray.d, -record.normal, eta);
                 }
             }
+            //<--new
+            
+            //-->old
+//            if (cos_theta <= 0) {
+//                // From air to dielectric material
+//                // xiao revert
+//                isRefraction = isRefract(ray.d, record.normal, idxRatio, rd);
+//                if(isRefraction)
+//                    c = -cos_theta;//dot(-ray.d, record.normal);
+//                
+//            }
+//            else {
+//                // From dielectric material to air
+//                // xiao revert
+//                isRefraction = isRefract(ray.d, -record.normal, real_t(1) / idxRatio, rd);
+//                if (isRefraction) {
+//                    c = dot(rd, record.normal);
+//                }
+//            }
+            //<--old
             
             // If there is refraction, recursively calculate color
             if (isRefraction) {
                 
                 Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
-                real_t R0 = pow((nt - 1.0)/(nt + 1.0), 2.0);
+                float R0 = powf((nt - 1.0f)/(nt + 1.0f), 2.0f);
                 //( (idxRatio - real_t(1)) * (idxRatio - real_t(1)) ) / ((idxRatio + real_t(1)) * (idxRatio + real_t(1)));
-                R = R0 + (real_t(1) - R0) * pow((real_t(1) - c), 5.0);
+                R = R0 + (1.0f - R0) * powf((1.0f - c), 5.0f);
                 refrColor = trace(refractRay, t0, t1, depth - 1);
             }
             

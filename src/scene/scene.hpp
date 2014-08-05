@@ -319,7 +319,7 @@ namespace _462 {
      * Get refraction ray direction, text book p 305
      * @param d         Incoming ray's direction.
      * @param n         Hit instance's normal
-     * @param ratio     Refractive indices' ratio
+     * @param ratio     Refractive indices' ratio // IOR ratio
      * @param t         OUT New refraction direction
      * @return bool Is there a fraction
      */

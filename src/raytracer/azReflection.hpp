@@ -17,8 +17,6 @@
 
 namespace _462 {
     
-    // source: https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/
-    
     class azReflection {
         
     public:
@@ -31,15 +29,7 @@ namespace _462 {
             return i - 2.0 * n * dot(n, i);
         }
         
-//        static Vector3 refract( Vector3 i, Vector3 n, float inv_eta )
-//        {
-//            float cosi = dot(-i, n);
-//            float cost2 = 1.0f - inv_eta * inv_eta * (1.0f - cosi * cosi);
-//            Vector3 t = inv_eta * i + ((inv_eta * cosi - sqrt(abs(cost2))) * n);
-//            //            return t * (Vector3)(cost2 > 0);
-//            return t * (cost2 > 0 ? 1.0f : 0.0f);
-//        }
-        
+        // tempoaryt
         static Vector3 refract(Vector3 d, Vector3 n, real_t ratio)
         {
             real_t dot_dn = dot(d, n);
@@ -51,6 +41,34 @@ namespace _462 {
             
             return (ratio * (d - (n * dot_dn))) - (n * sqrt(square));
         }
+        
+        // Incoming direction d
+        static Vector3 refract(Vector3 d, Vector3 n, const float &etai, const float &etat)
+        {
+            float cosi = dot(d, n);
+            cosi = clamp(cosi, -1.f, 1.f);
+            
+            // Compute indices of refraction for dielectric
+            // From air to dieletric
+            bool entering = cosi < 0.;
+            float ei = etai, et = etat;
+            
+            // From dieletric to air
+            if (!entering)
+            {
+                std::swap(ei, et);
+                n = -n;
+                cosi = -cosi;
+            }
+            
+            float square = 1.f - (pow(ei/et, 2.f) * (1.f - pow(cosi, 2.f)));
+            
+            if (square < 0) {
+                return Vector3().Zero();
+            }
+            
+            return (ei/et * (d - (n * cosi))) - (n * sqrt(square));
+        }
     };
     
     class azFresnel {
@@ -60,34 +78,58 @@ namespace _462 {
         azFresnel() {}
         ~azFresnel() {}
         
-        
-        // Xiao 8/4/2014
-        static float FresnelDielectricDielectric(float Eta, float CosTheta)
+        // PBRT version
+        static float FrDiel(float cosi, float cost, const float &etai, const float &etat)
         {
-            float c = CosTheta;
-            float temp = Eta * Eta + c * c - 1;
+//            Color3 cEtai = Color3(etai, etai, etai);
+//            Color3 cEtat = Color3(etat, etat, etat);
             
-            if (temp < 0)
-                return 1;
+            float Rparl = ((etat * cosi) - (etai * cost)) /
+                          ((etat * cosi) + (etai * cost));
+            float Rperp = ((etai * cosi) - (etat * cost)) /
+                          ((etai * cosi) + (etat * cost));
             
-            float g = sqrt(temp);
-            return 0.5 * Square((g - c) / (g + c)) *
-            (1 + Square(( (g + c)  * c - 1) / ((g - c) * c + 1)));
+            return (Rparl * Rparl + Rperp * Rperp) / 2.f;
         }
         
-//        static float FresnelDielectricDielectric(float Eta, float CosTheta)
-//        {
-//            float SinTheta2 = 1 - CosTheta * CosTheta;
-//            
-//            float t0 = sqrt(1 - (SinTheta2 / (Eta * Eta)));
-//            float t1 = Eta * t0;
-//            float t2 = Eta * CosTheta;
-//            
-//            float rs = (CosTheta - t1) / (CosTheta + t1);
-//            float rp = (t0 - t2) / (t0 + t2);
-//            
-//            return 0.5 * (rs * rs + rp * rp);
-//        }
+        // PBRT version
+        static float FresnelDielectricEvaluate(float cosi, const float &etai, const float &etat)
+        {
+            // Compute Fresnel reflectance for dielectric
+            cosi = clamp(cosi, -1.f, 1.f);
+            
+            // Compute indices of refraction for dielectric
+            bool entering = cosi < 0.;
+            float ei = etai, et = etat;
+            
+            if (!entering)  std::swap(ei, et);
+            
+            // Compute _sint_ using Snell's law
+            float sint = ei/et * sqrtf(std::max(0.f, 1.f - cosi * cosi));
+            if (sint >= 1.) {
+                // Handle total internal reflection
+                return 1.;
+            }
+            else {
+                float cost = sqrtf(std::max(0.f, 1.f - sint*sint));
+                return FrDiel(fabsf(cosi), cost, ei, et);
+            }
+        }
+        
+        // source: https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/
+        static float FresnelDielectricDielectric(float Eta, float CosTheta)
+        {
+            float SinTheta2 = 1 - CosTheta * CosTheta;
+            
+            float t0 = sqrt(1 - (SinTheta2 / (Eta * Eta)));
+            float t1 = Eta * t0;
+            float t2 = Eta * CosTheta;
+            
+            float rs = (CosTheta - t1) / (CosTheta + t1);
+            float rp = (t0 - t2) / (t0 + t2);
+            
+            return 0.5 * (rs * rs + rp * rp);
+        }
         
     };
 }

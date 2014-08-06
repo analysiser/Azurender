@@ -10,7 +10,9 @@
 
 #include "raytracer.hpp"
 
+#include "math/math.hpp"
 #include "raytracer/azReflection.hpp"
+
 #include "scene/scene.hpp"
 #include "scene/model.hpp"
 #include "scene/triangle.hpp"
@@ -59,7 +61,7 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PATH_TRACING_GI          false
+#define ENABLE_PATH_TRACING_GI          true
 
 #define ENABLE_PHOTON_MAPPING           false
 #define C_PHOTON_MODE                   1
@@ -181,8 +183,6 @@ namespace _462 {
     #endif
         
 #endif
-        
-        
         
         // lixiao debug
 //        std::thread trace_pixel_threads[4];
@@ -1138,19 +1138,6 @@ namespace _462 {
         else {
             return scene->background_color;
         }
-        
-//        if (isHit && !record.isLight) {
-//            return shade(ray, record, t0, t1, depth);
-//        }
-//        else if (isHit && record.isLight) {
-//            // TODO: lixiao debug force color to be white...
-////            return scene->get_lights()[0].color * Color3(100, 100, 100);
-////            return scene->get_lights()[0].color;
-//            return Color3(10,10,10);
-//        }
-//        else
-//            return scene->background_color;
-        
     }
 
     /**
@@ -1172,87 +1159,46 @@ namespace _462 {
         
         // refraction
         if (record.refractive_index > 0) {
-            real_t R = 1;
             
             Color3 reflColor = Color3::Black();
             Color3 refrColor = Color3::Black();
             
-            // Trace reflection color
-            ray.d = normalize(ray.d);
-            Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
-            //ray.d - 2 * dot(ray.d, record.normal) * record.normal;
-            Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, normalize(reflectDirection));
-            if (record.specular != Color3::Black())
-            {
-                reflColor = record.specular * trace(reflectRay, t0, t1, depth - 1);
-            }
-            
-            // Trace for specularly transmissive
+            float ni = float(1.0);
+            float nt = (float)record.refractive_index;
             float cos_theta = dot(ray.d, record.normal);
-            Vector3 rd;     //refract ray direction
-            float ni = real_t(1.0);
-            float nt = record.refractive_index;
-//            float idxRatio = ni/nt;    // n/nt
-            float eta = nt/ni;
-            float inv_eta = ni/nt;
-            float c = 0;
             
-            // xiao revert
-//            bool isRefraction = false;
+            float reflectivity = azFresnel::FresnelDielectricEvaluate(cos_theta, ni, nt);
+            float transmity    = 1.f - reflectivity;
             
-            //--> new
-            bool isRefraction = (azFresnel::FresnelDielectricDielectric(eta, cos_theta) != 1.0);
-            if (isRefraction) {
-                c = std::max(cos_theta, -cos_theta);
-//                isRefract(ray.d, record.normal, eta, rd);
-//                rd = azReflection::refract(-ray.d, record.normal, eta);
+            if (reflectivity > 0.f) {
+                Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                reflectDirection = normalize(reflectDirection);
                 
-                if (cos_theta < 0) {
-                    rd = azReflection::refract(ray.d, record.normal, inv_eta);
-                }
-                else {
-                    rd = azReflection::refract(ray.d, -record.normal, eta);
-                }
-            }
-            //<--new
-            
-            //-->old
-//            if (cos_theta <= 0) {
-//                // From air to dielectric material
-//                // xiao revert
-//                isRefraction = isRefract(ray.d, record.normal, idxRatio, rd);
-//                if(isRefraction)
-//                    c = -cos_theta;//dot(-ray.d, record.normal);
-//                
-//            }
-//            else {
-//                // From dielectric material to air
-//                // xiao revert
-//                isRefraction = isRefract(ray.d, -record.normal, real_t(1) / idxRatio, rd);
-//                if (isRefraction) {
-//                    c = dot(rd, record.normal);
-//                }
-//            }
-            //<--old
-            
-            // If there is refraction, recursively calculate color
-            if (isRefraction) {
+                Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, reflectDirection);
+                reflColor = record.specular * trace(reflectRay, t0, t1, depth - 1);
                 
-                Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
-                float R0 = powf((nt - 1.0f)/(nt + 1.0f), 2.0f);
-                //( (idxRatio - real_t(1)) * (idxRatio - real_t(1)) ) / ((idxRatio + real_t(1)) * (idxRatio + real_t(1)));
-                R = R0 + (1.0f - R0) * powf((1.0f - c), 5.0f);
-                refrColor = trace(refractRay, t0, t1, depth - 1);
             }
             
-            radiance += R * reflColor + (1.0 - R) * refrColor;
+            if (transmity > 0.f) {
+                
+                Vector3 refractDirection = azReflection::refract(ray.d, record.normal, ni, nt);
+                refractDirection = normalize(refractDirection);
+                
+                Ray refractRay = Ray(record.position + EPSILON * refractDirection , normalize(refractDirection));
+                refrColor = record.specular * trace(refractRay, t0, t1, depth - 1);
+            }
+            
+            radiance += reflectivity * reflColor + transmity * refrColor;
             
         }
         // reflection
         else if (record.specular != Color3::Black())
         {
             // Trace for specularly reflective
-            Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
+            ray.d = normalize(ray.d);
+            Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+            reflectDirection = normalize(reflectDirection);
+            Ray reflectRay = Ray(record.position + reflectDirection * EPSILON, reflectDirection);
             radiance += record.specular * trace(reflectRay, t0, t1, depth - 1);
         }
         

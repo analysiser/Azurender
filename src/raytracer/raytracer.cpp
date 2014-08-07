@@ -39,8 +39,8 @@
 #define TMAX                        400
 
 #define PROB_DABSORB                0.5F
-#define INDIRECT_PHOTON_NEEDED      4      // 200000   // 500000
-#define CAUSTICS_PHOTON_NEEDED      4      // 50000    // 200000
+#define INDIRECT_PHOTON_NEEDED      500000      // 200000   // 500000
+#define CAUSTICS_PHOTON_NEEDED      200000      // 50000    // 200000
 
 #define NUM_SAMPLE_PER_LIGHT        1           // if I do so many times of raytracing, i dont need high number of samples
 
@@ -50,7 +50,7 @@
 #define BETA                            (1.953)
 #define ONE_MINUS_E_TO_MINUS_BETA       (0.858)
 
-#define TOTAL_ITERATION                 1  // 300
+#define TOTAL_ITERATION                 300  // 300
 #define SMALL_NODE_GRANULARITY          128
 
 #define PHOTON_QUERY_RADIUS             (0.000375)     // 0.000272
@@ -800,74 +800,51 @@ namespace _462 {
         {
             // refractive
             if (record.refractive_index > 0) {
-//                real_t R = 1;
                 
-                // Trace for specularly transmissive
-                real_t cos_theta = dot((ray.d), record.normal);
-                Vector3 rd;     //refract ray direction
-                real_t idxRatio = real_t(1)/record.refractive_index;
-                real_t c = 0;
+                float ni = float(1.0);
+                float nt = (float)record.refractive_index;
+                float cos_theta = dot(ray.d, record.normal);
                 
-                bool isRefraction = false;
-                if (cos_theta <= 0) {
-                    // From air to dielectric material
-                    isRefraction = isRefract(ray.d, record.normal, idxRatio, rd);
-                    if(isRefraction)
-                        c = dot(-ray.d, record.normal);
+                float reflectivity = azFresnel::FresnelDielectricEvaluate(cos_theta, ni, nt);
+                float transmity    = 1.f - reflectivity;
+                
+                if (reflectivity > 0.f) {
+                    Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                    reflectDirection = normalize(reflectDirection);
+                    
+                    Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, reflectDirection);
+                    
+                    reflectRay.photon = ray.photon;
+                    reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular * reflectivity);
+                    //                    reflectRay.photon.color *= record.specular;
+                    reflectRay.photon.mask |= 0x2;
+                    photonTrace(reflectRay, t0, t1, depth - 1);
+                    
                 }
-                else {
-                    // From dielectric material to air
-                    isRefraction = isRefract(ray.d, -record.normal, real_t(1) / idxRatio, rd);
-                    if (isRefraction)
-                        c = dot(rd, record.normal);
-                }
                 
-                if (isRefraction) {
+                if (transmity > 0.f) {
+                    
+                    Vector3 refractDirection = azReflection::refract(ray.d, record.normal, ni, nt);
+                    refractDirection = normalize(refractDirection);
+                    
                     // create refractive reflection for photon
-                    Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
+                    Ray refractRay = Ray(record.position + EPSILON * refractDirection , refractDirection);
                     refractRay.photon = ray.photon;
-                    refractRay.photon.setColor(refractRay.photon.getColor() * record.specular);
-//                    refractRay.photon.color *= record.specular;
+                    refractRay.photon.setColor(refractRay.photon.getColor() * record.specular * transmity);
+                    //                    refractRay.photon.color *= record.specular;
                     refractRay.photon.mask |= 0x2;
                     photonTrace(refractRay, t0, t1, depth-1);
                 }
-                
-                // TODO: this generates a ring over the ceiling
-//                if (isRefraction) {
-//                    real_t R0 = ((idxRatio - real_t(1)) * (idxRatio - real_t(1))) / ((idxRatio + real_t(1)) * (idxRatio + real_t(1)));
-//                    R = R0 + (real_t(1) - R0) * pow((real_t(1) - c), 5);
-//                }
-//                
-//                real_t prob = random();
-//                if (prob < R) {
-//                    // create specular reflection for photon
-//                    Vector3 reflectDirection = ray.d - 2 * dot(ray.d, record.normal) * record.normal;
-//                    Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, normalize(reflectDirection));
-//                    reflectRay.photon = ray.photon;
-//                    reflectRay.photon.mask |= 0x2;
-////                    reflectRay.photon.color *= record.specular;
-//                    reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular);
-//                    photonTrace(reflectRay, t0, t1, depth-1);
-//                    
-//                }
-//                else {
-//                    // create refractive reflection for photon
-//                    Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
-//                    refractRay.photon = ray.photon;
-//                    refractRay.photon.mask |= 0x2;
-////                    refractRay.photon.color *= record.specular;
-//                    refractRay.photon.setColor(refractRay.photon.getColor() * record.specular);
-//                    photonTrace(refractRay, t0, t1, depth-1);
-//                }
-
             }
             // specular reflective
             else if (record.specular != Color3::Black())
             {
                 // Pure reflective surface
                 if (record.diffuse == Color3::Black()) {
-
-                    Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
+                    
+                    Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                    reflectDirection = normalize(reflectDirection);
+                    Ray reflectRay = Ray(record.position + reflectDirection * EPSILON, reflectDirection);
                     reflectRay.photon = ray.photon;
                     reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular);
 //                    reflectRay.photon.color *= record.specular;
@@ -881,7 +858,8 @@ namespace _462 {
                     real_t prob = random();
                     // Then there is a possibility of whether reflecting or absorbing
                     if (prob < 0.5) {
-                        Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
+                        Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                        Ray reflectRay = Ray(record.position + reflectDirection * EPSILON, reflectDirection);
                         reflectRay.photon = ray.photon;
                         reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular);
 //                        reflectRay.photon.color *= record.specular;
@@ -998,36 +976,38 @@ namespace _462 {
             // refractive
             if (record.refractive_index > 0) {
                 
-                // Trace for specularly transmissive
-                real_t cos_theta = dot((ray.d), record.normal);
-                Vector3 rd;     //refract ray direction
-                real_t idxRatio = real_t(1)/record.refractive_index;
-                real_t c = 0;
+                float ni = float(1.0);
+                float nt = (float)record.refractive_index;
+                float cos_theta = dot(ray.d, record.normal);
                 
-                bool isRefraction = false;
-                if (cos_theta <= 0) {
-                    // From air to dielectric material
-                    isRefraction = isRefract(ray.d, record.normal, idxRatio, rd);
-                    if(isRefraction)
-                        c = dot(-ray.d, record.normal);
-                }
-                else {
-                    // From dielectric material to air
-                    isRefraction = isRefract(ray.d, -record.normal, real_t(1) / idxRatio, rd);
-                    if (isRefraction)
-                        c = dot(rd, record.normal);
+                float reflectivity = azFresnel::FresnelDielectricEvaluate(cos_theta, ni, nt);
+                float transmity    = 1.f - reflectivity;
+                
+                if (reflectivity > 0.f) {
+                    Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                    reflectDirection = normalize(reflectDirection);
+                    
+                    Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, reflectDirection);
+                    
+                    reflectRay.photon = ray.photon;
+                    reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular * reflectivity);
+                    reflectRay.photon.mask |= 0x2;
+                    localPhotonTrace(reflectRay, t0, t1, depth-1, indirect_list, caustics_list, indirect_needed, caustics_needed);
+                    
                 }
                 
-                if (isRefraction) {
+                if (transmity > 0.f) {
+                    
+                    Vector3 refractDirection = azReflection::refract(ray.d, record.normal, ni, nt);
+                    refractDirection = normalize(refractDirection);
+                    
                     // create refractive reflection for photon
-                    Ray refractRay = Ray(record.position + EPSILON * rd , normalize(rd));
+                    Ray refractRay = Ray(record.position + EPSILON * refractDirection , refractDirection);
                     refractRay.photon = ray.photon;
-                    refractRay.photon.setColor(refractRay.photon.getColor() * record.specular);
-                    //                    refractRay.photon.color *= record.specular;
+                    refractRay.photon.setColor(refractRay.photon.getColor() * record.specular * transmity);
                     refractRay.photon.mask |= 0x2;
                     localPhotonTrace(refractRay, t0, t1, depth-1, indirect_list, caustics_list, indirect_needed, caustics_needed);
                 }
-                
             }
             // specular reflective
             else if (record.specular != Color3::Black())
@@ -1038,7 +1018,6 @@ namespace _462 {
                     Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
                     reflectRay.photon = ray.photon;
                     reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular);
-                    //                    reflectRay.photon.color *= record.specular;
                     reflectRay.photon.mask |= 0x2;
                     localPhotonTrace(reflectRay, t0, t1, depth-1, indirect_list, caustics_list, indirect_needed, caustics_needed);
                     
@@ -1049,10 +1028,12 @@ namespace _462 {
                     real_t prob = random();
                     // Then there is a possibility of whether reflecting or absorbing
                     if (prob < 0.5) {
-                        Ray reflectRay = Ray(record.position, normalize(ray.d - 2 * dot(ray.d, record.normal) * record.normal));
+                        Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
+                        reflectDirection = normalize(reflectDirection);
+                        Ray reflectRay = Ray(record.position + EPSILON * reflectDirection, reflectDirection);
+                        
                         reflectRay.photon = ray.photon;
                         reflectRay.photon.setColor(reflectRay.photon.getColor() * record.specular);
-                        //                        reflectRay.photon.color *= record.specular;
                         reflectRay.photon.mask |= 0x2;
                         localPhotonTrace(reflectRay, t0, t1, depth - 1, indirect_list, caustics_list, indirect_needed, caustics_needed);
                     }
@@ -1170,6 +1151,7 @@ namespace _462 {
             float reflectivity = azFresnel::FresnelDielectricEvaluate(cos_theta, ni, nt);
             float transmity    = 1.f - reflectivity;
             
+            // reflection
             if (reflectivity > 0.f) {
                 Vector3 reflectDirection = azReflection::reflect(ray.d, record.normal);
                 reflectDirection = normalize(reflectDirection);
@@ -1179,6 +1161,7 @@ namespace _462 {
                 
             }
             
+            // refraction
             if (transmity > 0.f) {
                 
                 Vector3 refractDirection = azReflection::refract(ray.d, record.normal, ni, nt);

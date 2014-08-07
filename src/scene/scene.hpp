@@ -315,28 +315,6 @@ namespace _462 {
         return Vector2(tex_coord.x > 1 ? tex_coord.x - (int)tex_coord.x : tex_coord.x, tex_coord.y > 1 ? tex_coord.y - (int)tex_coord.y : tex_coord.y);
     }
     
-    /*!
-     * Get refraction ray direction, text book p 305
-     * @param d         Incoming ray's direction.
-     * @param n         Hit instance's normal
-     * @param ratio     Refractive indices' ratio // IOR ratio
-     * @param t         OUT New refraction direction
-     * @return bool Is there a fraction
-     */
-    inline bool isRefract(Vector3 d, Vector3 n, real_t ratio, Vector3 &t)
-    {
-        real_t dot_dn = dot(d, n);
-        real_t square = real_t(1) - (pow(ratio, 2) * (real_t(1) - pow(dot_dn, 2)));
-        
-        if (square < 0) {
-            t = Vector3().Zero();
-            return false;
-        }
-        
-        t = (ratio * (d - (n * dot_dn))) - (n * sqrt(square));
-        return true;
-    }
-    
     /**
      * @brief   Get the bounding volumn for triangle mesh
      * @param   A, B, C     Position of vertices of triangle

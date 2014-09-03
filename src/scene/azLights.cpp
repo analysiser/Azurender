@@ -52,6 +52,7 @@ namespace _462 {
             Vector3 l = diffn;
             Vector3 n = normal;
             
+            // cos(theta_i)
             real_t dot_nl = dot(n, l);
             
             if (attenuation_constant != 0.0) {
@@ -59,7 +60,7 @@ namespace _462 {
             }
             else {
                 Color3 resultColor = ( color * (intensity * (1.0 / squared_distance(surfP, p))) * std::max(dot_nl, 0.0) );
-                resultColor = clamp(resultColor, 0, 1.0);
+//                resultColor = clamp(resultColor, 0, 1.0);
                 
                 // TODO: is this right?
                 return resultColor;//( color * (intensity * (1.0 / squared_distance(surfP, p))) * (dot_nl > 0 ? dot_nl : 0) );
@@ -129,7 +130,7 @@ namespace _462 {
     
     Color3 DistantLight::SampleLight(const Vector3 &/* p */, const Vector3 &normal, float t0, float t1) const
     {
-        float tl = 2;
+        float tl = 200;
         // visible
         if (tl > t0 && tl <= t1) {
             Vector3 l = inversed_direction;
@@ -139,7 +140,7 @@ namespace _462 {
             // no fall off
             Color3 resultColor = ( color * intensity ) * (dot_nl > 0 ? dot_nl : 0 );
 //            Color3 resultColor = ( color * (intensity * (1.0 / (tl * squared_distance(direction, Vector3::Zero())))) * (dot_nl > 0 ? dot_nl : 0) );
-            resultColor = clamp(resultColor, 0, 0.99);
+//            resultColor = clamp(resultColor, 0, 0.99);
 //            float clampV = 0.1;
 //            for (int i = 0; i < 3; i++) {
 //                if (resultColor[i] > clampV) {

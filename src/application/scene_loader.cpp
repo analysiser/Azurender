@@ -78,11 +78,12 @@ namespace _462 {
     static const char STR_SPHERE[] = "sphere";
     static const char STR_TRIANGLE[] = "triangle";
     static const char STR_MODEL[] = "model";
+    static const char STR_SKYBOX[] = "skybox";
     static const char STR_MESH[] = "mesh";
     
     // light
     // add by xiao li
-//    static const char STR_ISLIGHT[] = "islight";
+    //    static const char STR_ISLIGHT[] = "islight";
     static const char STR_LIGHT_TYPE[] = "type";    // indicate if the light source is point light or parallelogram light
     static const char STR_LIGHT_P1[] = "vertex1";
     static const char STR_LIGHT_P2[] = "vertex2";
@@ -146,7 +147,7 @@ namespace _462 {
         }
     }
     
-    // TODO: parse float type than double
+    // parse float type add to double
     static void parse_attrib_float( const TiXmlElement* elem, bool required, const char* name, float* val )
     {
         int rv = elem->QueryFloatAttribute( name, val );
@@ -257,25 +258,25 @@ namespace _462 {
         camera->orientation = normalize( ori );
     }
     
-//    static void parse_point_light( const TiXmlElement* elem, SphereLight* light )
-//    {
-//        parse_elem( elem, false, STR_ACON,      &light->attenuation.constant );
-//        parse_elem( elem, false, STR_ALIN,      &light->attenuation.linear );
-//        parse_elem( elem, false, STR_AQUAD,     &light->attenuation.quadratic );
-//        parse_elem( elem, true,  STR_POSITION,  &light->position );
-//        parse_elem( elem, true,  STR_COLOR,     &light->color );
-//        parse_elem( elem, false, STR_RADIUS,    &light->radius );
-////        parse_elem( elem, false, STR_TEST,      &light->test);
-//        
-////        // indicate light type
-////        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
-////        
-////        // only for square light
-////        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
-////        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
-////        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
-////        parse_elem(elem, false, STR_NORMAL, &light->normal);
-//    }
+    //    static void parse_point_light( const TiXmlElement* elem, SphereLight* light )
+    //    {
+    //        parse_elem( elem, false, STR_ACON,      &light->attenuation.constant );
+    //        parse_elem( elem, false, STR_ALIN,      &light->attenuation.linear );
+    //        parse_elem( elem, false, STR_AQUAD,     &light->attenuation.quadratic );
+    //        parse_elem( elem, true,  STR_POSITION,  &light->position );
+    //        parse_elem( elem, true,  STR_COLOR,     &light->color );
+    //        parse_elem( elem, false, STR_RADIUS,    &light->radius );
+    ////        parse_elem( elem, false, STR_TEST,      &light->test);
+    //
+    ////        // indicate light type
+    ////        parse_elem(elem, true, STR_LIGHT_TYPE, &light->type);
+    ////
+    ////        // only for square light
+    ////        parse_elem(elem, false, STR_LIGHT_P1, &light->vertex1);
+    ////        parse_elem(elem, false, STR_LIGHT_P2, &light->vertex2);
+    ////        parse_elem(elem, false, STR_LIGHT_DEPTH, &light->depth);
+    ////        parse_elem(elem, false, STR_NORMAL, &light->normal);
+    //    }
     
     // parse lights
     static void parse_light_point( const TiXmlElement *elem, PointLight *light )
@@ -375,7 +376,7 @@ namespace _462 {
         parse_elem( elem, true,  STR_POSITION,  &geom->position );
         parse_elem( elem, false, STR_ORIENT,    &ori );
         parse_elem( elem, false, STR_SCALE,     &geom->scale );
-//        parse_elem( elem, false, STR_ISLIGHT,   &geom->isLight );
+        //        parse_elem( elem, false, STR_ISLIGHT,   &geom->isLight );
         
         // normalize orientation
         geom->orientation = normalize( ori );
@@ -475,10 +476,10 @@ namespace _462 {
             // parse the lights
             elem = root->FirstChildElement( STR_PLIGHT );
             while ( elem ) {
-//                SphereLight pl;
-//                parse_point_light( elem, &pl );
-//                scene->add_light( pl );
-//                elem = elem->NextSiblingElement( STR_PLIGHT );
+                //                SphereLight pl;
+                //                parse_point_light( elem, &pl );
+                //                scene->add_light( pl );
+                //                elem = elem->NextSiblingElement( STR_PLIGHT );
                 
                 PointLight *pointLight = new PointLight();
                 scene->add_lights(pointLight);
@@ -559,6 +560,8 @@ namespace _462 {
                 check_mem( geom );
                 scene->add_geometry( geom );
                 parse_geom_sphere( materials, elem, geom );
+                geom->layer = Layer_Default;
+                
                 elem = elem->NextSiblingElement( STR_SPHERE );
             }
             
@@ -569,6 +572,8 @@ namespace _462 {
                 check_mem( geom );
                 scene->add_geometry( geom );
                 parse_geom_triangle( materials, triverts, elem, geom );
+                geom->layer = Layer_Default;
+                
                 elem = elem->NextSiblingElement( STR_TRIANGLE );
             }
             
@@ -579,7 +584,21 @@ namespace _462 {
                 check_mem( geom );
                 scene->add_geometry( geom );
                 parse_geom_model( materials, meshes, elem, geom );
+                geom->layer = Layer_Default;
+
                 elem = elem->NextSiblingElement( STR_MODEL );
+            }
+            
+            // skybox
+            elem = root->FirstChildElement( STR_SKYBOX );
+            while ( elem ) {
+                Model *skybox = new Model();
+                check_mem( skybox );
+                scene->add_geometry( skybox );
+                parse_geom_model( materials, meshes, elem, skybox );
+                skybox->layer = Layer_IgnoreShadowRay;
+                
+                elem = elem->NextSiblingElement( STR_SKYBOX );
             }
             
             // TODO add you own geometries here

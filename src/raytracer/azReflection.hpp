@@ -15,14 +15,25 @@
 #include "math/math.hpp"
 #include "math/vector.hpp"
 
+#define INV_TWOPI   0.15915494309189533577f
+
+
 namespace _462 {
     
+    inline float AbsCosTheta(const Vector3 &w) { return fabsf(w.z); }
+    
+    inline bool SameHemisphere(const Vector3 &w, const Vector3 &wp) {
+        return w.z * wp.z > 0.f;
+    }
+    
+    class azFresnel;
+    class azReflection;
     class azReflection {
         
     public:
-
+        
         azReflection() {}
-        ~azReflection() {}        
+        ~azReflection() {}
         
         static Vector3 reflect(Vector3 i, Vector3 n)
         {
@@ -69,6 +80,30 @@ namespace _462 {
             
             return (ei/et * (d - (n * cosi))) - (n * sqrt(square));
         }
+        
+        static float TSMicrofacetCoeef(const Vector3 &wo, const Vector3 &wi, const float &etai, const float &etat);
+        
+        static float TSMicrofacetSample_f(const Vector3 &wo, const Vector3 &wi, const float &etai, const float &etat);
+        
+        
+        static float G(const Vector3 &wo, const Vector3 &wi, const Vector3 &wh) {
+            float NdotWh = AbsCosTheta(wh);
+            float NdotWo = AbsCosTheta(wo);
+            float NdotWi = AbsCosTheta(wi);
+            float WOdotWh = fabsf(dot(wo, wh));
+            return std::min(1.f, std::min((2.f * NdotWh * NdotWo / WOdotWh),
+                                          (2.f * NdotWh * NdotWi / WOdotWh)));
+        }
+        
+        static float D(const Vector3 &wh) {
+            float ex = .01f, ey = .10f;
+            float costhetah = AbsCosTheta(wh);
+            float d = 1.f - costhetah * costhetah;
+            if (d == 0.f) return 0.f;
+            float e = (ex * wh.x * wh.x + ey * wh.y * wh.y) / d;
+            return sqrtf((ex+2.f) * (ey+2.f)) * INV_TWOPI * powf(costhetah, e);
+        }
+        
     };
     
     class azFresnel {
@@ -81,13 +116,13 @@ namespace _462 {
         // PBRT version
         static float FrDiel(float cosi, float cost, const float &etai, const float &etat)
         {
-//            Color3 cEtai = Color3(etai, etai, etai);
-//            Color3 cEtat = Color3(etat, etat, etat);
+            //            Color3 cEtai = Color3(etai, etai, etai);
+            //            Color3 cEtat = Color3(etat, etat, etat);
             
             float Rparl = ((etat * cosi) - (etai * cost)) /
-                          ((etat * cosi) + (etai * cost));
+            ((etat * cosi) + (etai * cost));
             float Rperp = ((etai * cosi) - (etat * cost)) /
-                          ((etai * cosi) + (etat * cost));
+            ((etai * cosi) + (etat * cost));
             
             return (Rparl * Rparl + Rperp * Rperp) / 2.f;
         }
@@ -132,6 +167,8 @@ namespace _462 {
         }
         
     };
+    
+    
 }
 
 

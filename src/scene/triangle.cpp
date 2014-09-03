@@ -67,7 +67,7 @@ namespace _462 {
         for (int i = 0; i < 3; i++) {
             // local bounding box
             bbox_local->include(vertices[i].position);
-            bbox_world->include(mat.transform_point(vertices[i].position));
+            bbox_world->include(wmat.transform_point(vertices[i].position));
         }
     }
     
@@ -76,8 +76,8 @@ namespace _462 {
         if(!bbox_world->intersect(ray, t0, t1))
             return false;
         
-        // Transform ray to sphere's local space
-        Ray r = Ray(invMat.transform_point(ray.e), invMat.transform_vector(ray.d));
+        // Transform ray to triangle's local space
+        Ray r = Ray(lmat.transform_point(ray.e), lmat.transform_vector(ray.d));
 
         Vertex A = vertices[0];
         Vertex B = vertices[1];

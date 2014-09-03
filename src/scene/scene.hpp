@@ -32,6 +32,20 @@ namespace _462 {
         eModel = 3,
     };
     
+    enum SceneLayer
+    {
+        Layer_Default         = 0,
+        Layer_IgnoreShadowRay = 1 << 0,
+        Layer_Unused0         = 1 << 1,
+        Layer_Unused1         = 1 << 2,
+        Layer_Unused2         = 1 << 3,
+        Layer_All             = Layer_Default |
+                                Layer_IgnoreShadowRay |
+                                Layer_Unused0 |
+                                Layer_Unused1 |
+                                Layer_Unused2,
+    };
+    
     struct SphereLight
     {
         struct Attenuation
@@ -42,7 +56,7 @@ namespace _462 {
         };
         
         SphereLight();
-
+        
         // The position of the light, relative to world origin.
         Vector3 position;
         // The color of the light (both diffuse and specular)
@@ -53,17 +67,17 @@ namespace _462 {
         // point light radius
         real_t radius;
         
-//        // type = 0: sphere light
-//        // type = 1: parallelogram light
-//        real_t type;
-//        
-//        // two vectors for parallelogram light
-//        Vector3 vertex1;
-//        Vector3 vertex2;
-//        Vector3 normal;
-//        real_t depth;
+        //        // type = 0: sphere light
+        //        // type = 1: parallelogram light
+        //        real_t type;
+        //
+        //        // two vectors for parallelogram light
+        //        Vector3 vertex1;
+        //        Vector3 vertex2;
+        //        Vector3 normal;
+        //        real_t depth;
     };
-
+    
     /**
      * @brief Data structure for intersection
      */
@@ -86,7 +100,7 @@ namespace _462 {
         
         int phong;           // p value for blinn-phong model
         
-//        bool isLight;
+        //        bool isLight;
         bool isInShadow;
         
         // Constructor
@@ -103,7 +117,7 @@ namespace _462 {
             
             phong = 0;
             
-//            isLight = false;
+            //            isLight = false;
             isInShadow = false;
         }
         
@@ -146,6 +160,7 @@ namespace _462 {
         virtual ~Geometry();
         
         GeometryType type;
+        SceneLayer layer;
         
         /*
          World transformation are applied in the following order:
@@ -168,13 +183,16 @@ namespace _462 {
         Vector3 scale;
         
         // Transformation matrix
-        Matrix4 mat;
+        Matrix4 wmat;
+        
         // Inverse transformation matrix
-        Matrix4 invMat;
+        // Local transformation matrix: transform world to local
+        Matrix4 lmat;
+        
         // Normal transformation matrix
         Matrix3 normMat;
         
-//        float isLight;
+        //        float isLight;
         
         /**
          * Renders this geometry using OpenGL in the local coordinate space.
@@ -195,32 +213,6 @@ namespace _462 {
         
         real_t isLight;
     };
-    
-    /**
-     * @brief Bounding box class
-     */
-    class Box {
-    public:
-        
-        Box() {
-            bounds[0] = Vector3::Zero();
-            bounds[1] = Vector3::Zero();
-        }
-        
-        Box(const Vector3 &min, const Vector3 &max) {
-            bounds[0] = min;
-            bounds[1] = max;
-        }
-        
-        // Test if a given ray hits a bounding box
-        bool intersect(const Ray &r, real_t t0, real_t t1) const;
-        
-        // Bounds[0] is bottom left front corner,
-        // Bounds[1] is top right back corner.
-        Vector3 bounds[2];
-    };
-    
-    
     
     /**
      * The container class for information used to render a scene composed of
@@ -250,8 +242,8 @@ namespace _462 {
         // accessor functions
         Geometry* const* get_geometries() const;
         size_t num_geometries() const;
-//        const SphereLight* get_lights() const;
-//        size_t num_lights() const;
+        //        const SphereLight* get_lights() const;
+        //        size_t num_lights() const;
         Material* const* get_materials() const;
         size_t num_materials() const;
         Mesh* const* get_meshes() const;
@@ -271,7 +263,7 @@ namespace _462 {
         void add_light( const SphereLight& l );
         void add_lights( Light *l );
         
-
+        
     private:
         
         typedef std::vector< SphereLight > SphereLightList;
@@ -298,7 +290,7 @@ namespace _462 {
         Scene& operator=(const Scene&);
         
     };
-
+    
     /* Helper functions for common utilities */
     /**
      * @brief   Adjust the texture coordinates for an object and its surface
@@ -308,45 +300,11 @@ namespace _462 {
     inline Vector2 getAdjustTexCoord(Vector2 tex_coord)
     {
         if (tex_coord.x < 0 || tex_coord.y < 0) {
-//            printf("(%f, %f)\n",tex_coord.x,tex_coord.y);
-//            assert(0);
+            //            printf("(%f, %f)\n",tex_coord.x,tex_coord.y);
+            //            assert(0);
         }
         
         return Vector2(tex_coord.x > 1 ? tex_coord.x - (int)tex_coord.x : tex_coord.x, tex_coord.y > 1 ? tex_coord.y - (int)tex_coord.y : tex_coord.y);
-    }
-    
-    /**
-     * @brief   Get the bounding volumn for triangle mesh
-     * @param   A, B, C     Position of vertices of triangle
-     * @return  Box         Bounding box for the triangle
-     */
-    inline Box getBoundingBoxForTriangle(Vector3 A, Vector3 B, Vector3 C)
-    {
-        real_t xmin, xmax, ymin, ymax, zmin, zmax;
-        
-        xmin = A.x < B.x ? A.x : B.x;
-        xmin = C.x < xmin ? C.x : xmin;
-        
-        xmax = A.x > B.x ? A.x : B.x;
-        xmax = C.x > xmax ? C.x : xmax;
-        
-        ymin = A.y < B.y ? A.y : B.y;
-        ymin = C.y < ymin ? C.y : ymin;
-        
-        ymax = A.y > B.y ? A.y : B.y;
-        ymax = C.y > ymax ? C.y : ymax;
-        
-        zmin = A.z < B.z ? A.z : B.z;
-        zmin = C.z < zmin ? C.z : zmin;
-        
-        zmax = A.z > B.z ? A.z : B.z;
-        zmax = C.z > zmax ? C.z : zmax;
-        
-        Vector3 min = Vector3(xmin, ymin, zmin);
-        Vector3 max = Vector3(xmax, ymax, zmax);
-        
-        Box box = Box(min, max);
-        return box;
     }
     
     /**
@@ -383,7 +341,7 @@ namespace _462 {
         
         return result;
     }
-
+    
     
 } /* _462 */
 

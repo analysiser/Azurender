@@ -23,11 +23,12 @@ namespace _462 {
     
     bool Geometry::initialize()
     {
-        make_inverse_transformation_matrix(&invMat, position, orientation, scale);
-        make_transformation_matrix(&mat, position, orientation, scale);
-        make_normal_matrix(&normMat, mat);
+        orientation = normalize(orientation);
+        make_inverse_transformation_matrix(&lmat, position, orientation, scale);
+        make_transformation_matrix(&wmat, position, orientation, scale);
+        make_normal_matrix(&normMat, wmat);
         
-        position_local = invMat.transform_point(position);
+        position_local = lmat.transform_point(position);
         
         return true;
     }
@@ -160,67 +161,6 @@ namespace _462 {
     void Scene::add_lights( Light *l )
     {
         lights.push_back(l);
-    }
-    
-    /**
-     * @brief test if a ray hits the bounding box
-     * @param   &r      reference of the ray
-     * @param   t0      lower limit of t
-     * @param   t1      upper limit of t
-     * @return  bool    if the intersection happens
-     */
-    bool Box::intersect(const _462::Ray &r, real_t t0, real_t t1) const
-    {
-        real_t tmin, tmax, tymin, tymax, tzmin, tzmax;
-        
-        // x
-        if (r.d.x >= 0) {
-            tmin = (bounds[0].x - r.e.x) / r.d.x;
-            tmax = (bounds[1].x - r.e.x) / r.d.x;
-        }
-        else {
-            tmin = (bounds[1].x - r.e.x) / r.d.x;
-            tmax = (bounds[0].x - r.e.x) / r.d.x;
-        }
-        
-        // y
-        if (r.d.y >= 0) {
-            tymin = (bounds[0].y - r.e.y) / r.d.y;
-            tymax = (bounds[1].y - r.e.y) / r.d.y;
-        }
-        else {
-            tymin = (bounds[1].y - r.e.y) / r.d.y;
-            tymax = (bounds[0].y - r.e.y) / r.d.y;
-        }
-        
-        if ( (tmin > tymax) || (tymin > tmax) )
-            return false;
-        
-        if (tymin > tmin)
-            tmin = tymin;
-        
-        if (tymax < tmax)
-            tmax = tymax;
-        
-        // z
-        if (r.d.z >= 0) {
-            tzmin = (bounds[0].z - r.e.z) / r.d.z;
-            tzmax = (bounds[1].z - r.e.z) / r.d.z;
-        }
-        else {
-            tzmin = (bounds[1].z - r.e.z) / r.d.z;
-            tzmax = (bounds[0].z - r.e.z) / r.d.z;
-        }
-        
-        if ( (tmin > tzmax) || (tzmin > tmax) )
-            return false;
-        if (tzmin > tmin)
-            tmin = tzmin;
-        if (tzmax < tmax)
-            tmax = tzmax;
-        
-        return ( (tmin < t1) && (tmax > t0) );
-        
     }
     
     

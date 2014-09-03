@@ -99,10 +99,6 @@ namespace _462 {
         KDNode *vvh_indirect_root;
         KDNode *vvh_caustics_root;
         
-        // caustics bounding boxes
-        // it stores bounding boxes of objects that might generate caustics
-        std::vector<Box> cboxes;
-        
         unsigned int num_iteration;
         
         
@@ -227,13 +223,11 @@ namespace _462 {
         Color3 shade_cphotons(HitRecord &record, real_t radius, size_t num_samples);
         
         // retrieve the closest hit record
-        HitRecord getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit);
+        HitRecord getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit, SceneLayer mask);
         
         // sample a Light source on the volumn of sphere light
 //        Vector3 sampleLightSource(SphereLight light);
-        
-        void generateCausticsBoxes();
-        
+                
         // helper function for sampling a point on a given unit sphere
         Vector3 samplePointOnUnitSphere();
         
@@ -330,6 +324,28 @@ namespace _462 {
     inline bool cPhotonComparatorZ(const cPhoton &a, const cPhoton &b)
     {
         return a.position[2] < b.position[2];
+    }
+    
+    
+    // sampling
+    inline Vector3 uniformSampleSphere(float u1, float u2)
+    {
+        float z = 1.f - 2.f * u1;
+        float r = sqrtf(std::max(0.f, 1.f - z * z));
+        float phi = 2.f * M_PI * u2;
+        float x = r * cosf(phi);
+        float y = r * sinf(phi);
+        return Vector3(x, y, z);
+    }
+    
+    inline Vector3 uniformSampleHemisphere(float u1, float u2)
+    {
+        float z = u1;
+        float r = sqrtf(std::max(0.f, 1.f - z * z));
+        float phi = 2 * M_PI * u2;
+        float x = r * cosf(phi);
+        float y = r * sinf(phi);
+        return Vector3(x, y, z);
     }
     
 } /* _462 */

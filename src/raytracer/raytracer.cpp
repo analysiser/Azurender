@@ -31,8 +31,8 @@
 
 #endif
 
-#define RAYTRACE_DEPTH          8
-#define PHOTON_TRACE_DEPTH      8
+#define RAYTRACE_DEPTH          5
+#define PHOTON_TRACE_DEPTH      5
 
 
 #define EPSILON                     1e-12
@@ -62,6 +62,7 @@
 #define CONE_K                          (1)
 
 #define ENABLE_PATH_TRACING_GI          true
+#define PT_GI_SAMPLE                    (1)
 
 #define ENABLE_PHOTON_MAPPING           false
 #define C_PHOTON_MODE                   1
@@ -71,6 +72,8 @@
 #define DOF_T                           9
 #define DOF_R                           (0.5)
 #define DOF_SAMPLE                      5
+
+#define INV_PI                          (0.31830988618379067154f)
 
 
 namespace _462 {
@@ -493,7 +496,6 @@ namespace _462 {
         ispc_cphoton_caustics_data.bitmap = new int8_t[cphoton_caustics_data.size()];
         
         
-        // TODO: ispc parallel
         for (size_t i = 0; i < cphoton_indirect_data.size(); i++)
         {
             ispc_cphoton_indirect_data.posx[i] = cphoton_indirect_data[i].position[0];
@@ -593,8 +595,6 @@ namespace _462 {
      */
     bool Raytracer::raytrace(unsigned char* buffer, real_t* max_time)
     {
-        // TODO Add any modifications to this algorithm, if needed.
-        
 //        static const size_t PRINT_INTERVAL = 64;
         
         // the time in milliseconds that we should stop
@@ -692,6 +692,22 @@ namespace _462 {
                     
                     // trace a pixel
                     Color3 color = trace_pixel(scene, x, c_row, width, height);
+                    
+//                    if (color != Color3::Black()) {
+//                        raytraceColorBuffer[(c_row * width + x)] += color;
+//                        
+//                        Color3 progressiveColor = raytraceColorBuffer[(c_row * width + x)] * ((1.f)/float(num_iteration));
+//                        progressiveColor = clamp(progressiveColor, 0.0, 1.0);
+//                        
+//                        
+//                        // write the result to the buffer, always use 1.0 as the alpha
+//                        //                    color.to_array(&buffer[4 * (c_row * width + x)]);
+//                        progressiveColor.to_array(&buffer[4 * (c_row * width + x)]);
+//                    }
+//                    else
+//                    {
+//                        raytraceColorBuffer[(c_row * width + x)] = raytraceColorBuffer[(c_row * width + x)] * (float(num_iteration)/float(num_iteration - 1));
+//                    }
 //                    applyGammaHDR(color);
                     raytraceColorBuffer[(c_row * width + x)] += color;
                     Color3 progressiveColor = raytraceColorBuffer[(c_row * width + x)] * ((1.0)/(num_iteration));
@@ -792,10 +808,8 @@ namespace _462 {
         }
         
         bool isHit = false;
-        HitRecord record = getClosestHit(ray, t0, t1, &isHit);
+        HitRecord record = getClosestHit(ray, t0, t1, &isHit, Layer_All);
         
-        // xiao debug
-//        if (isHit && !record.isLight)
         if (isHit)
         {
             // refractive
@@ -968,9 +982,8 @@ namespace _462 {
         }
         
         bool isHit = false;
-        HitRecord record = getClosestHit(ray, t0, t1, &isHit);
+        HitRecord record = getClosestHit(ray, t0, t1, &isHit, Layer_All);
         
-//        if (isHit && !record.isLight)// xiao debug
         if (isHit)
         {
             // refractive
@@ -1112,7 +1125,7 @@ namespace _462 {
     Color3 Raytracer::trace(Ray ray, real_t t0, real_t t1, int depth)
     {
         bool isHit = false;
-        HitRecord record = getClosestHit(ray, t0, t1, &isHit);
+        HitRecord record = getClosestHit(ray, t0, t1, &isHit, Layer_All);
         if (isHit) {
             return shade(ray, record, t0, t1, depth);
         }
@@ -1165,6 +1178,7 @@ namespace _462 {
             if (transmity > 0.f) {
                 
                 Vector3 refractDirection = azReflection::refract(ray.d, record.normal, ni, nt);
+    
                 refractDirection = normalize(refractDirection);
                 
                 Ray refractRay = Ray(record.position + EPSILON * refractDirection , normalize(refractDirection));
@@ -1172,7 +1186,6 @@ namespace _462 {
             }
             
             radiance += reflectivity * reflColor + transmity * refrColor;
-            
         }
         // reflection
         else if (record.specular != Color3::Black())
@@ -1183,12 +1196,11 @@ namespace _462 {
             reflectDirection = normalize(reflectDirection);
             Ray reflectRay = Ray(record.position + reflectDirection * EPSILON, reflectDirection);
             radiance += record.specular * trace(reflectRay, t0, t1, depth - 1);
+            
         }
         
-        // 4/14/2014, wrong assumption for direct illumination
-//        else {
-        
-        // ray hits texture map
+        // ray hits skybox
+        // TODO: better wrap up of skybox
         if (record.diffuse == Color3(-1.0, -1.0, -1.0))
         {
             Color3 hdrColor = record.texture;
@@ -1200,6 +1212,7 @@ namespace _462 {
         }
         else if (record.diffuse != Color3::Black() && record.refractive_index == 0) {
             
+            // diffuse
             // 6/27/2014, path tracing test
             // generate a new ray, randomized along normal sphere
             
@@ -1207,9 +1220,27 @@ namespace _462 {
             radiance += shade_direct_illumination(record, t0, t1);
             
 #if ENABLE_PATH_TRACING_GI
-            Vector3 dir = uniformSampleHemisphere(record.normal);
-            Ray pathRay = Ray(record.position, dir);
-            radiance += 0.6 * trace(pathRay, t0, t1, depth - 1);
+            // Xiao debug, 8/11/2014, at SIGGRAPH
+            // TODO: Actually apply BRDF for path tracing
+            // try to simulate lambertian BRDF model for monte carlo path tracing
+            Color3 indirectRadiance = Color3::Black();
+            for (int i = 0; i < PT_GI_SAMPLE; i++) {
+                Vector3 dir = uniformSampleHemisphere(record.normal);
+                Ray secondRay = Ray(record.position + dir * EPSILON, dir);
+//                bool isSecondRayHit;
+//                HitRecord secondRecord = getClosestHit(secondRay, t0, t1, &isSecondRayHit);
+//                if (isSecondRayHit) {
+                    Color3 Li = record.diffuse * trace(secondRay, t0, t1, depth - 1);
+//                    Color3 Li = secondRecord.diffuse;
+//                if (Li != Color3::Black()) {
+//                    Li = Li * INV_PI;
+                    indirectRadiance += Li;
+//                }
+
+//                }
+            }
+            radiance += indirectRadiance * (1.f/float(PT_GI_SAMPLE));
+
 #else
 #endif
             // normal
@@ -1238,62 +1269,13 @@ namespace _462 {
             
         }
         
-//            real_t progressiveCoef = real_t(TOTAL_ITERATION - num_iteration + 1)/real_t(TOTAL_ITERATION);
-//            progressiveCoef *= progressiveCoef;
-//            printf(" === %f\n",progressiveCoef);
-            
-            // Shading caustics
-//            radiance += shade_caustics(record, 0.0001 * 1, INFINITY) * (1.0/(CAUSTICS_PHOTON_NEEDED)) * 100; // 0.0001
-            
-            // Shading global illumination
-//            radiance += shade_indirect_illumination(record, 0.0001 * 1, INFINITY) * (1.0/(INDIRECT_PHOTON_NEEDED)) * 100;   // 0.0001
-//        }
-        
         // for raytracing ambient
         // turn amient on if needed
 //        if ( record.refractive_index == 0) {
 //            radiance += scene->ambient_light * record.ambient;
 //        }
         
-        // TODO:
-        // try to add high light with blinn-phong model
-        // the higher the phong, the smaller the high light
-        if (record.phong > 0) {
-            
-            for (size_t i = 0; i < scene->num_lights(); i++) {
-                
-//                SphereLight light = scene->get_lights()[i];
-                Light *light = scene->get_lights()[i];
-//                Vector3 lightpos = sampleLightSource(light);
-//                Vector3 lightpos = light->SamplePointOnLight();
-                Vector3 dirPtoL = light->getPointToLightDirection(record.position,
-                                                                  light->SamplePointOnLight());
-                Ray rPtoL = Ray(record.position, dirPtoL);
-                bool isHit;
-                getClosestHit(rPtoL, EPSILON, TMAX, &isHit);
-                // TODO: light intensity, defined by material
-                Color3 highLightColor = light->color * light->intensity;
-                if (isHit) {
-                    // should be high light
-                    Vector3 r = -dirPtoL + 2 * dot(dirPtoL, record.normal) * record.normal;
-                    Vector3 e = -ray.d;
-                    real_t coef = dot(e, r);
-                    coef = coef > 0 ? coef : 0;
-                    coef = pow(coef, record.phong);
-                    highLightColor *= coef;
-                }
-                else
-                    highLightColor = Color3::Black();
-                
-                radiance += highLightColor;
-            }
-            
-        }
-        
         return record.texture * radiance;
-        // consider diffusive color
-//        return record.texture * record.diffuse * radiance;
-        
     }
     
     /**
@@ -1317,7 +1299,7 @@ namespace _462 {
                 
                 Ray shadowRay = Ray(record.position + EPSILON * d_shadowRay_normolized, d_shadowRay_normolized);
                 bool isHit = false;
-                HitRecord shadowRecord = getClosestHit(shadowRay, t0, t1, &isHit);
+                HitRecord shadowRecord = getClosestHit(shadowRay, t0, t1, &isHit, (Layer_IgnoreShadowRay));
                 
                 if (isHit) {
                     res += record.diffuse * aLight->SampleLight(record.position, record.normal, t0, std::min(shadowRecord.t, t1));
@@ -1325,85 +1307,16 @@ namespace _462 {
                 else {
                     res += record.diffuse * aLight->SampleLight(record.position, record.normal, t0, t1);
                 }
-                
-                
-                
-                // -------------old working code------------>
-//                Light *aLight = scene->get_lights()[i];
-//                // Get a random point on light sphere
-////                Vector3 sampleLightPos = sampleLightSource(scene->get_lights()[i]);
-//                Vector3 sampleLightPos = aLight->SamplePointOnLight();
-//                
-//                // scene->get_lights()[i].position; // For hard shadows
-//                
-//                Vector3 d_shadowRay = sampleLightPos - record.position;
-//                Vector3 d_shadowRay_normolized = normalize(d_shadowRay);
-//                Ray shadowRay = Ray(record.position + EPSILON * d_shadowRay_normolized, d_shadowRay_normolized);
-//                    real_t tl = d_shadowRay.x / d_shadowRay_normolized.x;
-////                    real_t tl = length(d_shadowRay) / length(d_shadowRay_normolized);
-//                
-//                bool isHit = false;
-////                    tl = tl < t1 ? tl : t1;
-//                HitRecord shadowRecord = getClosestHit(shadowRay, t0, t1, &isHit);
-//                
-//                
-//                
-//                if (!isHit || tl < shadowRecord.t) {
-//                    res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-//                }
-                // <-----------------old working code----
-                
-                
-                
-                // only when hits the light before hits anything else
-//                if (shadowRecord.isLight)
-//                {
-//                    // if the obejct is not in shadow and is opaque
-//                    if (!isHit && (record.refractive_index == 0))
-//                    {
-//                        res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-//                    }
-//                    else
-//                    {
-//                        // in shadow
-//                        record.isInShadow = true;
-//                    }
-//                    
-//                    
-//                    if (record.refractive_index == 0)
-//                    {
-//                        //res = Color3::White();
-//                        // if the light is a sphere light source
-//                        if (scene->get_lights()[i].type == 1)
-//                        {
-//                            res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-//                        }
-//                        else if (scene->get_lights()[i].type == 2)
-//                        {
-//                            // test the light normal
-//                            if (dot(scene->get_lights()[i].normal, d_shadowRay_normolized) < 0)
-//                            {
-//                                res += (record.getPixelColorFromLight(scene->get_lights()[i])) * (real_t(1)/real_t(sample_num_per_light));
-//                            }
-//                            else
-//                            {
-//                                // in shadow
-//                                record.isInShadow = true;
-//                            }
-//                        }
-//                        
-//                        
-//                    }
-//                    else
-//                    {
-//                        // in shadow
-////                        record.isInShadow = true;
-//                    }
-//                }
-                
-                
             }
             
+            res *= (1.f/(float)sample_num_per_light);
+            
+            // !!! XIAO LI DEBUG 8/20/2014  MAYBE NOT RIGHT
+            // This is only for lambertian model
+            // TODO: make independent material and texture class for handling shaders!
+            // which involves different BxDF functions and PDF for evaluting
+            // and make shading be local
+            res *= INV_PI;
         }
         
         return res;
@@ -1671,38 +1584,6 @@ namespace _462 {
 //        return ran;
 //    }
     
-    void Raytracer::generateCausticsBoxes()
-    {
-        // find objects that could create caustics:
-        for (size_t i = 0; i < scene->num_geometries(); i++)
-        {
-            if (scene->get_geometries()[i]->type == eSphere)
-            {
-                Sphere *sphere = (Sphere *)scene->get_geometries()[i];
-                if ( (sphere->material->refractive_index > 0) || (sphere->material->specular != Color3::Black()) )
-                {
-                    Vector3 pos = sphere->position;
-                    real_t radius = sphere->radius;
-                    Box aBox = Box(Vector3(pos.x - radius, pos.y-radius, pos.z-radius), Vector3(pos.x + radius, pos.y+radius, pos.z+radius));
-                    cboxes.push_back(aBox);
-                }
-            }
-            
-//            if (scene->get_geometries()[i]->type == eTriangle)
-//            {
-//                Triangle *triangle = (Triangle *)scene->get_geometries()[i];
-//                for (int j = 0; j < 3; j++)
-//                {
-//                    if ((triangle->vertices[j].material->refractive_index > 0) || (triangle->vertices[j].material->specular != Color3::Black()))
-//                    {
-//                        Box aBox = *triangle->boundingBox;
-//                        cboxes.push_back(aBox);
-//                    }
-//                }
-//            }
-        }
-    }
-    
     
     /**
      * Retrieve the closest hit record
@@ -1712,7 +1593,7 @@ namespace _462 {
      * @param *isHit        indicate if there is a hit incident
      * @return HitRecord    the closest hit record
      */
-    HitRecord Raytracer::getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit)
+    HitRecord Raytracer::getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit, SceneLayer mask)
     {
         HitRecord closestHitRecord;
         HitRecord tmp;
@@ -1722,22 +1603,28 @@ namespace _462 {
         *isHit = false;
         for (size_t i = 0; i < scene->num_geometries(); i++)
         {
-            if (geometries[i]->hit(r, t0, t1, tmp))
-            {
-                if (!*isHit) {
-                    *isHit = true;
-                    t = tmp.t;
-                    closestHitRecord = tmp;
-                    
-                }
-                else {
-                    if (tmp.t < t) {
+            // added layer mask for ignoring layers
+            if (geometries[i]->layer ^ mask) {
+                
+                if (geometries[i]->hit(r, t0, t1, tmp))
+                {
+                    if (!*isHit) {
+                        *isHit = true;
                         t = tmp.t;
                         closestHitRecord = tmp;
                         
                     }
+                    else {
+                        if (tmp.t < t) {
+                            t = tmp.t;
+                            closestHitRecord = tmp;
+                            
+                        }
+                    }
                 }
             }
+            
+            
         }
         
         closestHitRecord.t = t;
@@ -1760,17 +1647,23 @@ namespace _462 {
         real_t y = _462::random_uniform() * 2 - 1;
         real_t z = _462::random_uniform() * 2 - 1;
         
+//        real_t x = _462::random_uniform();
+//        real_t y = _462::random_uniform();
+//        real_t z = _462::random_uniform();
+        
         Vector3 ran = Vector3(x, y, z);
         return normalize(ran);
     }
     
     Vector3 Raytracer::uniformSampleHemisphere(const Vector3& normal)
     {
-        Vector3 newDir = samplePointOnUnitSphereUniform();
+//        Vector3 newDir = samplePointOnUnitSphereUniform();
+//        Vector3 newDir = samplePointOnUnitSphere();
+        Vector3 newDir = uniformSampleSphere(random_uniform(), random_uniform());
         if (dot(newDir, normal) < 0.0) {
             newDir = -newDir;
         }
-//        return normalize(newDir);
+        return normalize(newDir);
         return newDir;
     }
     

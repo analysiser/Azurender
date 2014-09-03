@@ -136,7 +136,7 @@ namespace _462 {
             return false;
         
         // Transform ray to sphere's local space
-        Ray r = Ray(invMat.transform_point(ray.e), invMat.transform_vector(ray.d));
+        Ray r = Ray(lmat.transform_point(ray.e), lmat.transform_vector(ray.d));
         
 //        if (!bbox_local->intersect(r, t0, t1)) {
 //            return false;

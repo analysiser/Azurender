@@ -16,6 +16,7 @@
 namespace _462 {
     
     void ConcentricSampleDisk(float u1, float u2, float *dx, float *dy);
+    Vector3 UniformSampleHemisphere(float u1, float u2);
     
     inline Vector3 CosineSampleHemisphere(float u1, float u2) {
         

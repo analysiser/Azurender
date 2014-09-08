@@ -54,6 +54,16 @@ namespace _462 {
         *dy = r * sinf(theta);
     }
     
+    Vector3 UniformSampleHemisphere(float u1, float u2)
+    {
+        float z = u1;
+        float r = sqrtf(std::max(0.f, 1.f - z * z));
+        float phi = 2 * M_PI * u2;
+        float x = r * cosf(phi);
+        float y = r * sinf(phi);
+        return Vector3(x, y, z);
+    }
+    
 }
 
 

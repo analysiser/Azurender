@@ -338,16 +338,6 @@ namespace _462 {
         return Vector3(x, y, z);
     }
     
-    inline Vector3 uniformSampleHemisphere(float u1, float u2)
-    {
-        float z = u1;
-        float r = sqrtf(std::max(0.f, 1.f - z * z));
-        float phi = 2 * M_PI * u2;
-        float x = r * cosf(phi);
-        float y = r * sinf(phi);
-        return Vector3(x, y, z);
-    }
-    
 } /* _462 */
 
 #endif /* _462_RAYTRACER_HPP_ */

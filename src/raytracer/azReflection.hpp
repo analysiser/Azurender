@@ -14,17 +14,124 @@
 #include "math/color.hpp"
 #include "math/math.hpp"
 #include "math/vector.hpp"
-
-#define INV_TWOPI   0.15915494309189533577f
-
+#include "raytracer/constants.h"
+#include "raytracer/montecarlo.hpp"
 
 namespace _462 {
     
+    // PBRT P.426
+    // The shading coordinate system is defined by the orthonormal basis vectors (s, t, n)
+    // They lie along x, y, z axes in the coordinate system.
+    // Direction vectors w(omiga) in world space are transformed into the shading coordinate system
+    // before any of the BRDF or BTDF methods are called.
+    
+    // BSDF Inline Functions
+    inline float CosTheta(const Vector3 &w) { return w.z; };
+    
     inline float AbsCosTheta(const Vector3 &w) { return fabsf(w.z); }
+    
+    inline float SinTheta2(const Vector3 &w) {
+        return std::max(0.f, 1.f - CosTheta(w) * CosTheta(w));
+    }
+    
+    inline float SinTheta(const Vector3 &w) {
+        return sqrtf(SinTheta2(w));
+    }
+    
+    inline float CosPhi(const Vector3 &w) {
+        float sintheta = SinTheta(w);
+        if (sintheta == 0.f) return 1.f;
+        return clamp((float)w.x / sintheta, -1.f, 1.f);
+    }
+    
+    inline float SinPhi(const Vector3 &w) {
+        float sintheta = SinTheta(w);
+        if (sintheta == 0.f) return 0.f;
+        return clamp((float)w.y / sintheta, -1.f, 1.f);
+    }
     
     inline bool SameHemisphere(const Vector3 &w, const Vector3 &wp) {
         return w.z * wp.z > 0.f;
     }
+    
+    // BSDF Declarations
+    enum BxDFType {
+        BSDF_REFLECTION   = 1<<0,
+        BSDF_TRANSMISSION = 1<<1,
+        BSDF_DIFFUSE      = 1<<2,
+        BSDF_GLOSSY       = 1<<3,
+        BSDF_SPECULAR     = 1<<4,
+        BSDF_ALL_TYPES        = BSDF_DIFFUSE |
+                                BSDF_GLOSSY |
+                                BSDF_SPECULAR,
+        BSDF_ALL_REFLECTION   = BSDF_REFLECTION |
+                                BSDF_ALL_TYPES,
+        BSDF_ALL_TRANSMISSION = BSDF_TRANSMISSION |
+                                BSDF_ALL_TYPES,
+        BSDF_ALL              = BSDF_ALL_REFLECTION |
+                                BSDF_ALL_TRANSMISSION
+    };
+    
+    // TODO: BxDF, BRDF, BTDF, BSDF
+    /*!
+     @brief base class BxDF for BRDFs & BTDFs.
+     @note  Not all BxDFs can be evaluated with the f() method. For example, perfectly specular
+            objects like a mirror, glass, or water only scatter light from a single incident direction
+            into a single outgoing direction. Such BxDFs are best described with delta distributions
+            that are zero except for the single direction where light is scattered.
+     */
+    class BxDF {
+    public:
+        //BxDF Interface
+        virtual ~BxDF() { }
+        BxDF(BxDFType t) : type(t) { }
+        
+        bool MatchesFlags(BxDFType flags) const {
+            return (type & flags) == type;
+        }
+        
+        // Key method, returns the value of the distribution function for the given pair of directions
+        virtual Color3 f(const Vector3 &wo, const Vector3 &wi) const = 0;
+        /*!
+         @brief This method is used both for handling scattering that is described by delta
+                distributions as well as for randomly sampling directions from BxDFs that scatter light
+                along multiple directions
+         */
+        virtual Color3 Sample_f(const Vector3 &wo, Vector3 *wi, float u1, float u2, float *pdf) const;
+        
+        /*!
+         @brief hemispherical-directional reflectance is a 2D function that gives the total reflection in
+                a given direction due to constant illumination over the hemisphere, or, equivalently, total
+                reflection over the hemisphere due to light from a given direction. // Sec 14.5.5
+         */
+        virtual Color3 rho(const Vector3 &wo, int nSamples, const float *samples) const;
+        
+        /*!
+         @brief The hemispherical-hemispherical reflectance of a surface, denoted by ρhh, is a constant
+                spectral value that gives the fraction of incident light reflected by a surface when the
+                incident light is the same from all directions.
+         */
+        virtual Color3 rho(int nSamples, const float *samples1, const float *samples2) const;
+        
+        virtual float  Pdf(const Vector3 &wi, const Vector3 &wo) const;
+        
+        // BxDF Public Data
+        const BxDFType type;
+    };
+    
+    // TODO: change ordinary surfaces to Lambertian Model, test BRDF implementation
+    class Lambertian : public BxDF {
+    public:
+        // Lambertian public methods
+        Lambertian(const Color3 &reflectance) : BxDF(BxDFType(BSDF_REFLECTION | BSDF_DIFFUSE)), R(reflectance) { }
+        Color3 f(const Vector3 &wo, const Vector3 &wi) const;
+        Color3 rho(const Vector3 &, int, const float *) const { return R; }
+        Color3 rho(int, const float *, const float *) const { return R; }
+    private:
+        // Lamertian private data
+        Color3 R;
+    };
+    
     
     class azFresnel;
     class azReflection;
@@ -116,9 +223,6 @@ namespace _462 {
         // PBRT version
         static float FrDiel(float cosi, float cost, const float &etai, const float &etat)
         {
-            //            Color3 cEtai = Color3(etai, etai, etai);
-            //            Color3 cEtat = Color3(etat, etat, etat);
-            
             float Rparl = ((etat * cosi) - (etai * cost)) /
             ((etat * cosi) + (etai * cost));
             float Rperp = ((etai * cosi) - (etat * cost)) /

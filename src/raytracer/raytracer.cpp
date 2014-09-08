@@ -11,7 +11,9 @@
 #include "raytracer.hpp"
 
 #include "math/math.hpp"
+
 #include "raytracer/azReflection.hpp"
+#include "raytracer/constants.h"
 
 #include "scene/scene.hpp"
 #include "scene/model.hpp"
@@ -61,7 +63,7 @@
 // Cone filter constants    jensen P67, k >= 1 is a filter constant characterizing the filter
 #define CONE_K                          (1)
 
-#define ENABLE_PATH_TRACING_GI          true
+#define ENABLE_PATH_TRACING_GI          false
 #define PT_GI_SAMPLE                    (1)
 
 #define ENABLE_PHOTON_MAPPING           false
@@ -72,9 +74,6 @@
 #define DOF_T                           9
 #define DOF_R                           (0.5)
 #define DOF_SAMPLE                      5
-
-#define INV_PI                          (0.31830988618379067154f)
-
 
 namespace _462 {
     
@@ -1434,18 +1433,6 @@ namespace _462 {
                 acc_cphoton_search_time += end - start;
             }
             
-            // update debug varibales
-            if (record.isInShadow)
-            {
-                radius_shadow += maxSearchSquaredRadius;
-                shadow_count += 1;
-            }
-            else
-            {
-                radius_clear += maxSearchSquaredRadius;
-                clear_count += 1;
-            }
-            
             // shade
 //            printf("size = %ld\n",nearestPhotons.size());
             for (size_t i = 0; i < nearestPhotons.size(); i++)
@@ -1511,18 +1498,6 @@ namespace _462 {
                 nearestPhotonIndices.clear();
                 end = SDL_GetTicks();
                 acc_cphoton_search_time += end - start;
-            }
-            
-            // update debug varibales
-            if (record.isInShadow)
-            {
-                radius_shadow += maxSearchSquaredRadius;
-                shadow_count += 1;
-            }
-            else
-            {
-                radius_clear += maxSearchSquaredRadius;
-                clear_count += 1;
             }
             
 //            printf("source photon = %ld\n",sourcePhotons.size());
@@ -1591,6 +1566,7 @@ namespace _462 {
      * @param t0            lower limit of t
      * @param t1            upper limit of t
      * @param *isHit        indicate if there is a hit incident
+     * @param mask          layer to ignore when doing the nearest surface test
      * @return HitRecord    the closest hit record
      */
     HitRecord Raytracer::getClosestHit(Ray r, real_t t0, real_t t1, bool *isHit, SceneLayer mask)

@@ -40,4 +40,28 @@ namespace _462 {
         return TSMicrofacetCoeef(wo, wi, etai, etat);
     }
     
+    
+    Color3 BxDF::f(const Vector3 &wo, const Vector3 &wi) const
+    {
+
+    }
+    
+    Color3 BxDF::Sample_f(const Vector3 &wo, Vector3 *wi, float u1, float u2, float *pdf) const
+    {
+        // Cosine-sample the hemisphere, flipping the direction if necessary
+        *wi = CosineSampleHemisphere(u1, u2);
+        if (wo.z < 0.) wi->z *= -1.f;
+        *pdf = Pdf(wo, *wi);
+        return f(wo, *wi);
+    }
+    
+    float BxDF::Pdf(const Vector3 &wi, const  Vector3 &wo) const
+    {
+        
+    }
+    
+    Color3 Lambertian::f(const Vector3 & /*wo*/, const Vector3 & /*wi*/ ) const {
+        return R * INV_PI;
+    }
+    
 }

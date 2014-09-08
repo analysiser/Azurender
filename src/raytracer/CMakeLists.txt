@@ -1,4 +1,4 @@
-add_executable(raytracer main.cpp  raytracer.cpp raytracer.hpp Photon.cpp Photon.hpp azReflection.cpp azReflection.hpp  Utils.h )
+add_executable(raytracer main.cpp  raytracer.cpp raytracer.hpp Photon.cpp Photon.hpp azReflection.cpp azReflection.hpp montecarlo.cpp montecarlo.hpp  Utils.h constants.h)
 target_link_libraries(raytracer application math scene tinyxml ${SDL_LIBRARY}
                       ${PNG_LIBRARIES} ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES}
                       ${GLEW_LIBRARIES})

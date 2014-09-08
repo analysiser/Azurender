@@ -55,17 +55,16 @@ namespace _462 {
             // cos(theta_i)
             real_t dot_nl = dot(n, l);
             
+            Color3 resultColor = Color3::Black();
             if (attenuation_constant != 0.0) {
-                return ( color * intensity * std::max(dot_nl, 0.0) * (real_t(1) / (attenuation_constant)) );
+                resultColor = ( color * intensity * std::max(dot_nl, 0.0) * (real_t(1) / (attenuation_constant)) );
             }
             else {
-                Color3 resultColor = ( color * (intensity * (1.0 / squared_distance(surfP, p))) * std::max(dot_nl, 0.0) );
+                resultColor = ( color * (intensity * (1.0 / squared_distance(surfP, p))) * std::max(dot_nl, 0.0) );
 //                resultColor = clamp(resultColor, 0, 1.0);
                 
-                // TODO: is this right?
-                return resultColor;//( color * (intensity * (1.0 / squared_distance(surfP, p))) * (dot_nl > 0 ? dot_nl : 0) );
             }
-            
+            return resultColor;
         }
         
         return Color3::Black();

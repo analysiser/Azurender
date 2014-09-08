@@ -100,9 +100,6 @@ namespace _462 {
         
         int phong;           // p value for blinn-phong model
         
-        //        bool isLight;
-        bool isInShadow;
-        
         // Constructor
         HitRecord()
         {
@@ -116,29 +113,6 @@ namespace _462 {
             t = beta = gamma = 0;
             
             phong = 0;
-            
-            //            isLight = false;
-            isInShadow = false;
-        }
-        
-        // Get lambertian color that come from light
-        Color3 getPixelColorFromLight(SphereLight light)
-        {
-            Vector3 l = normalize(light.position - position);
-            Vector3 n = normal;
-            
-            real_t squared_dist = squared_distance(light.position, this->position);
-            real_t dist = sqrt( squared_dist );
-            
-            real_t dot_nl = dot(n, l);
-            
-            Color3 lightColor =
-            light.color * (real_t(1) / (light.attenuation.constant +
-                                        dist * light.attenuation.linear +
-                                        squared_dist * light.attenuation.quadratic));
-            
-            Color3 lambertian = this->diffuse * lightColor * (dot_nl > 0 ? dot_nl : 0);
-            return lambertian;
         }
         
         Color3 getPhotonLambertianColor(Vector3 direction, Color3 photonColor)

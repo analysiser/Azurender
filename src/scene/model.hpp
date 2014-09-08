@@ -45,9 +45,6 @@ namespace _462 {
         //
         virtual void createBoundingBox() const;
         
-        void createBVHTree();
-
-        
         // Override of virtual function from Geometry
         virtual bool hit(Ray ray, real_t t0, real_t t1, HitRecord &rec) const;
 

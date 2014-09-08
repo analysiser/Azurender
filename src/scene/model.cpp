@@ -130,7 +130,6 @@ namespace _462 {
             real_t alpha = 1 - beta - gamma;
             
             rec.normal = normalize(alpha * (normMat * A.normal) + beta * (normMat * B.normal) + gamma * (normMat * C.normal));
-//            rec.normal = -rec.normal;
             
             // For texture mapping adjustment
             A.tex_coord = getAdjustTexCoord(A.tex_coord);
@@ -156,99 +155,11 @@ namespace _462 {
             
             rec.refractive_index = material->refractive_index;
             
-//            rec.isLight = this->isLight;
-
-            
             return true;
         }
         
         return false;
-        
-//        if (!bBox.intersect(r, t0, t1)) {
-//            return false;
-//        }
-//        
-//        // Indices list that stores all the indices of triangles that might hit
-//        std::vector<size_t> indexList;
-//        root->nodeIntersect(r, t0, t1, indexList);
-//        
-//        if (indexList.size() == 0) {
-//            return false;
-//        }
-//        
-//        MeshTriangle const *triangles = mesh->get_triangles();
-//        real_t tt = INFINITY;
-//        
-//        for (size_t i = 0; i < indexList.size(); i++) {
-//            
-//            size_t idx = indexList[i];
-//            
-//            MeshVertex A = mesh->vertices[triangles[idx].vertices[0]];
-//            MeshVertex B = mesh->vertices[triangles[idx].vertices[1]];
-//            MeshVertex C = mesh->vertices[triangles[idx].vertices[2]];
-//            
-//            // result.x = beta, result.y = gamma, result.z = t
-//            Vector3 result = getResultTriangleIntersection(r, A.position, B.position, C.position);
-//            
-//            if (result.z < t0 || result.z > t1) {
-//                continue;
-//            }
-//            
-//            if (result.y < 0 || result.y > 1) {
-//                continue;
-//            }
-//            
-//            if (result.x < 0 || result.x > 1 - result.y) {
-//                continue;
-//            }
-//            
-//            if (result.z > tt) {
-//                continue;
-//            }
-//            
-//            rec.type = eTriangle;
-//            
-//            rec.position = ray.e + result.z * ray.d;
-//            
-//            real_t beta = result.x;
-//            real_t gamma = result.y;
-//            real_t alpha = 1 - beta - gamma;
-//            
-//            rec.normal = normalize(alpha * (normMat * A.normal) + beta * (normMat * B.normal) + gamma * (normMat * C.normal));
-//
-//            // For texture mapping adjustment
-//            A.tex_coord = getAdjustTexCoord(A.tex_coord);
-//            B.tex_coord = getAdjustTexCoord(B.tex_coord);
-//            C.tex_coord = getAdjustTexCoord(C.tex_coord);
-//            
-//            Vector2 tex_cood_interpolated =
-//            alpha * A.tex_coord + beta * B.tex_coord + gamma * C.tex_coord;
-//            
-//            int width = 0, height = 0;
-//            if (material) {
-//                material->get_texture_size(&width, &height);
-//            }
-//            
-//            rec.diffuse = material->diffuse;
-//            rec.ambient = material->ambient;
-//            rec.specular = material->specular;
-//            rec.phong = material->phong;
-//            
-//            rec.texture = material->get_texture_pixel(tex_cood_interpolated.x * width, tex_cood_interpolated.y * height);
-//            
-//            rec.t = result.z;
-//            
-//            rec.refractive_index = material->refractive_index;
-//            tt = result.z;
-//            
-////            rec.isLight = this->isLight;
-//        }
-//        
-//        if (tt < INFINITY) {
-//            return true;
-//        }
-        
-        return false;
+    
     }
     
 } /* _462 */

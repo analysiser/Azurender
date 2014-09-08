@@ -41,7 +41,7 @@ namespace _462 {
     }
     
 
-#pragma mark BxDF implementation
+#pragma mark - BxDF implementation
     
     // BxDF::Sample_f() takes two sample values in the
     // range [0, 1)^2 that are intended to be used by a transformation-based sampling algorithm.
@@ -90,6 +90,7 @@ namespace _462 {
         return r / (M_PI*nSamples);
     }
     
+#pragma mark - Lambertian implementation
     Color3 Lambertian::f(const Vector3 & /*wo*/, const Vector3 & /*wi*/ ) const {
         return R * INV_PI;
     }

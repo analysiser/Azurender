@@ -93,6 +93,10 @@ public:
     Color3 operator*( const Color3& rhs ) const {
         return Color3( r * rhs.r, g * rhs.g, b * rhs.b );
     }
+    
+    Color3 operator/( float s ) const {
+        return Color3(r / s, g / s, b / s);
+    }
 
     Color3& operator*=( const Color3& rhs ) {
         r *= rhs.r;
